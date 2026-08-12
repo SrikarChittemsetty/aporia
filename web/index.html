@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aporia — search philosophy by argument</title>
+<style>
+  :root {
+    --bg: #faf7f2; --ink: #22201c; --muted: #7a746a; --line: #e4ddd2;
+    --for: #1e6f50; --for-bg: #eaf5ef; --against: #9c3524; --against-bg: #f9ece9;
+    --nuance: #6b5ca5; --nuance-bg: #efecf7; --accent: #b4541f;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font-family: Georgia, 'Iowan Old Style', serif; }
+  header { max-width: 880px; margin: 3.5rem auto 0; padding: 0 1.25rem; text-align: center; }
+  h1 { font-size: 2.4rem; margin: 0 0 .3rem; letter-spacing: .01em; }
+  h1 em { color: var(--accent); font-style: italic; }
+  .tag { color: var(--muted); margin: 0 0 1.6rem; font-size: 1.05rem; }
+  form { display: flex; gap: .5rem; max-width: 640px; margin: 0 auto; }
+  input[type=text] { flex: 1; font: inherit; font-size: 1.05rem; padding: .7rem .9rem;
+    border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  button { font: inherit; font-size: 1rem; padding: .7rem 1.2rem; border: 0; border-radius: 8px;
+    background: var(--ink); color: #fff; cursor: pointer; }
+  button:disabled { opacity: .5; cursor: wait; }
+  .examples { margin-top: .8rem; font-size: .9rem; color: var(--muted); }
+  .examples a { color: var(--accent); cursor: pointer; text-decoration: underline dotted; }
+  #status { text-align: center; color: var(--muted); margin: 2rem 0; font-style: italic; }
+  main { max-width: 1100px; margin: 2.5rem auto 4rem; padding: 0 1.25rem;
+         display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  main[hidden] { display: none; }
+  @media (max-width: 800px) { main { grid-template-columns: 1fr; } }
+  .col h2 { font-size: 1.05rem; text-transform: uppercase; letter-spacing: .12em; margin: 0 0 1rem; }
+  .col.for h2 { color: var(--for); } .col.against h2 { color: var(--against); }
+  .nuance-row { grid-column: 1 / -1; }
+  .nuance-row h2 { color: var(--nuance); font-size: 1.05rem; text-transform: uppercase; letter-spacing: .12em; }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: 10px;
+          padding: 1rem 1.1rem; margin-bottom: 1rem; }
+  .card .move { font-size: .92rem; margin: 0 0 .6rem; padding: .45rem .6rem; border-radius: 6px; }
+  .for .card .move, .card.for .move { background: var(--for-bg); color: var(--for); }
+  .against .card .move, .card.against .move { background: var(--against-bg); color: var(--against); }
+  .card.nuance .move { background: var(--nuance-bg); color: var(--nuance); }
+  .card blockquote { margin: 0 0 .6rem; font-size: .98rem; line-height: 1.55; }
+  .card .cite { font-size: .85rem; color: var(--muted); }
+  .card .cite b { color: var(--ink); }
+  .card .expand { font-size: .82rem; color: var(--accent); cursor: pointer; text-decoration: underline dotted; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Ap<em>o</em>ria</h1>
+  <p class="tag">Type a claim. See who argued for it — and against it — across 2,000 years of philosophy.</p>
+  <form id="f">
+    <input id="q" type="text" placeholder='e.g. "free will is an illusion"' autofocus>
+    <button id="go" type="submit">Search</button>
+  </form>
+  <p class="examples">Try:
+    <a data-q="free will is an illusion">free will is an illusion</a> ·
+    <a data-q="liberty is compatible with necessity">liberty is compatible with necessity</a> ·
+    <a data-q="determinism makes morality meaningless">determinism makes morality meaningless</a>
+  </p>
+</header>
+<div id="status"></div>
+<main id="results" hidden>
+  <section class="col for"><h2>For</h2><div id="for"></div></section>
+  <section class="col against"><h2>Against</h2><div id="against"></div></section>
+  <section class="nuance-row"><h2>Nuance &amp; reframings</h2><div id="nuance"></div></section>
+</main>
+<script>
+const f = document.getElementById('f'), q = document.getElementById('q'),
+      go = document.getElementById('go'), status = document.getElementById('status'),
+      results = document.getElementById('results');
+
+document.querySelectorAll('.examples a').forEach(a =>
+  a.addEventListener('click', () => { q.value = a.dataset.q; f.requestSubmit(); }));
+
+function esc(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+
+function card(p, stance) {
+  const short = p.text.length > 700 ? p.text.slice(0, 700) + '…' : p.text;
+  return `<div class="card ${stance}">
+    ${p.move ? `<p class="move">${esc(p.move)}</p>` : ''}
+    <blockquote>“${esc(short)}”</blockquote>
+    <p class="cite"><b>${esc(p.author)}</b>, <i>${esc(p.work)}</i> — ${esc(p.citation)}
+       · <span class="expand" onclick="expand(${p.id}, this)">read in context</span></p>
+  </div>`;
+}
+
+async function expand(id, el) {
+  const r = await fetch(`/passage/${id}`); const d = await r.json();
+  el.closest('.card').querySelector('blockquote').innerHTML =
+    d.context.map(c => `<p>${esc(c.text)}</p>`).join('');
+  el.remove();
+}
+
+f.addEventListener('submit', async e => {
+  e.preventDefault();
+  if (!q.value.trim()) return;
+  history.replaceState(null, '', '?q=' + encodeURIComponent(q.value.trim()));
+  go.disabled = true; results.hidden = true;
+  status.textContent = 'Retrieving passages and mapping the dialectic — the first search on a new claim takes ~30s…';
+  try {
+    const r = await fetch(`/search?q=${encodeURIComponent(q.value)}`);
+    if (!r.ok) throw new Error(await r.text());
+    const d = await r.json();
+    if (d.stance_error) {
+      status.textContent = 'Stance layer offline (passages shown unclassified under Nuance). Fix: run `claude login` or set ANTHROPIC_API_KEY, then restart the server.';
+    } else { status.textContent = ''; }
+    for (const s of ['for', 'against', 'nuance']) {
+      document.getElementById(s).innerHTML =
+        d[s].length ? d[s].map(p => card(p, s)).join('') : '<p class="cite">Nothing found on this side.</p>';
+    }
+    results.hidden = false;
+  } catch (err) {
+    status.textContent = 'Search failed: ' + err.message;
+  } finally { go.disabled = false; }
+});
+
+// Shareable links: /?q=some+claim auto-runs the search on load.
+const initial = new URLSearchParams(location.search).get('q');
+if (initial) { q.value = initial; f.requestSubmit(); }
+</script>
+</body>
+</html>

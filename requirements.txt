@@ -1,0 +1,6 @@
+fastapi>=0.110
+uvicorn>=0.29
+numpy
+hnswlib>=0.8
+sentence-transformers>=2.7
+anthropic>=0.40
