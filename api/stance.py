@@ -71,7 +71,7 @@ def _sdk_available() -> bool:
     return cfg.exists() and any(cfg.glob("credentials/*.json"))
 
 
-def _classify_via_sdk(prompt: str) -> list[dict]:
+def _complete_via_sdk(prompt: str) -> str:
     import anthropic
 
     client = anthropic.Anthropic()
@@ -81,12 +81,11 @@ def _classify_via_sdk(prompt: str) -> list[dict]:
         messages=[{"role": "user", "content": prompt}],
     )
     if response.stop_reason == "refusal":
-        raise RuntimeError("model refused the classification request")
-    text = next(b.text for b in response.content if b.type == "text")
-    return _extract_json_array(text)
+        raise RuntimeError("model refused the request")
+    return next(b.text for b in response.content if b.type == "text")
 
 
-def _classify_via_cli(prompt: str) -> list[dict]:
+def _classify_via_cli_text(prompt: str) -> str:
     claude = shutil.which("claude") or str(Path.home() / ".local/bin/claude")
     result = subprocess.run(
         [claude, "-p", prompt],
@@ -96,7 +95,15 @@ def _classify_via_cli(prompt: str) -> list[dict]:
     if result.returncode != 0:
         detail = (result.stderr.strip() or result.stdout.strip())[:300]
         raise RuntimeError(f"claude CLI failed: {detail}")
-    return _extract_json_array(result.stdout)
+    return result.stdout
+
+
+def _classify_via_sdk(prompt: str) -> list[dict]:
+    return _extract_json_array(_complete_via_sdk(prompt))
+
+
+def _classify_via_cli(prompt: str) -> list[dict]:
+    return _extract_json_array(_classify_via_cli_text(prompt))
 
 
 def classify(query: str, passages: list[dict]) -> tuple[dict[int, dict], str | None]:

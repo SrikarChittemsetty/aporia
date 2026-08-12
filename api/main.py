@@ -13,6 +13,7 @@ from fastapi.responses import FileResponse
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from config import DB_PATH, EMBED_MODEL, INDEX_DIR, QUERY_PREFIX, ROOT, TOP_K
 from api import stance
+from api.claims import resolve_claim
 from index.vector_index import load_index
 
 app = FastAPI(title="Aporia", description="Search philosophy by argument, not keyword.")
@@ -43,12 +44,17 @@ def _fetch_chunks(ids: list[int]) -> list[dict]:
 
 @app.get("/search")
 def search(q: str = Query(..., min_length=3), k: int = TOP_K):
+    # Bare topics ("free will") resolve to a canonical claim; retrieval still
+    # uses the original query for breadth, stance is judged against the claim.
+    claim, was_topic, claim_error = resolve_claim(q)
+
     vector = _state["model"].encode(QUERY_PREFIX + q, normalize_embeddings=True)
     ids, scores = _state["index"].search(np.asarray(vector, dtype=np.float32), k=k)
     passages = _fetch_chunks(ids)
     score_by_id = dict(zip(ids, scores))
 
-    stances, stance_error = stance.classify(q, passages)
+    stances, stance_error = stance.classify(claim, passages)
+    stance_error = stance_error or claim_error
 
     grouped = {"for": [], "against": [], "nuance": []}
     for p in passages:
@@ -63,7 +69,8 @@ def search(q: str = Query(..., min_length=3), k: int = TOP_K):
             "confidence": s["confidence"],
             "similarity": round(score_by_id.get(p["id"], 0.0), 4),
         })
-    return {"query": q, "stance_error": stance_error, **grouped}
+    return {"query": q, "claim": claim, "was_topic": was_topic,
+            "stance_error": stance_error, **grouped}
 
 
 @app.get("/passage/{chunk_id}")

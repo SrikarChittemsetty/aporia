@@ -51,14 +51,17 @@
   <h1>Ap<em>o</em>ria</h1>
   <p class="tag">Type a claim. See who argued for it — and against it — across 2,000 years of philosophy.</p>
   <form id="f">
-    <input id="q" type="text" placeholder='e.g. "free will is an illusion"' autofocus>
+    <input id="q" type="text" placeholder='a topic ("free will", "evil") or a claim ("God exists")' autofocus>
     <button id="go" type="submit">Search</button>
   </form>
   <p class="examples">Try:
+    <a data-q="free will">free will</a> ·
+    <a data-q="existence of god">existence of god</a> ·
+    <a data-q="evil">evil</a> ·
     <a data-q="free will is an illusion">free will is an illusion</a> ·
-    <a data-q="liberty is compatible with necessity">liberty is compatible with necessity</a> ·
     <a data-q="determinism makes morality meaningless">determinism makes morality meaningless</a>
   </p>
+  <p id="claimline" class="examples" hidden></p>
 </header>
 <div id="status"></div>
 <main id="results" hidden>
@@ -103,6 +106,11 @@ f.addEventListener('submit', async e => {
     const r = await fetch(`/search?q=${encodeURIComponent(q.value)}`);
     if (!r.ok) throw new Error(await r.text());
     const d = await r.json();
+    const cl = document.getElementById('claimline');
+    if (d.was_topic && d.claim && d.claim.toLowerCase() !== d.query.toLowerCase()) {
+      cl.innerHTML = 'Debating the claim: <b>“' + esc(d.claim) + '”</b> — FOR and AGAINST are relative to it.';
+      cl.hidden = false;
+    } else { cl.hidden = true; }
     if (d.stance_error) {
       status.textContent = 'Stance layer offline (passages shown unclassified under Nuance). Fix: run `claude login` or set ANTHROPIC_API_KEY, then restart the server.';
     } else { status.textContent = ''; }

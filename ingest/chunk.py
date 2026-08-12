@@ -131,14 +131,25 @@ def chunk_work(text: str):
 
 
 def main() -> None:
+    rebuild = "--rebuild" in sys.argv
     DB_PATH.parent.mkdir(parents=True, exist_ok=True)
     con = sqlite3.connect(DB_PATH)
     con.executescript(SCHEMA)
-    con.execute("DELETE FROM chunks")
+    if rebuild:
+        # Full rebuild changes chunk ids, so cached stances are invalid too.
+        con.execute("DELETE FROM chunks")
+        con.execute("DELETE FROM stance_cache")
+
+    # Incremental by default: only chunk works not already in the DB, so
+    # existing chunk ids (and the stance cache keyed on them) stay stable.
+    existing = {row[0] for row in con.execute("SELECT DISTINCT gutenberg_id FROM chunks")}
 
     total = 0
     for entry in CORPUS:
         gid = entry["gutenberg_id"]
+        if gid in existing:
+            print(f"#{gid} {entry['author']}: already chunked, skipping")
+            continue
         raw = (RAW_DIR / f"{gid}.txt").read_text(encoding="utf-8")
         seq = 0
         for c in chunk_work(raw):

@@ -2,15 +2,18 @@
 
 **Search 2,000 years of philosophy by argument, not keyword.**
 
-Type a claim — *"free will is an illusion"* — and get the actual
-primary-source passages where philosophers argued **for** and **against** it,
-with citations and a one-line summary of the move each passage makes.
+Type a claim — *"free will is an illusion"* — or just a topic — *"free
+will"*, *"evil"*, *"existence of god"* — and get the actual primary-source
+passages where philosophers argued **for** and **against** it, with citations
+and a one-line summary of the move each passage makes. Bare topics are
+resolved to the canonical contested claim first (*"existence of god"* →
+*"God exists"*), so the FOR/AGAINST split always has a definite thesis.
 
-![Aporia searching "free will is an illusion": Spinoza argues FOR, William James and Kant argue AGAINST](docs/screenshot.png)
+![Aporia searching "free will is an illusion": Spinoza and Nietzsche argue FOR, William James and Kant argue AGAINST](docs/screenshot.png)
 
-*Above: Spinoza lands on FOR ("suspension of judgment is a perception, and not
-free will"), James and Kant on AGAINST — retrieved from the original texts,
-classified by stance, cited to the section.*
+*Above: Spinoza and Nietzsche land on FOR, James and Kant on AGAINST —
+retrieved from the original texts, classified by stance, cited to the
+section.*
 
 ## Why this is hard
 
@@ -40,7 +43,7 @@ uvicorn api.main:app --port 8080
 # open http://localhost:8080 and click an example query
 ```
 
-The three example queries on the landing page ship with pre-cached stance
+The example queries on the landing page ship with pre-cached stance
 classifications, so the demo works immediately — no API key needed. Novel
 claims use Claude for classification: set `ANTHROPIC_API_KEY` (or be logged
 into the `claude` CLI). Without either, novel queries still return passages,
@@ -56,31 +59,33 @@ Searches are shareable links: `/?q=liberty+is+compatible+with+necessity`.
 - **`index/`** — `sentence-transformers` embeddings and an hnswlib index
   behind a swappable [`VectorIndex`](index/vector_index.py) interface. A
   brute-force NumPy index ships alongside as the exact-recall baseline.
-- **`api/`** — FastAPI. `/search` does retrieval + stance grouping;
-  `/passage/{id}` returns a chunk with its neighbors. The stance layer
+- **`api/`** — FastAPI. `/search` does claim resolution, retrieval, and
+  stance grouping; `/passage/{id}` returns a chunk with its neighbors. Topic
+  queries resolve via a built-in claim table, then a cached LLM call
+  ([api/claims.py](api/claims.py)). The stance layer
   ([api/stance.py](api/stance.py)) batches all passages into one Claude call,
-  caches per (query, passage) in SQLite, and degrades gracefully (unclassified
+  caches per (claim, passage) in SQLite, and degrades gracefully (unclassified
   results, never cached) if no LLM backend is reachable.
 - **`evals/`** — retrieval sanity suite: 10 hand-written claims with expected
   authors. Current score: **9/10 queries surface an expected author in the
-  top 12** over a 1,486-chunk corpus.
+  top 12** over a 4,252-chunk corpus.
 
-## Corpus (Phase 0: the free-will debate)
+## Corpus (13 works, all public domain via Project Gutenberg)
 
-All public domain, via Project Gutenberg:
-
-| Author | Work | Position |
-|---|---|---|
-| David Hume | An Enquiry Concerning Human Understanding | compatibilist — "Of Liberty and Necessity" |
-| Baruch Spinoza | Ethics | necessitarian — the feeling of freedom is ignorance of causes |
-| William James | The Will to Believe | indeterminist — "The Dilemma of Determinism" |
-| Immanuel Kant | Critique of Practical Reason | freedom as a postulate of practical reason |
+Free will: Hume's *Enquiry*, Spinoza's *Ethics*, James's *The Will to
+Believe*, Kant's two *Critiques*-era works. God and evil: Hume's *Dialogues
+Concerning Natural Religion*, Descartes's *Discourse on the Method*.
+Morality: Nietzsche's *Beyond Good and Evil*, Mill's *Utilitarianism*, Kant's
+*Groundwork*. Rights and justice: Locke's *Second Treatise*, Mill's *On
+Liberty*, Paine's *Rights of Man*, Plato's *Republic*. The full list with
+Gutenberg IDs lives in [config.py](config.py) — adding a work is one dict
+entry plus a pipeline re-run (chunking is incremental; existing chunk ids are
+stable).
 
 ## Roadmap
 
-- **Phase 1** — 15–25 works across several classic debates (personal identity,
-  objective morality, the existence of God); deployed always-on demo
-  ([DEPLOY.md](DEPLOY.md) has the Fly.io recipe).
+- **Phase 1** — deployed always-on demo ([DEPLOY.md](DEPLOY.md) has the
+  Fly.io recipe); more debates (personal identity, beauty, knowledge).
 - **Phase 2** — replace hnswlib with a from-scratch HNSW implementation behind
   the same interface; benchmark recall vs. the brute-force baseline and
   QPS/latency vs. the library, table goes here.
