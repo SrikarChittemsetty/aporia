@@ -19,6 +19,9 @@ CHUNK_MAX_WORDS = 300
 
 # Retrieval
 TOP_K = 12
+# Which index implementation serves /search: "pyhnsw" (our from-scratch HNSW,
+# the default — this is the Phase 2 point), "hnswlib", or "numpy" (exact).
+INDEX_KIND = "pyhnsw"
 
 # Stance layer
 ANTHROPIC_MODEL = "claude-opus-5"

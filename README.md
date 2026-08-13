@@ -63,7 +63,9 @@ Searches are shareable links: `/?q=liberty+is+compatible+with+necessity`.
   implementations: exact brute force (NumPy), hnswlib, and
   [**a from-scratch HNSW written in pure NumPy**](index/pyhnsw.py) —
   hierarchical proximity graphs, beam search, and the Malkov–Yashunin
-  neighbor-selection heuristic implemented from the paper. Benchmarks below.
+  neighbor-selection heuristic implemented from the paper. **The demo serves
+  the from-scratch index** (`INDEX_KIND` in config.py switches back to
+  hnswlib or exact search). Benchmarks below.
 - **`api/`** — FastAPI. `/search` does claim resolution, retrieval, and
   stance grouping; `/passage/{id}` returns a chunk with its neighbors. Topic
   queries resolve via a built-in claim table, then a cached LLM call
@@ -106,19 +108,25 @@ implementation is the depth exercise — same algorithm, same interface, real
 recall — and its per-query work scales ~O(log n) where brute force scales
 O(n).
 
-## Tests
+## Tests & evals
 
 `pytest` covers the chunker (heading detection regressions included), claim
 resolution, and both pure-Python indexes (recall floor + disk roundtrip).
 CI runs on every push.
 
+- `python -m evals.sanity` — retrieval hit-rate on hand-written claims (9/10)
+- `python -m evals.bench` — index recall/latency benchmark (table above)
+- `python -m evals.stance_eval` — live stance-classifier agreement against
+  [83 hand-labeled gold stances](evals/gold_stances.json) (needs an LLM
+  backend)
+
 ## Roadmap
 
 - **Phase 1** — deployed always-on demo ([DEPLOY.md](DEPLOY.md) has the
   Fly.io recipe); more debates (personal identity, beauty, knowledge).
-- **Phase 2** — ✅ from-scratch HNSW ([index/pyhnsw.py](index/pyhnsw.py))
-  benchmarked above; next: serve it behind a config flag and tune
-  ef/M trade-offs.
+- **Phase 2** — ✅ from-scratch HNSW ([index/pyhnsw.py](index/pyhnsw.py)),
+  benchmarked above and **serving the live demo**; next: tune ef/M
+  trade-offs at larger corpus sizes.
 - **Phase 3** — offline claim graph: extract structured claims and
   supports/attacks relations across works, so serving becomes graph traversal
   instead of query-time classification; hand-labeled eval set for stance

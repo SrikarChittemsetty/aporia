@@ -1,0 +1,417 @@
+[
+ {
+  "claim": "free will is an illusion",
+  "chunk_id": 419,
+  "stance": "nuance"
+ },
+ {
+  "claim": "free will is an illusion",
+  "chunk_id": 421,
+  "stance": "for"
+ },
+ {
+  "claim": "free will is an illusion",
+  "chunk_id": 854,
+  "stance": "nuance"
+ },
+ {
+  "claim": "free will is an illusion",
+  "chunk_id": 903,
+  "stance": "against"
+ },
+ {
+  "claim": "free will is an illusion",
+  "chunk_id": 910,
+  "stance": "nuance"
+ },
+ {
+  "claim": "free will is an illusion",
+  "chunk_id": 947,
+  "stance": "against"
+ },
+ {
+  "claim": "free will is an illusion",
+  "chunk_id": 958,
+  "stance": "against"
+ },
+ {
+  "claim": "free will is an illusion",
+  "chunk_id": 1177,
+  "stance": "against"
+ },
+ {
+  "claim": "free will is an illusion",
+  "chunk_id": 1225,
+  "stance": "against"
+ },
+ {
+  "claim": "free will is an illusion",
+  "chunk_id": 1253,
+  "stance": "against"
+ },
+ {
+  "claim": "free will is an illusion",
+  "chunk_id": 1366,
+  "stance": "against"
+ },
+ {
+  "claim": "free will is an illusion",
+  "chunk_id": 1397,
+  "stance": "nuance"
+ },
+ {
+  "claim": "free will is an illusion",
+  "chunk_id": 1690,
+  "stance": "for"
+ },
+ {
+  "claim": "free will is an illusion",
+  "chunk_id": 1695,
+  "stance": "for"
+ },
+ {
+  "claim": "free will is an illusion",
+  "chunk_id": 2465,
+  "stance": "against"
+ },
+ {
+  "claim": "free will is an illusion",
+  "chunk_id": 2466,
+  "stance": "against"
+ },
+ {
+  "claim": "free will is an illusion",
+  "chunk_id": 2472,
+  "stance": "nuance"
+ },
+ {
+  "claim": "free will is an illusion",
+  "chunk_id": 2486,
+  "stance": "against"
+ },
+ {
+  "claim": "liberty is compatible with necessity",
+  "chunk_id": 123,
+  "stance": "for"
+ },
+ {
+  "claim": "liberty is compatible with necessity",
+  "chunk_id": 141,
+  "stance": "for"
+ },
+ {
+  "claim": "liberty is compatible with necessity",
+  "chunk_id": 142,
+  "stance": "for"
+ },
+ {
+  "claim": "liberty is compatible with necessity",
+  "chunk_id": 144,
+  "stance": "for"
+ },
+ {
+  "claim": "liberty is compatible with necessity",
+  "chunk_id": 145,
+  "stance": "for"
+ },
+ {
+  "claim": "liberty is compatible with necessity",
+  "chunk_id": 146,
+  "stance": "for"
+ },
+ {
+  "claim": "liberty is compatible with necessity",
+  "chunk_id": 147,
+  "stance": "for"
+ },
+ {
+  "claim": "liberty is compatible with necessity",
+  "chunk_id": 150,
+  "stance": "for"
+ },
+ {
+  "claim": "liberty is compatible with necessity",
+  "chunk_id": 153,
+  "stance": "against"
+ },
+ {
+  "claim": "liberty is compatible with necessity",
+  "chunk_id": 1449,
+  "stance": "nuance"
+ },
+ {
+  "claim": "liberty is compatible with necessity",
+  "chunk_id": 2326,
+  "stance": "nuance"
+ },
+ {
+  "claim": "liberty is compatible with necessity",
+  "chunk_id": 2330,
+  "stance": "nuance"
+ },
+ {
+  "claim": "liberty is compatible with necessity",
+  "chunk_id": 2331,
+  "stance": "nuance"
+ },
+ {
+  "claim": "liberty is compatible with necessity",
+  "chunk_id": 2636,
+  "stance": "nuance"
+ },
+ {
+  "claim": "liberty is compatible with necessity",
+  "chunk_id": 3929,
+  "stance": "nuance"
+ },
+ {
+  "claim": "liberty is compatible with necessity",
+  "chunk_id": 4060,
+  "stance": "nuance"
+ },
+ {
+  "claim": "determinism makes morality meaningless",
+  "chunk_id": 908,
+  "stance": "for"
+ },
+ {
+  "claim": "determinism makes morality meaningless",
+  "chunk_id": 910,
+  "stance": "for"
+ },
+ {
+  "claim": "determinism makes morality meaningless",
+  "chunk_id": 920,
+  "stance": "nuance"
+ },
+ {
+  "claim": "determinism makes morality meaningless",
+  "chunk_id": 921,
+  "stance": "nuance"
+ },
+ {
+  "claim": "determinism makes morality meaningless",
+  "chunk_id": 925,
+  "stance": "for"
+ },
+ {
+  "claim": "determinism makes morality meaningless",
+  "chunk_id": 931,
+  "stance": "for"
+ },
+ {
+  "claim": "determinism makes morality meaningless",
+  "chunk_id": 937,
+  "stance": "nuance"
+ },
+ {
+  "claim": "determinism makes morality meaningless",
+  "chunk_id": 1278,
+  "stance": "against"
+ },
+ {
+  "claim": "determinism makes morality meaningless",
+  "chunk_id": 1292,
+  "stance": "nuance"
+ },
+ {
+  "claim": "determinism makes morality meaningless",
+  "chunk_id": 1394,
+  "stance": "against"
+ },
+ {
+  "claim": "determinism makes morality meaningless",
+  "chunk_id": 1427,
+  "stance": "nuance"
+ },
+ {
+  "claim": "determinism makes morality meaningless",
+  "chunk_id": 1628,
+  "stance": "nuance"
+ },
+ {
+  "claim": "determinism makes morality meaningless",
+  "chunk_id": 2396,
+  "stance": "nuance"
+ },
+ {
+  "claim": "Humans have free will",
+  "chunk_id": 413,
+  "stance": "against"
+ },
+ {
+  "claim": "Humans have free will",
+  "chunk_id": 854,
+  "stance": "nuance"
+ },
+ {
+  "claim": "Humans have free will",
+  "chunk_id": 958,
+  "stance": "for"
+ },
+ {
+  "claim": "Humans have free will",
+  "chunk_id": 1177,
+  "stance": "for"
+ },
+ {
+  "claim": "Humans have free will",
+  "chunk_id": 1223,
+  "stance": "for"
+ },
+ {
+  "claim": "Humans have free will",
+  "chunk_id": 1225,
+  "stance": "for"
+ },
+ {
+  "claim": "Humans have free will",
+  "chunk_id": 2463,
+  "stance": "for"
+ },
+ {
+  "claim": "Humans have free will",
+  "chunk_id": 2465,
+  "stance": "for"
+ },
+ {
+  "claim": "Humans have free will",
+  "chunk_id": 2466,
+  "stance": "for"
+ },
+ {
+  "claim": "Humans have free will",
+  "chunk_id": 2472,
+  "stance": "nuance"
+ },
+ {
+  "claim": "Humans have free will",
+  "chunk_id": 2486,
+  "stance": "for"
+ },
+ {
+  "claim": "Humans have free will",
+  "chunk_id": 2496,
+  "stance": "nuance"
+ },
+ {
+  "claim": "God exists",
+  "chunk_id": 292,
+  "stance": "for"
+ },
+ {
+  "claim": "God exists",
+  "chunk_id": 293,
+  "stance": "for"
+ },
+ {
+  "claim": "God exists",
+  "chunk_id": 296,
+  "stance": "for"
+ },
+ {
+  "claim": "God exists",
+  "chunk_id": 309,
+  "stance": "for"
+ },
+ {
+  "claim": "God exists",
+  "chunk_id": 313,
+  "stance": "for"
+ },
+ {
+  "claim": "God exists",
+  "chunk_id": 330,
+  "stance": "for"
+ },
+ {
+  "claim": "God exists",
+  "chunk_id": 354,
+  "stance": "for"
+ },
+ {
+  "claim": "God exists",
+  "chunk_id": 410,
+  "stance": "for"
+ },
+ {
+  "claim": "God exists",
+  "chunk_id": 1370,
+  "stance": "nuance"
+ },
+ {
+  "claim": "God exists",
+  "chunk_id": 1437,
+  "stance": "nuance"
+ },
+ {
+  "claim": "God exists",
+  "chunk_id": 1590,
+  "stance": "against"
+ },
+ {
+  "claim": "God exists",
+  "chunk_id": 1614,
+  "stance": "against"
+ },
+ {
+  "claim": "The existence of evil is incompatible with a good God",
+  "chunk_id": 475,
+  "stance": "nuance"
+ },
+ {
+  "claim": "The existence of evil is incompatible with a good God",
+  "chunk_id": 544,
+  "stance": "nuance"
+ },
+ {
+  "claim": "The existence of evil is incompatible with a good God",
+  "chunk_id": 605,
+  "stance": "nuance"
+ },
+ {
+  "claim": "The existence of evil is incompatible with a good God",
+  "chunk_id": 623,
+  "stance": "nuance"
+ },
+ {
+  "claim": "The existence of evil is incompatible with a good God",
+  "chunk_id": 1285,
+  "stance": "nuance"
+ },
+ {
+  "claim": "The existence of evil is incompatible with a good God",
+  "chunk_id": 1625,
+  "stance": "for"
+ },
+ {
+  "claim": "The existence of evil is incompatible with a good God",
+  "chunk_id": 1628,
+  "stance": "for"
+ },
+ {
+  "claim": "The existence of evil is incompatible with a good God",
+  "chunk_id": 2083,
+  "stance": "nuance"
+ },
+ {
+  "claim": "The existence of evil is incompatible with a good God",
+  "chunk_id": 2137,
+  "stance": "nuance"
+ },
+ {
+  "claim": "The existence of evil is incompatible with a good God",
+  "chunk_id": 2288,
+  "stance": "nuance"
+ },
+ {
+  "claim": "The existence of evil is incompatible with a good God",
+  "chunk_id": 4698,
+  "stance": "nuance"
+ },
+ {
+  "claim": "The existence of evil is incompatible with a good God",
+  "chunk_id": 4699,
+  "stance": "nuance"
+ }
+]

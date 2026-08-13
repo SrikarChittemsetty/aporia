@@ -21,21 +21,15 @@ fly secrets set ANTHROPIC_API_KEY=sk-ant-...
 fly deploy
 ```
 
-Dockerfile sketch:
+The repo ships a [Dockerfile](Dockerfile) that installs CPU-only torch
+(avoiding ~3GB of CUDA libraries), bakes the embedding model into the image,
+and reuses local `data/` artifacts when present (building corpus + index from
+scratch otherwise):
 
-```dockerfile
-FROM python:3.12-slim
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-COPY . .
-# Build the corpus + index at image build time (or mount a volume instead)
-RUN python -m ingest.download && python -m ingest.chunk && python -m index.build_index
-CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8080"]
+```bash
+docker build -t aporia .
+docker run -p 8080:8080 -e ANTHROPIC_API_KEY=sk-ant-... aporia
 ```
-
-Pre-download the embedding model in the image too if you want fast cold
-starts: `RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('BAAI/bge-small-en-v1.5')"`.
 
 ## Render / Railway
 
