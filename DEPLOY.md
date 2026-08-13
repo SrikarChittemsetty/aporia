@@ -21,10 +21,11 @@ fly secrets set ANTHROPIC_API_KEY=sk-ant-...
 fly deploy
 ```
 
-The repo ships a [Dockerfile](Dockerfile) that installs CPU-only torch
-(avoiding ~3GB of CUDA libraries), bakes the embedding model into the image,
-and reuses local `data/` artifacts when present (building corpus + index from
-scratch otherwise):
+The repo ships a working [Dockerfile](Dockerfile) — build-tested locally
+(2.5GB image; serves search + UI from baked-in artifacts). It installs
+CPU-only torch (avoiding ~3GB of CUDA libraries), bakes the embedding model
+into the image, and reuses local `data/` artifacts when present (building
+corpus + index from scratch otherwise):
 
 ```bash
 docker build -t aporia .
