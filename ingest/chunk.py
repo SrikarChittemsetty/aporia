@@ -12,12 +12,18 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from config import CHUNK_MAX_WORDS, CHUNK_MIN_WORDS, CORPUS, DB_PATH, RAW_DIR
 
 # Heading heuristics for Gutenberg plain text: SECTION/CHAPTER/PART/BOOK lines,
-# roman-numeral headings, or short ALL-CAPS lines.
+# roman-numeral headings (numeral alone, or followed by ALL-CAPS text — a
+# trailing lowercase word means dialogue like "I do.", not a heading),
+# or short ALL-CAPS lines.
 HEADING_RE = re.compile(
     r"^(?:(?:SECTION|CHAPTER|PART|BOOK|ESSAY|PREFACE|INTRODUCTION|APPENDIX|PROP\.?|PROPOSITION)\b.*"
-    r"|[IVXLC]+\.?(?:\s+.*)?"
+    r"|[IVXLC]+\.?(?:\s+[A-Z][A-Z0-9 ,.'\-:;]*)?"
     r"|[A-Z][A-Z0-9 ,.'\-:;]{3,60})$"
 )
+
+# Sections that aren't the author's own argument: tables of contents, back
+# indexes, and the translator's front-matter analysis (Jowett's Republic).
+SKIP_SECTIONS = ("CONTENTS", "INDEX", "PAGE", "INTRODUCTION AND ANALYSIS", "front matter")
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS chunks (
@@ -155,6 +161,8 @@ def main() -> None:
         for c in chunk_work(raw):
             # Skip tiny fragments (tables of contents, stray lines).
             if len(c["text"].split()) < 40:
+                continue
+            if c["citation"].upper().startswith(tuple(s.upper() for s in SKIP_SECTIONS)):
                 continue
             con.execute(
                 "INSERT INTO chunks (gutenberg_id, author, work, citation_path, seq, char_start, char_end, text)"

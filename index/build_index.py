@@ -31,6 +31,11 @@ def main() -> None:
                            normalize_embeddings=True)
     vectors = np.asarray(vectors, dtype=np.float32)
 
+    # Persist the raw matrix for benchmarking (evals/bench.py) and future
+    # index experiments, so they don't have to re-embed the corpus.
+    INDEX_DIR.mkdir(parents=True, exist_ok=True)
+    np.savez_compressed(INDEX_DIR / "vectors.npz", vectors=vectors, ids=np.asarray(ids))
+
     try:
         index = HnswlibIndex()
         index.build(vectors, ids)

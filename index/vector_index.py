@@ -96,8 +96,46 @@ class NumpyIndex(VectorIndex):
         return obj
 
 
+class PyHnswIndex(VectorIndex):
+    """Our own HNSW implementation (index/pyhnsw.py) behind the same
+    interface — the Phase 2 replacement for HnswlibIndex."""
+
+    def __init__(self, m: int = 16, ef_construction: int = 200, ef_search: int = 64):
+        self._params = dict(m=m, ef_construction=ef_construction, ef_search=ef_search)
+        self._index = None
+        self._ids = None
+
+    def build(self, vectors: np.ndarray, ids: list[int]) -> None:
+        from index.pyhnsw import PyHNSW
+
+        self._index = PyHNSW(dim=vectors.shape[1], **self._params)
+        self._index.add_items(vectors)
+        self._ids = np.asarray(ids)
+
+    def search(self, vector: np.ndarray, k: int) -> tuple[list[int], list[float]]:
+        internal, dists = self._index.knn_query(vector, k)
+        return self._ids[internal].tolist(), [1.0 - d for d in dists]
+
+    def save(self, dirpath: Path) -> None:
+        dirpath.mkdir(parents=True, exist_ok=True)
+        self._index.save(dirpath / "pyhnsw")
+        np.save(dirpath / "pyhnsw_ids.npy", self._ids)
+        (dirpath / "meta.json").write_text(json.dumps({"kind": "pyhnsw"}))
+
+    @classmethod
+    def load(cls, dirpath: Path) -> "PyHnswIndex":
+        from index.pyhnsw import PyHNSW
+
+        obj = cls()
+        obj._index = PyHNSW.load(dirpath / "pyhnsw")
+        obj._ids = np.load(dirpath / "pyhnsw_ids.npy")
+        return obj
+
+
 def load_index(dirpath: Path) -> VectorIndex:
     meta = json.loads((dirpath / "meta.json").read_text())
     if meta.get("kind") == "hnswlib":
         return HnswlibIndex.load(dirpath)
+    if meta.get("kind") == "pyhnsw":
+        return PyHnswIndex.load(dirpath)
     return NumpyIndex.load(dirpath)

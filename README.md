@@ -56,9 +56,12 @@ Searches are shareable links: `/?q=liberty+is+compatible+with+necessity`.
 - **`ingest/`** — Project Gutenberg download + cleaning, paragraph-merging
   chunker that preserves author/work/section/char-offset metadata (powers the
   "read in context" expansion).
-- **`index/`** — `sentence-transformers` embeddings and an hnswlib index
-  behind a swappable [`VectorIndex`](index/vector_index.py) interface. A
-  brute-force NumPy index ships alongside as the exact-recall baseline.
+- **`index/`** — `sentence-transformers` embeddings behind a swappable
+  [`VectorIndex`](index/vector_index.py) interface with three interchangeable
+  implementations: exact brute force (NumPy), hnswlib, and
+  [**a from-scratch HNSW written in pure NumPy**](index/pyhnsw.py) —
+  hierarchical proximity graphs, beam search, and the Malkov–Yashunin
+  neighbor-selection heuristic implemented from the paper. Benchmarks below.
 - **`api/`** — FastAPI. `/search` does claim resolution, retrieval, and
   stance grouping; `/passage/{id}` returns a chunk with its neighbors. Topic
   queries resolve via a built-in claim table, then a cached LLM call
@@ -82,13 +85,38 @@ Gutenberg IDs lives in [config.py](config.py) — adding a work is one dict
 entry plus a pipeline re-run (chunking is incremental; existing chunk ids are
 stable).
 
+## Index benchmarks
+
+`python -m evals.bench` — 100 held-out corpus vectors as queries, k=10,
+recall measured against exact search:
+
+| Index | recall@10 | build time | p50 query | p95 query |
+|---|---|---|---|---|
+| NumPy brute force (exact) | 1.000 | 0.0s | 0.18 ms | 0.27 ms |
+| hnswlib (C++) | 0.996 | 0.3s | 0.20 ms | 0.26 ms |
+| PyHNSW (ours, NumPy) | 0.999 | 18.3s | 0.46 ms | 0.58 ms |
+
+*(3,623 vectors, dim 384, MacBook CPU.)*
+
+Honest reading: at this corpus size a single vectorized matrix product is
+hard to beat, and C++ beats Python on constant factors. The from-scratch
+implementation is the depth exercise — same algorithm, same interface, real
+recall — and its per-query work scales ~O(log n) where brute force scales
+O(n).
+
+## Tests
+
+`pytest` covers the chunker (heading detection regressions included), claim
+resolution, and both pure-Python indexes (recall floor + disk roundtrip).
+CI runs on every push.
+
 ## Roadmap
 
 - **Phase 1** — deployed always-on demo ([DEPLOY.md](DEPLOY.md) has the
   Fly.io recipe); more debates (personal identity, beauty, knowledge).
-- **Phase 2** — replace hnswlib with a from-scratch HNSW implementation behind
-  the same interface; benchmark recall vs. the brute-force baseline and
-  QPS/latency vs. the library, table goes here.
+- **Phase 2** — ✅ from-scratch HNSW ([index/pyhnsw.py](index/pyhnsw.py))
+  benchmarked above; next: serve it behind a config flag and tune
+  ef/M trade-offs.
 - **Phase 3** — offline claim graph: extract structured claims and
   supports/attacks relations across works, so serving becomes graph traversal
   instead of query-time classification; hand-labeled eval set for stance
