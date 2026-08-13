@@ -1,5 +1,7 @@
 # Aporia
 
+[![tests](https://github.com/SrikarChittemsetty/aporia/actions/workflows/ci.yml/badge.svg)](https://github.com/SrikarChittemsetty/aporia/actions/workflows/ci.yml)
+
 **Search 2,000 years of philosophy by argument, not keyword.**
 
 Type a claim — *"free will is an illusion"* — or just a topic — *"free
