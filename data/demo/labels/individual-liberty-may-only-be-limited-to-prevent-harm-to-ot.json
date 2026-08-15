@@ -1,0 +1,14 @@
+[
+  {"id": 2139, "stance": "for", "move": "Carves out a protected sphere of purely self-regarding conduct — conscience, thought, tastes, and life-plans — over which society has no warrant to interfere.", "confidence": 0.9},
+  {"id": 2134, "stance": "for", "move": "States the harm principle outright: self-protection is the sole warrant for coercion, and the individual's own good is never sufficient justification.", "confidence": 0.97},
+  {"id": 2318, "stance": "nuance", "move": "Tests a borderline case — counselling or instigating self-regarding acts — conceding it is a social act outside the strict definition, then extending liberty to it by analogy of reasons.", "confidence": 0.6},
+  {"id": 2326, "stance": "against", "move": "Concedes that engagements may be voided simply because they are injurious to the contracting party himself, citing the nullity of a self-sale into slavery.", "confidence": 0.75},
+  {"id": 2340, "stance": "for", "move": "Reclassifies the disputed conduct as injurious to offspring and others, and mocks the inverted sentiment that grants freedom to harm others while denying freedom in purely self-regarding matters.", "confidence": 0.65},
+  {"id": 2280, "stance": "against", "move": "Presses the paternalist objection that society owes protection to adults incapable of self-government, and should repress vices like drunkenness and idleness by law and organised opinion.", "confidence": 0.75},
+  {"id": 2244, "stance": "nuance", "move": "Argues for liberty on developmental grounds — cultivation of individuality makes well-developed human beings — without addressing what may limit it.", "confidence": 0.6},
+  {"id": 2311, "stance": "nuance", "move": "Reframes the boundary question by distinguishing controls that raise no issue of liberty at all (anti-adulteration, workplace safety) from prohibitions that infringe the buyer's liberty.", "confidence": 0.65},
+  {"id": 2279, "stance": "against", "move": "Denies the self-regarding/other-regarding distinction, arguing no one is isolated: self-injury drains shared resources, burdens dependants, and corrupts by example.", "confidence": 0.8},
+  {"id": 2230, "stance": "nuance", "move": "Locates the real difficulty not in drawing the boundary with social control but in the public's indifference to individual spontaneity as an intrinsic good.", "confidence": 0.65},
+  {"id": 2331, "stance": "for", "move": "Uses the harm criterion to redraw a misplaced liberty claim: freedom covers one's own concerns, but power exercised over others (husbands over wives) must be vigilantly controlled by the state.", "confidence": 0.6},
+  {"id": 2330, "stance": "for", "move": "Grounds moral responsibility in the interests of others affected by one's step, illustrating the general principle of liberty by where the duty to others begins.", "confidence": 0.55}
+]

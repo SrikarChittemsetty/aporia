@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aporia — search philosophy by argument, not keyword</title>
+<meta name="description" content="Pick a contested claim and see which philosophers argued for it and which argued against it, quoted from the primary sources with citations.">
+<meta property="og:title" content="Aporia — search philosophy by argument, not keyword">
+<meta property="og:description" content="Pick a contested claim and see who argued for it and who argued against it, in their own words.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23faf7f2'/%3E%3Ctext x='16' y='24' font-family='Georgia,serif' font-size='22' fill='%23b4541f' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #faf7f2; --paper: #fffdfa; --ink: #22201c; --muted: #7a746a; --faint: #9d968a;
+    --line: #e4ddd2;
+    --for: #1e6f50; --for-bg: #eaf5ef;
+    --against: #9c3524; --against-bg: #f9ece9;
+    --nuance: #6b5ca5; --nuance-bg: #efecf7;
+    --accent: #b4541f;
+    --serif: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--serif); line-height: 1.6; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem; }
+  a { color: var(--accent); }
+
+  /* hero */
+  header { padding: 4rem 0 2.5rem; text-align: center; }
+  h1 { font-size: clamp(2.6rem, 6vw, 4rem); margin: 0 0 .5rem; letter-spacing: .01em; font-weight: 400; }
+  h1 em { color: var(--accent); font-style: italic; }
+  .tag { font-size: clamp(1.05rem, 2vw, 1.25rem); color: var(--ink); max-width: 34em; margin: 0 auto 1rem; }
+  .sub { color: var(--muted); max-width: 40em; margin: 0 auto; font-size: 1rem; }
+
+  .stats { display: flex; flex-wrap: wrap; justify-content: center; gap: 2.4rem; margin: 2.5rem 0 0; }
+  .stat b { display: block; font-size: 1.7rem; font-weight: 400; letter-spacing: -.01em; }
+  .stat span { font-family: var(--sans); font-size: .74rem; letter-spacing: .13em; text-transform: uppercase; color: var(--faint); }
+
+  /* claim picker */
+  .picker { padding: 2.5rem 0 1rem; border-top: 1px solid var(--line); margin-top: 3rem; }
+  .picker h2, .section h2 {
+    font-family: var(--sans); font-size: .78rem; letter-spacing: .16em; text-transform: uppercase;
+    color: var(--faint); margin: 0 0 1rem; font-weight: 600;
+  }
+  #search {
+    width: 100%; max-width: 620px; font: 1.05rem var(--serif); padding: .75rem 1rem;
+    border: 1px solid var(--line); border-radius: 9px; background: var(--paper); color: var(--ink);
+    margin-bottom: 1.1rem;
+  }
+  #search:focus { outline: 2px solid rgba(180,84,31,.3); outline-offset: 1px; }
+  .chips { display: flex; flex-wrap: wrap; gap: .55rem; }
+  .chip {
+    font: .95rem var(--serif); background: var(--paper); border: 1px solid var(--line);
+    border-radius: 999px; padding: .5rem 1rem; cursor: pointer; color: var(--ink);
+    transition: border-color .15s, background .15s, transform .1s;
+  }
+  .chip:hover { border-color: var(--accent); transform: translateY(-1px); }
+  .chip[aria-selected="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .no-match { color: var(--muted); font-style: italic; margin: .4rem 0 0; }
+
+  /* result */
+  .claimline { margin: 2.4rem 0 .3rem; font-size: 1.5rem; line-height: 1.35; }
+  .claimline .q { color: var(--accent); font-style: italic; }
+  .blurb { color: var(--muted); margin: 0 0 1.6rem; }
+  .split { display: flex; height: 8px; border-radius: 5px; overflow: hidden; margin-bottom: .5rem; background: var(--line); }
+  .split i { display: block; }
+  .split .f { background: var(--for); } .split .a { background: var(--against); } .split .n { background: var(--nuance); }
+  .split-key { font-family: var(--sans); font-size: .78rem; color: var(--muted); margin: 0 0 2rem; }
+  .split-key b { font-weight: 600; }
+  .split-key .kf { color: var(--for); } .split-key .ka { color: var(--against); } .split-key .kn { color: var(--nuance); }
+
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 1.6rem; }
+  @media (max-width: 820px) { .cols { grid-template-columns: 1fr; } }
+  .col h3 {
+    font-family: var(--sans); font-size: .8rem; letter-spacing: .14em; text-transform: uppercase;
+    margin: 0 0 .9rem; font-weight: 600;
+  }
+  .col.for h3 { color: var(--for); } .col.against h3 { color: var(--against); } .col.nuance h3 { color: var(--nuance); }
+  .full { grid-column: 1 / -1; margin-top: 1.2rem; }
+
+  .card { background: var(--paper); border: 1px solid var(--line); border-radius: 11px; padding: 1.1rem 1.2rem; margin-bottom: 1rem; }
+  .card .move { font-size: .93rem; margin: 0 0 .7rem; padding: .5rem .7rem; border-radius: 7px; font-family: var(--sans); line-height: 1.5; }
+  .card.for .move { background: var(--for-bg); color: var(--for); }
+  .card.against .move { background: var(--against-bg); color: var(--against); }
+  .card.nuance .move { background: var(--nuance-bg); color: var(--nuance); }
+  .card blockquote { margin: 0 0 .7rem; font-size: 1rem; line-height: 1.62; }
+  .card .cite { font-size: .87rem; color: var(--muted); margin: 0; }
+  .card .cite b { color: var(--ink); font-weight: 600; }
+  .card .more { font-size: .84rem; color: var(--accent); cursor: pointer; text-decoration: underline dotted; background: none; border: 0; padding: 0; font-family: var(--serif); }
+  .empty { color: var(--muted); font-style: italic; }
+
+  /* prose sections */
+  .section { padding: 3.5rem 0; border-top: 1px solid var(--line); margin-top: 3.5rem; }
+  .section h3 { font-size: 1.6rem; font-weight: 400; margin: 0 0 .8rem; }
+  .section p { max-width: 40em; color: var(--ink); }
+  .section p.muted { color: var(--muted); }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+  @media (max-width: 780px) { .two { grid-template-columns: 1fr; } }
+  .box { background: var(--paper); border: 1px solid var(--line); border-radius: 11px; padding: 1.3rem 1.5rem; }
+  .box h4 { margin: 0 0 .5rem; font-size: 1.08rem; font-weight: 600; }
+  .box p { margin: 0; font-size: .96rem; color: var(--muted); }
+  table { width: 100%; border-collapse: collapse; font-size: .95rem; margin-top: .6rem; }
+  th, td { text-align: left; padding: .6rem .7rem; border-bottom: 1px solid var(--line); }
+  th { font-family: var(--sans); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); font-weight: 600; }
+  td.n { font-variant-numeric: tabular-nums; }
+  code { font: .88em ui-monospace, SFMono-Regular, Menlo, monospace; background: #f2ece3; padding: .1em .35em; border-radius: 4px; }
+  footer { padding: 2.5rem 0 5rem; color: var(--muted); font-size: .93rem; border-top: 1px solid var(--line); }
+  footer p { max-width: 44em; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>Ap<em>o</em>ria</h1>
+    <p class="tag">Search philosophy by argument, not keyword.</p>
+    <p class="sub">
+      Pick a claim below and see which philosophers argued <b>for</b> it and which argued
+      <b>against</b> it — quoted from the original texts, cited to the section, with a one-line
+      summary of the move each passage makes.
+    </p>
+    <div class="stats" id="stats"></div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="picker">
+    <h2>Choose a contested claim</h2>
+    <input id="search" type="text" placeholder="Filter the claims — try “god”, “liberty”, “knowledge”…" autocomplete="off">
+    <div class="chips" id="chips"></div>
+    <p class="no-match" id="nomatch" hidden>No claim matches that. The live app answers any claim you type; this offline demo ships the twelve above.</p>
+  </div>
+
+  <div id="result"></div>
+</div>
+
+<div class="wrap">
+  <section class="section">
+    <h3>Why this is harder than it sounds</h3>
+    <p>
+      Ordinary semantic search finds passages <em>about</em> a topic. It cannot tell a defence of
+      free will from an attack on it, because the two say almost exactly the same words about
+      almost exactly the same things — they sit right next to each other in the mathematics.
+    </p>
+    <p class="muted">
+      So Aporia does the retrieval first and then asks a language model one question per passage:
+      relative to <em>this specific claim</em>, is this passage arguing for it, against it, or
+      reframing the question? Answers are cached per claim, so a given claim costs one model call
+      ever. That second layer is the whole project — a search engine that returns a debate rather
+      than a reading list.
+    </p>
+  </section>
+
+  <section class="section">
+    <h3>How it was built</h3>
+    <div class="two">
+      <div class="box">
+        <h4>The search index was written from scratch</h4>
+        <p>
+          Rather than calling a vector-database library, the HNSW nearest-neighbour index was
+          implemented in NumPy directly from the 2016 Malkov–Yashunin paper — hierarchical
+          proximity graphs, geometric level assignment, beam search, heuristic neighbour
+          selection. It serves this demo. It is not a side experiment.
+        </p>
+      </div>
+      <div class="box">
+        <h4>It is measured against the library it replaces</h4>
+        <p>
+          Behind the same interface as <code>hnswlib</code>, the C++ implementation most people
+          reach for, so the two can be swapped with one config line and benchmarked head to head.
+        </p>
+        <table>
+          <thead><tr><th>Index</th><th>Recall@10</th><th>p50 query</th></tr></thead>
+          <tbody>
+            <tr><td>From scratch (NumPy)</td><td class="n">0.999</td><td class="n">0.46 ms</td></tr>
+            <tr><td>hnswlib (C++)</td><td class="n">0.996</td><td class="n">0.20 ms</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="box">
+        <h4>The corpus was audited, not just downloaded</h4>
+        <p>
+          A data check caught 492 chunks of a Victorian translator’s commentary being attributed
+          to Plato, and a heading-detection bug that was turning dialogue replies like “I do.”
+          into citation paths. Both are fixed, both have regression tests, and the corpus is now
+          3,723 passages of authorial text.
+        </p>
+      </div>
+      <div class="box">
+        <h4>The classifier is evaluated, not trusted</h4>
+        <p>
+          83 hand-labelled stance judgements form a gold set with an agreement harness, and ten
+          hand-written claims check that retrieval surfaces the philosopher who actually holds
+          the position — currently 9 of 10. Ten tests run in CI on every push.
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p>
+      <strong>About this page.</strong> It is a frozen snapshot of the real system, so it can run
+      with no install and no API key. The passages and their ranking are genuine output from the
+      pipeline: the same bge-small embeddings through the same from-scratch HNSW index that serves
+      the live app. The stance labels were produced by Claude from the pipeline’s own
+      classification prompt and written to the same cache the live app reads, which is exactly
+      what happens when you run it yourself with a key set. The twelve claims are curated; the
+      live app takes anything you type.
+    </p>
+    <p>
+      Aporia — built by Srikar Chittemsetty. MIT licensed.
+      <a href="https://github.com/SrikarChittemsetty/aporia">Source, benchmarks and design notes on GitHub</a>.
+    </p>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script>
+(function () {
+  var D = window.APORIA_DATA;
+  if (!D) return;
+
+  var chips = document.getElementById("chips");
+  var result = document.getElementById("result");
+  var search = document.getElementById("search");
+  var nomatch = document.getElementById("nomatch");
+  var current = 0;
+
+  function esc(s) {
+    var d = document.createElement("div");
+    d.textContent = s == null ? "" : s;
+    return d.innerHTML;
+  }
+
+  // --- header stats
+  var s = D.stats;
+  var statBits = [
+    [s.passages.toLocaleString(), "passages"],
+    [s.works, "primary works"],
+    [s.authors, "philosophers"],
+    [s.claims, "claims mapped"],
+    ["0.999", "index recall@10"]
+  ];
+  document.getElementById("stats").innerHTML = statBits.map(function (b) {
+    return '<div class="stat"><b>' + b[0] + "</b><span>" + b[1] + "</span></div>";
+  }).join("");
+
+  // --- chips
+  function renderChips(filter) {
+    var shown = 0;
+    chips.innerHTML = D.claims.map(function (c, i) {
+      var hay = (c.claim + " " + c.topic + " " + c.blurb).toLowerCase();
+      if (filter && hay.indexOf(filter) === -1) return "";
+      shown++;
+      return '<button class="chip" role="option" data-i="' + i + '" aria-selected="' +
+        (i === current) + '">' + esc(c.claim) + "</button>";
+    }).join("");
+    nomatch.hidden = shown > 0;
+    Array.prototype.forEach.call(chips.querySelectorAll(".chip"), function (el) {
+      el.addEventListener("click", function () { select(+el.dataset.i, true); });
+    });
+  }
+
+  // --- one passage
+  function card(p, stance) {
+    var LIMIT = 620;
+    var long = p.text.length > LIMIT;
+    var short = long ? p.text.slice(0, LIMIT).replace(/\s+\S*$/, "") + "…" : p.text;
+    return '<div class="card ' + stance + '">' +
+      (p.move ? '<p class="move">' + esc(p.move) + "</p>" : "") +
+      '<blockquote data-full="' + esc(p.text) + '">“' + esc(short) + "”</blockquote>" +
+      '<p class="cite"><b>' + esc(p.author) + "</b>, <i>" + esc(p.work) + "</i> — " + esc(p.citation) +
+      (long ? ' · <button class="more">read the full passage</button>' : "") +
+      "</p></div>";
+  }
+
+  function column(list, stance, heading) {
+    return '<section class="col ' + stance + '"><h3>' + heading + " · " + list.length + "</h3>" +
+      (list.length
+        ? list.map(function (p) { return card(p, stance); }).join("")
+        : '<p class="empty">Nothing in the corpus takes this side of this claim.</p>') +
+      "</section>";
+  }
+
+  function select(i, scroll) {
+    current = i;
+    var c = D.claims[i];
+    var total = c["for"].length + c.against.length + c.nuance.length;
+    var pct = function (n) { return (100 * n / total).toFixed(1) + "%"; };
+
+    result.innerHTML =
+      '<p class="claimline">Who argued <span class="q">“' + esc(c.claim) + '”</span>?</p>' +
+      '<p class="blurb">' + esc(c.blurb) + "</p>" +
+      '<div class="split">' +
+        '<i class="f" style="width:' + pct(c["for"].length) + '"></i>' +
+        '<i class="a" style="width:' + pct(c.against.length) + '"></i>' +
+        '<i class="n" style="width:' + pct(c.nuance.length) + '"></i>' +
+      "</div>" +
+      '<p class="split-key">Of the ' + total + ' passages retrieved for this claim: ' +
+        '<b class="kf">' + c["for"].length + " for</b> · " +
+        '<b class="ka">' + c.against.length + " against</b> · " +
+        '<b class="kn">' + c.nuance.length + " reframing it</b></p>" +
+      '<div class="cols">' +
+        column(c["for"], "for", "Argued for") +
+        column(c.against, "against", "Argued against") +
+        '<div class="full">' + column(c.nuance, "nuance", "Reframings &amp; qualifications") + "</div>" +
+      "</div>";
+
+    Array.prototype.forEach.call(result.querySelectorAll(".more"), function (btn) {
+      btn.addEventListener("click", function () {
+        var card = btn.closest(".card");
+        var bq = card.querySelector("blockquote");
+        bq.textContent = "“" + bq.dataset.full + "”";
+        btn.remove();
+      });
+    });
+
+    Array.prototype.forEach.call(chips.querySelectorAll(".chip"), function (el) {
+      el.setAttribute("aria-selected", String(+el.dataset.i === i));
+    });
+
+    history.replaceState(null, "", "?claim=" + encodeURIComponent(c.claim));
+    if (scroll) result.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  search.addEventListener("input", function () {
+    renderChips(search.value.trim().toLowerCase());
+  });
+
+  // Deep links: ?claim=… reopens the same view.
+  var wanted = new URLSearchParams(location.search).get("claim");
+  if (wanted) {
+    D.claims.forEach(function (c, i) {
+      if (c.claim.toLowerCase() === wanted.toLowerCase()) current = i;
+    });
+  }
+
+  renderChips("");
+  select(current, false);
+})();
+</script>
+</body>
+</html>

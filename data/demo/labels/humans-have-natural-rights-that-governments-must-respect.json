@@ -1,0 +1,74 @@
+[
+  {
+    "id": 3993,
+    "stance": "for",
+    "move": "Proclaims a formal declaration that men are born free and equal in natural, imprescriptible, and inalienable rights, and defines the preservation of those rights as the end of all political association.",
+    "confidence": 0.95
+  },
+  {
+    "id": 3925,
+    "stance": "for",
+    "move": "Defines natural rights as those belonging to man by right of his existence and grounds every civil right in a pre-existing natural right.",
+    "confidence": 0.88
+  },
+  {
+    "id": 3927,
+    "stance": "for",
+    "move": "Argues that the aggregated power of society can never be applied to invade the natural rights individuals retain, and sorts governments by whether they arose from the common rights of man rather than superstition or conquest.",
+    "confidence": 0.9
+  },
+  {
+    "id": 2655,
+    "stance": "for",
+    "move": "Holds that the law of nature binds legislators as an eternal rule, so that no human sanction is valid against the preservation of mankind and no power may destroy or enslave its subjects.",
+    "confidence": 0.93
+  },
+  {
+    "id": 2530,
+    "stance": "for",
+    "move": "Distinguishes natural liberty (subject only to the law of nature) from civil liberty, insisting that freedom under government means a standing rule by consent rather than another man's arbitrary will.",
+    "confidence": 0.75
+  },
+  {
+    "id": 4042,
+    "stance": "for",
+    "move": "Presents the American and French revolutions as restoring a natural order of things and quotes the declared natural and imprescriptible rights as universal principles binding on sovereignty.",
+    "confidence": 0.92
+  },
+  {
+    "id": 3926,
+    "stance": "for",
+    "move": "Divides natural rights into those retained (where individual power suffices) and those deposited in the common stock, concluding that civil power is nothing but an aggregate of exchanged natural rights.",
+    "confidence": 0.87
+  },
+  {
+    "id": 2111,
+    "stance": "against",
+    "move": "Denies that personal rights come from any original ordinance of Nature, holding that the State is historically prior to the individual and that rights are slowly acquired within the social organism, against which the individual has none.",
+    "confidence": 0.93
+  },
+  {
+    "id": 3924,
+    "stance": "for",
+    "move": "Argues that man entered society not to have fewer rights but to have them better secured, making natural rights the foundation of all civil rights and delegated power answerable to them.",
+    "confidence": 0.9
+  },
+  {
+    "id": 2140,
+    "stance": "nuance",
+    "move": "Demands that no society counts as free unless these liberties are respected whatever its form of government, but rests the demand on mankind being greater gainers by mutual forbearance rather than on any natural right.",
+    "confidence": 0.55
+  },
+  {
+    "id": 4083,
+    "stance": "for",
+    "move": "Uses nature's unpredictable distribution of mental powers as a standard, condemning the hereditary system as repugnant to human rights and unjust because government must follow the order of nature.",
+    "confidence": 0.7
+  },
+  {
+    "id": 4066,
+    "stance": "for",
+    "move": "Locates social order in the natural constitution of man, prior to and independent of government, so that the proper quantity of government is limited by man's natural character.",
+    "confidence": 0.6
+  }
+]

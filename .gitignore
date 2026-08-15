@@ -6,3 +6,6 @@ __pycache__/
 data/raw/
 data/index/
 data/aporia.db
+# Classification prompts are regenerated from retrieval.json by
+# scripts/export_site.py; the labels they produced are what's worth keeping.
+data/demo/prompts/
