@@ -1,0 +1,14 @@
+[
+  {"id": 401, "stance": "for", "move": "Distinguishes three kinds of knowledge and affirms that beyond mere opinion/imagination there are adequate ideas of common notions and an intuitive knowledge reaching the essence of things.", "confidence": 0.6},
+  {"id": 231, "stance": "against", "move": "Argues that a cause known only through its particular effects can never license inference to any new effects, since the requisite qualities leave no trace in the effects from which the cause is known.", "confidence": 0.6},
+  {"id": 4542, "stance": "for", "move": "Insists the highest truths deserve the highest accuracy rather than a mere outline, and identifies the idea of the good as a highest knowledge without which all other knowledge profits nothing.", "confidence": 0.55},
+  {"id": 35, "stance": "against", "move": "Holds without exception that causal relations are never known by a priori reasoning but only from observed constant conjunction, so reason unassisted by experience can infer nothing about real existence.", "confidence": 0.72},
+  {"id": 1194, "stance": "for", "move": "Defends a priori knowledge by arguing that denying it would be self-refuting, and that substituting custom for objective necessity would abolish reason's power to judge objects at all.", "confidence": 0.85},
+  {"id": 16, "stance": "for", "move": "Denies that the science of the mind is uncertain or chimerical, claiming its distinctions are real and certain and its truths lie within the compass of human understanding.", "confidence": 0.75},
+  {"id": 4500, "stance": "for", "move": "Argues by the correlation of faculties with their objects that absolute being may be absolutely known, reserving opinion for what lies between being and not-being.", "confidence": 0.78},
+  {"id": 4571, "stance": "for", "move": "Prescribes arithmetic studied with the mind alone as the study that carries the soul out of the sea of change from becoming to truth and being.", "confidence": 0.55},
+  {"id": 235, "stance": "against", "move": "Doubts that any cause can be known from its effect alone, since inference requires constant conjunction and resemblance to other observed causes and effects.", "confidence": 0.65},
+  {"id": 46, "stance": "against", "move": "Grants that experience informs us certainly only of the precise objects and time observed, then presses that the inference extending it to future cases rests on an unexplained step of thought.", "confidence": 0.65},
+  {"id": 27, "stance": "nuance", "move": "Raises the missing-shade-of-colour case as a singular counterexample to the maxim that simple ideas derive from impressions, without addressing certainty of knowledge.", "confidence": 0.7},
+  {"id": 1441, "stance": "nuance", "move": "Denies that the existence of a being can be known from mere concepts since existential propositions are synthetic, while opening a single alternative route to that knowledge through pure practical reason.", "confidence": 0.7}
+]

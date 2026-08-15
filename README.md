@@ -22,7 +22,8 @@ built.
 | Corpus | **3,723 passages** from 13 primary works, 10 philosophers |
 | Vector index | **written from scratch in NumPy** from the HNSW paper — 0.999 recall@10, 0.46 ms p50 |
 | Retrieval eval | **9 of 10** hand-written claims surface the philosopher who actually holds the position |
-| Stance layer | one Claude call per claim, cached forever; **83 hand-labelled** gold judgements to check it against |
+| Stance layer | one Claude call per claim, cached forever |
+| Classifier reliability | **88.9%** run-to-run agreement over 144 passages — and **0** for↔against reversals |
 | Tests | 10 pytest tests, green in CI |
 
 ![Aporia searching "free will is an illusion": Spinoza and Nietzsche argue FOR, William James and Kant argue AGAINST](docs/screenshot.png)
@@ -137,9 +138,32 @@ CI runs on every push.
 
 - `python -m evals.sanity` — retrieval hit-rate on hand-written claims (9/10)
 - `python -m evals.bench` — index recall/latency benchmark (table above)
-- `python -m evals.stance_eval` — live stance-classifier agreement against
-  [83 hand-labeled gold stances](evals/gold_stances.json) (needs an LLM
-  backend)
+- `python -m evals.stability` — **run-to-run agreement of the stance
+  classifier**: an independent second pass over the same 144 passages, with no
+  access to the first pass, compared label by label.
+
+  | | |
+  |---|---|
+  | agreement | **128/144 = 88.9%** |
+  | outright reversals (for ↔ against) | **0** |
+  | disagreements | 16, every one of them in or out of *nuance* |
+
+  That second number is the interesting one. The classifier never once flipped
+  a passage from defending a claim to attacking it; all of its instability sits
+  on the boundary between "takes a side" and "equivocates", which is the
+  boundary human readers argue about too. Per-claim agreement ranges from 67%
+  (the design argument, where Hume's characters concede and withhold in the
+  same breath) to 100% (four of the twelve claims).
+
+  **What this is not:** an accuracy measurement. Both passes come from the same
+  model, so this measures self-consistency, not correctness.
+- `python -m evals.stance_eval` — agreement against
+  [evals/gold_stances.json](evals/gold_stances.json). Read the caveat before
+  quoting the result: that file was exported from cached model labels for six
+  claims and spot-checked by hand, so it is a **regression baseline** — it
+  catches the classifier drifting from behaviour that was once reviewed. It is
+  not an independent ground truth, and a true accuracy number needs a human
+  labelling passages blind. That is the next eval worth building.
 
 ## Roadmap
 

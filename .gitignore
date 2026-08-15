@@ -9,3 +9,4 @@ data/aporia.db
 # Classification prompts are regenerated from retrieval.json by
 # scripts/export_site.py; the labels they produced are what's worth keeping.
 data/demo/prompts/
+data/demo/pass2_prompts/
