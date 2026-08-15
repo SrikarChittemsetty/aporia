@@ -11,6 +11,20 @@ and a one-line summary of the move each passage makes. Bare topics are
 resolved to the canonical contested claim first (*"existence of god"* →
 *"God exists"*), so the FOR/AGAINST split always has a definite thesis.
 
+### **[▶ Try it — twelve debates, no install](https://srikarchittemsetty.github.io/aporia/)**
+
+Pick a claim and watch Kant and Spinoza land on opposite sides of it. That page
+is a frozen snapshot of real pipeline output; the sections below are how it was
+built.
+
+| | |
+|---|---|
+| Corpus | **3,723 passages** from 13 primary works, 10 philosophers |
+| Vector index | **written from scratch in NumPy** from the HNSW paper — 0.999 recall@10, 0.46 ms p50 |
+| Retrieval eval | **9 of 10** hand-written claims surface the philosopher who actually holds the position |
+| Stance layer | one Claude call per claim, cached forever; **83 hand-labelled** gold judgements to check it against |
+| Tests | 10 pytest tests, green in CI |
+
 ![Aporia searching "free will is an illusion": Spinoza and Nietzsche argue FOR, William James and Kant argue AGAINST](docs/screenshot.png)
 
 *Above: Spinoza and Nietzsche land on FOR, James and Kant on AGAINST —
@@ -75,7 +89,14 @@ Searches are shareable links: `/?q=liberty+is+compatible+with+necessity`.
   results, never cached) if no LLM backend is reachable.
 - **`evals/`** — retrieval sanity suite: 10 hand-written claims with expected
   authors. Current score: **9/10 queries surface an expected author in the
-  top 12** over a 4,252-chunk corpus.
+  top 12** over the 3,723-chunk corpus.
+- **`scripts/export_site.py`** — freezes a curated set of claims into the
+  static site at [`docs/`](docs/) that backs the live demo link above. It runs
+  the real retrieval path, emits the pipeline's own classification prompt for
+  any unclassified (claim, passage) pair, and folds the answers back into the
+  same SQLite stance cache the app reads — so the demo is a snapshot of real
+  output, and a local run of the app answers those twelve claims with no API
+  key. Three stages: `retrieve`, `ingest`, `build`.
 
 ## Corpus (13 works, all public domain via Project Gutenberg)
 
