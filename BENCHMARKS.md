@@ -34,6 +34,7 @@ Median query latency, k=10, 100 queries per configuration.
 | 30,000 | 2.322 ms | 0.193 ms | 0.556 ms |
 | 100,000 | 8.442 ms | 0.218 ms | 0.520 ms |
 | 300,000 | 27.172 ms | 1.146 ms | — |
+| 1,000,000 *(swapping — see below)* | 167.410 ms | 89.450 ms | — |
 
 Brute force grows linearly and the graphs barely move. As a speed-up over exact
 search:
@@ -46,6 +47,7 @@ search:
 | 30,000 | 12.0× | 4.18× |
 | 100,000 | **38.7×** | **16.2×** |
 | 300,000 | 23.7× | — |
+| 1,000,000 *(memory-bound)* | 1.9× | — |
 
 **The C++ index crosses over at about 4,000 vectors — essentially the size of the
 current corpus. The from-scratch Python one crosses over between 5,000 and
@@ -67,6 +69,7 @@ Recall@10 against exact search, at the default `ef_search = 64`:
 | 30,000 | 0.999 | 1.000 |
 | 100,000 | 1.000 | 1.000 |
 | 300,000 | 0.999 | — |
+| 1,000,000 | 0.980 | — |
 
 Approximate search is, on this data, not measurably approximate. That is a
 statement about the data as much as the index — real embedding neighbourhoods are
@@ -93,13 +96,26 @@ past it.
 
 ## Where this machine gives out
 
-At 1,000,000 vectors the working set (1.5 GB of float32 vectors, plus the graph)
-exceeds what an 8 GB laptop can hold while also running Postgres and a browser.
-The measurement at that size is dominated by swap, not by either algorithm:
-brute-force p95 hit 2.2 s and the index build took 54 minutes. Those numbers
-describe this laptop's memory, and they are recorded here rather than quietly
-dropped, but the honest measured range of this benchmark is **up to 300,000
-vectors**.
+At 1,000,000 vectors the working set — 1.5 GB of float32 vectors plus the graph —
+stops fitting in an 8 GB laptop that is also running Postgres and a browser. The
+numbers say so plainly:
+
+| vectors | brute force p50 | hnswlib p50 | speed-up | hnswlib recall |
+|--------:|----------------:|------------:|---------:|---------------:|
+| 300,000 | 27.2 ms | 1.15 ms | **23.7×** | 0.999 |
+| 1,000,000 | 167.4 ms | 89.5 ms | **1.9×** | 0.980 |
+
+Recall stays at 0.980, so the index is still finding the right neighbours — it is
+not broken, it is *swapping*. A graph traversal jumps to arbitrary nodes, which is
+the access pattern virtual memory handles worst, and 89 ms for a query that took
+1.15 ms at 300k is the sound of every hop hitting disk. The build took 31 minutes
+for the same reason.
+
+So the 1M row measures this laptop's RAM, not either algorithm. It is recorded
+here rather than quietly dropped, but **the honest measured range of this
+benchmark is up to 300,000 vectors** — and the real lesson is the one every
+vector-search deployment eventually learns: the index has to fit in memory, and
+when it stops fitting, the asymptotics stop mattering.
 
 ---
 
