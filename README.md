@@ -21,7 +21,7 @@ built.
 |---|---|
 | Corpus | **3,723 passages** from 13 primary works, 10 philosophers |
 | Vector index | **written from scratch in NumPy** from the HNSW paper — 0.999 recall@10, 0.46 ms p50 |
-| Retrieval eval | **9 of 10** hand-written claims surface the philosopher who actually holds the position |
+| Retrieval eval | **37 of 41** hand-written claims surface the philosopher who actually holds the position, across all 13 works |
 | Stance layer | one Claude call per claim, cached forever |
 | Classifier reliability | **88.9%** run-to-run agreement over 144 passages — and **0** for↔against reversals |
 | Tests | 10 pytest tests, green in CI |
@@ -88,9 +88,10 @@ Searches are shareable links: `/?q=liberty+is+compatible+with+necessity`.
   ([api/stance.py](api/stance.py)) batches all passages into one Claude call,
   caches per (claim, passage) in SQLite, and degrades gracefully (unclassified
   results, never cached) if no LLM backend is reachable.
-- **`evals/`** — retrieval sanity suite: 10 hand-written claims with expected
-  authors. Current score: **9/10 queries surface an expected author in the
-  top 12** over the 3,723-chunk corpus.
+- **`evals/`** — retrieval sanity suite: 41 hand-written claims with the
+  authors who actually argue them, three or four per work. Current score:
+  **37/41 (90%) surface an expected author in the top 12**, with passages
+  drawn from all 13 works. See the failure mode it exposed, below.
 - **`scripts/export_site.py`** — freezes a curated set of claims into the
   static site at [`docs/`](docs/) that backs the live demo link above. It runs
   the real retrieval path, emits the pipeline's own classification prompt for
@@ -110,6 +111,40 @@ Liberty*, Paine's *Rights of Man*, Plato's *Republic*. The full list with
 Gutenberg IDs lives in [config.py](config.py) — adding a work is one dict
 entry plus a pipeline re-run (chunking is incremental; existing chunk ids are
 stable).
+
+## What the bigger eval exposed
+
+Widening the retrieval eval from 10 free-will queries to 41 across every work
+barely moved the headline (9/10 → 37/41), which is the boring part. The
+interesting part is the four misses, because they are all the same miss.
+
+| query | wanted | got |
+|---|---|---|
+| "most people mistake shadows for reality" | Plato | Spinoza, Hume, Nietzsche, Descartes, James |
+| "morality is an invention of the weak to constrain the strong" | Nietzsche | Kant, Mill |
+| "good and evil are historical inventions rather than eternal facts" | Nietzsche | Spinoza, Hume, Kant, Plato, James |
+| "we should reject any belief we can find the slightest reason to doubt" | Descartes | Hume, Kant, Mill, James |
+
+Every one of those arguments *is* in the corpus. Re-running the same queries in
+the text's own language finds them immediately:
+
+| query | retrieves |
+|---|---|
+| "most people mistake shadows for reality" | ✗ no Plato |
+| "prisoners chained in a cave see only shadows cast on the wall" | ✓ **Plato** |
+| "morality is an invention of the weak to constrain the strong" | ✗ no Nietzsche |
+| "master morality and slave morality are two distinct types" | ✓ **Nietzsche** |
+
+So the failure mode is specific and diagnosable: **the embedding matches
+vocabulary and imagery, not the conclusion an argument reaches.** Plato makes the
+point about appearance and reality by telling a story about a den, prisoners and
+firelight, and never states the moral in the abstract terms a user would type.
+Nietzsche coins his own vocabulary rather than using the paraphrase everyone
+remembers him by. Both are exactly the passages a philosophy search engine most
+needs to find, and dense retrieval alone reliably misses them.
+
+This is the strongest argument for the Phase 3 work below: extracting the claims
+a passage makes, rather than hoping a query happens to share its wording.
 
 ## Index benchmarks
 
@@ -136,7 +171,7 @@ O(n).
 resolution, and both pure-Python indexes (recall floor + disk roundtrip).
 CI runs on every push.
 
-- `python -m evals.sanity` — retrieval hit-rate on hand-written claims (9/10)
+- `python -m evals.sanity` — retrieval hit-rate on 41 hand-written claims (37/41, 90%)
 - `python -m evals.bench` — index recall/latency benchmark (table above)
 - `python -m evals.stability` — **run-to-run agreement of the stance
   classifier**: an independent second pass over the same 144 passages, with no
