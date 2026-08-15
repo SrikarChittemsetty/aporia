@@ -157,6 +157,14 @@ CI runs on every push.
 
   **What this is not:** an accuracy measurement. Both passes come from the same
   model, so this measures self-consistency, not correctness.
+- `python -m evals.make_labeling_sheet` → `python -m evals.score_gold` — the
+  accuracy eval, and the honest way to get one. The first writes a
+  self-contained HTML sheet that shows 60 passages one at a time, stratified
+  across claims and shuffled, with **the model's answer nowhere in the file**;
+  you label them cold. The second scores the classifier against those labels and
+  reports accuracy, a confusion matrix, per-stance precision/recall, and
+  **Cohen's kappa** — which is the number to quote, because raw agreement
+  flatters any classifier on a skewed label distribution.
 - `python -m evals.stance_eval` — agreement against
   [evals/gold_stances.json](evals/gold_stances.json). Read the caveat before
   quoting the result: that file was exported from cached model labels for six
