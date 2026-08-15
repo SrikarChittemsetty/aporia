@@ -49,10 +49,11 @@ search:
 | 300,000 | 23.7× | — |
 | 1,000,000 *(memory-bound)* | 1.9× | — |
 
-**The C++ index crosses over at about 4,000 vectors — essentially the size of the
-current corpus. The from-scratch Python one crosses over between 5,000 and
-7,500.** So the index is not a science project that will pay off one day: the
-corpus is already at the point where it starts winning, and one more book tips it.
+**The C++ index is already at parity on the real corpus** — 1.04× at 3,723 — and
+is 2.1× ahead by 5,000. **The from-scratch Python index crosses over between
+5,000 and 7,500 vectors** (0.82× at 5,000, 1.46× at 7,500). So neither is a
+science project that will pay off one day: the corpus sits exactly at the point
+where the index stops being a liability, and one more book tips it.
 
 Past that the gap widens fast. At 100,000 vectors — about 27 books at this
 chunking rate — exact search takes 8.4 ms per query and the from-scratch index

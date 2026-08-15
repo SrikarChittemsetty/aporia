@@ -172,9 +172,10 @@ corpus sizes from 3.7k to 300k vectors:
 | 100,000 | 8.442 ms | 0.218 ms | **0.520 ms** |
 | 300,000 | 27.172 ms | 1.146 ms | — |
 
-The C++ index overtakes exact search at **~4,000 vectors** and the from-scratch
-one between **5,000 and 7,500** — so the corpus is already at the size where
-the index starts paying for itself, and one more book tips it. At 100k the
+The C++ index is already at parity on today's corpus (1.04×) and 2.1× ahead by
+5,000 vectors; the from-scratch one overtakes exact search between **5,000 and
+7,500** — so the corpus sits exactly at the size where the index stops being a
+liability, and one more book tips it. At 100k the
 from-scratch index is **16× faster** than exact search at recall 1.000. Where
 it genuinely loses is build time: ~50× slower than hnswlib, consistently, which
 is what a pure-Python inner loop costs.
