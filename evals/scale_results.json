@@ -1,0 +1,218 @@
+[
+ {
+  "index": "numpy",
+  "n": 3723,
+  "build_s": 0.0,
+  "p50_ms": 0.187,
+  "p95_ms": 0.2,
+  "recall": 1.0
+ },
+ {
+  "index": "hnswlib",
+  "n": 3723,
+  "build_s": 0.28,
+  "p50_ms": 0.18,
+  "p95_ms": 0.217,
+  "recall": 0.993
+ },
+ {
+  "index": "pyhnsw",
+  "n": 3723,
+  "build_s": 17.74,
+  "p50_ms": 0.434,
+  "p95_ms": 0.501,
+  "recall": 0.999
+ },
+ {
+  "index": "numpy",
+  "n": 5000,
+  "build_s": 0.0,
+  "p50_ms": 0.26,
+  "p95_ms": 0.277,
+  "recall": 1.0
+ },
+ {
+  "index": "hnswlib",
+  "n": 5000,
+  "build_s": 0.33,
+  "p50_ms": 0.122,
+  "p95_ms": 0.147,
+  "recall": 1.0
+ },
+ {
+  "index": "pyhnsw",
+  "n": 5000,
+  "build_s": 22.74,
+  "p50_ms": 0.318,
+  "p95_ms": 0.357,
+  "recall": 1.0
+ },
+ {
+  "index": "numpy",
+  "n": 7500,
+  "build_s": 0.0,
+  "p50_ms": 0.496,
+  "p95_ms": 0.743,
+  "recall": 1.0
+ },
+ {
+  "index": "hnswlib",
+  "n": 7500,
+  "build_s": 0.58,
+  "p50_ms": 0.138,
+  "p95_ms": 0.164,
+  "recall": 1.0
+ },
+ {
+  "index": "pyhnsw",
+  "n": 7500,
+  "build_s": 36.36,
+  "p50_ms": 0.34,
+  "p95_ms": 0.376,
+  "recall": 1.0
+ },
+ {
+  "index": "numpy",
+  "n": 10000,
+  "build_s": 0.0,
+  "p50_ms": 0.561,
+  "p95_ms": 0.7,
+  "recall": 1.0
+ },
+ {
+  "index": "hnswlib",
+  "n": 10000,
+  "build_s": 0.84,
+  "p50_ms": 0.136,
+  "p95_ms": 0.19,
+  "recall": 0.997
+ },
+ {
+  "index": "pyhnsw",
+  "n": 10000,
+  "build_s": 50.38,
+  "p50_ms": 0.36,
+  "p95_ms": 0.403,
+  "recall": 1.0
+ },
+ {
+  "index": "numpy",
+  "n": 15000,
+  "build_s": 0.0,
+  "p50_ms": 1.135,
+  "p95_ms": 1.253,
+  "recall": 1.0
+ },
+ {
+  "index": "hnswlib",
+  "n": 15000,
+  "build_s": 1.46,
+  "p50_ms": 0.158,
+  "p95_ms": 0.186,
+  "recall": 1.0
+ },
+ {
+  "index": "pyhnsw",
+  "n": 15000,
+  "build_s": 81.74,
+  "p50_ms": 0.396,
+  "p95_ms": 0.441,
+  "recall": 1.0
+ },
+ {
+  "index": "numpy",
+  "n": 20000,
+  "build_s": 0.01,
+  "p50_ms": 1.514,
+  "p95_ms": 1.671,
+  "recall": 1.0
+ },
+ {
+  "index": "hnswlib",
+  "n": 20000,
+  "build_s": 2.07,
+  "p50_ms": 0.18,
+  "p95_ms": 0.216,
+  "recall": 1.0
+ },
+ {
+  "index": "pyhnsw",
+  "n": 20000,
+  "build_s": 115.73,
+  "p50_ms": 0.411,
+  "p95_ms": 0.464,
+  "recall": 1.0
+ },
+ {
+  "index": "numpy",
+  "n": 30000,
+  "build_s": 0.01,
+  "p50_ms": 2.322,
+  "p95_ms": 2.479,
+  "recall": 1.0
+ },
+ {
+  "index": "hnswlib",
+  "n": 30000,
+  "build_s": 3.76,
+  "p50_ms": 0.193,
+  "p95_ms": 0.227,
+  "recall": 0.999
+ },
+ {
+  "index": "pyhnsw",
+  "n": 30000,
+  "build_s": 187.33,
+  "p50_ms": 0.556,
+  "p95_ms": 0.798,
+  "recall": 1.0
+ },
+ {
+  "index": "numpy",
+  "n": 100000,
+  "build_s": 0.08,
+  "p50_ms": 8.442,
+  "p95_ms": 9.412,
+  "recall": 1.0
+ },
+ {
+  "index": "hnswlib",
+  "n": 100000,
+  "build_s": 17.29,
+  "p50_ms": 0.218,
+  "p95_ms": 0.279,
+  "recall": 1.0
+ },
+ {
+  "index": "pyhnsw",
+  "n": 100000,
+  "build_s": 855.47,
+  "p50_ms": 0.52,
+  "p95_ms": 0.599,
+  "recall": 1.0
+ },
+ {
+  "index": "numpy",
+  "n": 300000,
+  "build_s": 0.35,
+  "p50_ms": 27.172,
+  "p95_ms": 33.828,
+  "recall": 1.0
+ },
+ {
+  "index": "hnswlib",
+  "n": 300000,
+  "build_s": 72.09,
+  "p50_ms": 1.146,
+  "p95_ms": 3.342,
+  "recall": 0.999
+ },
+ {
+  "index": "numpy",
+  "n": 1000000,
+  "build_s": 1.79,
+  "p50_ms": 167.41,
+  "p95_ms": 699.052,
+  "recall": 1.0
+ }
+]

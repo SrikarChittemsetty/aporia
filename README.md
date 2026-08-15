@@ -160,10 +160,29 @@ recall measured against exact search:
 *(3,623 vectors, dim 384, MacBook CPU.)*
 
 Honest reading: at this corpus size a single vectorized matrix product is
-hard to beat, and C++ beats Python on constant factors. The from-scratch
-implementation is the depth exercise — same algorithm, same interface, real
-recall — and its per-query work scales ~O(log n) where brute force scales
-O(n).
+hard to beat, and C++ beats Python on constant factors. That invites the
+obvious question — so why build the index? — and
+**[BENCHMARKS.md](BENCHMARKS.md) answers it by measuring the crossover** across
+corpus sizes from 3.7k to 300k vectors:
+
+| vectors | brute force | hnswlib | PyHNSW (ours) |
+|--------:|------------:|--------:|--------------:|
+| 3,723 *(today)* | 0.187 ms | 0.180 ms | 0.434 ms |
+| 7,500 | 0.496 ms | 0.138 ms | **0.340 ms** |
+| 100,000 | 8.442 ms | 0.218 ms | **0.520 ms** |
+| 300,000 | 27.172 ms | 1.146 ms | — |
+
+The C++ index overtakes exact search at **~4,000 vectors** and the from-scratch
+one between **5,000 and 7,500** — so the corpus is already at the size where
+the index starts paying for itself, and one more book tips it. At 100k the
+from-scratch index is **16× faster** than exact search at recall 1.000. Where
+it genuinely loses is build time: ~50× slower than hnswlib, consistently, which
+is what a pure-Python inner loop costs.
+
+BENCHMARKS.md also documents the benchmark bug that nearly published a false
+result — synthetic vectors that were statistically indistinguishable from
+uniform random data, making recall look like it collapsed to 0.417 at 100k when
+the real figure is 1.000.
 
 ## Tests & evals
 
