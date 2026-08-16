@@ -279,12 +279,23 @@ CI runs on every push.
 - **Phase 1** — deployed always-on demo ([DEPLOY.md](DEPLOY.md) has the
   Fly.io recipe); more debates (personal identity, beauty, knowledge).
 - **Phase 2** — ✅ from-scratch HNSW ([index/pyhnsw.py](index/pyhnsw.py)),
-  benchmarked above and **serving the live demo**; next: tune ef/M
-  trade-offs at larger corpus sizes.
-- **Phase 3** — offline claim graph: extract structured claims and
-  supports/attacks relations across works, so serving becomes graph traversal
-  instead of query-time classification; hand-labeled eval set for stance
-  accuracy.
+  benchmarked from 3.7k to 1M vectors in [BENCHMARKS.md](BENCHMARKS.md) and
+  **serving the live demo**.
+- **Phase 2.5** — ✅ query expansion ([api/expand.py](api/expand.py)), which
+  closes the vocabulary gap from the query side and is validated on a held-out
+  set. It is the cheap half of the fix.
+- **Phase 3** — the expensive half: an offline claim graph. Expansion rewrites
+  the *query* into the corpus's idiom, one claim at a time, at the cost of a
+  model call. Extracting the claim each *passage* makes would do the same work
+  once, offline, and make serving a graph traversal — supports/attacks relations
+  across works — instead of query-time classification. The held-out miss that
+  remains (mind-body dualism, wanting Descartes) is the kind of case it would
+  catch.
+- **The eval that is still missing:** a real accuracy number for the stance
+  classifier. `evals/stability.py` measures self-consistency (88.9%), which is
+  not the same thing. [`evals/make_labeling_sheet.py`](evals/make_labeling_sheet.py)
+  generates a blind sheet and [`evals/score_gold.py`](evals/score_gold.py) scores
+  it with Cohen's kappa; what is needed is a human to sit down and label.
 
 ## License
 
