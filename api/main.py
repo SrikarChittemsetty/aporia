@@ -12,7 +12,7 @@ from fastapi.responses import FileResponse
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from config import DB_PATH, EMBED_MODEL, INDEX_DIR, QUERY_PREFIX, ROOT, TOP_K
-from api import stance
+from api import expand, stance
 from api.claims import resolve_claim
 from index.vector_index import load_index
 
@@ -48,13 +48,17 @@ def search(q: str = Query(..., min_length=3), k: int = TOP_K):
     # uses the original query for breadth, stance is judged against the claim.
     claim, was_topic, claim_error = resolve_claim(q)
 
-    vector = _state["model"].encode(QUERY_PREFIX + q, normalize_embeddings=True)
+    # Retrieval searches with a blend of the query and a hypothetical passage
+    # written in the corpus's own idiom — see api/expand.py for why, and
+    # evals/expansion_eval.py for what it is worth. Degrades to the plain query
+    # vector if no LLM backend is reachable.
+    vector, _hypothetical, expand_error = expand.search_vector(_state["model"], q)
     ids, scores = _state["index"].search(np.asarray(vector, dtype=np.float32), k=k)
     passages = _fetch_chunks(ids)
     score_by_id = dict(zip(ids, scores))
 
     stances, stance_error = stance.classify(claim, passages)
-    stance_error = stance_error or claim_error
+    stance_error = stance_error or claim_error or expand_error
 
     grouped = {"for": [], "against": [], "nuance": []}
     for p in passages:

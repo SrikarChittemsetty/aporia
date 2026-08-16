@@ -36,7 +36,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from api import stance
+from api import expand, stance
 from config import DB_PATH, EMBED_MODEL, INDEX_DIR, QUERY_PREFIX, ROOT, TOP_K
 
 DEMO_DIR = ROOT / "data" / "demo"
@@ -100,9 +100,14 @@ def stage_retrieve(k: int) -> None:
     PROMPT_DIR.mkdir(parents=True, exist_ok=True)
     LABEL_DIR.mkdir(parents=True, exist_ok=True)
 
+    missing_expansions = []
     for entry in DEMO_CLAIMS:
         claim = entry["claim"]
-        vector = model.encode(QUERY_PREFIX + claim, normalize_embeddings=True)
+        # Same retrieval path the live app uses, so the frozen demo cannot drift
+        # from what a local run would produce.
+        vector, hypothetical, expand_error = expand.search_vector(model, claim)
+        if hypothetical is None:
+            missing_expansions.append(claim)
         ids, scores = index.search(np.asarray(vector, dtype=np.float32), k=k)
         score_by_id = dict(zip(ids, scores))
 
@@ -130,6 +135,12 @@ def stage_retrieve(k: int) -> None:
     con.close()
     DEMO_DIR.mkdir(parents=True, exist_ok=True)
     RETRIEVAL_PATH.write_text(json.dumps(out, indent=2) + "\n")
+
+    if missing_expansions:
+        print(f"\n! {len(missing_expansions)} claim(s) have no cached query expansion; "
+              f"they used plain retrieval:")
+        for c in missing_expansions:
+            print(f"    {c}")
 
     missing = [c for c in out if not _cached_ids(c["claim"])]
     print(f"\nwrote {RETRIEVAL_PATH.relative_to(ROOT)}")

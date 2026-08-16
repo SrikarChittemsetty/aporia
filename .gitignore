@@ -11,3 +11,6 @@ data/aporia.db
 data/demo/prompts/
 data/demo/pass2_prompts/
 evals/labeling_sheet.html
+data/expansion/prompts/
+data/expansion/holdout_prompts/
+data/expansion/demo_prompts/

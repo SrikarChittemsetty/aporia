@@ -1,74 +1,14 @@
 [
-  {
-    "id": 1984,
-    "stance": "nuance",
-    "move": "Qualifies the happiness standard by holding that in an imperfect world the readiness to sacrifice one's own happiness is the highest virtue and that the conscious ability to do without happiness is what best secures the happiness actually attainable.",
-    "confidence": 0.65
-  },
-  {
-    "id": 840,
-    "stance": "nuance",
-    "move": "Invokes 'the highest good' only to argue that attaining it depends on a self-verifying faith and moral energy, without identifying that good with happiness or taking a side on the claim.",
-    "confidence": 0.7
-  },
-  {
-    "id": 1386,
-    "stance": "against",
-    "move": "Subordinates happiness within the summum bonum by making virtue the unconditioned supreme good and happiness good only on the condition of morally right behaviour.",
-    "confidence": 0.85
-  },
-  {
-    "id": 2365,
-    "stance": "against",
-    "move": "Denies that happiness is unconditionally good by arguing that only a good will is good without qualification, and that well-being without it breeds pride and merely makes one worthy of happiness.",
-    "confidence": 0.92
-  },
-  {
-    "id": 2028,
-    "stance": "for",
-    "move": "Defends the Happiness principle as the single end by absorbing apparent rivals into it, treating virtue and other goods as desired for themselves yet as parts of happiness rather than competitors to it.",
-    "confidence": 0.8
-  },
-  {
-    "id": 1412,
-    "stance": "nuance",
-    "move": "Reframes the question by defining happiness as nature's harmony with one's will and arguing that no necessary link to morality exists in the world, so the summum bonum containing it must be postulated rather than asserted as the highest good.",
-    "confidence": 0.65
-  },
-  {
-    "id": 1975,
-    "stance": "for",
-    "move": "States the Greatest Happiness Principle outright, making a life rich in enjoyment and free of pain the ultimate end for whose sake all else is desirable and hence the standard of morality, before naming objectors to it.",
-    "confidence": 0.88
-  },
-  {
-    "id": 1239,
-    "stance": "against",
-    "move": "Argues that the principle of happiness rests on variable empirical data and can yield only general advisory maxims, never the universally necessary practical laws that the commanding moral law supplies.",
-    "confidence": 0.88
-  },
-  {
-    "id": 648,
-    "stance": "against",
-    "move": "Identifies a rival highest good, holding that love towards God is the highest good sought under the guidance of reason and the most constant of the emotions, immune to envy and jealousy.",
-    "confidence": 0.55
-  },
-  {
-    "id": 2377,
-    "stance": "against",
-    "move": "Demotes happiness to an only indirect duty and a fluctuating, indefinite idea of combined inclinations, insisting one should promote it from law rather than from inclination.",
-    "confidence": 0.85
-  },
-  {
-    "id": 1960,
-    "stance": "nuance",
-    "move": "Steps back to the meta-level, arguing that questions of ultimate ends admit no ordinary proof and that the happiness formula can only be supported by considerations addressed to the rational faculty.",
-    "confidence": 0.7
-  },
-  {
-    "id": 1974,
-    "stance": "for",
-    "move": "Defends the utilitarian standard by relocating it from the agent's own happiness to the greatest aggregate happiness, so that even self-costly nobleness is vindicated by the general gain in happiness.",
-    "confidence": 0.8
-  }
+  {"id": 1984, "stance": "nuance", "move": "Qualifies the happiness standard by making readiness to sacrifice one's own happiness the highest virtue in an imperfect world, and the conscious ability to do without happiness the best means to such happiness as is attainable.", "confidence": 0.68},
+  {"id": 2028, "stance": "for", "move": "Defends the Happiness principle by absorbing apparent rivals into it, treating virtue and other goods as desired for their own sake yet as ingredients of happiness rather than competitors to it.", "confidence": 0.8},
+  {"id": 2365, "stance": "against", "move": "Denies that happiness is unconditionally good, holding that only a good will is good without qualification and that well-being without it breeds pride, so a good will is merely the condition of being worthy of happiness.", "confidence": 0.93},
+  {"id": 1975, "stance": "for", "move": "States the Greatest Happiness Principle outright, making a life exempt from pain and rich in enjoyment the ultimate end for whose sake all else is desirable and therefore the standard of morality.", "confidence": 0.9},
+  {"id": 840, "stance": "nuance", "move": "Invokes the highest good only to argue that reaching it depends on a self-verifying faith and moral energy that help create the truth believed, without identifying that good with happiness.", "confidence": 0.65},
+  {"id": 2367, "stance": "against", "move": "Ranks the good will above every result it could produce in favour of inclination, even the sum total of all inclinations, holding it good in itself like a jewel whether or not it accomplishes anything.", "confidence": 0.85},
+  {"id": 1386, "stance": "against", "move": "Splits the summum bonum into virtue and happiness and makes virtue the unconditioned supreme good, while happiness is not absolutely good but always presupposes morally right behaviour as its condition.", "confidence": 0.87},
+  {"id": 1960, "stance": "nuance", "move": "Steps back to the meta-level, arguing that questions of ultimate ends admit no ordinary proof and that the happiness formula can only be commended by considerations addressed to the rational faculty.", "confidence": 0.72},
+  {"id": 2030, "stance": "for", "move": "Explains how means such as power and fame come to be desired for their own sake, and absorbs them back into the end by holding that what is so desired is desired as part of happiness.", "confidence": 0.75},
+  {"id": 1974, "stance": "for", "move": "Relocates the utilitarian standard from the agent's own happiness to the greatest happiness altogether, so that even self-costly nobleness is vindicated by the general gain in happiness.", "confidence": 0.8},
+  {"id": 736, "stance": "nuance", "move": "Reports rather than argues, illustrating how a temperamental optimism like Whitman's or Rousseau's settles the question of life's worth by sheer joy of living instead of by argument.", "confidence": 0.6},
+  {"id": 1239, "stance": "against", "move": "Argues that the principle of happiness rests on variable empirical data and can yield only general advisory maxims, never the universally necessary practical laws that the commanding moral law supplies.", "confidence": 0.88}
 ]

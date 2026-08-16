@@ -21,10 +21,10 @@ built.
 |---|---|
 | Corpus | **3,723 passages** from 13 primary works, 10 philosophers |
 | Vector index | **written from scratch in NumPy** from the HNSW paper — 0.999 recall@10, 0.46 ms p50 |
-| Retrieval eval | **37 of 41** hand-written claims surface the philosopher who actually holds the position, across all 13 works |
+| Retrieval eval | **20 of 21 held-out** claims surface the philosopher who actually holds the position (95.2%); plain dense retrieval alone scores 19/21 |
 | Stance layer | one Claude call per claim, cached forever |
 | Classifier reliability | **88.9%** run-to-run agreement over 144 passages — and **0** for↔against reversals |
-| Tests | 10 pytest tests, green in CI |
+| Tests | 17 pytest tests, green in CI |
 
 ![Aporia searching "free will is an illusion": Spinoza and Nietzsche argue FOR, William James and Kant argue AGAINST](docs/screenshot.png)
 
@@ -44,8 +44,9 @@ is classified exactly once. Full design rationale: [docs/DESIGN.md](docs/DESIGN.
 ```
 OFFLINE   Gutenberg texts → clean → chunk (~100–300 words, citation metadata)
           → embed (bge-small) → hnswlib index
-ONLINE    claim → embed → top-K vector search → one batched Claude call
-          classifies stance + move per passage (cached) → FOR/AGAINST → UI
+ONLINE    claim → expand to a hypothetical period passage (cached) → blend
+          vectors → top-K vector search → one batched Claude call classifies
+          stance + move per passage (cached) → FOR/AGAINST → UI
 ```
 
 ## Try it in two minutes
@@ -88,10 +89,13 @@ Searches are shareable links: `/?q=liberty+is+compatible+with+necessity`.
   ([api/stance.py](api/stance.py)) batches all passages into one Claude call,
   caches per (claim, passage) in SQLite, and degrades gracefully (unclassified
   results, never cached) if no LLM backend is reachable.
-- **`evals/`** — retrieval sanity suite: 41 hand-written claims with the
-  authors who actually argue them, three or four per work. Current score:
-  **37/41 (90%) surface an expected author in the top 12**, with passages
-  drawn from all 13 works. See the failure mode it exposed, below.
+- **`evals/`** — retrieval suite: 41 hand-written claims with the authors who
+  actually argue them, three or four per work, plus a **21-query held-out set**
+  written after the fact. Plain dense retrieval scores 37/41 and 19/21; with
+  query expansion, 41/41 and **20/21**. See the failure mode it exposed and the
+  fix, below.
+- **`api/expand.py`** — query expansion (HyDE): searches with a blend of the
+  user's claim and a hypothetical period passage arguing it, cached per claim.
 - **`scripts/export_site.py`** — freezes a curated set of claims into the
   static site at [`docs/`](docs/) that backs the live demo link above. It runs
   the real retrieval path, emits the pipeline's own classification prompt for
@@ -143,8 +147,47 @@ Nietzsche coins his own vocabulary rather than using the paraphrase everyone
 remembers him by. Both are exactly the passages a philosophy search engine most
 needs to find, and dense retrieval alone reliably misses them.
 
-This is the strongest argument for the Phase 3 work below: extracting the claims
-a passage makes, rather than hoping a query happens to share its wording.
+## Fixing it, and what the fix is actually worth
+
+[`api/expand.py`](api/expand.py) closes the gap from the query side. Before
+searching, it asks the model to write a short passage *as a philosopher arguing
+the claim would have written it* — period vocabulary, period imagery — embeds
+that, and searches with a blend of the two vectors. The hypothetical passage is
+invented and is never shown to anyone; it exists only to move the query into the
+region of the space where the real passages live. (This is the HyDE idea: a
+hypothetical document makes a better search key than a question.) One cached
+model call per unique claim, exactly like the stance layer, and it degrades to
+plain vector search when no backend is reachable.
+
+| | plain retrieval | with expansion | change |
+|---|---|---|---|
+| Development set (41 queries) | 37/41 — 90.2% | **41/41 — 100%** | +4 fixed, 0 broken |
+| **Held-out set (21 queries)** | 19/21 — 90.5% | **20/21 — 95.2%** | +1 fixed, **0 broken** |
+
+**The held-out row is the one that counts.** The 41-query set is where the
+failure was *found*, so scoring 100% on it after fixing exactly those four
+queries proves very little. [`evals/holdout.py`](evals/holdout.py) is twenty-one
+queries written afterwards, never used to build or tune anything, and never
+revised after seeing a result. The gain there is real but far more modest — and
+the important column is the last one: at no blend strength on either set did
+expansion break a query that previously worked.
+
+The blend strength was chosen the same way. On held-out queries `alpha=0.3`
+scores 20/21 while 0.5, 0.7 and 1.0 all score 19/21 — the same as no expansion
+at all. The user's own wording carries most of the signal; the hypothetical is a
+nudge, and turning it into a shove throws away what was actually asked. On the
+development set 0.3, 0.5 and 0.7 all score 41/41, which is exactly the kind of
+unanimity that makes a development set look more decisive than it is.
+
+The one held-out query still missed — *"the mind and the body are entirely
+different kinds of thing"*, which wants Descartes — is a genuine failure, not a
+mislabelled expectation: the argument is in the corpus, in Part IV of the
+*Discourse*.
+
+```bash
+python -m evals.expansion_eval            # the development set, all blend strengths
+python -m evals.expansion_eval --holdout  # the set that counts
+```
 
 ## Index benchmarks
 
@@ -191,7 +234,10 @@ the real figure is 1.000.
 resolution, and both pure-Python indexes (recall floor + disk roundtrip).
 CI runs on every push.
 
-- `python -m evals.sanity` — retrieval hit-rate on 41 hand-written claims (37/41, 90%)
+- `python -m evals.sanity` — plain-retrieval hit-rate on 41 hand-written claims
+  (37/41, 90%) — the ablation, and the diagnostic that found the failure mode
+- `python -m evals.expansion_eval [--holdout]` — retrieval with query expansion,
+  swept across blend strengths (41/41 development, **20/21 held-out**)
 - `python -m evals.bench` — index recall/latency benchmark (table above)
 - `python -m evals.stability` — **run-to-run agreement of the stance
   classifier**: an independent second pass over the same 144 passages, with no

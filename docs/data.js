@@ -9,14 +9,34 @@ window.APORIA_DATA = {
    "blurb": "The oldest fight in the corpus: Spinoza and Nietzsche against, James and Kant for.",
    "for": [
     {
+     "id": 1366,
+     "author": "Immanuel Kant",
+     "work": "The Critique of Practical Reason",
+     "citation": "IV. MODALITY.",
+     "text": "This could not happen if we did not suppose that whatever springs from a man's choice (as every action intentionally performed undoubtedly does) has as its foundation a free causality, which from early youth expresses its character in its manifestations (i.e., actions). These, on account of the uniformity of conduct, exhibit a natural connection, which however does not make the vicious quality of the will necessary, but on the contrary, is the consequence of the evil principles voluntarily adopted and unchangeable, which only make it so much the more culpable and deserving of punishment. There still remains a difficulty in the combination of freedom with the mechanism of nature in a being belonging to the world of sense; a difficulty which, even after all the foregoing is admitted, threatens freedom with complete destruction. But with this danger there is also a circumstance that offers hope of an issue still favourable to freedom; namely, that the same difficulty presses much more strongly (in fact as we shall presently see, presses only) on the system that holds the existence determinable in time and space to be the existence of things in themselves; it does not therefore oblige us to give up our capital supposition of the ideality of time as a mere form of sensible intuition, and consequently as a mere manner of representation which is proper to the subject as belonging to the world of sense; and therefore it only requires that this view be reconciled with this idea.",
+     "move": "Holds that whatever springs from a man's choice presupposes a free causality, and defends that freedom against the mechanism of nature by treating time as a mere form of sensible intuition.",
+     "confidence": 0.6,
+     "similarity": 0.8192
+    },
+    {
+     "id": 1253,
+     "author": "Immanuel Kant",
+     "work": "The Critique of Practical Reason",
+     "citation": "INTERNAL EXTERNAL",
+     "text": "Yet we are, through reason, conscious of a law to which all our maxims are subject, as though a natural order must be originated from our will. This law, therefore, must be the idea of a natural system not given in experience, and yet possible through freedom; a system, therefore, which is supersensible, and to which we give objective reality, at least in a practical point of view, since we look on it as an object of our will as pure rational beings.",
+     "move": "Grants objective reality, at least in a practical point of view, to a supersensible natural order originated from our will and possible only through freedom.",
+     "confidence": 0.55,
+     "similarity": 0.8152
+    },
+    {
      "id": 2465,
      "author": "Immanuel Kant",
      "work": "Fundamental Principles of the Metaphysic of Morals",
      "citation": "CRITIQUE OF PURE PRACTICAL REASON",
      "text": "On the hypothesis, then, of freedom of the will, morality together with its principle follows from it by mere analysis of the conception. However, the latter is a synthetic proposition; viz., an absolutely good will is that whose maxim can always include itself regarded as a universal law; for this property of its maxim can never be discovered by analysing the conception of an absolutely good will. Now such synthetic propositions are only possible in this way: that the two cognitions are connected together by their union with a third in which they are both to be found. The positive concept of freedom furnishes this third cognition, which cannot, as with physical causes, be the nature of the sensible world (in the concept of which we find conjoined the concept of something in relation as cause to something else as effect). We cannot now at once show what this third is to which freedom points us and of which we have an idea a priori, nor can we make intelligible how the concept of freedom is shown to be legitimate from principles of pure practical reason and with it the possibility of a categorical imperative; but some further preparation is required. Freedom must be presupposed as a Property of the Will of all Rational Beings",
-     "move": "Argues that the positive concept of freedom supplies the third term needed to ground the moral law, concluding that freedom must be presupposed as a property of the will of all rational beings.",
-     "confidence": 0.65,
-     "similarity": 0.7746
+     "move": "Argues that morality follows by analysis from the freedom of the will, with the positive concept of freedom supplying the needed third term, and concludes freedom must be presupposed of every rational being's will.",
+     "confidence": 0.7,
+     "similarity": 0.815
     },
     {
      "id": 2466,
@@ -24,19 +44,9 @@ window.APORIA_DATA = {
      "work": "Fundamental Principles of the Metaphysic of Morals",
      "citation": "CRITIQUE OF PURE PRACTICAL REASON",
      "text": "It is not enough to predicate freedom of our own will, from Whatever reason, if we have not sufficient grounds for predicating the same of all rational beings. For as morality serves as a law for us only because we are rational beings, it must also hold for all rational beings; and as it must be deduced simply from the property of freedom, it must be shown that freedom also is a property of all rational beings. It is not enough, then, to prove it from certain supposed experiences of human nature (which indeed is quite impossible, and it can only be shown a priori), but we must show that it belongs to the activity of all rational beings endowed with a will. Now I say every being that cannot act except under the idea of freedom is just for that reason in a practical point of view really free, that is to say, all laws which are inseparably connected with freedom have the same force for him as if his will had been shown to be free in itself by a proof theoretically conclusive. * Now I affirm that we must attribute to every rational being which has a will that it has also the idea of freedom and acts entirely under this idea.",
-     "move": "Argues a priori that every being that cannot act except under the idea of freedom is thereby practically free, extending freedom to all rational beings with a will rather than inferring it from experience.",
-     "confidence": 0.6,
-     "similarity": 0.7743
-    },
-    {
-     "id": 1366,
-     "author": "Immanuel Kant",
-     "work": "The Critique of Practical Reason",
-     "citation": "IV. MODALITY.",
-     "text": "This could not happen if we did not suppose that whatever springs from a man's choice (as every action intentionally performed undoubtedly does) has as its foundation a free causality, which from early youth expresses its character in its manifestations (i.e., actions). These, on account of the uniformity of conduct, exhibit a natural connection, which however does not make the vicious quality of the will necessary, but on the contrary, is the consequence of the evil principles voluntarily adopted and unchangeable, which only make it so much the more culpable and deserving of punishment. There still remains a difficulty in the combination of freedom with the mechanism of nature in a being belonging to the world of sense; a difficulty which, even after all the foregoing is admitted, threatens freedom with complete destruction. But with this danger there is also a circumstance that offers hope of an issue still favourable to freedom; namely, that the same difficulty presses much more strongly (in fact as we shall presently see, presses only) on the system that holds the existence determinable in time and space to be the existence of things in themselves; it does not therefore oblige us to give up our capital supposition of the ideality of time as a mere form of sensible intuition, and consequently as a mere manner of representation which is proper to the subject as belonging to the world of sense; and therefore it only requires that this view be reconciled with this idea.",
-     "move": "Holds that intentional action presupposes a free causality underlying character, and defends this against the mechanism of nature by appealing to the ideality of time as a mere form of sensible intuition.",
-     "confidence": 0.6,
-     "similarity": 0.7638
+     "move": "Argues a priori rather than from experience that every being which cannot act except under the idea of freedom is for that reason practically free, extending this to all rational beings with a will.",
+     "confidence": 0.8,
+     "similarity": 0.8132
     },
     {
      "id": 958,
@@ -44,9 +54,9 @@ window.APORIA_DATA = {
      "work": "The Will to Believe, and Other Essays in Popular Philosophy",
      "citation": "MEMBERS OF THE MINISTERS' INSTITUTE:",
      "text": "[5] A favorite argument against free-will is that if it be true, a man's murderer may as probably be his best friend as his worst enemy, a mother be as likely to strangle as to suckle her first-born, and all of us be as ready to jump from fourth-story windows as to go out of front doors, etc. Users of this argument should properly be excluded from debate till they learn what the real question is. 'Free-will' does not say that everything that is physically conceivable is also morally possible. It merely says that of alternatives that really _tempt_ our will more than one is really possible. Of course, the alternatives that do thus tempt our will are vastly fewer than the physical possibilities we can coldly fancy. Persons really tempted often do murder their best friends, mothers do strangle their first-born, people do jump out of fourth-story windows, etc. [6] To a reader who says he is satisfied with a pessimism, and has no objection to thinking the whole bad, I have no more to say: he makes fewer demands on the world than I, who, making them, wish to look a little further before I give up all hope of having them satisfied. If, however, all he means is that the badness of some parts does not prevent his acceptance of a universe whose _other_ parts give him satisfaction, I welcome him as an ally. He has abandoned the notion of the _Whole_, which is the essence of deterministic monism, and views things as a pluralism, just as I do in this paper. [7] Compare Sir James Stephen's Essays by a Barrister, London, 1862, pp. 138, 318.",
-     "move": "Defends free will by rebutting a caricature objection, restating the doctrine as the claim that among alternatives that genuinely tempt the will more than one is really possible.",
-     "confidence": 0.8,
-     "similarity": 0.7604
+     "move": "Defends free will by rebutting the caricature that it makes every physical possibility equally likely, restating it as the claim that among alternatives which really tempt the will more than one is possible.",
+     "confidence": 0.72,
+     "similarity": 0.8083
     },
     {
      "id": 1177,
@@ -54,9 +64,29 @@ window.APORIA_DATA = {
      "work": "The Critique of Practical Reason",
      "citation": "PREFACE.",
      "text": "Freedom, however, is the only one of all the ideas of the speculative reason of which we know the possibility a priori (without, however, understanding it), because it is the condition of the moral law which we know. * The ideas of God and immortality, however, are not conditions of the moral law, but only conditions of the necessary object of a will determined by this law; that is to say, conditions of the practical use of our pure reason. Hence, with respect to these ideas, we cannot affirm that we know and understand, I will not say the actuality, but even the possibility of them. However they are the conditions of the application of the morally determined will to its object, which is given to it a priori, viz., the summum bonum. Consequently in this practical point of view their possibility must be assumed, although we cannot theoretically know and understand it. To justify this assumption it is sufficient, in a practical point of view, that they contain no intrinsic impossibility (contradiction). Here we have what, as far as speculative reason is concerned, is a merely subjective principle of assent, which, however, is objectively valid for a reason equally pure but practical, and this principle, by means of the concept of freedom, assures objective reality and authority to the ideas of God and immortality.",
-     "move": "Asserts that freedom is the one idea of speculative reason whose possibility is known a priori, because it is the condition of the moral law we already know.",
-     "confidence": 0.65,
-     "similarity": 0.7572
+     "move": "Claims freedom is the only idea of speculative reason whose possibility is known a priori, because it is the condition of the moral law we already know.",
+     "confidence": 0.62,
+     "similarity": 0.8061
+    },
+    {
+     "id": 154,
+     "author": "David Hume",
+     "work": "An Enquiry Concerning Human Understanding",
+     "citation": "PART II.",
+     "text": "Our clear and unalterable ideas of morality establish this rule, upon unquestionable reasons, when we examine the consequences of any human action; and these reasons must still have greater force when applied to the volitions and intentions of a Being infinitely wise and powerful. Ignorance or impotence may be pleaded for so limited a creature as man; but those imperfections have no place in our Creator. He foresaw, he ordained, he intended all those actions of men, which we so rashly pronounce criminal. And we must therefore conclude, either that they are not criminal, or that the Deity, not man, is accountable for them. But as either of these positions is absurd and impious, it follows, that the doctrine from which they are deduced cannot possibly be true, as being liable to all the same objections. An absurd consequence, if necessary, proves the original doctrine to be absurd; in the same manner as criminal actions render criminal the original cause, if the connexion between them be necessary and evitable.",
+     "move": "Runs a reductio on necessitated human action: if actions follow necessarily from a foreseeing Creator, either they are not criminal or the Deity is accountable, and since both are absurd the doctrine cannot be true.",
+     "confidence": 0.5,
+     "similarity": 0.8041
+    },
+    {
+     "id": 1229,
+     "author": "Immanuel Kant",
+     "work": "The Critique of Practical Reason",
+     "citation": "REMARK.",
+     "text": "The fact just mentioned is undeniable. It is only necessary to analyse the judgement that men pass on the lawfulness of their actions, in order to find that, whatever inclination may say to the contrary, reason, incorruptible and self-constrained, always confronts the maxim of the will in any action with the pure will, that is, with itself, considering itself as a priori practical. Now this principle of morality, just on account of the universality of the legislation which makes it the formal supreme determining principle of the will, without regard to any subjective differences, is declared by the reason to be a law for all rational beings, in so far as they have a will, that is, a power to determine their causality by the conception of rules; and, therefore, so far as they are capable of acting according to principles, and consequently also according to practical a priori principles (for these alone have the necessity that reason requires in a principle). It is, therefore, not limited to men only, but applies to all finite beings that possess reason and will; nay, it even includes the Infinite Being as the supreme intelligence. In the former case, however, the law has the form of an imperative, because in them, as rational beings, we can suppose a pure will, but being creatures affected with wants and physical motives, not a holy will, that is, one which would be incapable of any maxim conflicting with the moral law.",
+     "move": "Treats the undeniable fact of reason confronting our maxims as showing that rational beings have a will, a power to determine their own causality by the conception of rules.",
+     "confidence": 0.5,
+     "similarity": 0.8019
     }
    ],
    "against": [
@@ -66,19 +96,9 @@ window.APORIA_DATA = {
      "work": "Ethics",
      "citation": "POSTULATES",
      "text": "Experience teaches us no less clearly than reason, that men believe themselves to be free, simply because they are conscious of their actions, and unconscious of the causes whereby those actions are determined; and, further, it is plain that the dictates of the mind are but another name for the appetites, and therefore vary according to the varying state of the body. Everyone shapes his actions according to his emotion, those who are assailed by conflicting emotions know not what they wish; those who are not attacked by any emotion are readily swayed this way or that. All these considerations clearly show that a mental decision and a bodily appetite, or determined state, are simultaneous, or rather are one and the same thing, which we call decision, when it is regarded under and explained through the attribute of thought, and a conditioned state, when it is regarded under the attribute of extension, and deduced from the laws of motion and rest. This will appear yet more plainly in the sequel. For the present I wish to call attention to another point, namely, that we cannot act by the decision of the mind, unless we have a remembrance of having done so.",
-     "move": "Explains the belief in freedom as an illusion arising from consciousness of actions combined with ignorance of their determining causes, identifying mental decision with a bodily determined state.",
+     "move": "Explains the belief in freedom as consciousness of one's actions combined with ignorance of their determining causes, identifying mental decision and bodily appetite as one and the same determined thing.",
      "confidence": 0.95,
-     "similarity": 0.7499
-    },
-    {
-     "id": 437,
-     "author": "Baruch Spinoza",
-     "work": "Ethics",
-     "citation": "POSTULATES",
-     "text": "Experience abundantly shows that men can govern anything more easily than their tongues, and restrain anything more easily than their appetites; when it comes about that many believe, that we are only free in respect to objects which we moderately desire, because our desire for such can easily be controlled by the thought of something else frequently remembered, but that we are by no means free in respect to what we seek with violent emotion, for our desire cannot then be allayed with the remembrance of anything else. However, unless such persons had proved by experience that we do many things which we afterwards repent of, and again that we often, when assailed by contrary emotions, see the better and follow the worse, there would be nothing to prevent their believing that we are free in all things. Thus an infant believes that of its own free will it desires milk, an angry child believes that it freely desires vengeance, a timid child believes that it freely desires to run away; further, a drunken man believes that he utters from the free decision of his mind words which, when he is sober, he would willingly have withheld: thus, too, a delirious man, a garrulous woman, a child, and others of like complexion, believe that they speak from the free decision of their mind, when they are in reality unable to restrain their impulse to talk.",
-     "move": "Uses cases of the infant, the angry child, the drunkard, and the garrulous talker to show that the conviction of acting from free decision accompanies impulses one cannot restrain.",
-     "confidence": 0.95,
-     "similarity": 0.7464
+     "similarity": 0.8086
     }
    ],
    "nuance": [
@@ -88,49 +108,29 @@ window.APORIA_DATA = {
      "work": "Fundamental Principles of the Metaphysic of Morals",
      "citation": "CRITIQUE OF PURE PRACTICAL REASON",
      "text": "It must be freely admitted that there is a sort of circle here from which it seems impossible to escape. In the order of efficient causes we assume ourselves free, in order that in the order of ends we may conceive ourselves as subject to moral laws: and we afterwards conceive ourselves as subject to these laws, because we have attributed to ourselves freedom of will: for freedom and self-legislation of will are both autonomy and, therefore, are reciprocal conceptions, and for this very reason one must not be used to explain the other or give the reason of it, but at most only logical purposes to reduce apparently different notions of the same object to one single concept (as we reduce different fractions of the same value to the lowest terms). One resource remains to us, namely, to inquire whether we do not occupy different points of view when by means of freedom we think ourselves as causes efficient a priori, and when we form our conception of ourselves from our actions as effects which we see before our eyes.",
-     "move": "Concedes a circle between assuming freedom and being subject to moral law, and proposes escaping it by distinguishing two standpoints from which we view ourselves, rather than asserting or denying freedom.",
-     "confidence": 0.75,
-     "similarity": 0.7903
+     "move": "Concedes a circle between assuming freedom and being subject to moral law, and proposes escaping it by distinguishing two points of view we occupy on ourselves.",
+     "confidence": 0.72,
+     "similarity": 0.8373
     },
     {
-     "id": 1253,
-     "author": "Immanuel Kant",
-     "work": "The Critique of Practical Reason",
-     "citation": "INTERNAL EXTERNAL",
-     "text": "Yet we are, through reason, conscious of a law to which all our maxims are subject, as though a natural order must be originated from our will. This law, therefore, must be the idea of a natural system not given in experience, and yet possible through freedom; a system, therefore, which is supersensible, and to which we give objective reality, at least in a practical point of view, since we look on it as an object of our will as pure rational beings.",
-     "move": "Grants objective reality to a supersensible natural order 'possible through freedom' only 'in a practical point of view,' qualifying the standing of freedom rather than asserting it theoretically.",
-     "confidence": 0.5,
-     "similarity": 0.7633
-    },
-    {
-     "id": 854,
+     "id": 907,
      "author": "William James",
      "work": "The Will to Believe, and Other Essays in Popular Philosophy",
-     "citation": "I.",
-     "text": "[4] Observe that in all this not a word has been said of free-will. It all applies as well to a predetermined as to an indeterminate universe. If _M_ + _x_ is fixed in advance, the belief which leads to _x_ and the desire which prompts the belief are also fixed. But fixed or not, these subjective states form a phenomenal condition necessarily preceding the facts; necessarily constitutive, therefore, of the truth _M_ + _x_ which we seek. If, however, free acts be possible, a faith in their possibility, by augmenting the moral energy which gives them birth, will increase their frequency in a given individual. [5] In either case, as a later essay explains (see p. 193), the _should_ which the moralist regards as binding upon him must be rooted in the feeling of some other thinker, or collection of thinkers, to whose demands he individually bows. {111} REFLEX ACTION AND THEISM.[1]",
-     "move": "Explicitly brackets the free-will question, noting the argument applies equally to a predetermined and an indeterminate universe, and only adds a conditional remark about believing in free acts if they are possible.",
-     "confidence": 0.8,
-     "similarity": 0.7623
-    },
-    {
-     "id": 2140,
-     "author": "John Stuart Mill",
-     "work": "On Liberty",
-     "citation": "INTRODUCTORY.",
-     "text": "No society in which these liberties are not, on the whole, respected, is free, whatever may be its form of government; and none is completely free in which they do not exist absolute and unqualified. The only freedom which deserves the name, is that of pursuing our own good in our own way, so long as we do not attempt to deprive others of theirs, or impede their efforts to obtain it. Each is the proper guardian of his own health, whether bodily, or mental and spiritual. Mankind are greater gainers by suffering each other to live as seems good to themselves, than by compelling each to live as seems good to the rest.",
-     "move": "Discusses freedom in the political sense of society not coercing individuals in their own affairs, without addressing whether the will is metaphysically free.",
+     "citation": "MEMBERS OF THE MINISTERS' INSTITUTE:",
+     "text": "To begin, then, I must suppose you acquainted with all the usual arguments on the subject. I cannot stop to take up the old proofs from causation, from statistics, from the certainty with which we can foretell one another's conduct, from the fixity of character, and all the rest. But there are two words which usually encumber these classical arguments, {149} and which we must immediately dispose of if we are to make any progress. One is the eulogistic word _freedom_, and the other is the opprobrious word _chance_. The word 'chance' I wish to keep, but I wish to get rid of the word 'freedom.' Its eulogistic associations have so far overshadowed all the rest of its meaning that both parties claim the sole right to use it, and determinists to-day insist that they alone are freedom's champions. Old-fashioned determinism was what we may call _hard_ determinism. It did not shrink from such words as fatality, bondage of the will, necessitation, and the like. Nowadays, we have a _soft_ determinism which abhors harsh words, and, repudiating fatality, necessity, and even predetermination, says that its real name is freedom; for freedom is only necessity understood, and bondage to the highest is identical with true freedom. Even a writer as little used to making capital out of soft words as Mr. Hodgson hesitates not to call himself a 'free-will determinist.'",
+     "move": "Makes a terminological clearing move, discarding the eulogistic word 'freedom' that hard and soft determinists both claim while keeping the word 'chance'.",
      "confidence": 0.75,
-     "similarity": 0.7535
+     "similarity": 0.8008
     },
     {
-     "id": 1725,
-     "author": "Friedrich Nietzsche",
-     "work": "Beyond Good and Evil",
-     "citation": "CHAPTER II. THE FREE SPIRIT",
-     "text": "The question is ultimately whether we really recognize the will as OPERATING, whether we believe in the causality of the will; if we do so--and fundamentally our belief IN THIS is just our belief in causality itself--we MUST make the attempt to posit hypothetically the causality of the will as the only causality. \"Will\" can naturally only operate on \"will\"--and not on \"matter\" (not on \"nerves,\" for instance): in short, the hypothesis must be hazarded, whether will does not operate on will wherever \"effects\" are recognized--and whether all mechanical action, inasmuch as a power operates therein, is not just the power of will, the effect of will. Granted, finally, that we succeeded in explaining our entire instinctive life as the development and ramification of one fundamental form of will--namely, the Will to Power, as my thesis puts it; granted that all organic functions could be traced back to this Will to Power, and that the solution of the problem of generation and nutrition--it is one problem--could also be found therein: one would thus have acquired the right to define ALL active force unequivocally as WILL TO POWER. The world seen from within, the world defined and designated according to its \"intelligible character\"--it would simply be \"Will to Power,\" and nothing else.",
-     "move": "Reframes the will as a causal hypothesis, proposing that all effective force be defined as will to power, without affirming or denying freedom of choice.",
+     "id": 1436,
+     "author": "Immanuel Kant",
+     "work": "The Critique of Practical Reason",
+     "citation": "VII. How is it possible to conceive an Extension of Pure",
+     "text": "When these ideas of God, of an intelligible world (the kingdom of God), and of immortality are further determined by predicates taken from our own nature, we must not regard this determination as a sensualizing of those pure rational ideas (anthropomorphism), nor as a transcendent knowledge of supersensible objects; for these predicates are no others than understanding and will, considered too in the relation to each other in which they must be conceived in the moral law, and therefore, only so far as a pure practical use is made of them. As to all the rest that belongs to these conceptions psychologically, that is, so far as we observe these faculties of ours empirically in their exercise (e.g., that the understanding of man is discursive, and its notions therefore not intuitions but thoughts, that these follow one another in time, that his will has its satisfaction always dependent on the existence of its object, etc., which cannot be the case in the Supreme Being), from all this we abstract in that case, and then there remains of the notions by which we conceive a pure intelligence nothing more than just what is required for the possibility of conceiving a moral law.",
+     "move": "Restricts predicates such as understanding and will, when applied to God, to their bare practical moral use, taking no position on whether human willing is free.",
      "confidence": 0.6,
-     "similarity": 0.7502
+     "similarity": 0.8005
     }
    ]
   },
@@ -140,14 +140,14 @@ window.APORIA_DATA = {
    "blurb": "Hume's Dialogues stage both sides of the design argument in one book.",
    "for": [
     {
-     "id": 292,
+     "id": 410,
      "author": "Baruch Spinoza",
      "work": "Ethics",
-     "citation": "PROPOSITIONS.",
-     "text": "If, then, no cause or reason can be given, which prevents the existence of God, or which destroys his existence, we must certainly conclude that he necessarily does exist. If such a reason or cause should be given, it must either be drawn from the very nature of God, or be external to him--that is, drawn from another substance of another nature. For if it were of the same nature, God, by that very fact, would be admitted to exist. But substance of another nature could have nothing in common with God (by Prop. ii.), and therefore would be unable either to cause or to destroy his existence. As, then, a reason or cause which would annul the divine existence cannot be drawn from anything external to the divine nature, such cause must perforce, if God does not exist, be drawn from God's own nature, which would involve a contradiction. To make such an affirmation about a being absolutely infinite and supremely perfect is absurd; therefore, neither in the nature of God, nor externally to his nature, can a cause or reason be assigned which would annul his existence. Therefore, God necessarily exists. Q.E.D. Another proof.--The potentiality of non--existence is a negation of power, and contrariwise the potentiality of existence is a power, as is obvious. If, then, that which necessarily exists is nothing but finite beings, such finite beings are more powerful than a being absolutely infinite, which is obviously absurd; therefore, either nothing exists, or else a being absolutely infinite necessarily exists also. Now we exist either in ourselves, or in something else which necessarily exists (see Axiom. i. and Prop. vii.). Therefore a being absolutely infinite--in other words, God (Def. vi.)--necessarily exists. Q.E.D.",
-     "move": "Runs a reductio showing no cause annulling God's existence can be drawn either from God's own nature or from anything external, and adds that a being absolutely infinite must have infinite power of existing.",
-     "confidence": 0.95,
-     "similarity": 0.788
+     "citation": "POSTULATES",
+     "text": "Note.--By existence I do not here mean duration--that is, existence in so far as it is conceived abstractedly, and as a certain form of quantity. I am speaking of the very nature of existence, which is assigned to particular things, because they follow in infinite numbers and in infinite ways from the eternal necessity of God's nature (I. xvi.). I am speaking, I repeat, of the very existence of particular things, in so far as they are in God. For although each particular thing be conditioned by another particular thing to exist in a given way, yet the force whereby each particular thing perseveres in existing follows from the eternal necessity of God's nature (cf. I. xxiv. Coroll.). PROP. XLVI. The knowledge of the eternal and infinite essence of God which every idea involves is adequate and perfect. Proof.--The proof of the last proposition is universal; and whether a thing be considered as a part or a whole, the idea thereof, whether of the whole or of a part (by the last Prop.), will involve God's eternal and infinite essence. Wherefore, that, which gives knowledge of the eternal and infinite essence of God, is common to all, and is equally in the part and in the whole; therefore (II. xxxviii.) this knowledge will be adequate. Q.E.D. PROP. XLVII. The human mind has an adequate knowledge of the eternal and infinite essence of God. Proof.--The human mind has ideas (II. xxii.), from which (II. xxiii.) it perceives itself and its own body (II. xix.) and external bodies (II. xvi. Coroll. i. and II. xvii.) as actually existing; therefore (II. xlv. and xlvi.) it has an adequate knowledge of the eternal and infinite essence of God. Q.E.D.",
+     "move": "Treats the existence of particular things as following from the eternal necessity of God's nature and asserts every idea involves an adequate knowledge of God's eternal and infinite essence.",
+     "confidence": 0.6,
+     "similarity": 0.8294
     },
     {
      "id": 293,
@@ -157,27 +157,7 @@ window.APORIA_DATA = {
      "text": "Note.--In this last proof, I have purposely shown God's existence à posteriori, so that the proof might be more easily followed, not because, from the same premises, God's existence does not follow à priori. For, as the potentiality of existence is a power, it follows that, in proportion as reality increases in the nature of a thing, so also will it increase its strength for existence. Therefore a being absolutely infinite, such as God, has from himself an absolutely infinite power of existence, and hence he does absolutely exist. Perhaps there will be many who will be unable to see the force of this proof, inasmuch as they are accustomed only to consider those things which flow from external causes. Of such things, they see that those which quickly come to pass--that is, quickly come into existence--quickly also disappear; whereas they regard as more difficult of accomplishment--that is, not so easily brought into existence--those things which they conceive as more complicated.",
      "move": "Argues a priori that potentiality of existence is a power, so a being of absolutely infinite reality has infinite power of existence from itself and therefore absolutely exists.",
      "confidence": 0.95,
-     "similarity": 0.7853
-    },
-    {
-     "id": 410,
-     "author": "Baruch Spinoza",
-     "work": "Ethics",
-     "citation": "POSTULATES",
-     "text": "Note.--By existence I do not here mean duration--that is, existence in so far as it is conceived abstractedly, and as a certain form of quantity. I am speaking of the very nature of existence, which is assigned to particular things, because they follow in infinite numbers and in infinite ways from the eternal necessity of God's nature (I. xvi.). I am speaking, I repeat, of the very existence of particular things, in so far as they are in God. For although each particular thing be conditioned by another particular thing to exist in a given way, yet the force whereby each particular thing perseveres in existing follows from the eternal necessity of God's nature (cf. I. xxiv. Coroll.). PROP. XLVI. The knowledge of the eternal and infinite essence of God which every idea involves is adequate and perfect. Proof.--The proof of the last proposition is universal; and whether a thing be considered as a part or a whole, the idea thereof, whether of the whole or of a part (by the last Prop.), will involve God's eternal and infinite essence. Wherefore, that, which gives knowledge of the eternal and infinite essence of God, is common to all, and is equally in the part and in the whole; therefore (II. xxxviii.) this knowledge will be adequate. Q.E.D. PROP. XLVII. The human mind has an adequate knowledge of the eternal and infinite essence of God. Proof.--The human mind has ideas (II. xxii.), from which (II. xxiii.) it perceives itself and its own body (II. xix.) and external bodies (II. xvi. Coroll. i. and II. xvii.) as actually existing; therefore (II. xlv. and xlvi.) it has an adequate knowledge of the eternal and infinite essence of God. Q.E.D.",
-     "move": "Treats the existence of particular things as following from the eternal necessity of God's nature and asserts every idea involves an adequate knowledge of God's eternal and infinite essence.",
-     "confidence": 0.6,
-     "similarity": 0.7807
-    },
-    {
-     "id": 313,
-     "author": "Baruch Spinoza",
-     "work": "Ethics",
-     "citation": "PROPOSITIONS.",
-     "text": "Proof.--A mode exists in something else, through which it must be conceived (Def. v.), that is (Prop. xv.), it exists solely in God, and solely through God can be conceived. If therefore a mode is conceived as necessarily existing and infinite, it must necessarily be inferred or perceived through some attribute of God, in so far as such attribute is conceived as expressing the infinity and necessity of existence, in other words (Def. viii.) eternity; that is, in so far as it is considered absolutely. A mode, therefore, which necessarily exists as infinite, must follow from the absolute nature of some attribute of God, either immediately (Prop. xxi.) or through the means of some modification, which follows from the absolute nature of the said attribute; that is (by Prop. xxii.), which exists necessarily and as infinite. PROP. XXIV. The essence of things produced by God does not involve existence. Proof.--This proposition is evident from Def. i. For that of which the nature (considered in itself) involves existence is self--caused, and exists by the sole necessity of its own nature. Corollary.--Hence it follows that God is not only the cause of things coming into existence, but also of their continuing in existence, that is, in scholastic phraseology, God is cause of the being of things (essendi rerum). For whether things exist, or do not exist, whenever we contemplate their essence, we see that it involves neither existence nor duration; consequently, it cannot be the cause of either the one or the other. God must be the sole cause, inasmuch as to him alone does existence appertain. (Prop. xiv. Coroll. i.) Q.E.D. PROP. XXV. God is the efficient cause not only of the existence of things, but also of their essence.",
-     "move": "Distinguishes God, whose nature involves existence and is self-caused, from produced things whose essence does not involve existence, making God the cause of both their coming to be and their continuing to be.",
-     "confidence": 0.55,
-     "similarity": 0.7802
+     "similarity": 0.8291
     },
     {
      "id": 330,
@@ -187,7 +167,27 @@ window.APORIA_DATA = {
      "text": "In the foregoing I have explained the nature and properties of God. I have shown that he necessarily exists, that he is one: that he is, and acts solely by the necessity of his own nature; that he is the free cause of all things, and how he is so; that all things are in God, and so depend on him, that without him they could neither exist nor be conceived; lastly, that all things are predetermined by God, not through his free will or absolute fiat, but from the very nature of God or infinite power. I have further, where occasion afforded, taken care to remove the prejudices, which might impede the comprehension of my demonstrations. Yet there still remain misconceptions not a few, which might and may prove very grave hindrances to the understanding of the concatenation of things, as I have explained it above. I have therefore thought it worth while to bring these misconceptions before the bar of reason.",
      "move": "Summarizes the completed demonstration that God necessarily exists, is one, and is the cause on which all things depend, before turning to remove misconceptions.",
      "confidence": 0.85,
-     "similarity": 0.7716
+     "similarity": 0.8222
+    },
+    {
+     "id": 292,
+     "author": "Baruch Spinoza",
+     "work": "Ethics",
+     "citation": "PROPOSITIONS.",
+     "text": "If, then, no cause or reason can be given, which prevents the existence of God, or which destroys his existence, we must certainly conclude that he necessarily does exist. If such a reason or cause should be given, it must either be drawn from the very nature of God, or be external to him--that is, drawn from another substance of another nature. For if it were of the same nature, God, by that very fact, would be admitted to exist. But substance of another nature could have nothing in common with God (by Prop. ii.), and therefore would be unable either to cause or to destroy his existence. As, then, a reason or cause which would annul the divine existence cannot be drawn from anything external to the divine nature, such cause must perforce, if God does not exist, be drawn from God's own nature, which would involve a contradiction. To make such an affirmation about a being absolutely infinite and supremely perfect is absurd; therefore, neither in the nature of God, nor externally to his nature, can a cause or reason be assigned which would annul his existence. Therefore, God necessarily exists. Q.E.D. Another proof.--The potentiality of non--existence is a negation of power, and contrariwise the potentiality of existence is a power, as is obvious. If, then, that which necessarily exists is nothing but finite beings, such finite beings are more powerful than a being absolutely infinite, which is obviously absurd; therefore, either nothing exists, or else a being absolutely infinite necessarily exists also. Now we exist either in ourselves, or in something else which necessarily exists (see Axiom. i. and Prop. vii.). Therefore a being absolutely infinite--in other words, God (Def. vi.)--necessarily exists. Q.E.D.",
+     "move": "Runs a reductio showing no cause annulling God's existence can be drawn either from God's own nature or from anything external, and adds that a being absolutely infinite must have infinite power of existing.",
+     "confidence": 0.95,
+     "similarity": 0.8216
+    },
+    {
+     "id": 313,
+     "author": "Baruch Spinoza",
+     "work": "Ethics",
+     "citation": "PROPOSITIONS.",
+     "text": "Proof.--A mode exists in something else, through which it must be conceived (Def. v.), that is (Prop. xv.), it exists solely in God, and solely through God can be conceived. If therefore a mode is conceived as necessarily existing and infinite, it must necessarily be inferred or perceived through some attribute of God, in so far as such attribute is conceived as expressing the infinity and necessity of existence, in other words (Def. viii.) eternity; that is, in so far as it is considered absolutely. A mode, therefore, which necessarily exists as infinite, must follow from the absolute nature of some attribute of God, either immediately (Prop. xxi.) or through the means of some modification, which follows from the absolute nature of the said attribute; that is (by Prop. xxii.), which exists necessarily and as infinite. PROP. XXIV. The essence of things produced by God does not involve existence. Proof.--This proposition is evident from Def. i. For that of which the nature (considered in itself) involves existence is self--caused, and exists by the sole necessity of its own nature. Corollary.--Hence it follows that God is not only the cause of things coming into existence, but also of their continuing in existence, that is, in scholastic phraseology, God is cause of the being of things (essendi rerum). For whether things exist, or do not exist, whenever we contemplate their essence, we see that it involves neither existence nor duration; consequently, it cannot be the cause of either the one or the other. God must be the sole cause, inasmuch as to him alone does existence appertain. (Prop. xiv. Coroll. i.) Q.E.D. PROP. XXV. God is the efficient cause not only of the existence of things, but also of their essence.",
+     "move": "Distinguishes God, whose nature involves existence and is self-caused, from produced things whose essence does not involve existence, making God the cause of both their coming to be and their continuing to be.",
+     "confidence": 0.55,
+     "similarity": 0.8165
     },
     {
      "id": 318,
@@ -197,17 +197,7 @@ window.APORIA_DATA = {
      "text": "Proof.--Whatsoever is, is in God (Prop. xv.). But God cannot be called a thing contingent. For (by Prop. xi.) he exists necessarily, and not contingently. Further, the modes of the divine nature follow therefrom necessarily, and not contingently (Prop. xvi.); and they thus follow, whether we consider the divine nature absolutely, or whether we consider it as in any way conditioned to act (Prop. xxvii.). Further, God is not only the cause of these modes, in so far as they simply exist (by Prop. xxiv, Coroll.), but also in so far as they are considered as conditioned for operating in a particular manner (Prop. xxvi.). If they be not conditioned by God (Prop. xxvi.), it is impossible, and not contingent, that they should condition themselves; contrariwise, if they be conditioned by God, it is impossible, and not contingent, that they should render themselves unconditioned. Wherefore all things are conditioned by the necessity of the divine nature, not only to exist, but also to exist and operate in a particular manner, and there is nothing that is contingent. Q.E.D. Note.--Before going any further, I wish here to explain, what we should understand by nature viewed as active (natura naturans), and nature viewed as passive (natura naturata). I say to explain, or rather call attention to it, for I think that, from what has been said, it is sufficiently clear, that by nature viewed as active we should understand that which is in itself, and is conceived through itself, or those attributes of substance, which express eternal and infinite essence, in other words (Prop. xiv., Coroll. i., and Prop. xvii., Coroll. ii) God, in so far as he is considered as a free cause.",
      "move": "Denies contingency anywhere by asserting God exists necessarily rather than contingently and that all modes follow necessarily from the divine nature.",
      "confidence": 0.75,
-     "similarity": 0.767
-    },
-    {
-     "id": 309,
-     "author": "Baruch Spinoza",
-     "work": "Ethics",
-     "citation": "PROPOSITIONS.",
-     "text": "Proof.--God (by Def. vi.) is substance, which (by Prop. xi.) necessarily exists, that is (by Prop. vii.) existence appertains to its nature, or (what is the same thing) follows from its definition; therefore, God is eternal (by Def. viii.). Further, by the attributes of God we must understand that which (by Def. iv.) expresses the essence of the divine substance--in other words, that which appertains to substance: that, I say, should be involved in the attributes of substance. Now eternity appertains to the nature of substance (as I have already shown in Prop. vii.); therefore, eternity must appertain to each of the attributes, and thus all are eternal. Q.E.D. Note.--This proposition is also evident from the manner in which (in Prop. xi.) I demonstrated the existence of God; it is evident, I repeat, from that proof, that the existence of God, like his essence, is an eternal truth. Further (in Prop. xix. of my \"Principles of the Cartesian Philosophy\"), I have proved the eternity of God, in another manner, which I need not here repeat. PROP. XX. The existence of God and his essence are one and the same. Proof.--God (by the last Prop.) and all his attributes are eternal, that is (by Def. viii.) each of his attributes expresses existence. Therefore the same attributes of God which explain his eternal essence, explain at the same time his eternal existence--in other words, that which constitutes God's essence constitutes at the same time his existence. Wherefore God's existence and God's essence are one and the same. Q.E.D. Coroll. I.--Hence it follows that God's existence, like his essence, is an eternal truth.",
-     "move": "Infers God's eternity from his necessary existence, holding that God's existence is an eternal truth and identical with his essence.",
-     "confidence": 0.9,
-     "similarity": 0.7669
+     "similarity": 0.8147
     }
    ],
    "against": [
@@ -219,7 +209,7 @@ window.APORIA_DATA = {
      "text": "It is pretended that the Deity is a necessarily existent being; and this necessity of his existence is attempted to be explained by asserting, that if we knew his whole essence or nature, we should perceive it to be as impossible for him not to exist, as for twice two not to be four. But it is evident that this can never happen, while our faculties remain the same as at present. It will still be possible for us, at any time, to conceive the non-existence of what we formerly conceived to exist; nor can the mind ever lie under a necessity of supposing any object to remain always in being; in the same manner as we lie under a necessity of always conceiving twice two to be four. The words, therefore, necessary existence, have no meaning; or, which is the same thing, none that is consistent.",
      "move": "Argues that since we can always conceive the non-existence of any being, the phrase 'necessary existence' has no consistent meaning, dissolving the a priori proof of a necessarily existent Deity.",
      "confidence": 0.7,
-     "similarity": 0.7915
+     "similarity": 0.8452
     },
     {
      "id": 1614,
@@ -229,7 +219,7 @@ window.APORIA_DATA = {
      "text": "In short, I repeat the question: Is the world, considered in general, and as it appears to us in this life, different from what a man, or such a limited being, would, beforehand, expect from a very powerful, wise, and benevolent Deity? It must be strange prejudice to assert the contrary. And from thence I conclude, that however consistent the world may be, allowing certain suppositions and conjectures, with the idea of such a Deity, it can never afford us an inference concerning his existence. The consistence is not absolutely denied, only the inference. Conjectures, especially where infinity is excluded from the Divine attributes, may perhaps be sufficient to prove a consistence, but can never be foundations for any inference. There seem to be four circumstances, on which depend all, or the greatest part of the ills, that molest sensible creatures; and it is not impossible but all these circumstances may be necessary and unavoidable. We know so little beyond common life, or even of common life, that, with regard to the economy of a universe, there is no conjecture, however wild, which may not be just; nor any one, however plausible, which may not be erroneous. All that belongs to human understanding, in this deep ignorance and obscurity, is to be sceptical, or at least cautious, and not to admit of any hypothesis whatever, much less of any which is supported by no appearance of probability. Now, this I assert to be the case with regard to all the causes of evil, and the circumstances on which it depends. None of them appear to human reason in the least degree necessary or unavoidable; nor can we suppose them such, without the utmost license of imagination.",
      "move": "Argues from the world's mixture of ills that, while consistency with a benevolent Deity is not denied, the world affords no inference to his existence, so scepticism is the only warranted attitude.",
      "confidence": 0.65,
-     "similarity": 0.768
+     "similarity": 0.8236
     }
    ],
    "nuance": [
@@ -241,17 +231,7 @@ window.APORIA_DATA = {
      "text": "When the man of affairs, the artist, or the man of science fails, he is not rebutted. He tries again. He says the impressions of sense _must_ give way, _must_ be reduced to the desiderated form.[3] They all postulate in the interests of their volitional nature a harmony between the latter and the nature of things. The theologian does no more. And the reflex doctrine of the mind's structure, though all theology should as yet have failed of its endeavor, could but confess that the endeavor itself at least obeyed in form the mind's most necessary law.[4] Now for the question I asked above: What kind of a being would God be if he did exist? The word 'God' has come to mean many things in the history {121} of human thought, from Venus and Jupiter to the 'Idee' which figures in the pages of Hegel. Even the laws of physical nature have, in these positivistic times, been held worthy of divine honor and presented as the only fitting object of our reverence.[5] Of course, if our discussion is to bear any fruit, we must mean something more definite than this. We must not call any object of our loyalty a 'God' without more ado, simply because to awaken our loyalty happens to be one of God's functions. He must have some intrinsic characteristics of his own besides; and theism must mean the faith of that man who believes that the object of _his_ loyalty has those other attributes, negative or positive, as the case may be.",
      "move": "Sets aside whether God exists to ask instead what kind of being God would be if he did, insisting 'God' must carry definite intrinsic attributes rather than naming any object of loyalty.",
      "confidence": 0.8,
-     "similarity": 0.769
-    },
-    {
-     "id": 354,
-     "author": "Baruch Spinoza",
-     "work": "Ethics",
-     "citation": "PROPOSITIONS",
-     "text": "Corollary.--Hence, so long as particular things do not exist, except in so far as they are comprehended in the attributes of God, their representations in thought or ideas do not exist, except in so far as the infinite idea of God exists; and when particular things are said to exist, not only in so far as they are involved in the attributes of God, but also in so far as they are said to continue, their ideas will also involve existence, through which they are said to continue. Note.--If anyone desires an example to throw more light on this question, I shall, I fear, not be able to give him any, which adequately explains the thing of which I here speak, inasmuch as it is unique; however, I will endeavour to illustrate it as far as possible. The nature of a circle is such that if any number of straight lines intersect within it, the rectangles formed by their segments will be equal to one another; thus, infinite equal rectangles are contained in a circle. Yet none of these rectangles can be said to exist, except in so far as the circle exists; nor can the idea of any of these rectangles be said to exist, except in so far as they are comprehended in the idea of the circle. Let us grant that, from this infinite number of rectangles, two only exist. The ideas of these two not only exist, in so far as they are contained in the idea of the circle, but also as they involve the existence of those rectangles; wherefore they are distinguished from the remaining ideas of the remaining rectangles.",
-     "move": "Explains, via the analogy of rectangles contained in a circle, how the ideas of particular things exist only so far as the infinite idea of God exists, without arguing the question of God's existence.",
-     "confidence": 0.6,
-     "similarity": 0.7672
+     "similarity": 0.8199
     },
     {
      "id": 359,
@@ -261,7 +241,27 @@ window.APORIA_DATA = {
      "text": "However, I pass over this point. My intention here was only to give a reason for not saying, that that, without which a thing cannot be or be conceived, belongs to the essence of that thing: individual things cannot be or be conceived without God, yet God does not appertain to their essence. I said that \"I considered as belonging to the essence of a thing that, which being given, the thing is necessarily given also, and which being removed, the thing is necessarily removed also; or that without which the thing, and which itself without the thing can neither be nor be conceived.\" (II. Def. ii.) PROP. XI. The first element, which constitutes the actual being of the human mind, is the idea of some particular thing actually existing. Proof.--The essence of man (by the Coroll. of the last Prop.) is constituted by certain modes of the attributes of God, namely (by II. Ax. ii.), by the modes of thinking, of all which (by II. Ax. iii.) the idea is prior in nature, and, when the idea is given, the other modes (namely, those of which the idea is prior in nature) must be in the same individual (by the same Axiom). Therefore an idea is the first element constituting the human mind. But not the idea of a non--existent thing, for then (II. viii. Coroll.) the idea itself cannot be said to exist; it must therefore be the idea of something actually existing. But not of an infinite thing. For an infinite thing (I. xxi., xxii.), must always necessarily exist; this would (by II. Ax. i.) involve an absurdity. Therefore the first element, which constitutes the actual being of the human mind, is the idea of something actually existing. Q.E.D.",
      "move": "Qualifies the dependence relation, granting that individual things cannot be or be conceived without God while denying that God belongs to their essence, and turns to what constitutes the human mind.",
      "confidence": 0.65,
-     "similarity": 0.7601
+     "similarity": 0.8197
+    },
+    {
+     "id": 354,
+     "author": "Baruch Spinoza",
+     "work": "Ethics",
+     "citation": "PROPOSITIONS",
+     "text": "Corollary.--Hence, so long as particular things do not exist, except in so far as they are comprehended in the attributes of God, their representations in thought or ideas do not exist, except in so far as the infinite idea of God exists; and when particular things are said to exist, not only in so far as they are involved in the attributes of God, but also in so far as they are said to continue, their ideas will also involve existence, through which they are said to continue. Note.--If anyone desires an example to throw more light on this question, I shall, I fear, not be able to give him any, which adequately explains the thing of which I here speak, inasmuch as it is unique; however, I will endeavour to illustrate it as far as possible. The nature of a circle is such that if any number of straight lines intersect within it, the rectangles formed by their segments will be equal to one another; thus, infinite equal rectangles are contained in a circle. Yet none of these rectangles can be said to exist, except in so far as the circle exists; nor can the idea of any of these rectangles be said to exist, except in so far as they are comprehended in the idea of the circle. Let us grant that, from this infinite number of rectangles, two only exist. The ideas of these two not only exist, in so far as they are contained in the idea of the circle, but also as they involve the existence of those rectangles; wherefore they are distinguished from the remaining ideas of the remaining rectangles.",
+     "move": "Explains, via the analogy of rectangles contained in a circle, how the ideas of particular things exist only so far as the infinite idea of God exists, without arguing the question of God's existence.",
+     "confidence": 0.6,
+     "similarity": 0.8151
+    },
+    {
+     "id": 1437,
+     "author": "Immanuel Kant",
+     "work": "The Critique of Practical Reason",
+     "citation": "VII. How is it possible to conceive an Extension of Pure",
+     "text": "There is then a knowledge of God indeed, but only for practical purposes, and, if we attempt to extend it to a theoretical knowledge, we find an understanding that has intuitions, not thoughts, a will that is directed to objects on the existence of which its satisfaction does not in the least depend (not to mention the transcendental predicates, as, for example, a magnitude of existence, that is duration, which, however, is not in time, the only possible means we have of conceiving existence as magnitude). Now these are all attributes of which we can form no conception that would help to the knowledge of the object, and we learn from this that they can never be used for a theory of supersensible beings, so that on this side they are quite incapable of being the foundation of a speculative knowledge, and their use is limited simply to the practice of the moral law.",
+     "move": "Restricts knowledge of God to practical purposes: theoretical extension yields attributes we cannot conceive.",
+     "confidence": 0.7,
+     "similarity": 0.8132
     }
    ]
   },
@@ -271,14 +271,14 @@ window.APORIA_DATA = {
    "blurb": "Hume wrote both sides of this one himself, as two characters in one dialogue.",
    "for": [
     {
-     "id": 1609,
+     "id": 1515,
      "author": "David Hume",
      "work": "Dialogues Concerning Natural Religion",
-     "citation": "PART 10",
-     "text": "Here, CLEANTHES, I find myself at ease in my argument. Here I triumph. Formerly, when we argued concerning the natural attributes of intelligence and design, I needed all my sceptical and metaphysical subtlety to elude your grasp. In many views of the universe, and of its parts, particularly the latter, the beauty and fitness of final causes strike us with such irresistible force, that all objections appear (what I believe they really are) mere cavils and sophisms; nor can we then imagine how it was ever possible for us to repose any weight on them. But there is no view of human life, or of the condition of mankind, from which, without the greatest violence, we can infer the moral attributes, or learn that infinite benevolence, conjoined with infinite power and infinite wisdom, which we must discover by the eyes of faith alone. It is your turn now to tug the labouring oar, and to support your philosophical subtleties against the dictates of plain reason and experience.",
-     "move": "Concedes that the beauty and fitness of final causes carry irresistible force for the natural attributes of intelligence and design, while denying that moral attributes can be inferred from the condition of mankind.",
-     "confidence": 0.55,
-     "similarity": 0.7328
+     "citation": "PART 2",
+     "text": "Not to lose any time in circumlocutions, said CLEANTHES, addressing himself to DEMEA, much less in replying to the pious declamations of PHILO; I shall briefly explain how I conceive this matter. Look round the world: contemplate the whole and every part of it: You will find it to be nothing but one great machine, subdivided into an infinite number of lesser machines, which again admit of subdivisions to a degree beyond what human senses and faculties can trace and explain. All these various machines, and even their most minute parts, are adjusted to each other with an accuracy which ravishes into admiration all men who have ever contemplated them. The curious adapting of means to ends, throughout all nature, resembles exactly, though it much exceeds, the productions of human contrivance; of human designs, thought, wisdom, and intelligence. Since, therefore, the effects resemble each other, we are led to infer, by all the rules of analogy, that the causes also resemble; and that the Author of Nature is somewhat similar to the mind of man, though possessed of much larger faculties, proportioned to the grandeur of the work which he has executed. By this argument a posteriori, and by this argument alone, do we prove at once the existence of a Deity, and his similarity to human mind and intelligence.",
+     "move": "States the design argument outright — the world is one great machine of nested machines whose adapting of means to ends resembles human contrivance, so by the rules of analogy its cause resembles human mind.",
+     "confidence": 0.95,
+     "similarity": 0.784
     }
    ],
    "against": [
@@ -288,9 +288,19 @@ window.APORIA_DATA = {
      "work": "Dialogues Concerning Natural Religion",
      "citation": "PART 2",
      "text": "But can you think, CLEANTHES, that your usual phlegm and philosophy have been preserved in so wide a step as you have taken, when you compared to the universe houses, ships, furniture, machines, and, from their similarity in some circumstances, inferred a similarity in their causes? Thought, design, intelligence, such as we discover in men and other animals, is no more than one of the springs and principles of the universe, as well as heat or cold, attraction or repulsion, and a hundred others, which fall under daily observation. It is an active cause, by which some particular parts of nature, we find, produce alterations on other parts. But can a conclusion, with any propriety, be transferred from parts to the whole? Does not the great disproportion bar all comparison and inference? From observing the growth of a hair, can we learn any thing concerning the generation of a man? Would the manner of a leaf's blowing, even though perfectly known, afford us any instruction concerning the vegetation of a tree? But, allowing that we were to take the operations of one part of nature upon another, for the foundation of our judgement concerning the origin of the whole, (which never can be admitted,) yet why select so minute, so weak, so bounded a principle, as the reason and design of animals is found to be upon this planet? What peculiar privilege has this little agitation of the brain which we call thought, that we must thus make it the model of the whole universe? Our partiality in our own favour does indeed present it on all occasions; but sound philosophy ought carefully to guard against so natural an illusion.",
-     "move": "Attacks the design analogy as an illegitimate leap from a part to the whole, asking what privilege the 'little agitation of the brain' called thought has to serve as the model of the universe.",
+     "move": "Attacks the design analogy as an illegitimate transfer from a part to the whole, asking what privilege the little agitation of the brain called thought has to be the model of the entire universe.",
      "confidence": 0.9,
-     "similarity": 0.7285
+     "similarity": 0.7971
+    },
+    {
+     "id": 1520,
+     "author": "David Hume",
+     "work": "Dialogues Concerning Natural Religion",
+     "citation": "PART 2",
+     "text": "Were a man to abstract from every thing which he knows or has seen, he would be altogether incapable, merely from his own ideas, to determine what kind of scene the universe must be, or to give the preference to one state or situation of things above another. For as nothing which he clearly conceives could be esteemed impossible or implying a contradiction, every chimera of his fancy would be upon an equal footing; nor could he assign any just reason why he adheres to one idea or system, and rejects the others which are equally possible. Again; after he opens his eyes, and contemplates the world as it really is, it would be impossible for him at first to assign the cause of any one event, much less of the whole of things, or of the universe. He might set his fancy a rambling; and she might bring him in an infinite variety of reports and representations. These would all be possible; but being all equally possible, he would never of himself give a satisfactory account for his preferring one of them to the rest. Experience alone can point out to him the true cause of any phenomenon.",
+     "move": "Argues that unaided reflection leaves every cosmology equally possible and that on opening his eyes a man still could not assign the cause of any one event, much less of the universe, since experience alone points out true causes.",
+     "confidence": 0.6,
+     "similarity": 0.7849
     },
     {
      "id": 1567,
@@ -298,19 +308,9 @@ window.APORIA_DATA = {
      "work": "Dialogues Concerning Natural Religion",
      "citation": "PART 7",
      "text": "Our friend CLEANTHES, replied PHILO, as you have heard, asserts, that since no question of fact can be proved otherwise than by experience, the existence of a Deity admits not of proof from any other medium. The world, says he, resembles the works of human contrivance; therefore its cause must also resemble that of the other. Here we may remark, that the operation of one very small part of nature, to wit man, upon another very small part, to wit that inanimate matter lying within his reach, is the rule by which CLEANTHES judges of the origin of the whole; and he measures objects, so widely disproportioned, by the same individual standard. But to waive all objections drawn from this topic, I affirm, that there are other parts of the universe (besides the machines of human invention) which bear still a greater resemblance to the fabric of the world, and which, therefore, afford a better conjecture concerning the universal origin of this system. These parts are animals and vegetables. The world plainly resembles more an animal or a vegetable, than it does a watch or a knitting-loom. Its cause, therefore, it is more probable, resembles the cause of the former. The cause of the former is generation or vegetation. The cause, therefore, of the world, we may infer to be something similar or analogous to generation or vegetation. But how is it conceivable, said DEMEA, that the world can arise from any thing similar to vegetation or generation?",
-     "move": "Turns the analogy against itself: the world resembles an animal or vegetable more than a watch, so its cause is better conjectured to be generation or vegetation than contrivance.",
+     "move": "Turns the analogy against itself: the world resembles an animal or vegetable more than a watch or knitting-loom, so its cause is better conjectured to be generation or vegetation than contrivance.",
      "confidence": 0.85,
-     "similarity": 0.7277
-    },
-    {
-     "id": 236,
-     "author": "David Hume",
-     "work": "An Enquiry Concerning Human Understanding",
-     "citation": "SECTION XI.",
-     "text": "I leave it to your own reflection to pursue the consequences of this principle. I shall just observe, that, as the antagonists of Epicurus always suppose the universe, an effect quite singular and unparalleled, to be the proof of a Deity, a cause no less singular and unparalleled; your reasonings, upon that supposition, seem, at least, to merit our attention. There is, I own, some difficulty, how we can ever return from the cause to the effect, and, reasoning from our ideas of the former, infer any alteration on the latter, or any addition to it.",
-     "move": "Presses that the universe is a singular and unparalleled effect, so no return from the supposed cause back to the effect can be justified.",
-     "confidence": 0.55,
-     "similarity": 0.7192
+     "similarity": 0.7841
     },
     {
      "id": 1558,
@@ -319,8 +319,8 @@ window.APORIA_DATA = {
      "citation": "PART 6",
      "text": "Now, if we survey the universe, so far as it falls under our knowledge, it bears a great resemblance to an animal or organised body, and seems actuated with a like principle of life and motion. A continual circulation of matter in it produces no disorder: a continual waste in every part is incessantly repaired: the closest sympathy is perceived throughout the entire system: and each part or member, in performing its proper offices, operates both to its own preservation and to that of the whole. The world, therefore, I infer, is an animal; and the Deity is the SOUL of the world, actuating it, and actuated by it. You have too much learning, CLEANTHES, to be at all surprised at this opinion, which, you know, was maintained by almost all the Theists of antiquity, and chiefly prevails in their discourses and reasonings. For though, sometimes, the ancient philosophers reason from final causes, as if they thought the world the workmanship of God; yet it appears rather their favourite notion to consider it as his body, whose organisation renders it subservient to him. And it must be confessed, that, as the universe resembles more a human body than it does the works of human art and contrivance, if our limited analogy could ever, with any propriety, be extended to the whole of nature, the inference seems juster in favour of the ancient than the modern theory.",
      "move": "Replaces the artifact analogy with an organic one — the universe circulates, repairs itself, and sympathizes like a body — inferring that the world is an animal and the Deity its soul rather than its external workman.",
-     "confidence": 0.75,
-     "similarity": 0.715
+     "confidence": 0.68,
+     "similarity": 0.7773
     }
    ],
    "nuance": [
@@ -330,19 +330,19 @@ window.APORIA_DATA = {
      "work": "An Enquiry Concerning Human Understanding",
      "citation": "SECTION XI.",
      "text": "The same rule holds, whether the cause assigned be brute unconscious matter, or a rational intelligent being. If the cause be known only by the effect, we never ought to ascribe to it any qualities, beyond what are precisely requisite to produce the effect: Nor can we, by any rules of just reasoning, return back from the cause, and infer other effects from it, beyond those by which alone it is known to us. No one, merely from the sight of one of Zeuxis's pictures, could know, that he was also a statuary or architect, and was an artist no less skilful in stone and marble than in colours. The talents and taste, displayed in the particular work before us; these we may safely conclude the workman to be possessed of. The cause must be proportioned to the effect; and if we exactly and precisely proportion it, we shall never find in it any qualities, that point farther, or afford an inference concerning any other design or performance. Such qualities must be somewhat beyond what is merely requisite for producing the effect, which we examine.",
-     "move": "Applies the proportionality rule — a cause known only through its effect may be credited with nothing beyond what the effect requires — using Zeuxis's picture to limit rather than refute the inference from design.",
+     "move": "Applies the proportionality rule — a cause known only by its effect may be credited with nothing beyond what the effect requires — using Zeuxis's picture to limit rather than refute the inference to an intelligent cause.",
      "confidence": 0.6,
-     "similarity": 0.7394
+     "similarity": 0.8062
     },
     {
-     "id": 1370,
-     "author": "Immanuel Kant",
-     "work": "The Critique of Practical Reason",
-     "citation": "IV. MODALITY.",
-     "text": "{BOOK_1|CHAPTER_3 ^paragraph 50} The above-mentioned difficulty is resolved briefly and clearly as follows: If existence in time is a mere sensible mode of representation belonging to thinking beings in the world and consequently does not apply to them as things in themselves, then the creation of these beings is a creation of things in themselves, since the notion of creation does not belong to the sensible form of representation of existence or to causality, but can only be referred to noumena. Consequently, when I say of beings in the world of sense that they are created, I so far regard them as noumena. As it would be a contradiction, therefore, to say that God is a creator of appearances, so also it is a contradiction to say that as creator He is the cause of actions in the world of sense, and therefore as appearances, although He is the cause of the existence of the acting beings (which are noumena). If now it is possible to affirm freedom in spite of the natural mechanism of actions as appearances (by regarding existence in time as something that belongs only to appearances, not to things in themselves), then the circumstance that the acting beings are creatures cannot make the slightest difference, since creation concerns their supersensible and not their sensible existence, and, therefore, cannot be regarded as the determining principle of the appearances. It would be quite different if the beings in the world as things in themselves existed in time, since in that case the creator of substance would be at the same time the author of the whole mechanism of this substance.",
-     "move": "Locates creation among noumena rather than appearances in order to reconcile divine creation with freedom, never addressing whether order in nature proves a designer.",
-     "confidence": 0.75,
-     "similarity": 0.7376
+     "id": 1609,
+     "author": "David Hume",
+     "work": "Dialogues Concerning Natural Religion",
+     "citation": "PART 10",
+     "text": "Here, CLEANTHES, I find myself at ease in my argument. Here I triumph. Formerly, when we argued concerning the natural attributes of intelligence and design, I needed all my sceptical and metaphysical subtlety to elude your grasp. In many views of the universe, and of its parts, particularly the latter, the beauty and fitness of final causes strike us with such irresistible force, that all objections appear (what I believe they really are) mere cavils and sophisms; nor can we then imagine how it was ever possible for us to repose any weight on them. But there is no view of human life, or of the condition of mankind, from which, without the greatest violence, we can infer the moral attributes, or learn that infinite benevolence, conjoined with infinite power and infinite wisdom, which we must discover by the eyes of faith alone. It is your turn now to tug the labouring oar, and to support your philosophical subtleties against the dictates of plain reason and experience.",
+     "move": "Concedes that the beauty and fitness of final causes make objections to intelligence and design look like mere cavils, while denying that any view of human life lets us infer the creator's moral attributes.",
+     "confidence": 0.6,
+     "similarity": 0.7975
     },
     {
      "id": 1442,
@@ -350,19 +350,19 @@ window.APORIA_DATA = {
      "work": "The Critique of Practical Reason",
      "citation": "VII. How is it possible to conceive an Extension of Pure",
      "text": "As we can know only a small part of this world, and can still less compare it with all possible worlds, we may indeed from its order, design, and greatness, infer a wise, good, powerful, etc., Author of it, but not that He is all-wise, all-good, all-powerful, etc. It may indeed very well be granted that we should be justified in supplying this inevitable defect by a legitimate and reasonable hypothesis; namely, that when wisdom, goodness, etc, are displayed in all the parts that offer themselves to our nearer knowledge, it is just the same in all the rest, and that it would therefore be reasonable to ascribe all possible perfections to the Author of the world, but these are not strict logical inferences in which we can pride ourselves on our insight, but only permitted conclusions in which we may be indulged and which require further recommendation before we can make use of them. On the path of empirical inquiry then (physics), the conception of God remains always a conception of the perfection of the First Being not accurately enough determined to be held adequate to the conception of Deity. (With metaphysic in its transcendental part nothing whatever can be accomplished.)",
-     "move": "Grants that order and design permit inferring a wise and powerful Author, but denies that the inference reaches all-wisdom or all-power, calling such extensions permitted conclusions rather than strict logical inferences.",
-     "confidence": 0.6,
-     "similarity": 0.7255
+     "move": "Grants that order, design, and greatness let us infer a wise, good, and powerful Author, but denies the inference reaches all-wisdom or all-power, calling such extensions permitted conclusions rather than strict logical inferences.",
+     "confidence": 0.7,
+     "similarity": 0.7829
     },
     {
-     "id": 1520,
+     "id": 1518,
      "author": "David Hume",
      "work": "Dialogues Concerning Natural Religion",
      "citation": "PART 2",
-     "text": "Were a man to abstract from every thing which he knows or has seen, he would be altogether incapable, merely from his own ideas, to determine what kind of scene the universe must be, or to give the preference to one state or situation of things above another. For as nothing which he clearly conceives could be esteemed impossible or implying a contradiction, every chimera of his fancy would be upon an equal footing; nor could he assign any just reason why he adheres to one idea or system, and rejects the others which are equally possible. Again; after he opens his eyes, and contemplates the world as it really is, it would be impossible for him at first to assign the cause of any one event, much less of the whole of things, or of the universe. He might set his fancy a rambling; and she might bring him in an infinite variety of reports and representations. These would all be possible; but being all equally possible, he would never of himself give a satisfactory account for his preferring one of them to the rest. Experience alone can point out to him the true cause of any phenomenon.",
-     "move": "Argues that a priori reflection alone leaves every conceivable cosmology equally possible, so that experience alone can point out the true cause of any phenomenon — without saying what experience yields about the universe's cause.",
-     "confidence": 0.55,
-     "similarity": 0.7225
+     "text": "If we see a house, CLEANTHES, we conclude, with the greatest certainty, that it had an architect or builder; because this is precisely that species of effect which we have experienced to proceed from that species of cause. But surely you will not affirm, that the universe bears such a resemblance to a house, that we can with the same certainty infer a similar cause, or that the analogy is here entire and perfect. The dissimilitude is so striking, that the utmost you can here pretend to is a guess, a conjecture, a presumption concerning a similar cause; and how that pretension will be received in the world, I leave you to consider. It would surely be very ill received, replied CLEANTHES; and I should be deservedly blamed and detested, did I allow, that the proofs of a Deity amounted to no more than a guess or conjecture. But is the whole adjustment of means to ends in a house and in the universe so slight a resemblance? The economy of final causes? The order, proportion, and arrangement of every part? Steps of a stair are plainly contrived, that human legs may use them in mounting; and this inference is certain and infallible. Human legs are also contrived for walking and mounting; and this inference, I allow, is not altogether so certain, because of the dissimilarity which you remark; but does it, therefore, deserve the name only of presumption or conjecture?",
+     "move": "Stages the dispute over the analogy's strength: the house comparison is pressed as yielding at most a guess or conjecture, and answered by appeal to the economy of final causes and the contrivance of stairs for legs.",
+     "confidence": 0.5,
+     "similarity": 0.7828
     },
     {
      "id": 215,
@@ -370,19 +370,19 @@ window.APORIA_DATA = {
      "work": "An Enquiry Concerning Human Understanding",
      "citation": "SECTION XI.",
      "text": "105. You then, who are my accusers, have acknowledged, that the chief or sole argument for a divine existence (which I never questioned) is derived from the order of nature; where there appear such marks of intelligence and design, that you think it extravagant to assign for its cause, either chance, or the blind and unguided force of matter. You allow, that this is an argument drawn from effects to causes. From the order of the work, you infer, that there must have been project and forethought in the workman. If you cannot make out this point, you allow, that your conclusion fails; and you pretend not to establish the conclusion in a greater latitude than the phenomena of nature will justify. These are your concessions. I desire you to mark the consequences. When we infer any particular cause from an effect, we must proportion the one to the other, and can never be allowed to ascribe to the cause any qualities, but what are exactly sufficient to produce the effect. A body of ten ounces raised in any scale may serve as a proof, that the counterbalancing weight exceeds ten ounces; but can never afford a reason that it exceeds a hundred. If the cause, assigned for any effect, be not sufficient to produce it, we must either reject that cause, or add to it such qualities as will give it a just proportion to the effect. But if we ascribe to it farther qualities, or affirm it capable of producing other effects, we can only indulge the licence of conjecture, and arbitrarily suppose the existence of qualities and energies, without reason or authority.",
-     "move": "Accepts that the sole argument for a deity runs from the order of nature to its cause, then restricts it by the ten-ounce weight analogy: only qualities exactly sufficient to produce the effect may be ascribed to the cause.",
-     "confidence": 0.55,
-     "similarity": 0.7188
+     "move": "Accepts that the sole argument for a divine existence runs from the order of nature to its cause, then constrains it with the ten-ounce weight analogy so that only qualities exactly sufficient to produce the effect may be ascribed.",
+     "confidence": 0.6,
+     "similarity": 0.7806
     },
     {
-     "id": 396,
-     "author": "Baruch Spinoza",
-     "work": "Ethics",
-     "citation": "POSTULATES",
-     "text": "Proof.--This proposition is self--evident. For when we say that an idea in the human mind follows from ideas which are therein adequate, we say, in other words (II. xi. Coroll.), that an idea is in the divine intellect, whereof God is the cause, not in so far as he is infinite, nor in so far as he is affected by the ideas of very many particular things, but only in so far as he constitutes the essence of the human mind.",
-     "move": "Derives adequate ideas in the human mind from God considered as constituting that mind's essence, a claim about ideas and the divine intellect that never touches cosmic design.",
-     "confidence": 0.7,
-     "similarity": 0.7175
+     "id": 2838,
+     "author": "René Descartes",
+     "work": "Discourse on the Method",
+     "citation": "PART V",
+     "text": "Besides, I have pointed out what are the laws of nature; and, with no other principle upon which to found my reasonings except the infinite perfection of God, I endeavored to demonstrate all those about which there could be any room for doubt, and to prove that they are such, that even if God had created more worlds, there could have been none in which these laws were not observed. Thereafter, I showed how the greatest part of the matter of this chaos must, in accordance with these laws, dispose and arrange itself in such a way as to present the appearance of heavens; how in the meantime some of its parts must compose an earth and some planets and comets, and others a sun and fixed stars. And, making a digression at this stage on the subject of light, I expounded at considerable length what the nature of that light must be which is found in the sun and the stars, and how thence in an instant of time it traverses the immense spaces of the heavens, and how from the planets and comets it is reflected towards the earth. To this I likewise added much respecting the substance, the situation, the motions, and all the different qualities of these heavens and stars; so that I thought I had said enough respecting them to show that there is nothing observable in the heavens or stars of our system that must not, or at least may not appear precisely alike in those of the system which I described.",
+     "move": "Reverses the direction of inference, deriving the laws of nature from God's infinite perfection and then showing how matter in chaos would arrange itself into heavens, earth, and stars by those laws alone.",
+     "confidence": 0.55,
+     "similarity": 0.7806
     },
     {
      "id": 1654,
@@ -390,9 +390,9 @@ window.APORIA_DATA = {
      "work": "Dialogues Concerning Natural Religion",
      "citation": "PART 12",
      "text": "If the whole of Natural Theology, as some people seem to maintain, resolves itself into one simple, though somewhat ambiguous, at least undefined proposition, That the cause or causes of order in the universe probably bear some remote analogy to human intelligence: If this proposition be not capable of extension, variation, or more particular explication: If it affords no inference that affects human life, or can be the source of any action or forbearance: And if the analogy, imperfect as it is, can be carried no further than to the human intelligence, and cannot be transferred, with any appearance of probability, to the other qualities of the mind; if this really be the case, what can the most inquisitive, contemplative, and religious man do more than give a plain, philosophical assent to the proposition, as often as it occurs, and believe that the arguments on which it is established exceed the objections which lie against it? Some astonishment, indeed, will naturally arise from the greatness of the object; some melancholy from its obscurity; some contempt of human reason, that it can give no solution more satisfactory with regard to so extraordinary and magnificent a question. But believe me, CLEANTHES, the most natural sentiment which a well-disposed mind will feel on this occasion, is a longing desire and expectation that Heaven would be pleased to dissipate, at least alleviate, this profound ignorance, by affording some more particular revelation to mankind, and making discoveries of the nature, attributes, and operations of the Divine object of our faith.",
-     "move": "Reduces natural theology to the undefined proposition that the cause of order bears some remote analogy to human intelligence, allowing only a plain philosophical assent that yields no further inference or practical consequence.",
-     "confidence": 0.7,
-     "similarity": 0.7164
+     "move": "Reduces natural theology to the undefined proposition that the cause of order probably bears some remote analogy to human intelligence, allowing only a plain philosophical assent that supports no further inference or action.",
+     "confidence": 0.75,
+     "similarity": 0.7785
     }
    ]
   },
@@ -407,9 +407,9 @@ window.APORIA_DATA = {
      "work": "The Critique of Practical Reason",
      "citation": "IV. MODALITY.",
      "text": "While the moral law, therefore, is a formal determining principle of action by practical pure reason, and is moreover a material though only objective determining principle of the objects of action as called good and evil, it is also a subjective determining principle, that is, a motive to this action, inasmuch as it has influence on the morality of the subject and produces a feeling conducive to the influence of the law on the will. There is here in the subject no antecedent feeling tending to morality. For this is impossible, since every feeling is sensible, and the motive of moral intention must be free from all sensible conditions. On the contrary, while the sensible feeling which is at the bottom of all our inclinations is the condition of that impression which we call respect, the cause that determines it lies in the pure practical reason; and this impression therefore, on account of its origin, must be called, not a pathological but a practical effect. For by the fact that the conception of the moral law deprives self-love of its influence, and self-conceit of its illusion, it lessens the obstacle to pure practical reason and produces the conception of the superiority of its objective law to the impulses of the sensibility; and thus, by removing the counterpoise, it gives relatively greater weight to the law in the judgement of reason (in the case of a will affected by the aforesaid impulses).",
-     "move": "Locates the moral law's determining ground in pure practical reason rather than any antecedent sensible feeling, so that respect is a practical effect of an objective law superior to sensibility.",
-     "confidence": 0.72,
-     "similarity": 0.7836
+     "move": "Locates the moral law's determining ground in pure practical reason rather than any antecedent sensible feeling, so respect is a practical effect of an objective law superior to the impulses of sensibility.",
+     "confidence": 0.7,
+     "similarity": 0.8373
     },
     {
      "id": 2443,
@@ -417,29 +417,9 @@ window.APORIA_DATA = {
      "work": "Fundamental Principles of the Metaphysic of Morals",
      "citation": "TO THE METAPHYSIC OF MORALS",
      "text": "Morality consists then in the reference of all action to the legislation which alone can render a kingdom of ends possible. This legislation must be capable of existing in every rational being and of emanating from his will, so that the principle of this will is never to act on any maxim which could not without contradiction be also a universal law and, accordingly, always so to act that the will could at the same time regard itself as giving in its maxims universal laws. If now the maxims of rational beings are not by their own nature coincident with this objective principle, then the necessity of acting on it is called practical necessitation, i.e., duty. Duty does not apply to the sovereign in the kingdom of ends, but it does to every member of it and to all in the same degree. The practical necessity of acting on this principle, i.e., duty, does not rest at all on feelings, impulses, or inclinations, but solely on the relation of rational beings to one another, a relation in which the will of a rational being must always be regarded as legislative, since otherwise it could not be conceived as an end in itself. Reason then refers every maxim of the will, regarding it as legislating universally, to every other will and also to every action towards oneself; and this not on account of any other practical motive or any future advantage, but from the idea of the dignity of a rational being, obeying no law but that which he himself also gives.",
-     "move": "Grounds morality in an objective principle of universalizable maxims legislated by rational beings, with duty resting solely on that relation and not on feelings, impulses, or inclinations.",
-     "confidence": 0.8,
-     "similarity": 0.7657
-    },
-    {
-     "id": 2402,
-     "author": "Immanuel Kant",
-     "work": "Fundamental Principles of the Metaphysic of Morals",
-     "citation": "TO THE METAPHYSIC OF MORALS",
-     "text": "In this way, although for its application to man morality has need of anthropology, yet, in the first instance, we must treat it independently as pure philosophy, i.e., as metaphysic, complete in itself (a thing which in such distinct branches of science is easily done); knowing well that unless we are in possession of this, it would not only be vain to determine the moral element of duty in right actions for purposes of speculative criticism, but it would be impossible to base morals on their genuine principles, even for common practical purposes, especially of moral instruction, so as to produce pure moral dispositions, and to engraft them on men's minds to the promotion of the greatest possible good in the world.",
-     "move": "Insists morality must first be treated as pure philosophy complete in itself, independent of anthropology, since otherwise morals could not be based on their genuine principles.",
-     "confidence": 0.74,
-     "similarity": 0.7652
-    },
-    {
-     "id": 2445,
-     "author": "Immanuel Kant",
-     "work": "Fundamental Principles of the Metaphysic of Morals",
-     "citation": "TO THE METAPHYSIC OF MORALS",
-     "text": "Now morality is the condition under which alone a rational being can be an end in himself, since by this alone is it possible that he should be a legislating member in the kingdom of ends. Thus morality, and humanity as capable of it, is that which alone has dignity. Skill and diligence in labour have a market value; wit, lively imagination, and humour, have fancy value; on the other hand, fidelity to promises, benevolence from principle (not from instinct), have an intrinsic worth. Neither nature nor art contains anything which in default of these it could put in their place, for their worth consists not in the effects which spring from them, not in the use and advantage which they secure, but in the disposition of mind, that is, the maxims of the will which are ready to manifest themselves in such actions, even though they should not have the desired effect. These actions also need no recommendation from any subjective taste or sentiment, that they may be looked on with immediate favour and satisfaction: they need no immediate propension or feeling for them; they exhibit the will that performs them as an object of an immediate respect, and nothing but reason is required to impose them on the will; not to flatter it into them, which, in the case of duties, would be a contradiction. This estimation therefore shows that the worth of such a disposition is dignity, and places it infinitely above all value, with which it cannot for a moment be brought into comparison or competition without as it were violating its sanctity.",
-     "move": "Contrasts the intrinsic worth and dignity of moral disposition with market and fancy value, holding that such actions need no recommendation from subjective taste or sentiment and require only reason.",
-     "confidence": 0.78,
-     "similarity": 0.7651
+     "move": "Grounds morality in an objective principle of universalizable maxims legislated by every rational will, with duty resting solely on the relation of rational beings and not at all on feelings, impulses, or inclinations.",
+     "confidence": 0.85,
+     "similarity": 0.8363
     },
     {
      "id": 1400,
@@ -447,31 +427,61 @@ window.APORIA_DATA = {
      "work": "The Critique of Practical Reason",
      "citation": "I. The Antinomy of Practical Reason.",
      "text": "Even an inclination to what is right (e.g., to beneficence), though it may much facilitate the efficacy of the moral maxims, cannot produce any. For in these all must be directed to the conception of the law as a determining principle, if the action is to contain morality and not merely legality. Inclination is blind and slavish, whether it be of a good sort or not, and, when morality is in question, reason must not play the part merely of guardian to inclination, but disregarding it altogether must attend simply to its own interest as pure practical reason. This very feeling of compassion and tender sympathy, if it precedes the deliberation on the question of duty and becomes a determining principle, is even annoying to right thinking persons, brings their deliberate maxims into confusion, and makes them wish to be delivered from it and to be subject to lawgiving reason alone.",
-     "move": "Denies that inclination — even compassion or an inclination to beneficence — can produce morality, requiring instead that action be determined by the conception of the law under lawgiving reason alone.",
+     "move": "Denies that inclination, even compassion or a leaning toward beneficence, can produce morality, requiring instead that the conception of the law be the determining principle under lawgiving reason alone.",
      "confidence": 0.7,
-     "similarity": 0.7632
+     "similarity": 0.8307
     },
     {
-     "id": 1318,
+     "id": 2445,
+     "author": "Immanuel Kant",
+     "work": "Fundamental Principles of the Metaphysic of Morals",
+     "citation": "TO THE METAPHYSIC OF MORALS",
+     "text": "Now morality is the condition under which alone a rational being can be an end in himself, since by this alone is it possible that he should be a legislating member in the kingdom of ends. Thus morality, and humanity as capable of it, is that which alone has dignity. Skill and diligence in labour have a market value; wit, lively imagination, and humour, have fancy value; on the other hand, fidelity to promises, benevolence from principle (not from instinct), have an intrinsic worth. Neither nature nor art contains anything which in default of these it could put in their place, for their worth consists not in the effects which spring from them, not in the use and advantage which they secure, but in the disposition of mind, that is, the maxims of the will which are ready to manifest themselves in such actions, even though they should not have the desired effect. These actions also need no recommendation from any subjective taste or sentiment, that they may be looked on with immediate favour and satisfaction: they need no immediate propension or feeling for them; they exhibit the will that performs them as an object of an immediate respect, and nothing but reason is required to impose them on the will; not to flatter it into them, which, in the case of duties, would be a contradiction. This estimation therefore shows that the worth of such a disposition is dignity, and places it infinitely above all value, with which it cannot for a moment be brought into comparison or competition without as it were violating its sanctity.",
+     "move": "Contrasts the intrinsic worth and dignity of moral disposition with market value and fancy value, holding such actions need no recommendation from subjective taste or sentiment and require only reason to impose them.",
+     "confidence": 0.8,
+     "similarity": 0.828
+    },
+    {
+     "id": 2469,
+     "author": "Immanuel Kant",
+     "work": "Fundamental Principles of the Metaphysic of Morals",
+     "citation": "CRITIQUE OF PURE PRACTICAL REASON",
+     "text": "Now it resulted also from the presupposition of these ideas that we became aware of a law that the subjective principles of action, i.e., maxims, must always be so assumed that they can also hold as objective, that is, universal principles, and so serve as universal laws of our own dictation. But why then should I subject myself to this principle and that simply as a rational being, thus also subjecting to it all other being endowed with reason? I will allow that no interest urges me to this, for that would not give a categorical imperative, but I must take an interest in it and discern how this comes to pass; for this properly an \"I ought\" is properly an \"I would,\" valid for every rational being, provided only that reason determined his actions without any hindrance. But for beings that are in addition affected as we are by springs of a different kind, namely, sensibility, and in whose case that is not always done which reason alone would do, for these that necessity is expressed only as an \"ought,\" and the subjective necessity is different from the objective.",
+     "move": "Asserts that maxims must be assumed so as to hold as objective universal laws, then presses the question of why a rational being is bound by this, distinguishing the objective necessity from the subjective 'ought'.",
+     "confidence": 0.55,
+     "similarity": 0.8263
+    },
+    {
+     "id": 1329,
      "author": "Immanuel Kant",
      "work": "The Critique of Practical Reason",
      "citation": "IV. MODALITY.",
-     "text": "This feeling (which we call the moral feeling) is therefore produced simply by reason. It does not serve for the estimation of actions nor for the foundation of the objective moral law itself, but merely as a motive to make this of itself a maxim. But what name could we more suitably apply to this singular feeling which cannot be compared to any pathological feeling? It is of such a peculiar kind that it seems to be at the disposal of reason only, and that pure practical reason. {BOOK_1|CHAPTER_3 ^paragraph 10}",
-     "move": "Distinguishes moral feeling, produced simply by reason, from the objective moral law itself, which the feeling motivates but does not found.",
-     "confidence": 0.7,
-     "similarity": 0.7603
+     "text": "It is of the greatest importance to attend with the utmost exactness in all moral judgements to the subjective principle of all maxims, that all the morality of actions may be placed in the necessity of acting from duty and from respect for the law, not from love and inclination for that which the actions are to produce. For men and all created rational beings moral necessity is constraint, that is obligation, and every action based on it is to be conceived as a duty, not as a proceeding previously pleasing, or likely to be pleasing to us of our own accord. As if indeed we could ever bring it about that without respect for the law, which implies fear, or at least apprehension of transgression, we of ourselves, like the independent Deity, could ever come into possession of holiness of will by the coincidence of our will with the pure moral law becoming as it were part of our nature, never to be shaken (in which case the law would cease to be a command for us, as we could never be tempted to be untrue to it). {BOOK_1|CHAPTER_3 ^paragraph 20} The moral law is in fact for the will of a perfect being a law of holiness, but for the will of every finite rational being a law of duty, of moral constraint, and of the determination of its actions by respect for this law and reverence for its duty. No other subjective principle must be assumed as a motive, else while the action might chance to be such as the law prescribes, yet, as does not proceed from duty, the intention, which is the thing properly in question in this legislation, is not moral.",
+     "move": "Places all morality of actions in acting from duty and respect for the law rather than from love or inclination, treating the moral law as holiness for a perfect will and constraint for every finite rational will.",
+     "confidence": 0.75,
+     "similarity": 0.8228
+    },
+    {
+     "id": 2405,
+     "author": "Immanuel Kant",
+     "work": "Fundamental Principles of the Metaphysic of Morals",
+     "citation": "TO THE METAPHYSIC OF MORALS",
+     "text": "All imperatives are expressed by the word ought [or shall], and thereby indicate the relation of an objective law of reason to a will, which from its subjective constitution is not necessarily determined by it (an obligation). They say that something would be good to do or to forbear, but they say it to a will which does not always do a thing because it is conceived to be good to do it. That is practically good, however, which determines the will by means of the conceptions of reason, and consequently not from subjective causes, but objectively, that is on principles which are valid for every rational being as such. It is distinguished from the pleasant, as that which influences the will only by means of sensation from merely subjective causes, valid only for the sense of this or that one, and not as a principle of reason, which holds for every one. *",
+     "move": "Defines the practically good as what determines the will objectively, on principles valid for every rational being as such, expressly opposing it to the merely pleasant that holds only for this or that sense.",
+     "confidence": 0.85,
+     "similarity": 0.8217
     }
    ],
    "against": [
     {
-     "id": 1718,
-     "author": "Friedrich Nietzsche",
-     "work": "Beyond Good and Evil",
-     "citation": "CHAPTER II. THE FREE SPIRIT",
-     "text": "In short, we believe that the intention is only a sign or symptom, which first requires an explanation--a sign, moreover, which has too many interpretations, and consequently hardly any meaning in itself alone: that morality, in the sense in which it has been understood hitherto, as intention-morality, has been a prejudice, perhaps a prematureness or preliminariness, probably something of the same rank as astrology and alchemy, but in any case something which must be surmounted. The surmounting of morality, in a certain sense even the self-mounting of morality--let that be the name for the long-secret labour which has been reserved for the most refined, the most upright, and also the most wicked consciences of today, as the living touchstones of the soul.",
-     "move": "Dismisses morality as hitherto understood (intention-morality) as a prejudice of the same rank as astrology and alchemy, something to be surmounted.",
-     "confidence": 0.85,
-     "similarity": 0.7644
+     "id": 1959,
+     "author": "John Stuart Mill",
+     "work": "Utilitarianism",
+     "citation": "GENERAL REMARKS.",
+     "text": "I might go much further, and say that to all those _à priori_ moralists who deem it necessary to argue at all, utilitarian arguments are indispensable. It is not my present purpose to criticise these thinkers; but I cannot help referring, for illustration, to a systematic treatise by one of the most illustrious of them, the _Metaphysics of Ethics_, by Kant. This remarkable man, whose system of thought will long remain one of the landmarks in the history of philosophical speculation, does, in the treatise in question, lay down an universal first principle as the origin and ground of moral obligation; it is this:--'So act, that the rule on which thou actest would admit of being adopted as a law by all rational beings.' But when he begins to deduce from this precept any of the actual duties of morality, he fails, almost grotesquely, to show that there would be any contradiction, any logical (not to say physical) impossibility, in the adoption by all rational beings of the most outrageously immoral rules of conduct. All he shows is that the _consequences_ of their universal adoption would be such as no one would choose to incur.",
+     "move": "Charges that Kant's universal-law principle fails almost grotesquely to derive actual duties, since it shows no contradiction in immoral rules and can only appeal to the consequences of their universal adoption.",
+     "confidence": 0.5,
+     "similarity": 0.8214
     }
    ],
    "nuance": [
@@ -481,39 +491,9 @@ window.APORIA_DATA = {
      "work": "Fundamental Principles of the Metaphysic of Morals",
      "citation": "TO THE METAPHYSIC OF MORALS",
      "text": "On the other hand, the question how the imperative of morality is possible, is undoubtedly one, the only one, demanding a solution, as this is not at all hypothetical, and the objective necessity which it presents cannot rest on any hypothesis, as is the case with the hypothetical imperatives. Only here we must never leave out of consideration that we cannot make out by any example, in other words empirically, whether there is such an imperative at all, but it is rather to be feared that all those which seem to be categorical may yet be at bottom hypothetical. For instance, when the precept is: \"Thou shalt not promise deceitfully\"; and it is assumed that the necessity of this is not a mere counsel to avoid some other evil, so that it should mean: \"Thou shalt not make a lying promise, lest if it become known thou shouldst destroy thy credit,\" but that an action of this kind must be regarded as evil in itself, so that the imperative of the prohibition is categorical; then we cannot show with certainty in any example that the will was determined merely by the law, without any other spring of action, although it may appear to be so. For it is always possible that fear of disgrace, perhaps also obscure dread of other dangers, may have a secret influence on the will. Who can prove by experience the non-existence of a cause when all that experience tells us is that we do not perceive it? But in such a case the so-called moral imperative, which as such appears to be categorical and unconditional, would in reality be only a pragmatic precept, drawing our attention to our own interests and merely teaching us to take these into consideration.",
-     "move": "Grants that the moral imperative's necessity cannot rest on any hypothesis, yet warns that no example can ever prove empirically that a genuinely categorical imperative exists rather than a hidden hypothetical one.",
-     "confidence": 0.66,
-     "similarity": 0.7705
-    },
-    {
-     "id": 1988,
-     "author": "John Stuart Mill",
-     "work": "Utilitarianism",
-     "citation": "WHAT UTILITARIANISM IS.",
-     "text": "The objectors to utilitarianism cannot always be charged with representing it in a discreditable light. On the contrary, those among them who entertain anything like a just idea of its disinterested character, sometimes find fault with its standard as being too high for humanity. They say it is exacting too much to require that people shall always act from the inducement of promoting the general interests of society. But this is to mistake the very meaning of a standard of morals, and to confound the rule of action with the motive of it. It is the business of ethics to tell us what are our duties, or by what test we may know them; but no system of ethics requires that the sole motive of all we do shall be a feeling of duty; on the contrary, ninety-nine hundredths of all our actions are done from other motives, and rightly so done, if the rule of duty does not condemn them. It is the more unjust to utilitarianism that this particular misapprehension should be made a ground of objection to it, inasmuch as utilitarian moralists have gone beyond almost all others in affirming that the motive has nothing to do with the morality of the action, though much with the worth of the agent.",
-     "move": "Answers the 'standard too high' objection by separating the rule of action from the motive of it, without arguing for or against the standard's objectivity.",
-     "confidence": 0.6,
-     "similarity": 0.7658
-    },
-    {
-     "id": 1957,
-     "author": "John Stuart Mill",
-     "work": "Utilitarianism",
-     "citation": "GENERAL REMARKS.",
-     "text": "According to the one opinion, the principles of morals are evident _à priori_, requiring nothing to command assent, except that the meaning of the terms be understood. According to the other doctrine, right and wrong, as well as truth and falsehood, are questions of observation and experience. But both hold equally that morality must be deduced from principles; and the intuitive school affirm as strongly as the inductive, that there is a science of morals. Yet they seldom attempt to make out a list of the _à priori_ principles which are to serve as the premises of the science; still more rarely do they make any effort to reduce those various principles to one first principle, or common ground of obligation. They either assume the ordinary precepts of morals as of _à priori_ authority, or they lay down as the common groundwork of those maxims, some generality much less obviously authoritative than the maxims themselves, and which has never succeeded in gaining popular acceptance. Yet to support their pretensions there ought either to be some one fundamental principle or law, at the root of all morality, or if there be several, there should be a determinate order of precedence among them; and the one principle, or the rule for deciding between the various principles when they conflict, ought to be self-evident.",
-     "move": "Reports the standing dispute between the intuitive and inductive schools, noting both affirm a science of morals while faulting them for never producing the first principle such a science would require.",
-     "confidence": 0.58,
-     "similarity": 0.7608
-    },
-    {
-     "id": 1999,
-     "author": "John Stuart Mill",
-     "work": "Utilitarianism",
-     "citation": "WHAT UTILITARIANISM IS.",
-     "text": "It is truly a whimsical supposition, that if mankind were agreed in considering utility to be the test of morality, they would remain without any agreement as to what is useful, and would take no measures for having their notions on the subject taught to the young, and enforced by law and opinion. There is no difficulty in proving any ethical standard whatever to work ill, if we suppose universal idiocy to be conjoined with it, but on any hypothesis short of that, mankind must by this time have acquired positive beliefs as to the effects of some actions on their happiness; and the beliefs which have thus come down are the rules of morality for the multitude, and for the philosopher until he has succeeded in finding better. That philosophers might easily do this, even now, on many subjects; that the received code of ethics is by no means of divine right; and that mankind have still much to learn as to the effects of actions on the general happiness, I admit, or rather, earnestly maintain. The corollaries from the principle of utility, like the precepts of every practical art, admit of indefinite improvement, and, in a progressive state of the human mind, their improvement is perpetually going on.",
-     "move": "Defends utility as a workable test while conceding the received code of ethics is by no means of divine right and its corollaries admit of indefinite, ongoing improvement.",
-     "confidence": 0.57,
-     "similarity": 0.7585
+     "move": "Grants that the moral imperative's objective necessity can rest on no hypothesis, yet warns that no example can show empirically that a truly categorical imperative exists rather than a hidden hypothetical one.",
+     "confidence": 0.65,
+     "similarity": 0.8354
     },
     {
      "id": 2009,
@@ -521,9 +501,29 @@ window.APORIA_DATA = {
      "work": "Utilitarianism",
      "citation": "CHAPTER III.",
      "text": "The principle of utility either has, or there is no reason why it might not have, all the sanctions which belong to any other system of morals. Those sanctions are either external or internal. Of the external sanctions it is not necessary to speak at any length. They are, the hope of favour and the fear of displeasure from our fellow creatures or from the Ruler of the Universe, along with whatever we may have of sympathy or affection for them or of love and awe of Him, inclining us to do His will independently of selfish consequences. There is evidently no reason why all these motives for observance should not attach themselves to the utilitarian morality, as completely and as powerfully as to any other. Indeed, those of them which refer to our fellow creatures are sure to do so, in proportion to the amount of general intelligence; for whether there be any other ground of moral obligation than the general happiness or not, men do desire happiness; and however imperfect may be their own practice, they desire and commend all conduct in others towards themselves, by which they think their happiness is promoted. With regard to the religious motive, if men believe, as most profess to do, in the goodness of God, those who think that conduciveness to the general happiness is the essence, or even only the criterion, of good, must necessarily believe that it is also that which God approves.",
-     "move": "Argues that the external and internal sanctions available to any other system of morals attach equally to the principle of utility, a claim about motives for observance rather than about moral truth.",
+     "move": "Argues that the external and internal sanctions belonging to any other system of morals attach equally to the principle of utility, a claim about motives for observance rather than about moral truth.",
+     "confidence": 0.55,
+     "similarity": 0.8294
+    },
+    {
+     "id": 1415,
+     "author": "Immanuel Kant",
+     "work": "The Critique of Practical Reason",
+     "citation": "IV. The Immortality of the Soul as a Postulate of",
+     "text": "It must be remarked here that this moral necessity is subjective, that is, it is a want, and not objective, that is, itself a duty, for there cannot be a duty to suppose the existence of anything (since this concerns only the theoretical employment of reason). Moreover, it is not meant by this that it is necessary to suppose the existence of God as a basis of all obligation in general (for this rests, as has been sufficiently proved, simply on the autonomy of reason itself). What belongs to duty here is only the endeavour to realize and promote the summum bonum in the world, the possibility of which can therefore be postulated; and as our reason finds it not conceivable except on the supposition of a supreme intelligence, the admission of this existence is therefore connected with the consciousness of our duty, although the admission itself belongs to the domain of speculative reason. Considered in respect of this alone, as a principle of explanation, it may be called a hypothesis, but in reference to the intelligibility of an object given us by the moral law (the summum bonum), and consequently of a requirement for practical purposes, it may be called faith, that is to say a pure rational faith, since pure reason (both in its theoretical and practical use) is the sole source from which it springs. {BOOK_2|CHAPTER_2 ^paragraph 45}",
+     "move": "Classifies the moral necessity of assuming God as subjective want rather than objective duty, insisting that obligation itself rests simply on the autonomy of reason, and calls the assumption pure rational faith.",
+     "confidence": 0.55,
+     "similarity": 0.826
+    },
+    {
+     "id": 1999,
+     "author": "John Stuart Mill",
+     "work": "Utilitarianism",
+     "citation": "WHAT UTILITARIANISM IS.",
+     "text": "It is truly a whimsical supposition, that if mankind were agreed in considering utility to be the test of morality, they would remain without any agreement as to what is useful, and would take no measures for having their notions on the subject taught to the young, and enforced by law and opinion. There is no difficulty in proving any ethical standard whatever to work ill, if we suppose universal idiocy to be conjoined with it, but on any hypothesis short of that, mankind must by this time have acquired positive beliefs as to the effects of some actions on their happiness; and the beliefs which have thus come down are the rules of morality for the multitude, and for the philosopher until he has succeeded in finding better. That philosophers might easily do this, even now, on many subjects; that the received code of ethics is by no means of divine right; and that mankind have still much to learn as to the effects of actions on the general happiness, I admit, or rather, earnestly maintain. The corollaries from the principle of utility, like the precepts of every practical art, admit of indefinite improvement, and, in a progressive state of the human mind, their improvement is perpetually going on.",
+     "move": "Defends utility as a workable test while conceding the received code of ethics is by no means of divine right and that its corollaries admit of indefinite, perpetually ongoing improvement.",
      "confidence": 0.6,
-     "similarity": 0.758
+     "similarity": 0.826
     }
    ]
   },
@@ -533,96 +533,36 @@ window.APORIA_DATA = {
    "blurb": "Descartes builds certainty from doubt; Hume takes it apart again.",
    "for": [
     {
-     "id": 401,
-     "author": "Baruch Spinoza",
-     "work": "Ethics",
-     "citation": "POSTULATES",
-     "text": "(2.) From symbols, e.g., from the fact of having read or heard certain words we remember things and form certain ideas concerning them, similar to those through which we imagine things (II. xviii. note). I shall call both these ways of regarding things knowledge of the first kind, opinion, or imagination. (3.) From the fact that we have notions common to all men, and adequate ideas of the properties of things (II. xxxviii. Coroll., xxxix. and Coroll. and xl.); this I call reason and knowledge of the second kind. Besides these two kinds of knowledge, there is, as I will hereafter show, a third kind of knowledge, which we will call intuition. This kind of knowledge proceeds from an adequate idea of the absolute essence of certain attributes of God to the adequate knowledge of the essence of things. I will illustrate all three kinds of knowledge by a single example. Three numbers are given for finding a fourth, which shall be to the third as the second is to the first. Tradesmen without hesitation multiply the second by the third, and divide the product by the first; either because they have not forgotten the rule which they received from a master without any proof, or because they have often made trial of it with simple numbers, or by virtue of the proof of the nineteenth proposition of the seventh book of Euclid, namely, in virtue of the general property of proportionals. But with very simple numbers there is no need of this. For instance, one, two, three, being given, everyone can see that the fourth proportional is six; and this is much clearer, because we infer the fourth number from an intuitive grasping of the ratio, which the first bears to the second.",
-     "move": "Stratifies cognition into three kinds and holds that reason and intuition yield adequate ideas of the properties and essences of things, above mere opinion or imagination.",
-     "confidence": 0.6,
-     "similarity": 0.7183
-    },
-    {
-     "id": 4542,
-     "author": "Plato",
-     "work": "The Republic",
-     "citation": "BOOK VI.",
-     "text": "Yes, I said, there is. And of the virtues too we must behold not the outline merely, as at present—nothing short of the most finished picture should satisfy us. When little things are elaborated with an infinity of pains, in order that they may appear in their full beauty and utmost clearness, how ridiculous that we should not think the highest truths worthy of attaining the highest accuracy! A right noble thought; but do you suppose that we shall refrain from asking you what is this highest knowledge? Nay, I said, ask if you will; but I am certain that you have heard the answer many times, and now you either do not understand me or, as I rather think, you are disposed to be troublesome; for you have often been told that the idea of good is the highest knowledge, and that all other things become useful and advantageous only by their use of this. You can hardly be ignorant that of this I was about to speak, concerning which, as you have often heard me say, we know so little; and, without which, any other knowledge or possession of any kind will profit us nothing. Do you think that the possession of all other things is of any value if we do not possess the good? or the knowledge of all other things if we have no knowledge of beauty and goodness? Assuredly not. You are further aware that most people affirm pleasure to be the good, but the finer sort of wits say it is knowledge? Yes. And you are aware too that the latter cannot explain what they mean by knowledge, but are obliged after all to say knowledge of the good? How ridiculous!",
-     "move": "Insists the highest truths deserve the highest accuracy and identifies the idea of the good as the highest knowledge on which all else depends.",
-     "confidence": 0.55,
-     "similarity": 0.7171
-    },
-    {
-     "id": 1194,
-     "author": "Immanuel Kant",
-     "work": "The Critique of Practical Reason",
-     "citation": "PREFACE.",
-     "text": "Nothing worse could happen to these labours than that anyone should make the unexpected discovery that there neither is, nor can be, any a priori knowledge at all. But there is no danger of this. This would be the same thing as if one sought to prove by reason that there is no reason. For we only say that we know something by reason, when we are conscious that we could have known it, even if it had not been given to us in experience; hence rational knowledge and knowledge a priori are one and the same. It is a clear contradiction to try to extract necessity from a principle of experience (ex pumice aquam), and to try by this to give a judgement true universality (without which there is no rational inference, not even inference from analogy, which is at least a presumed universality and objective necessity). To substitute subjective necessity, that is, custom, for objective, which exists only in a priori judgements, is to deny to reason the power of judging about the object, i.e., of knowing it, and what belongs to it. It implies, for example, that we must not say of something which often or always follows a certain antecedent state that we can conclude from this to that (for this would imply objective necessity and the notion of an a priori connexion), but only that we may expect similar cases (just as animals do), that is that we reject the notion of cause altogether as false and a mere delusion.",
-     "move": "Argues that denying a priori knowledge is self-refuting, since necessity and true universality cannot be extracted from experience and substituting custom for objective necessity denies reason the power to know objects at all.",
-     "confidence": 0.85,
-     "similarity": 0.7062
-    },
-    {
      "id": 16,
      "author": "David Hume",
      "work": "An Enquiry Concerning Human Understanding",
      "citation": "OF THE DIFFERENT SPECIES OF PHILOSOPHY.",
      "text": "Nor can there remain any suspicion, that this science is uncertain and chimerical; unless we should entertain such a scepticism as is entirely subversive of all speculation, and even action. It cannot be doubted, that the mind is endowed with several powers and faculties, that these powers are distinct from each other, that what is really distinct to the immediate perception may be distinguished by reflexion; and consequently, that there is a truth and falsehood in all propositions on this subject, and a truth and falsehood, which lie not beyond the compass of human understanding. There are many obvious distinctions of this kind, such as those between the will and understanding, the imagination and passions, which fall within the comprehension of every human creature; and the finer and more philosophical distinctions are no less real and certain, though more difficult to be comprehended. Some instances, especially late ones, of success in these enquiries, may give us a juster notion of the certainty and solidity of this branch of learning. And shall we esteem it worthy the labour of a philosopher to give us a true system of the planets, and adjust the position and order of those remote bodies; while we affect to overlook those, who, with so much success, delineate the parts of the mind, in which we are so intimately concerned?",
-     "move": "Rejects the suspicion that the science of mental powers is uncertain, holding that its distinctions are real and certain and that truth and falsehood here lie within the compass of human understanding.",
-     "confidence": 0.75,
-     "similarity": 0.7045
+     "move": "Rejects the suspicion that the science of the mind's powers is uncertain and chimerical, holding its distinctions no less real and certain and its truths within the compass of human understanding.",
+     "confidence": 0.8,
+     "similarity": 0.7878
     },
     {
-     "id": 4500,
-     "author": "Plato",
-     "work": "The Republic",
-     "citation": "BOOK V.",
-     "text": "We must certainly offer him some good advice, he replied. Come, then, and let us think of something to say to him. Shall we begin by assuring him that he is welcome to any knowledge which he may have, and that we are rejoiced at his having it? But we should like to ask him a question: Does he who has knowledge know something or nothing? (You must answer for him.) I answer that he knows something. Something that is or is not? Something that is; for how can that which is not ever be known? And are we assured, after looking at the matter from many points of view, that absolute being is or may be absolutely known, but that the utterly non-existent is utterly unknown? Nothing can be more certain. Good. But if there be anything which is of such a nature as to be and not to be, that will have a place intermediate between pure being and the absolute negation of being? Yes, between them. And, as knowledge corresponded to being and ignorance of necessity to not-being, for that intermediate between being and not-being there has to be discovered a corresponding intermediate between ignorance and knowledge, if there be such? Certainly. Do we admit the existence of opinion? Undoubtedly. As being the same with knowledge, or another faculty? Another faculty. Then opinion and knowledge have to do with different kinds of matter corresponding to this difference of faculties? Yes. And knowledge is relative to being and knows being. But before I proceed further I will make a division. What division?",
-     "move": "Correlates knowledge with being and secures that absolute being may be absolutely known, assigning the wavering intermediate between being and not-being to opinion rather than knowledge.",
-     "confidence": 0.7,
-     "similarity": 0.7038
-    },
-    {
-     "id": 4571,
-     "author": "Plato",
-     "work": "The Republic",
-     "citation": "BOOK VII.",
-     "text": "Yes, in a very remarkable manner. Then this is knowledge of the kind for which we are seeking, having a double use, military and philosophical; for the man of war must learn the art of number or he will not know how to array his troops, and the philosopher also, because he has to rise out of the sea of change and lay hold of true being, and therefore he must be an arithmetician. That is true. And our guardian is both warrior and philosopher? Certainly. Then this is a kind of knowledge which legislation may fitly prescribe; and we must endeavour to persuade those who are to be the principal men of our State to go and learn arithmetic, not as amateurs, but they must carry on the study until they see the nature of numbers with the mind only; nor again, like merchants or retail-traders, with a view to buying or selling, but for the sake of their military use, and of the soul herself; and because this will be the easiest way for her to pass from becoming to truth and being. That is excellent, he said. Yes, I said, and now having spoken of it, I must add how charming the science is! and in how many ways it conduces to our desired end, if pursued in the spirit of a philosopher, and not of a shopkeeper! How do you mean?",
-     "move": "Presents arithmetic as the study that lifts the soul from becoming to truth and being, so the philosopher may lay hold of true being.",
-     "confidence": 0.55,
-     "similarity": 0.7028
+     "id": 2833,
+     "author": "René Descartes",
+     "work": "Discourse on the Method",
+     "citation": "PART IV",
+     "text": "But after the knowledge of God and of the soul has rendered us certain of this rule, we can easily understand that the truth of the thoughts we experience when awake, ought not in the slightest degree to be called in question on account of the illusions of our dreams. For if it happened that an individual, even when asleep, had some very distinct idea, as, for example, if a geometer should discover some new demonstration, the circumstance of his being asleep would not militate against its truth; and as for the most ordinary error of our dreams, which consists in their representing to us various objects in the same way as our external senses, this is not prejudicial, since it leads us very properly to suspect the truth of the ideas of sense; for we are not infrequently deceived in the same manner when awake; as when persons in the jaundice see all objects yellow, or when the stars or bodies at a great distance appear to us much smaller than they are. For, in fine, whether awake or asleep, we ought never to allow ourselves to be persuaded of the truth of anything unless on the evidence of our reason.",
+     "move": "Uses the knowledge of God and the soul to secure a rule of truth against the dream doubt, noting a geometer's demonstration would hold even in sleep provided we accept nothing except on the evidence of reason.",
+     "confidence": 0.85,
+     "similarity": 0.7672
     }
    ],
    "against": [
-    {
-     "id": 231,
-     "author": "David Hume",
-     "work": "An Enquiry Concerning Human Understanding",
-     "citation": "SECTION XI.",
-     "text": "[30] In general, it may, I think, be established as a maxim, that where any cause is known only by its particular effects, it must be impossible to infer any new effects from that cause; since the qualities, which are requisite to produce these new effects along with the former, must either be different, or superior, or of more extensive operation, than those which simply produced the effect, whence alone the cause is supposed to be known to us. We can never, therefore, have any reason to suppose the existence of these qualities. To say, that the new effects proceed only from a continuation of the same energy, which is already known from the first effects, will not remove the difficulty. For even granting this to be the case (which can seldom be supposed), the very continuation and exertion of a like energy (for it is impossible it can be absolutely the same), I say, this exertion of a like energy, in a different period of space and time, is a very arbitrary supposition, and what there cannot possibly be any traces of in the effects, from which all our knowledge of the cause is originally derived. Let the _inferred_ cause be exactly proportioned (as it should be) to the known effect; and it is impossible that it can possess any qualities, from which new or different effects can be _inferred_.",
-     "move": "Argues that a cause known only through its particular effects can never license inference to any new effect, so the inferred cause can carry no knowledge beyond what the observed effect already shows.",
-     "confidence": 0.7,
-     "similarity": 0.7172
-    },
     {
      "id": 35,
      "author": "David Hume",
      "work": "An Enquiry Concerning Human Understanding",
      "citation": "PART I.",
      "text": "I shall venture to affirm, as a general proposition, which admits of no exception, that the knowledge of this relation is not, in any instance, attained by reasonings _a priori_; but arises entirely from experience, when we find that any particular objects are constantly conjoined with each other. Let an object be presented to a man of ever so strong natural reason and abilities; if that object be entirely new to him, he will not be able, by the most accurate examination of its sensible qualities, to discover any of its causes or effects. Adam, though his rational faculties be supposed, at the very first, entirely perfect, could not have inferred from the fluidity and transparency of water that it would suffocate him, or from the light and warmth of fire that it would consume him. No object ever discovers, by the qualities which appear to the senses, either the causes which produced it, or the effects which will arise from it; nor can our reason, unassisted by experience, ever draw any inference concerning real existence and matter of fact.",
-     "move": "Affirms without exception that causal relations are never known a priori, since even a perfect intellect like Adam's could infer nothing about matter of fact from sensible qualities alone.",
-     "confidence": 0.75,
-     "similarity": 0.7081
-    },
-    {
-     "id": 235,
-     "author": "David Hume",
-     "work": "An Enquiry Concerning Human Understanding",
-     "citation": "SECTION XI.",
-     "text": "115. But there occurs to me (continued I) with regard to your main topic, a difficulty, which I shall just propose to you without insisting on it; lest it lead into reasonings of too nice and delicate a nature. In a word, I much doubt whether it be possible for a cause to be known only by its effect (as you have all along supposed) or to be of so singular and particular a nature as to have no parallel and no similarity with any other cause or object, that has ever fallen under our observation. It is only when two _species_ of objects are found to be constantly conjoined, that we can infer the one from the other; and were an effect presented, which was entirely singular, and could not be comprehended under any known _species_, I do not see, that we could form any conjecture or inference at all concerning its cause. If experience and observation and analogy be, indeed, the only guides which we can reasonably follow in inferences of this nature; both the effect and cause must bear a similarity and resemblance to other effects and causes, which we know, and which we have found, in many instances, to be conjoined with each other.",
-     "move": "Doubts that any cause can be known through an entirely singular effect, since inference requires constant conjunction and resemblance to other observed causes and effects.",
+     "move": "Affirms without exception that causal relations are never known by a priori reasoning, since even Adam with perfect faculties could infer nothing about matter of fact from sensible qualities alone.",
      "confidence": 0.7,
-     "similarity": 0.7028
+     "similarity": 0.7953
     },
     {
      "id": 46,
@@ -630,31 +570,91 @@ window.APORIA_DATA = {
      "work": "An Enquiry Concerning Human Understanding",
      "citation": "PART II.",
      "text": "Now this is a process of the mind or thought, of which I would willingly know the foundation. It is allowed on all hands that there is no known connexion between the sensible qualities and the secret powers; and consequently, that the mind is not led to form such a conclusion concerning their constant and regular conjunction, by anything which it knows of their nature. As to past _Experience_, it can be allowed to give _direct_ and _certain_ information of those precise objects only, and that precise period of time, which fell under its cognizance: but why this experience should be extended to future times, and to other objects, which for aught we know, may be only in appearance similar; this is the main question on which I would insist. The bread, which I formerly eat, nourished me; that is, a body of such sensible qualities was, at that time, endued with such secret powers: but does it follow, that other bread must also nourish me at another time, and that like sensible qualities must always be attended with like secret powers? The consequence seems nowise necessary. At least, it must be acknowledged that there is here a consequence drawn by the mind; that there is a certain step taken; a process of thought, and an inference, which wants to be explained.",
-     "move": "Grants experience certain information only about the precise objects and time it observed, then demands an explanation for the unexplained inferential step that extends it to future cases, calling the consequence nowise necessary.",
+     "move": "Grants experience direct and certain information only about the precise objects and period it observed, then finds no necessary consequence carrying it to future cases, leaving the inferential step unexplained.",
      "confidence": 0.7,
-     "similarity": 0.7008
+     "similarity": 0.7835
+    },
+    {
+     "id": 52,
+     "author": "David Hume",
+     "work": "An Enquiry Concerning Human Understanding",
+     "citation": "PART II.",
+     "text": "From a body of like colour and consistence with bread we expect like nourishment and support. But this surely is a step or progress of the mind, which wants to be explained. When a man says, _I have found, in all past instances, such sensible qualities conjoined with such secret powers_: And when he says, _Similar sensible qualities will always be conjoined with similar secret powers_, he is not guilty of a tautology, nor are these propositions in any respect the same. You say that the one proposition is an inference from the other. But you must confess that the inference is not intuitive; neither is it demonstrative: Of what nature is it, then? To say it is experimental, is begging the question. For all inferences from experience suppose, as their foundation, that the future will resemble the past, and that similar powers will be conjoined with similar sensible qualities. If there be any suspicion that the course of nature may change, and that the past may be no rule for the future, all experience becomes useless, and can give rise to no inference or conclusion. It is impossible, therefore, that any arguments from experience can prove this resemblance of the past to the future; since all these arguments are founded on the supposition of that resemblance.",
+     "move": "Argues the inference from observed to unobserved is neither intuitive nor demonstrative, and cannot be experimental without begging the question, since every argument from experience already presupposes that the future resembles the past.",
+     "confidence": 0.8,
+     "similarity": 0.7762
+    },
+    {
+     "id": 231,
+     "author": "David Hume",
+     "work": "An Enquiry Concerning Human Understanding",
+     "citation": "SECTION XI.",
+     "text": "[30] In general, it may, I think, be established as a maxim, that where any cause is known only by its particular effects, it must be impossible to infer any new effects from that cause; since the qualities, which are requisite to produce these new effects along with the former, must either be different, or superior, or of more extensive operation, than those which simply produced the effect, whence alone the cause is supposed to be known to us. We can never, therefore, have any reason to suppose the existence of these qualities. To say, that the new effects proceed only from a continuation of the same energy, which is already known from the first effects, will not remove the difficulty. For even granting this to be the case (which can seldom be supposed), the very continuation and exertion of a like energy (for it is impossible it can be absolutely the same), I say, this exertion of a like energy, in a different period of space and time, is a very arbitrary supposition, and what there cannot possibly be any traces of in the effects, from which all our knowledge of the cause is originally derived. Let the _inferred_ cause be exactly proportioned (as it should be) to the known effect; and it is impossible that it can possess any qualities, from which new or different effects can be _inferred_.",
+     "move": "Argues that where a cause is known only by its particular effects, no new effect can ever be inferred from it, since the required extra qualities leave no trace in the effects we have.",
+     "confidence": 0.62,
+     "similarity": 0.7713
+    },
+    {
+     "id": 1687,
+     "author": "Friedrich Nietzsche",
+     "work": "Beyond Good and Evil",
+     "citation": "CHAPTER I. PREJUDICES OF PHILOSOPHERS",
+     "text": "For if I had not already decided within myself what it is, by what standard could I determine whether that which is just happening is not perhaps 'willing' or 'feeling'? In short, the assertion 'I think,' assumes that I COMPARE my state at the present moment with other states of myself which I know, in order to determine what it is; on account of this retrospective connection with further 'knowledge,' it has, at any rate, no immediate certainty for me.\"--In place of the \"immediate certainty\" in which the people may believe in the special case, the philosopher thus finds a series of metaphysical questions presented to him, veritable conscience questions of the intellect, to wit: \"Whence did I get the notion of 'thinking'? Why do I believe in cause and effect? What gives me the right to speak of an 'ego,' and even of an 'ego' as cause, and finally of an 'ego' as cause of thought?\" He who ventures to answer these metaphysical questions at once by an appeal to a sort of INTUITIVE perception, like the person who says, \"I think, and know that this, at least, is true, actual, and certain\"--will encounter a smile and two notes of interrogation in a philosopher nowadays.",
+     "move": "Denies the 'I think' any immediate certainty by showing it presupposes a comparison with other known states, and turns the appeal to intuitive perception into a set of unanswered metaphysical questions.",
+     "confidence": 0.9,
+     "similarity": 0.7691
+    },
+    {
+     "id": 37,
+     "author": "David Hume",
+     "work": "An Enquiry Concerning Human Understanding",
+     "citation": "PART I.",
+     "text": "But the same truth may not appear, at first sight, to have the same evidence with regard to events, which have become familiar to us from our first appearance in the world, which bear a close analogy to the whole course of nature, and which are supposed to depend on the simple qualities of objects, without any secret structure of parts. We are apt to imagine that we could discover these effects by the mere operation of our reason, without experience. We fancy, that were we brought on a sudden into this world, we could at first have inferred that one Billiard-ball would communicate motion to another upon impulse; and that we needed not to have waited for the event, in order to pronounce with certainty concerning it. Such is the influence of custom, that, where it is strongest, it not only covers our natural ignorance, but even conceals itself, and seems not to take place, merely because it is found in the highest degree.",
+     "move": "Diagnoses our confidence that reason alone could foretell one billiard ball moving another as the work of custom, which where strongest conceals our natural ignorance and even conceals itself.",
+     "confidence": 0.75,
+     "similarity": 0.7677
+    },
+    {
+     "id": 60,
+     "author": "David Hume",
+     "work": "An Enquiry Concerning Human Understanding",
+     "citation": "PART I.",
+     "text": "Suppose, again, that he has acquired more experience, and has lived so long in the world as to have observed familiar objects or events to be constantly conjoined together; what is the consequence of this experience? He immediately infers the existence of one object from the appearance of the other. Yet he has not, by all his experience, acquired any idea or knowledge of the secret power by which the one object produces the other; nor is it, by any process of reasoning, he is engaged to draw this inference. But still he finds himself determined to draw it: And though he should be convinced that his understanding has no part in the operation, he would nevertheless continue in the same course of thinking. There is some other principle which determines him to form such a conclusion.",
+     "move": "Observes that no amount of experience yields any idea or knowledge of the secret power connecting objects, and that the inference is drawn not by reasoning but by some other determining principle.",
+     "confidence": 0.7,
+     "similarity": 0.7666
     }
    ],
    "nuance": [
+    {
+     "id": 4542,
+     "author": "Plato",
+     "work": "The Republic",
+     "citation": "BOOK VI.",
+     "text": "Yes, I said, there is. And of the virtues too we must behold not the outline merely, as at present—nothing short of the most finished picture should satisfy us. When little things are elaborated with an infinity of pains, in order that they may appear in their full beauty and utmost clearness, how ridiculous that we should not think the highest truths worthy of attaining the highest accuracy! A right noble thought; but do you suppose that we shall refrain from asking you what is this highest knowledge? Nay, I said, ask if you will; but I am certain that you have heard the answer many times, and now you either do not understand me or, as I rather think, you are disposed to be troublesome; for you have often been told that the idea of good is the highest knowledge, and that all other things become useful and advantageous only by their use of this. You can hardly be ignorant that of this I was about to speak, concerning which, as you have often heard me say, we know so little; and, without which, any other knowledge or possession of any kind will profit us nothing. Do you think that the possession of all other things is of any value if we do not possess the good? or the knowledge of all other things if we have no knowledge of beauty and goodness? Assuredly not. You are further aware that most people affirm pleasure to be the good, but the finer sort of wits say it is knowledge? Yes. And you are aware too that the latter cannot explain what they mean by knowledge, but are obliged after all to say knowledge of the good? How ridiculous!",
+     "move": "Demands nothing short of the most finished picture for the highest truths while confessing that of the idea of the good, the highest knowledge, we know so little and cannot say what knowledge means.",
+     "confidence": 0.55,
+     "similarity": 0.78
+    },
+    {
+     "id": 66,
+     "author": "David Hume",
+     "work": "An Enquiry Concerning Human Understanding",
+     "citation": "PART I.",
+     "text": "37. But here it may be proper to remark, that though our conclusions from experience carry us beyond our memory and senses, and assure us of matters of fact which happened in the most distant places and most remote ages, yet some fact must always be present to the senses or memory, from which we may first proceed in drawing these conclusions. A man, who should find in a desert country the remains of pompous buildings, would conclude that the country had, in ancient times, been cultivated by civilized inhabitants; but did nothing of this nature occur to him, he could never form such an inference. We learn the events of former ages from history; but then we must peruse the volumes in which this instruction is contained, and thence carry up our inferences from one testimony to another, till we arrive at the eyewitnesses and spectators of these distant events. In a word, if we proceed not upon some fact, present to the memory or senses, our reasonings would be merely hypothetical; and however the particular links might be connected with each other, the whole chain of inferences would have nothing to support it, nor could we ever, by its means, arrive at the knowledge of any real existence. If I ask why you believe any particular matter of fact, which you relate, you must tell me some reason; and this reason will be some other fact, connected with it. But as you cannot proceed after this manner, _in infinitum_, you must at last terminate in some fact, which is present to your memory or senses; or must allow that your belief is entirely without foundation.",
+     "move": "Makes factual reasoning depend on terminating in some fact present to memory or senses, without which the whole chain of inferences would be merely hypothetical and support no knowledge of real existence.",
+     "confidence": 0.55,
+     "similarity": 0.7752
+    },
     {
      "id": 27,
      "author": "David Hume",
      "work": "An Enquiry Concerning Human Understanding",
      "citation": "OF THE ORIGIN OF IDEAS.",
      "text": "Now I ask, whether it be possible for him, from his own imagination, to supply this deficiency, and raise up to himself the idea of that particular shade, though it had never been conveyed to him by his senses? I believe there are few but will be of opinion that he can: and this may serve as a proof that the simple ideas are not always, in every instance, derived from the correspondent impressions; though this instance is so singular, that it is scarcely worth our observing, and does not merit that for it alone we should alter our general maxim.",
-     "move": "Raises the missing-shade-of-colour case as a singular counterexample to the maxim that simple ideas always derive from correspondent impressions, while declining to revise the maxim.",
-     "confidence": 0.55,
-     "similarity": 0.6995
-    },
-    {
-     "id": 1441,
-     "author": "Immanuel Kant",
-     "work": "The Critique of Practical Reason",
-     "citation": "VII. How is it possible to conceive an Extension of Pure",
-     "text": "It is absolutely impossible, however, to know the existence of this Being from mere concepts, because every existential proposition, that is, every proposition that affirms the existence of a being of which I frame a concept, is a synthetic proposition, that is, one by which I go beyond that conception and affirm of it more than was thought in the conception itself; namely, that this concept in the understanding has an object corresponding to it outside the understanding, and this it is obviously impossible to elicit by any reasoning. There remains, therefore, only one single process possible for reason to attain this knowledge, namely, to start from the supreme principle of its pure practical use (which in every case is directed simply to the existence of something as a consequence of reason) and thus determine its object. Then its inevitable problem, namely, the necessary direction of the will to the summum bonum, discovers to us not only the necessity of assuming such a First Being in reference to the possibility of this good in the world, but, what is most remarkable, something which reason in its progress on the path of physical nature altogether failed to find, namely, an accurately defined conception of this First Being.",
-     "move": "Denies that the existence of the First Being can be known from mere concepts, since existential propositions are synthetic, but reroutes reason to that knowledge through its pure practical use.",
-     "confidence": 0.65,
-     "similarity": 0.6982
+     "move": "Raises the missing shade of colour as a singular counterexample to the maxim that simple ideas always derive from correspondent impressions, then declines to alter the maxim for its sake.",
+     "confidence": 0.6,
+     "similarity": 0.7704
     }
    ]
   },
@@ -669,19 +669,9 @@ window.APORIA_DATA = {
      "work": "The Rights of Man",
      "citation": "PAINE'S PREFACE TO THE FRENCH EDITION",
      "text": "The representatives of the people of France, formed into a National Assembly, considering that ignorance, neglect, or contempt of human rights, are the sole causes of public misfortunes and corruptions of Government, have resolved to set forth in a solemn declaration, these natural, imprescriptible, and inalienable rights: that this declaration being constantly present to the minds of the members of the body social, they may be forever kept attentive to their rights and their duties; that the acts of the legislative and executive powers of Government, being capable of being every moment compared with the end of political institutions, may be more respected; and also, that the future claims of the citizens, being directed by simple and incontestable principles, may always tend to the maintenance of the Constitution, and the general happiness. For these reasons the National Assembly doth recognize and declare, in the presence of the Supreme Being, and with the hope of his blessing and favour, the following sacred rights of men and of citizens: One: Men are born, and always continue, free and equal in respect of their Rights. Civil distinctions, therefore, can be founded only on Public Utility. Two: The end of all Political associations is the Preservation of the Natural and Imprescriptible Rights of Man; and these rights are Liberty, Property, Security, and Resistance of Oppression. Three: The Nation is essentially the source of all Sovereignty; nor can any individual, or any body of Men, be entitled to any authority which is not expressly derived from it.",
-     "move": "Proclaims a formal declaration that men are born free and equal in natural, imprescriptible, and inalienable rights, and defines the preservation of those rights as the end of all political association.",
+     "move": "Declares natural, imprescriptible, and inalienable rights and makes their preservation the end of all political association, so that acts of government may be constantly compared against them.",
      "confidence": 0.95,
-     "similarity": 0.7697
-    },
-    {
-     "id": 3925,
-     "author": "Thomas Paine",
-     "work": "The Rights of Man",
-     "citation": "PAINE'S PREFACE TO THE FRENCH EDITION",
-     "text": "A few words will explain this. Natural rights are those which appertain to man in right of his existence. Of this kind are all the intellectual rights, or rights of the mind, and also all those rights of acting as an individual for his own comfort and happiness, which are not injurious to the natural rights of others. Civil rights are those which appertain to man in right of his being a member of society. Every civil right has for its foundation some natural right pre-existing in the individual, but to the enjoyment of which his individual power is not, in all cases, sufficiently competent. Of this kind are all those which relate to security and protection. From this short review it will be easy to distinguish between that class of natural rights which man retains after entering into society and those which he throws into the common stock as a member of society.",
-     "move": "Defines natural rights as those belonging to man by right of his existence and grounds every civil right in a pre-existing natural right.",
-     "confidence": 0.88,
-     "similarity": 0.76
+     "similarity": 0.8129
     },
     {
      "id": 3927,
@@ -689,9 +679,9 @@ window.APORIA_DATA = {
      "work": "The Rights of Man",
      "citation": "PAINE'S PREFACE TO THE FRENCH EDITION",
      "text": "Thirdly, That the power produced from the aggregate of natural rights, imperfect in power in the individual, cannot be applied to invade the natural rights which are retained in the individual, and in which the power to execute is as perfect as the right itself. We have now, in a few words, traced man from a natural individual to a member of society, and shown, or endeavoured to show, the quality of the natural rights retained, and of those which are exchanged for civil rights. Let us now apply these principles to governments. In casting our eyes over the world, it is extremely easy to distinguish the governments which have arisen out of society, or out of the social compact, from those which have not; but to place this in a clearer light than what a single glance may afford, it will be proper to take a review of the several sources from which governments have arisen and on which they have been founded. They may be all comprehended under three heads. First, Superstition. Secondly, Power. Thirdly, The common interest of society and the common rights of man. The first was a government of priestcraft, the second of conquerors, and the third of reason. When a set of artful men pretended, through the medium of oracles, to hold intercourse with the Deity, as familiarly as they now march up the back-stairs in European courts, the world was completely under the government of superstition. The oracles were consulted, and whatever they were made to say became the law; and this sort of government lasted as long as this sort of superstition lasted.",
-     "move": "Argues that the aggregated power of society can never be applied to invade the natural rights individuals retain, and sorts governments by whether they arose from the common rights of man rather than superstition or conquest.",
-     "confidence": 0.9,
-     "similarity": 0.7499
+     "move": "Argues that governmental power, being only the aggregate of surrendered natural rights, can never legitimately be turned against the natural rights each individual retains.",
+     "confidence": 0.92,
+     "similarity": 0.8058
     },
     {
      "id": 2655,
@@ -699,9 +689,19 @@ window.APORIA_DATA = {
      "work": "Second Treatise of Government",
      "citation": "CHAPTER. XI.",
      "text": "It is a power, that hath no other end but preservation, and therefore can never have a right to destroy, enslave, or designedly to impoverish the subjects.* The obligations of the law of nature cease not in society, but only in many cases are drawn closer, and have by human laws known penalties annexed to them, to inforce their observation. Thus the law of nature stands as an eternal rule to all men, legislators as well as others. The rules that they make for other men’s actions, must, as well as their own and other men’s actions, be conformable to the law of nature, i.e. to the will of God, of which that is a declaration, and the fundamental law of nature being the preservation of mankind, no human sanction can be good, or valid against it.",
-     "move": "Holds that the law of nature binds legislators as an eternal rule, so that no human sanction is valid against the preservation of mankind and no power may destroy or enslave its subjects.",
+     "move": "Holds that the law of nature binds legislators as an eternal rule, so no human sanction contrary to the preservation of mankind can be valid and no power may destroy or enslave its subjects.",
      "confidence": 0.93,
-     "similarity": 0.7495
+     "similarity": 0.8022
+    },
+    {
+     "id": 3925,
+     "author": "Thomas Paine",
+     "work": "The Rights of Man",
+     "citation": "PAINE'S PREFACE TO THE FRENCH EDITION",
+     "text": "A few words will explain this. Natural rights are those which appertain to man in right of his existence. Of this kind are all the intellectual rights, or rights of the mind, and also all those rights of acting as an individual for his own comfort and happiness, which are not injurious to the natural rights of others. Civil rights are those which appertain to man in right of his being a member of society. Every civil right has for its foundation some natural right pre-existing in the individual, but to the enjoyment of which his individual power is not, in all cases, sufficiently competent. Of this kind are all those which relate to security and protection. From this short review it will be easy to distinguish between that class of natural rights which man retains after entering into society and those which he throws into the common stock as a member of society.",
+     "move": "Defines natural rights as belonging to man in right of his existence and shows every civil right to rest on a pre-existing natural right.",
+     "confidence": 0.85,
+     "similarity": 0.7973
     },
     {
      "id": 2530,
@@ -709,29 +709,9 @@ window.APORIA_DATA = {
      "work": "Second Treatise of Government",
      "citation": "OF SLAVERY.",
      "text": "Sect. 22. THE natural liberty of man is to be free from any superior power on earth, and not to be under the will or legislative authority of man, but to have only the law of nature for his rule. The liberty of man, in society, is to be under no other legislative power, but that established, by consent, in the commonwealth; nor under the dominion of any will, or restraint of any law, but what that legislative shall enact, according to the trust put in it. Freedom then is not what Sir Robert Filmer tells us, Observations, A. 55. a liberty for every one to do what he lists, to live as he pleases, and not to be tied by any laws: but freedom of men under government is, to have a standing rule to live by, common to every one of that society, and made by the legislative power erected in it; a liberty to follow my own will in all things, where the rule prescribes not; and not to be subject to the inconstant, uncertain, unknown, arbitrary will of another man: as freedom of nature is, to be under no other restraint but the law of nature.",
-     "move": "Distinguishes natural liberty (subject only to the law of nature) from civil liberty, insisting that freedom under government means a standing rule by consent rather than another man's arbitrary will.",
-     "confidence": 0.75,
-     "similarity": 0.7392
-    },
-    {
-     "id": 4042,
-     "author": "Thomas Paine",
-     "work": "The Rights of Man",
-     "citation": "CONCLUSION",
-     "text": "What were formerly called Revolutions, were little more than a change of persons, or an alteration of local circumstances. They rose and fell like things of course, and had nothing in their existence or their fate that could influence beyond the spot that produced them. But what we now see in the world, from the Revolutions of America and France, are a renovation of the natural order of things, a system of principles as universal as truth and the existence of man, and combining moral with political happiness and national prosperity. \"I. Men are born, and always continue, free and equal in respect of their rights. Civil distinctions, therefore, can be founded only on public utility. \"II. The end of all political associations is the preservation of the natural and imprescriptible rights of man; and these rights are liberty, property, security, and resistance of oppression. \"III. The nation is essentially the source of all sovereignty; nor can any Individual, or Any Body Of Men, be entitled to any authority which is not expressly derived from it.\" In these principles, there is nothing to throw a Nation into confusion by inflaming ambition. They are calculated to call forth wisdom and abilities, and to exercise them for the public good, and not for the emolument or aggrandisement of particular descriptions of men or families. Monarchical sovereignty, the enemy of mankind, and the source of misery, is abolished; and the sovereignty itself is restored to its natural and original place, the Nation. Were this the case throughout Europe, the cause of wars would be taken away.",
-     "move": "Presents the American and French revolutions as restoring a natural order of things and quotes the declared natural and imprescriptible rights as universal principles binding on sovereignty.",
-     "confidence": 0.92,
-     "similarity": 0.7264
-    },
-    {
-     "id": 3926,
-     "author": "Thomas Paine",
-     "work": "The Rights of Man",
-     "citation": "PAINE'S PREFACE TO THE FRENCH EDITION",
-     "text": "The natural rights which he retains are all those in which the Power to execute is as perfect in the individual as the right itself. Among this class, as is before mentioned, are all the intellectual rights, or rights of the mind; consequently religion is one of those rights. The natural rights which are not retained, are all those in which, though the right is perfect in the individual, the power to execute them is defective. They answer not his purpose. A man, by natural right, has a right to judge in his own cause; and so far as the right of the mind is concerned, he never surrenders it. But what availeth it him to judge, if he has not power to redress? He therefore deposits this right in the common stock of society, and takes the ann of society, of which he is a part, in preference and in addition to his own. Society grants him nothing. Every man is a proprietor in society, and draws on the capital as a matter of right. From these premisses two or three certain conclusions will follow: First, That every civil right grows out of a natural right; or, in other words, is a natural right exchanged. Secondly, That civil power properly considered as such is made up of the aggregate of that class of the natural rights of man, which becomes defective in the individual in point of power, and answers not his purpose, but when collected to a focus becomes competent to the Purpose of every one.",
-     "move": "Divides natural rights into those retained (where individual power suffices) and those deposited in the common stock, concluding that civil power is nothing but an aggregate of exchanged natural rights.",
-     "confidence": 0.87,
-     "similarity": 0.7256
+     "move": "Posits a natural liberty under the law of nature alone, and defines freedom under government as subjection only to standing consented law rather than another man's arbitrary will.",
+     "confidence": 0.78,
+     "similarity": 0.792
     },
     {
      "id": 3924,
@@ -739,29 +719,49 @@ window.APORIA_DATA = {
      "work": "The Rights of Man",
      "citation": "PAINE'S PREFACE TO THE FRENCH EDITION",
      "text": "The duty of man is not a wilderness of turnpike gates, through which he is to pass by tickets from one to the other. It is plain and simple, and consists but of two points. His duty to God, which every man must feel; and with respect to his neighbor, to do as he would be done by. If those to whom power is delegated do well, they will be respected: if not, they will be despised; and with regard to those to whom no power is delegated, but who assume it, the rational world can know nothing of them. Hitherto we have spoken only (and that but in part) of the natural rights of man. We have now to consider the civil rights of man, and to show how the one originates from the other. Man did not enter into society to become worse than he was before, nor to have fewer rights than he had before, but to have those rights better secured. His natural rights are the foundation of all his civil rights. But in order to pursue this distinction with more precision, it will be necessary to mark the different qualities of natural and civil rights.",
-     "move": "Argues that man entered society not to have fewer rights but to have them better secured, making natural rights the foundation of all civil rights and delegated power answerable to them.",
+     "move": "Argues that man entered society not to have fewer rights but to have them better secured, making natural rights the foundation of civil rights and delegated power answerable to how it is used.",
      "confidence": 0.9,
-     "similarity": 0.72
+     "similarity": 0.7913
     },
     {
-     "id": 4083,
-     "author": "Thomas Paine",
-     "work": "The Rights of Man",
-     "citation": "CHAPTER III. OF THE OLD AND NEW SYSTEMS OF GOVERNMENT",
-     "text": "Experience, in all ages, and in all countries, has demonstrated that it is impossible to control Nature in her distribution of mental powers. She gives them as she pleases. Whatever is the rule by which she, apparently to us, scatters them among mankind, that rule remains a secret to man. It would be as ridiculous to attempt to fix the hereditaryship of human beauty, as of wisdom. Whatever wisdom constituently is, it is like a seedless plant; it may be reared when it appears, but it cannot be voluntarily produced. There is always a sufficiency somewhere in the general mass of society for all purposes; but with respect to the parts of society, it is continually changing its place. It rises in one to-day, in another to-morrow, and has most probably visited in rotation every family of the earth, and again withdrawn. As this is in the order of nature, the order of government must necessarily follow it, or government will, as we see it does, degenerate into ignorance. The hereditary system, therefore, is as repugnant to human wisdom as to human rights; and is as absurd as it is unjust.",
-     "move": "Uses nature's unpredictable distribution of mental powers as a standard, condemning the hereditary system as repugnant to human rights and unjust because government must follow the order of nature.",
-     "confidence": 0.7,
-     "similarity": 0.7183
+     "id": 2535,
+     "author": "John Locke",
+     "work": "Second Treatise of Government",
+     "citation": "OF PROPERTY.",
+     "text": "Sect. 27. Though the earth, and all inferior creatures, be common to all men, yet every man has a property in his own person: this no body has any right to but himself. The labour of his body, and the work of his hands, we may say, are properly his. Whatsoever then he removes out of the state that nature hath provided, and left it in, he hath mixed his labour with, and joined to it something that is his own, and thereby makes it his property. It being by him removed from the common state nature hath placed it in, it hath by this labour something annexed to it, that excludes the common right of other men: for this labour being the unquestionable property of the labourer, no man but he can have a right to what that is once joined to, at least where there is enough, and as good, left in common for others.",
+     "move": "Grounds a pre-political property right in self-ownership and labour, holding that no body but a man himself has a right to his person or the work of his hands.",
+     "confidence": 0.82,
+     "similarity": 0.7898
     },
     {
-     "id": 4066,
+     "id": 2649,
+     "author": "John Locke",
+     "work": "Second Treatise of Government",
+     "citation": "CHAPTER. IX.",
+     "text": "Sect. 131. But though men, when they enter into society, give up the equality, liberty, and executive power they had in the state of nature, into the hands of the society, to be so far disposed of by the legislative, as the good of the society shall require; yet it being only with an intention in every one the better to preserve himself, his liberty and property; (for no rational creature can be supposed to change his condition with an intention to be worse) the power of the society, or legislative constituted by them, can never be supposed to extend farther, than the common good; but is obliged to secure every one’s property, by providing against those three defects above mentioned, that made the state of nature so unsafe and uneasy. And so whoever has the legislative or supreme power of any commonwealth, is bound to govern by established standing laws, promulgated and known to the people, and not by extemporary decrees; by indifferent and upright judges, who are to decide controversies by those laws; and to employ the force of the community at home, only in the execution of such laws, or abroad to prevent or redress foreign injuries, and secure the community from inroads and invasion. And all this to be directed to no other end, but the peace, safety, and public good of the people.",
+     "move": "Concedes that men surrender natural equality and executive power to society, but infers from their preservative motive that legislative power can never extend beyond the common good and must rule by known standing laws.",
+     "confidence": 0.85,
+     "similarity": 0.7896
+    },
+    {
+     "id": 3926,
      "author": "Thomas Paine",
      "work": "The Rights of Man",
-     "citation": "CHAPTER I. OF SOCIETY AND CIVILISATION",
-     "text": "Great part of that order which reigns among mankind is not the effect of government. It has its origin in the principles of society and the natural constitution of man. It existed prior to government, and would exist if the formality of government was abolished. The mutual dependence and reciprocal interest which man has upon man, and all the parts of civilised community upon each other, create that great chain of connection which holds it together. The landholder, the farmer, the manufacturer, the merchant, the tradesman, and every occupation, prospers by the aid which each receives from the other, and from the whole. Common interest regulates their concerns, and forms their law; and the laws which common usage ordains, have a greater influence than the laws of government. In fine, society performs for itself almost everything which is ascribed to government. To understand the nature and quantity of government proper for man, it is necessary to attend to his character. As Nature created him for social life, she fitted him for the station she intended. In all cases she made his natural wants greater than his individual powers. No one man is capable, without the aid of society, of supplying his own wants, and those wants, acting upon every individual, impel the whole of them into society, as naturally as gravitation acts to a centre. But she has gone further. She has not only forced man into society by a diversity of wants which the reciprocal aid of each other can supply, but she has implanted in him a system of social affections, which, though not necessary to his existence, are essential to his happiness. There is no period in life when this love for society ceases to act. It begins and ends with our being.",
-     "move": "Locates social order in the natural constitution of man, prior to and independent of government, so that the proper quantity of government is limited by man's natural character.",
-     "confidence": 0.6,
-     "similarity": 0.7181
+     "citation": "PAINE'S PREFACE TO THE FRENCH EDITION",
+     "text": "The natural rights which he retains are all those in which the Power to execute is as perfect in the individual as the right itself. Among this class, as is before mentioned, are all the intellectual rights, or rights of the mind; consequently religion is one of those rights. The natural rights which are not retained, are all those in which, though the right is perfect in the individual, the power to execute them is defective. They answer not his purpose. A man, by natural right, has a right to judge in his own cause; and so far as the right of the mind is concerned, he never surrenders it. But what availeth it him to judge, if he has not power to redress? He therefore deposits this right in the common stock of society, and takes the ann of society, of which he is a part, in preference and in addition to his own. Society grants him nothing. Every man is a proprietor in society, and draws on the capital as a matter of right. From these premisses two or three certain conclusions will follow: First, That every civil right grows out of a natural right; or, in other words, is a natural right exchanged. Secondly, That civil power properly considered as such is made up of the aggregate of that class of the natural rights of man, which becomes defective in the individual in point of power, and answers not his purpose, but when collected to a focus becomes competent to the Purpose of every one.",
+     "move": "Divides natural rights into those retained and those deposited in the common stock, concluding that every civil right is a natural right exchanged and that society grants a man nothing he does not already own.",
+     "confidence": 0.87,
+     "similarity": 0.7895
+    },
+    {
+     "id": 4042,
+     "author": "Thomas Paine",
+     "work": "The Rights of Man",
+     "citation": "CONCLUSION",
+     "text": "What were formerly called Revolutions, were little more than a change of persons, or an alteration of local circumstances. They rose and fell like things of course, and had nothing in their existence or their fate that could influence beyond the spot that produced them. But what we now see in the world, from the Revolutions of America and France, are a renovation of the natural order of things, a system of principles as universal as truth and the existence of man, and combining moral with political happiness and national prosperity. \"I. Men are born, and always continue, free and equal in respect of their rights. Civil distinctions, therefore, can be founded only on public utility. \"II. The end of all political associations is the preservation of the natural and imprescriptible rights of man; and these rights are liberty, property, security, and resistance of oppression. \"III. The nation is essentially the source of all sovereignty; nor can any Individual, or Any Body Of Men, be entitled to any authority which is not expressly derived from it.\" In these principles, there is nothing to throw a Nation into confusion by inflaming ambition. They are calculated to call forth wisdom and abilities, and to exercise them for the public good, and not for the emolument or aggrandisement of particular descriptions of men or families. Monarchical sovereignty, the enemy of mankind, and the source of misery, is abolished; and the sovereignty itself is restored to its natural and original place, the Nation. Were this the case throughout Europe, the cause of wars would be taken away.",
+     "move": "Presents the American and French revolutions as a renovation of the natural order and quotes articles making the preservation of natural and imprescriptible rights the end of all political association.",
+     "confidence": 0.93,
+     "similarity": 0.7851
     }
    ],
    "against": [
@@ -771,21 +771,21 @@ window.APORIA_DATA = {
      "work": "On Liberty",
      "citation": "III.",
      "text": "This is hardly the view of the nineteenth century. It is possible that logically the individual is prior to the State; historically and in the order of Nature, the State is prior to the individual. In other words, such rights as every single personality possesses in a modern world do not belong to him by an original ordinance of Nature, but are slowly acquired in the growth and development of the social state. It is not the truth that individual liberties were forfeited by some deliberate act when men made themselves into a Commonwealth. It is more true to say, as Aristotle said long ago, that man is naturally a political animal, that he lived under strict social laws as a mere item, almost a nonentity, as compared with the Order, Society, or Community to which he belonged, and that such privileges as he subsequently acquired have been obtained in virtue of his growing importance as a member of a growing organisation. But if this is even approximately true, it seriously restricts that liberty of the individual for which Mill pleads. The individual has no chance, because he has no rights, against the social organism. Society can punish him for acts or even opinions which are anti-social in character.",
-     "move": "Denies that personal rights come from any original ordinance of Nature, holding that the State is historically prior to the individual and that rights are slowly acquired within the social organism, against which the individual has none.",
-     "confidence": 0.93,
-     "similarity": 0.7242
+     "move": "Denies that rights belong to individuals by an original ordinance of Nature, holding that the State is prior to the individual and that rights are slowly acquired in social development, so the individual has none against the social organism.",
+     "confidence": 0.92,
+     "similarity": 0.8143
     }
    ],
    "nuance": [
     {
-     "id": 2140,
-     "author": "John Stuart Mill",
-     "work": "On Liberty",
-     "citation": "INTRODUCTORY.",
-     "text": "No society in which these liberties are not, on the whole, respected, is free, whatever may be its form of government; and none is completely free in which they do not exist absolute and unqualified. The only freedom which deserves the name, is that of pursuing our own good in our own way, so long as we do not attempt to deprive others of theirs, or impede their efforts to obtain it. Each is the proper guardian of his own health, whether bodily, or mental and spiritual. Mankind are greater gainers by suffering each other to live as seems good to themselves, than by compelling each to live as seems good to the rest.",
-     "move": "Demands that no society counts as free unless these liberties are respected whatever its form of government, but rests the demand on mankind being greater gainers by mutual forbearance rather than on any natural right.",
-     "confidence": 0.55,
-     "similarity": 0.7191
+     "id": 4069,
+     "author": "Thomas Paine",
+     "work": "The Rights of Man",
+     "citation": "CHAPTER I. OF SOCIETY AND CIVILISATION",
+     "text": "The more perfect civilisation is, the less occasion has it for government, because the more does it regulate its own affairs, and govern itself; but so contrary is the practice of old governments to the reason of the case, that the expenses of them increase in the proportion they ought to diminish. It is but few general laws that civilised life requires, and those of such common usefulness, that whether they are enforced by the forms of government or not, the effect will be nearly the same. If we consider what the principles are that first condense men into society, and what are the motives that regulate their mutual intercourse afterwards, we shall find, by the time we arrive at what is called government, that nearly the whole of the business is performed by the natural operation of the parts upon each other. Man, with respect to all those matters, is more a creature of consistency than he is aware, or than governments would wish him to believe. All the great laws of society are laws of nature. Those of trade and commerce, whether with respect to the intercourse of individuals or of nations, are laws of mutual and reciprocal interest. They are followed and obeyed, because it is the interest of the parties so to do, and not on account of any formal laws their governments may impose or interpose. But how often is the natural propensity to society disturbed or destroyed by the operations of government! When the latter, instead of being ingrafted on the principles of the former, assumes to exist for itself, and acts by partialities of favour and oppression, it becomes the cause of the mischiefs it ought to prevent.",
+     "move": "Shifts from rights to the self-sufficiency of society, arguing the great laws of society are laws of nature obeyed from mutual interest, and that government mostly disturbs this natural operation.",
+     "confidence": 0.6,
+     "similarity": 0.7857
     }
    ]
   },
@@ -800,9 +800,9 @@ window.APORIA_DATA = {
      "work": "Utilitarianism",
      "citation": "CHAPTER IV.",
      "text": "This opinion is not, in the smallest degree, a departure from the Happiness principle. The ingredients of happiness are very various, and each of them is desirable in itself, and not merely when considered as swelling an aggregate. The principle of utility does not mean that any given pleasure, as music, for instance, or any given exemption from pain, as for example health, are to be looked upon as means to a collective something termed happiness, and to be desired on that account. They are desired and desirable in and for themselves; besides being means, they are a part of the end. Virtue, according to the utilitarian doctrine, is not naturally and originally part of the end, but it is capable of becoming so; and in those who love it disinterestedly it has become so, and is desired and cherished, not as a means to happiness, but as a part of their happiness.",
-     "move": "Defends the Happiness principle as the single end by absorbing apparent rivals into it, treating virtue and other goods as desired for themselves yet as parts of happiness rather than competitors to it.",
+     "move": "Defends the Happiness principle by absorbing apparent rivals into it, treating virtue and other goods as desired for their own sake yet as ingredients of happiness rather than competitors to it.",
      "confidence": 0.8,
-     "similarity": 0.6938
+     "similarity": 0.7858
     },
     {
      "id": 1975,
@@ -810,9 +810,19 @@ window.APORIA_DATA = {
      "work": "Utilitarianism",
      "citation": "WHAT UTILITARIANISM IS.",
      "text": "According to the Greatest Happiness Principle, as above explained, the ultimate end, with reference to and for the sake of which all other things are desirable (whether we are considering our own good or that of other people), is an existence exempt as far as possible from pain, and as rich as possible in enjoyments, both in point of quantity and quality; the test of quality, and the rule for measuring it against quantity, being the preference felt by those who, in their opportunities of experience, to which must be added their habits of self-consciousness and self-observation, are best furnished with the means of comparison. This, being, according to the utilitarian opinion, the end of human action, is necessarily also the standard of morality; which may accordingly be defined, the rules and precepts for human conduct, by the observance of which an existence such as has been described might be, to the greatest extent possible, secured to all mankind; and not to them only, but, so far as the nature of things admits, to the whole sentient creation. Against this doctrine, however, arises another class of objectors, who say that happiness, in any form, cannot be the rational purpose of human life and action; because, in the first place, it is unattainable: and they contemptuously ask, What right hast thou to be happy? a question which Mr. Carlyle clenches by the addition, What right, a short time ago, hadst thou even _to be_? Next, they say, that men can do _without_ happiness; that all noble human beings have felt this, and could not have become noble but by learning the lesson of Entsagen, or renunciation; which lesson, thoroughly learnt and submitted to, they affirm to be the beginning and necessary condition of all virtue.",
-     "move": "States the Greatest Happiness Principle outright, making a life rich in enjoyment and free of pain the ultimate end for whose sake all else is desirable and hence the standard of morality, before naming objectors to it.",
-     "confidence": 0.88,
-     "similarity": 0.6917
+     "move": "States the Greatest Happiness Principle outright, making a life exempt from pain and rich in enjoyment the ultimate end for whose sake all else is desirable and therefore the standard of morality.",
+     "confidence": 0.9,
+     "similarity": 0.774
+    },
+    {
+     "id": 2030,
+     "author": "John Stuart Mill",
+     "work": "Utilitarianism",
+     "citation": "CHAPTER IV.",
+     "text": "The same may be said of the majority of the great objects of human life--power, for example, or fame; except that to each of these there is a certain amount of immediate pleasure annexed, which has at least the semblance of being naturally inherent in them; a thing which cannot be said of money. Still, however, the strongest natural attraction, both of power and of fame, is the immense aid they give to the attainment of our other wishes; and it is the strong association thus generated between them and all our objects of desire, which gives to the direct desire of them the intensity it often assumes, so as in some characters to surpass in strength all other desires. In these cases the means have become a part of the end, and a more important part of it than any of the things which they are means to. What was once desired as an instrument for the attainment of happiness, has come to be desired for its own sake. In being desired for its own sake it is, however, desired as part of happiness. The person is made, or thinks he would be made, happy by its mere possession; and is made unhappy by failure to obtain it.",
+     "move": "Explains how means such as power and fame come to be desired for their own sake, and absorbs them back into the end by holding that what is so desired is desired as part of happiness.",
+     "confidence": 0.75,
+     "similarity": 0.7726
     },
     {
      "id": 1974,
@@ -820,31 +830,41 @@ window.APORIA_DATA = {
      "work": "Utilitarianism",
      "citation": "WHAT UTILITARIANISM IS.",
      "text": "I have dwelt on this point, as being a necessary part of a perfectly just conception of Utility or Happiness, considered as the directive rule of human conduct. But it is by no means an indispensable condition to the acceptance of the utilitarian standard; for that standard is not the agent's own greatest happiness, but the greatest amount of happiness altogether; and if it may possibly be doubted whether a noble character is always the happier for its nobleness, there can be no doubt that it makes other people happier, and that the world in general is immensely a gainer by it. Utilitarianism, therefore, could only attain its end by the general cultivation of nobleness of character, even if each individual were only benefited by the nobleness of others, and his own, so far as happiness is concerned, were a sheer deduction from the benefit. But the bare enunciation of such an absurdity as this last, renders refutation superfluous.",
-     "move": "Defends the utilitarian standard by relocating it from the agent's own happiness to the greatest aggregate happiness, so that even self-costly nobleness is vindicated by the general gain in happiness.",
+     "move": "Relocates the utilitarian standard from the agent's own happiness to the greatest happiness altogether, so that even self-costly nobleness is vindicated by the general gain in happiness.",
      "confidence": 0.8,
-     "similarity": 0.6781
+     "similarity": 0.7705
     }
    ],
    "against": [
-    {
-     "id": 1386,
-     "author": "Immanuel Kant",
-     "work": "The Critique of Practical Reason",
-     "citation": "CHAPTER II. Of the Dialectic of Pure Reason in defining the",
-     "text": "Now inasmuch as virtue and happiness together constitute the possession of the summum bonum in a person, and the distribution of happiness in exact proportion to morality (which is the worth of the person, and his worthiness to be happy) constitutes the summum bonum of a possible world; hence this summum bonum expresses the whole, the perfect good, in which, however, virtue as the condition is always the supreme good, since it has no condition above it; whereas happiness, while it is pleasant to the possessor of it, is not of itself absolutely and in all respects good, but always presupposes morally right behaviour as its condition.",
-     "move": "Subordinates happiness within the summum bonum by making virtue the unconditioned supreme good and happiness good only on the condition of morally right behaviour.",
-     "confidence": 0.85,
-     "similarity": 0.7065
-    },
     {
      "id": 2365,
      "author": "Immanuel Kant",
      "work": "Fundamental Principles of the Metaphysic of Morals",
      "citation": "OF MORALITY TO THE PHILOSOPHICAL",
      "text": "Nothing can possibly be conceived in the world, or even out of it, which can be called good, without qualification, except a good will. Intelligence, wit, judgement, and the other talents of the mind, however they may be named, or courage, resolution, perseverance, as qualities of temperament, are undoubtedly good and desirable in many respects; but these gifts of nature may also become extremely bad and mischievous if the will which is to make use of them, and which, therefore, constitutes what is called character, is not good. It is the same with the gifts of fortune. Power, riches, honour, even health, and the general well-being and contentment with one's condition which is called happiness, inspire pride, and often presumption, if there is not a good will to correct the influence of these on the mind, and with this also to rectify the whole principle of acting and adapt it to its end. The sight of a being who is not adorned with a single feature of a pure and good will, enjoying unbroken prosperity, can never give pleasure to an impartial rational spectator. Thus a good will appears to constitute the indispensable condition even of being worthy of happiness.",
-     "move": "Denies that happiness is unconditionally good by arguing that only a good will is good without qualification, and that well-being without it breeds pride and merely makes one worthy of happiness.",
-     "confidence": 0.92,
-     "similarity": 0.6982
+     "move": "Denies that happiness is unconditionally good, holding that only a good will is good without qualification and that well-being without it breeds pride, so a good will is merely the condition of being worthy of happiness.",
+     "confidence": 0.93,
+     "similarity": 0.7846
+    },
+    {
+     "id": 2367,
+     "author": "Immanuel Kant",
+     "work": "Fundamental Principles of the Metaphysic of Morals",
+     "citation": "OF MORALITY TO THE PHILOSOPHICAL",
+     "text": "A good will is good not because of what it performs or effects, not by its aptness for the attainment of some proposed end, but simply by virtue of the volition; that is, it is good in itself, and considered by itself is to be esteemed much higher than all that can be brought about by it in favour of any inclination, nay even of the sum total of all inclinations. Even if it should happen that, owing to special disfavour of fortune, or the niggardly provision of a step-motherly nature, this will should wholly lack power to accomplish its purpose, if with its greatest efforts it should yet achieve nothing, and there should remain only the good will (not, to be sure, a mere wish, but the summoning of all means in our power), then, like a jewel, it would still shine by its own light, as a thing which has its whole value in itself. Its usefulness or fruitlessness can neither add nor take away anything from this value. It would be, as it were, only the setting to enable us to handle it the more conveniently in common commerce, or to attract to it the attention of those who are not yet connoisseurs, but not to recommend it to true connoisseurs, or to determine its value.",
+     "move": "Ranks the good will above every result it could produce in favour of inclination, even the sum total of all inclinations, holding it good in itself like a jewel whether or not it accomplishes anything.",
+     "confidence": 0.85,
+     "similarity": 0.7738
+    },
+    {
+     "id": 1386,
+     "author": "Immanuel Kant",
+     "work": "The Critique of Practical Reason",
+     "citation": "CHAPTER II. Of the Dialectic of Pure Reason in defining the",
+     "text": "Now inasmuch as virtue and happiness together constitute the possession of the summum bonum in a person, and the distribution of happiness in exact proportion to morality (which is the worth of the person, and his worthiness to be happy) constitutes the summum bonum of a possible world; hence this summum bonum expresses the whole, the perfect good, in which, however, virtue as the condition is always the supreme good, since it has no condition above it; whereas happiness, while it is pleasant to the possessor of it, is not of itself absolutely and in all respects good, but always presupposes morally right behaviour as its condition.",
+     "move": "Splits the summum bonum into virtue and happiness and makes virtue the unconditioned supreme good, while happiness is not absolutely good but always presupposes morally right behaviour as its condition.",
+     "confidence": 0.87,
+     "similarity": 0.7737
     },
     {
      "id": 1239,
@@ -854,27 +874,7 @@ window.APORIA_DATA = {
      "text": "{BOOK_1|CHAPTER_1 ^paragraph 95} The principle of happiness may, indeed, furnish maxims, but never such as would be competent to be laws of the will, even if universal happiness were made the object. For since the knowledge of this rests on mere empirical data, since every man's judgement on it depends very much on his particular point of view, which is itself moreover very variable, it can supply only general rules, not universal; that is, it can give rules which on the average will most frequently fit, but not rules which must hold good always and necessarily; hence, no practical laws can be founded on it. Just because in this case an object of choice is the foundation of the rule and must therefore precede it, the rule can refer to nothing but what is [felt], and therefore it refers to experience and is founded on it, and then the variety of judgement must be endless. This principle, therefore, does not prescribe the same practical rules to all rational beings, although the rules are all included under a common title, namely, that of happiness. The moral law, however, is conceived as objectively necessary, only because it holds for everyone that has reason and will. The maxim of self-love (prudence) only advises; the law of morality commands. Now there is a great difference between that which we are advised to do and that to which we are obliged.",
      "move": "Argues that the principle of happiness rests on variable empirical data and can yield only general advisory maxims, never the universally necessary practical laws that the commanding moral law supplies.",
      "confidence": 0.88,
-     "similarity": 0.688
-    },
-    {
-     "id": 648,
-     "author": "Baruch Spinoza",
-     "work": "Ethics",
-     "citation": "PROPOSITIONS.",
-     "text": "Proof.--This love towards God is the highest good which we can seek for under the guidance of reason (IV. xxviii.), it is common to all men (IV. xxxvi.), and we desire that all should rejoice therein (IV. xxxvii.); therefore (Def. of the Emotions, xxiii.), it cannot be stained by the emotion envy, nor by the emotion of jealousy (V. xviii. see definition of Jealousy, III. xxxv. note); but, contrariwise, it must needs be the more fostered, in proportion as we conceive a greater number of men to rejoice therein. Q.E.D. Note.--We can in the same way show, that there is no emotion directly contrary to this love, whereby this love can be destroyed; therefore we may conclude, that this love towards God is the most constant of all the emotions, and that, in so far as it is referred to the body, it cannot be destroyed, unless the body be destroyed also. As to its nature, in so far as it is referred to the mind only, we shall presently inquire. I have now gone through all the remedies against the emotions, or all that the mind, considered in itself alone, can do against them. Whence it appears that the mind's power over the emotions consists:---- I. In the actual knowledge of the emotions (V. iv. note). II. In the fact that it separates the emotions from the thought of an external cause, which we conceive confusedly (V. ii. and V. iv. note). III. In the fact, that, in respect to time, the emotions referred to things, which we distinctly understand, surpass those referred to what we conceive in a confused and fragmentary manner (V. vii.).",
-     "move": "Identifies a rival highest good, holding that love towards God is the highest good sought under the guidance of reason and the most constant of the emotions, immune to envy and jealousy.",
-     "confidence": 0.55,
-     "similarity": 0.6861
-    },
-    {
-     "id": 2377,
-     "author": "Immanuel Kant",
-     "work": "Fundamental Principles of the Metaphysic of Morals",
-     "citation": "OF MORALITY TO THE PHILOSOPHICAL",
-     "text": "To secure one's own happiness is a duty, at least indirectly; for discontent with one's condition, under a pressure of many anxieties and amidst unsatisfied wants, might easily become a great temptation to transgression of duty. But here again, without looking to duty, all men have already the strongest and most intimate inclination to happiness, because it is just in this idea that all inclinations are combined in one total. But the precept of happiness is often of such a sort that it greatly interferes with some inclinations, and yet a man cannot form any definite and certain conception of the sum of satisfaction of all of them which is called happiness. It is not then to be wondered at that a single inclination, definite both as to what it promises and as to the time within which it can be gratified, is often able to overcome such a fluctuating idea, and that a gouty patient, for instance, can choose to enjoy what he likes, and to suffer what he may, since, according to his calculation, on this occasion at least, he has not sacrificed the enjoyment of the present moment to a possibly mistaken expectation of a happiness which is supposed to be found in health. But even in this case, if the general desire for happiness did not influence his will, and supposing that in his particular case health was not a necessary element in this calculation, there yet remains in this, as in all other cases, this law, namely, that he should promote his happiness not from inclination but from duty, and by this would his conduct first acquire true moral worth.",
-     "move": "Demotes happiness to an only indirect duty and a fluctuating, indefinite idea of combined inclinations, insisting one should promote it from law rather than from inclination.",
-     "confidence": 0.85,
-     "similarity": 0.6858
+     "similarity": 0.7665
     }
    ],
    "nuance": [
@@ -884,9 +884,9 @@ window.APORIA_DATA = {
      "work": "Utilitarianism",
      "citation": "WHAT UTILITARIANISM IS.",
      "text": "Though it is only in a very imperfect state of the world's arrangements that any one can best serve the happiness of others by the absolute sacrifice of his own, yet so long as the world is in that imperfect state, I fully acknowledge that the readiness to make such a sacrifice is the highest virtue which can be found in man. I will add, that in this condition of the world, paradoxical as the assertion may be, the conscious ability to do without happiness gives the best prospect of realizing such happiness as is attainable. For nothing except that consciousness can raise a person above the chances of life, by making him feel that, let fate and fortune do their worst, they have not power to subdue him: which, once felt, frees him from excess of anxiety concerning the evils of life, and enables him, like many a Stoic in the worst times of the Roman Empire, to cultivate in tranquillity the sources of satisfaction accessible to him, without concerning himself about the uncertainty of their duration, any more than about their inevitable end.",
-     "move": "Qualifies the happiness standard by holding that in an imperfect world the readiness to sacrifice one's own happiness is the highest virtue and that the conscious ability to do without happiness is what best secures the happiness actually attainable.",
-     "confidence": 0.65,
-     "similarity": 0.7401
+     "move": "Qualifies the happiness standard by making readiness to sacrifice one's own happiness the highest virtue in an imperfect world, and the conscious ability to do without happiness the best means to such happiness as is attainable.",
+     "confidence": 0.68,
+     "similarity": 0.8159
     },
     {
      "id": 840,
@@ -894,19 +894,9 @@ window.APORIA_DATA = {
      "work": "The Will to Believe, and Other Essays in Popular Philosophy",
      "citation": "I.",
      "text": "But the highest good can be achieved only by our getting our proper life; and that can come about only by help of a moral energy born of the faith that in some way or other we shall succeed in getting it if we try pertinaciously enough. This world _is_ good, we must say, since it is what we make it,--and we shall make it good. How can we exclude from the cognition of a truth a faith which is involved in the creation of the truth? _M_ has its character indeterminate, susceptible of forming part of a thorough-going pessimism on the one hand, or of a meliorism, a moral (as distinguished from a sensual) optimism on the other. All depends on the character of the {103} personal contribution _x_. Wherever the facts to be formulated contain such a contribution, we may logically, legitimately, and inexpugnably believe what we desire. The belief creates its verification. The thought becomes literally father to the fact, as the wish was father to the thought.[4]",
-     "move": "Invokes 'the highest good' only to argue that attaining it depends on a self-verifying faith and moral energy, without identifying that good with happiness or taking a side on the claim.",
-     "confidence": 0.7,
-     "similarity": 0.7066
-    },
-    {
-     "id": 1412,
-     "author": "Immanuel Kant",
-     "work": "The Critique of Practical Reason",
-     "citation": "IV. The Immortality of the Soul as a Postulate of",
-     "text": "Happiness is the condition of a rational being in the world with whom everything goes according to his wish and will; it rests, therefore, on the harmony of physical nature with his whole end and likewise with the essential determining principle of his will. Now the moral law as a law of freedom commands by determining principles, which ought to be quite independent of nature and of its harmony with our faculty of desire (as springs). But the acting rational being in the world is not the cause of the world and of nature itself. There is not the least ground, therefore, in the moral law for a necessary connection between morality and proportionate happiness in a being that belongs to the world as part of it, and therefore dependent on it, and which for that reason cannot by his will be a cause of this nature, nor by his own power make it thoroughly harmonize, as far as his happiness is concerned, with his practical principles. Nevertheless, in the practical problem of pure reason, i.e., the necessary pursuit of the summum bonum, such a connection is postulated as necessary: we ought to endeavour to promote the summum bonum, which, therefore, must be possible.",
-     "move": "Reframes the question by defining happiness as nature's harmony with one's will and arguing that no necessary link to morality exists in the world, so the summum bonum containing it must be postulated rather than asserted as the highest good.",
+     "move": "Invokes the highest good only to argue that reaching it depends on a self-verifying faith and moral energy that help create the truth believed, without identifying that good with happiness.",
      "confidence": 0.65,
-     "similarity": 0.6933
+     "similarity": 0.7739
     },
     {
      "id": 1960,
@@ -914,9 +904,19 @@ window.APORIA_DATA = {
      "work": "Utilitarianism",
      "citation": "GENERAL REMARKS.",
      "text": "On the present occasion, I shall, without further discussion of the other theories, attempt to contribute something towards the understanding and appreciation of the Utilitarian or Happiness theory, and towards such proof as it is susceptible of. It is evident that this cannot be proof in the ordinary and popular meaning of the term. Questions of ultimate ends are not amenable to direct proof. Whatever can be proved to be good, must be so by being shown to be a means to something admitted to be good without proof. The medical art is proved to be good, by its conducing to health; but how is it possible to prove that health is good? The art of music is good, for the reason, among others, that it produces pleasure; but what proof is it possible to give that pleasure is good? If, then, it is asserted that there is a comprehensive formula, including all things which are in themselves good, and that whatever else is good, is not so as an end, but as a mean, the formula may be accepted or rejected, but is not a subject of what is commonly understood by proof. We are not, however, to infer that its acceptance or rejection must depend on blind impulse, or arbitrary choice. There is a larger meaning of the word proof, in which this question is as amenable to it as any other of the disputed questions of philosophy. The subject is within the cognizance of the rational faculty; and neither does that faculty deal with it solely in the way of intuition. Considerations may be presented capable of determining the intellect either to give or withhold its assent to the doctrine; and this is equivalent to proof.",
-     "move": "Steps back to the meta-level, arguing that questions of ultimate ends admit no ordinary proof and that the happiness formula can only be supported by considerations addressed to the rational faculty.",
-     "confidence": 0.7,
-     "similarity": 0.6856
+     "move": "Steps back to the meta-level, arguing that questions of ultimate ends admit no ordinary proof and that the happiness formula can only be commended by considerations addressed to the rational faculty.",
+     "confidence": 0.72,
+     "similarity": 0.7732
+    },
+    {
+     "id": 736,
+     "author": "William James",
+     "work": "The Will to Believe, and Other Essays in Popular Philosophy",
+     "citation": "I.",
+     "text": "With many men the question of life's worth is answered by a temperamental optimism which makes them incapable of believing that anything seriously evil can exist. Our dear old Walt Whitman's works are the standing text-book of this kind of optimism. The mere joy of living is so immense in Walt Whitman's veins that it abolishes the possibility of any other kind of feeling:-- \"To breathe the air, how delicious! To speak, to walk, to seize something by the hand!... To be this incredible God I am!... O amazement of things, even the least particle! O spirituality of things! I too carol the Sun, usher'd or at noon, or as now, setting; I too throb to the brain and beauty of the earth and of all the growths of the earth.... I sing to the last the equalities, modern or old, I sing the endless finales of things, I say Nature continues--glory continues. I praise with electric voice, For I do not see one imperfection in the universe, And I do not see one cause or result lamentable at last.\" So Rousseau, writing of the nine years he spent at Annecy, with nothing but his happiness to tell:--",
+     "move": "Reports rather than argues, illustrating how a temperamental optimism like Whitman's or Rousseau's settles the question of life's worth by sheer joy of living instead of by argument.",
+     "confidence": 0.6,
+     "similarity": 0.7665
     }
    ]
   },
@@ -926,24 +926,34 @@ window.APORIA_DATA = {
    "blurb": "Mill's harm principle, and the objections it has always attracted.",
    "for": [
     {
-     "id": 2139,
-     "author": "John Stuart Mill",
-     "work": "On Liberty",
-     "citation": "INTRODUCTORY.",
-     "text": "But there is a sphere of action in which society, as distinguished from the individual, has, if any, only an indirect interest; comprehending all that portion of a person's life and conduct which affects only himself, or if it also affects others, only with their free, voluntary, and undeceived consent and participation. When I say only himself, I mean directly, and in the first instance: for whatever affects himself, may affect others _through_ himself; and the objection which may be grounded on this contingency, will receive consideration in the sequel. This, then, is the appropriate region of human liberty. It comprises, first, the inward domain of consciousness; demanding liberty of conscience, in the most comprehensive sense; liberty of thought and feeling; absolute freedom of opinion and sentiment on all subjects, practical or speculative, scientific, moral, or theological. The liberty of expressing and publishing opinions may seem to fall under a different principle, since it belongs to that part of the conduct of an individual which concerns other people; but, being almost of as much importance as the liberty of thought itself, and resting in great part on the same reasons, is practically inseparable from it. Secondly, the principle requires liberty of tastes and pursuits; of framing the plan of our life to suit our own character; of doing as we like, subject to such consequences as may follow: without impediment from our fellow-creatures, so long as what we do does not harm them, even though they should think our conduct foolish, perverse, or wrong. Thirdly, from this liberty of each individual, follows the liberty, within the same limits, of combination among individuals; freedom to unite, for any purpose not involving harm to others: the persons combining being supposed to be of full age, and not forced or deceived.",
-     "move": "Carves out a protected sphere of purely self-regarding conduct — conscience, thought, tastes, and life-plans — over which society has no warrant to interfere.",
-     "confidence": 0.9,
-     "similarity": 0.7752
-    },
-    {
      "id": 2134,
      "author": "John Stuart Mill",
      "work": "On Liberty",
      "citation": "INTRODUCTORY.",
      "text": "The object of this Essay is to assert one very simple principle, as entitled to govern absolutely the dealings of society with the individual in the way of compulsion and control, whether the means used be physical force in the form of legal penalties, or the moral coercion of public opinion. That principle is, that the sole end for which mankind are warranted, individually or collectively, in interfering with the liberty of action of any of their number, is self-protection. That the only purpose for which power can be rightfully exercised over any member of a civilised community, against his will, is to prevent harm to others. His own good, either physical or moral, is not a sufficient warrant. He cannot rightfully be compelled to do or forbear because it will be better for him to do so, because it will make him happier, because, in the opinions of others, to do so would be wise, or even right. These are good reasons for remonstrating with him, or reasoning with him, or persuading him, or entreating him, but not for compelling him, or visiting him with any evil in case he do otherwise. To justify that, the conduct from which it is desired to deter him must be calculated to produce evil to some one else. The only part of the conduct of any one, for which he is amenable to society, is that which concerns others. In the part which merely concerns himself, his independence is, of right, absolute. Over himself, over his own body and mind, the individual is sovereign.",
-     "move": "States the harm principle outright: self-protection is the sole warrant for coercion, and the individual's own good is never sufficient justification.",
+     "move": "States the harm principle outright: self-protection is the sole warrant for coercion, the agent's own good is never sufficient, and over his own body and mind the individual is sovereign.",
      "confidence": 0.97,
-     "similarity": 0.7662
+     "similarity": 0.8484
+    },
+    {
+     "id": 2318,
+     "author": "John Stuart Mill",
+     "work": "On Liberty",
+     "citation": "APPLICATIONS.",
+     "text": "There is another question to which an answer must be found, consistent with the principles which have been laid down. In cases of personal conduct supposed to be blamable, but which respect for liberty precludes society from preventing or punishing, because the evil directly resulting falls wholly on the agent; what the agent is free to do, ought other persons to be equally free to counsel or instigate? This question is not free from difficulty. The case of a person who solicits another to do an act, is not strictly a case of self-regarding conduct. To give advice or offer inducements to any one, is a social act, and may therefore, like actions in general which affect others, be supposed amenable to social control. But a little reflection corrects the first impression, by showing that if the case is not strictly within the definition of individual liberty, yet the reasons on which the principle of individual liberty is grounded, are applicable to it. If people must be allowed, in whatever concerns only themselves, to act as seems best to themselves at their own peril, they must equally be free to consult with one another about what is fit to be so done; to exchange opinions, and give and receive suggestions.",
+     "move": "Tests the hard case of counselling or instigating a self-regarding act, concedes it falls outside the strict definition, then extends liberty to it because the same grounds apply to consulting with one another.",
+     "confidence": 0.62,
+     "similarity": 0.8311
+    },
+    {
+     "id": 2139,
+     "author": "John Stuart Mill",
+     "work": "On Liberty",
+     "citation": "INTRODUCTORY.",
+     "text": "But there is a sphere of action in which society, as distinguished from the individual, has, if any, only an indirect interest; comprehending all that portion of a person's life and conduct which affects only himself, or if it also affects others, only with their free, voluntary, and undeceived consent and participation. When I say only himself, I mean directly, and in the first instance: for whatever affects himself, may affect others _through_ himself; and the objection which may be grounded on this contingency, will receive consideration in the sequel. This, then, is the appropriate region of human liberty. It comprises, first, the inward domain of consciousness; demanding liberty of conscience, in the most comprehensive sense; liberty of thought and feeling; absolute freedom of opinion and sentiment on all subjects, practical or speculative, scientific, moral, or theological. The liberty of expressing and publishing opinions may seem to fall under a different principle, since it belongs to that part of the conduct of an individual which concerns other people; but, being almost of as much importance as the liberty of thought itself, and resting in great part on the same reasons, is practically inseparable from it. Secondly, the principle requires liberty of tastes and pursuits; of framing the plan of our life to suit our own character; of doing as we like, subject to such consequences as may follow: without impediment from our fellow-creatures, so long as what we do does not harm them, even though they should think our conduct foolish, perverse, or wrong. Thirdly, from this liberty of each individual, follows the liberty, within the same limits, of combination among individuals; freedom to unite, for any purpose not involving harm to others: the persons combining being supposed to be of full age, and not forced or deceived.",
+     "move": "Marks out the appropriate region of human liberty as conduct affecting only oneself or others by their free consent, covering conscience, opinion, tastes, and the framing of one's own life-plan.",
+     "confidence": 0.9,
+     "similarity": 0.8298
     },
     {
      "id": 2340,
@@ -951,19 +961,9 @@ window.APORIA_DATA = {
      "work": "On Liberty",
      "citation": "APPLICATIONS.",
      "text": "Such laws are interferences of the state to prohibit a mischievous act--an act injurious to others, which ought to be a subject of reprobation, and social stigma, even when it is not deemed expedient to superadd legal punishment. Yet the current ideas of liberty, which bend so easily to real infringements of the freedom of the individual, in things which concern only himself, would repel the attempt to put any restraint upon his inclinations when the consequence of their indulgence is a life, or lives, of wretchedness and depravity to the offspring, with manifold evils to those sufficiently within reach to be in any way affected by their actions. When we compare the strange respect of mankind for liberty, with their strange want of respect for it, we might imagine that a man had an indispensable right to do harm to others, and no right at all to please himself without giving pain to any one.",
-     "move": "Reclassifies the disputed conduct as injurious to offspring and others, and mocks the inverted sentiment that grants freedom to harm others while denying freedom in purely self-regarding matters.",
-     "confidence": 0.65,
-     "similarity": 0.7566
-    },
-    {
-     "id": 2331,
-     "author": "John Stuart Mill",
-     "work": "On Liberty",
-     "citation": "APPLICATIONS.",
-     "text": "I have already observed that, owing to the absence of any recognised general principles, liberty is often granted where it should be withheld, as well as withheld where it should be granted; and one of the cases in which, in the modern European world, the sentiment of liberty is the strongest, is a case where, in my view, it is altogether misplaced. A person should be free to do as he likes in his own concerns; but he ought not to be free to do as he likes in acting for another, under the pretext that the affairs of another are his own affairs. The State, while it respects the liberty of each in what specially regards himself, is bound to maintain a vigilant control over his exercise of any power which it allows him to possess over others. This obligation is almost entirely disregarded in the case of the family relations, a case, in its direct influence on human happiness, more important than all others taken together. The almost despotic power of husbands over wives need not be enlarged upon here because nothing more is needed for the complete removal of the evil, than that wives should have the same rights, and should receive the protection of law in the same manner, as all other persons; and because, on this subject, the defenders of established injustice do not avail themselves of the plea of liberty, but stand forth openly as the champions of power.",
-     "move": "Uses the harm criterion to redraw a misplaced liberty claim: freedom covers one's own concerns, but power exercised over others (husbands over wives) must be vigilantly controlled by the state.",
-     "confidence": 0.6,
-     "similarity": 0.7383
+     "move": "Justifies state prohibition by reclassifying the conduct as injurious to offspring and others, and mocks the inverted sentiment that seems to grant a right to harm others while denying the right to please oneself harmlessly.",
+     "confidence": 0.68,
+     "similarity": 0.8266
     },
     {
      "id": 2330,
@@ -971,21 +971,61 @@ window.APORIA_DATA = {
      "work": "On Liberty",
      "citation": "APPLICATIONS.",
      "text": "A person is bound to take all these circumstances into account, before resolving on a step which may affect such important interests of others; and if he does not allow proper weight to those interests, he is morally responsible for the wrong. I have made these obvious remarks for the better illustration of the general principle of liberty, and not because they are at all needed on the particular question, which, on the contrary, is usually discussed as if the interest of children was everything, and that of grown persons nothing.",
-     "move": "Grounds moral responsibility in the interests of others affected by one's step, illustrating the general principle of liberty by where the duty to others begins.",
+     "move": "Anchors moral responsibility to the important interests of others that a step may affect, using that boundary to illustrate the general principle of liberty.",
      "confidence": 0.55,
-     "similarity": 0.7379
+     "similarity": 0.805
+    },
+    {
+     "id": 2228,
+     "author": "John Stuart Mill",
+     "work": "On Liberty",
+     "citation": "CHAPTER III.",
+     "text": "Acts, of whatever kind, which, without justifiable cause, do harm to others, may be, and in the more important cases absolutely require to be, controlled by the unfavourable sentiments, and, when needful, by the active interference of mankind. The liberty of the individual must be thus far limited; he must not make himself a nuisance to other people. But if he refrains from molesting others in what concerns them, and merely acts according to his own inclination and judgment in things which concern himself, the same reasons which show that opinion should be free, prove also that he should be allowed, without molestation, to carry his opinions into practice at his own cost. That mankind are not infallible; that their truths, for the most part, are only half-truths; that unity of opinion, unless resulting from the fullest and freest comparison of opposite opinions, is not desirable, and diversity not an evil, but a good, until mankind are much more capable than at present of recognising all sides of the truth, are principles applicable to men's modes of action, not less than to their opinions. As it is useful that while mankind are imperfect there should be different opinions, so is it that there should be different experiments of living; that free scope should be given to varieties of character, short of injury to others; and that the worth of different modes of life should be proved practically, when any one thinks fit to try them.",
+     "move": "Limits liberty exactly at unjustified harm to others, and argues that fallibility and the value of diverse experiments in living entitle a person to act on his own judgment at his own cost.",
+     "confidence": 0.9,
+     "similarity": 0.801
+    },
+    {
+     "id": 2331,
+     "author": "John Stuart Mill",
+     "work": "On Liberty",
+     "citation": "APPLICATIONS.",
+     "text": "I have already observed that, owing to the absence of any recognised general principles, liberty is often granted where it should be withheld, as well as withheld where it should be granted; and one of the cases in which, in the modern European world, the sentiment of liberty is the strongest, is a case where, in my view, it is altogether misplaced. A person should be free to do as he likes in his own concerns; but he ought not to be free to do as he likes in acting for another, under the pretext that the affairs of another are his own affairs. The State, while it respects the liberty of each in what specially regards himself, is bound to maintain a vigilant control over his exercise of any power which it allows him to possess over others. This obligation is almost entirely disregarded in the case of the family relations, a case, in its direct influence on human happiness, more important than all others taken together. The almost despotic power of husbands over wives need not be enlarged upon here because nothing more is needed for the complete removal of the evil, than that wives should have the same rights, and should receive the protection of law in the same manner, as all other persons; and because, on this subject, the defenders of established injustice do not avail themselves of the plea of liberty, but stand forth openly as the champions of power.",
+     "move": "Applies the criterion to a misplaced liberty claim: a person is free in his own concerns but not in exercising power over others, so the state must vigilantly control such power, as in family relations.",
+     "confidence": 0.72,
+     "similarity": 0.8
+    },
+    {
+     "id": 2137,
+     "author": "John Stuart Mill",
+     "work": "On Liberty",
+     "citation": "INTRODUCTORY.",
+     "text": "A person may cause evil to others not only by his actions but by his inaction, and in either case he is justly accountable to them for the injury. The latter case, it is true, requires a much more cautious exercise of compulsion than the former. To make any one answerable for doing evil to others, is the rule; to make him answerable for not preventing evil, is, comparatively speaking, the exception. Yet there are many cases clear enough and grave enough to justify that exception. In all things which regard the external relations of the individual, he is _de jure_ amenable to those whose interests are concerned, and if need be, to society as their protector. There are often good reasons for not holding him to the responsibility; but these reasons must arise from the special expediencies of the case: either because it is a kind of case in which he is on the whole likely to act better, when left to his own discretion, than when controlled in any way in which society have it in their power to control him; or because the attempt to exercise control would produce other evils, greater than those which it would prevent.",
+     "move": "Extends accountability from acts to inaction that causes evil to others, while cautioning that compulsion here is the exception and may be withheld on grounds of expediency.",
+     "confidence": 0.68,
+     "similarity": 0.7985
     }
    ],
    "against": [
+    {
+     "id": 2279,
+     "author": "John Stuart Mill",
+     "work": "On Liberty",
+     "citation": "CHAPTER IV.",
+     "text": "The distinction here pointed out between the part of a person's life which concerns only himself, and that which concerns others, many persons will refuse to admit. How (it may be asked) can any part of the conduct of a member of society be a matter of indifference to the other members? No person is an entirely isolated being; it is impossible for a person to do anything seriously or permanently hurtful to himself, without mischief reaching at least to his near connections, and often far beyond them. If he injures his property, he does harm to those who directly or indirectly derived support from it, and usually diminishes, by a greater or less amount, the general resources of the community. If he deteriorates his bodily or mental faculties, he not only brings evil upon all who depended on him for any portion of their happiness, but disqualifies himself for rendering the services which he owes to his fellow-creatures generally; perhaps becomes a burthen on their affection or benevolence; and if such conduct were very frequent, hardly any offence that is committed would detract more from the general sum of good. Finally, if by his vices or follies a person does no direct harm to others, he is nevertheless (it may be said) injurious by his example; and ought to be compelled to control himself, for the sake of those whom the sight or knowledge of his conduct might corrupt or mislead.",
+     "move": "Attacks the self-regarding/other-regarding distinction, arguing no one is isolated, that self-injury drains shared resources and burdens dependants, and that a bad example alone warrants compulsion.",
+     "confidence": 0.8,
+     "similarity": 0.8233
+    },
     {
      "id": 2326,
      "author": "John Stuart Mill",
      "work": "On Liberty",
      "citation": "APPLICATIONS.",
      "text": "It was pointed out in an early part of this Essay, that the liberty of the individual, in things wherein the individual is alone concerned, implies a corresponding liberty in any number of individuals to regulate by mutual agreement such things as regard them jointly, and regard no persons but themselves. This question presents no difficulty, so long as the will of all the persons implicated remains unaltered; but since that will may change, it is often necessary, even in things in which they alone are concerned, that they should enter into engagements with one another; and when they do, it is fit, as a general rule, that those engagements should be kept. Yet in the laws, probably, of every country, this general rule has some exceptions. Not only persons are not held to engagements which violate the rights of third parties, but it is sometimes considered a sufficient reason for releasing them from an engagement, that it is injurious to themselves. In this and most other civilised countries, for example, an engagement by which a person should sell himself, or allow himself to be sold, as a slave, would be null and void; neither enforced by law nor by opinion.",
-     "move": "Concedes that engagements may be voided simply because they are injurious to the contracting party himself, citing the nullity of a self-sale into slavery.",
-     "confidence": 0.75,
-     "similarity": 0.7613
+     "move": "Concedes an exception in which a binding engagement is voided simply because it is injurious to the contracting party himself, instancing the nullity of selling oneself into slavery.",
+     "confidence": 0.72,
+     "similarity": 0.8181
     },
     {
      "id": 2280,
@@ -993,61 +1033,21 @@ window.APORIA_DATA = {
      "work": "On Liberty",
      "citation": "CHAPTER IV.",
      "text": "And even (it will be added) if the consequences of misconduct could be confined to the vicious or thoughtless individual, ought society to abandon to their own guidance those who are manifestly unfit for it? If protection against themselves is confessedly due to children and persons under age, is not society equally bound to afford it to persons of mature years who are equally incapable of self-government? If gambling, or drunkenness, or incontinence, or idleness, or uncleanliness, are as injurious to happiness, and as great a hindrance to improvement, as many or most of the acts prohibited by law, why (it may be asked) should not law, so far as is consistent with practicability and social convenience, endeavour to repress these also? And as a supplement to the unavoidable imperfections of law, ought not opinion at least to organise a powerful police against these vices, and visit rigidly with social penalties those who are known to practise them? There is no question here (it may be said) about restricting individuality, or impeding the trial of new and original experiments in living. The only things it is sought to prevent are things which have been tried and condemned from the beginning of the world until now; things which experience has shown not to be useful or suitable to any person's individuality. There must be some length of time and amount of experience, after which a moral or prudential truth may be regarded as established: and it is merely desired to prevent generation after generation from falling over the same precipice which has been fatal to their predecessors.",
-     "move": "Presses the paternalist objection that society owes protection to adults incapable of self-government, and should repress vices like drunkenness and idleness by law and organised opinion.",
-     "confidence": 0.75,
-     "similarity": 0.7475
-    },
-    {
-     "id": 2279,
-     "author": "John Stuart Mill",
-     "work": "On Liberty",
-     "citation": "CHAPTER IV.",
-     "text": "The distinction here pointed out between the part of a person's life which concerns only himself, and that which concerns others, many persons will refuse to admit. How (it may be asked) can any part of the conduct of a member of society be a matter of indifference to the other members? No person is an entirely isolated being; it is impossible for a person to do anything seriously or permanently hurtful to himself, without mischief reaching at least to his near connections, and often far beyond them. If he injures his property, he does harm to those who directly or indirectly derived support from it, and usually diminishes, by a greater or less amount, the general resources of the community. If he deteriorates his bodily or mental faculties, he not only brings evil upon all who depended on him for any portion of their happiness, but disqualifies himself for rendering the services which he owes to his fellow-creatures generally; perhaps becomes a burthen on their affection or benevolence; and if such conduct were very frequent, hardly any offence that is committed would detract more from the general sum of good. Finally, if by his vices or follies a person does no direct harm to others, he is nevertheless (it may be said) injurious by his example; and ought to be compelled to control himself, for the sake of those whom the sight or knowledge of his conduct might corrupt or mislead.",
-     "move": "Denies the self-regarding/other-regarding distinction, arguing no one is isolated: self-injury drains shared resources, burdens dependants, and corrupts by example.",
-     "confidence": 0.8,
-     "similarity": 0.7442
+     "move": "Presses the paternalist case that adults incapable of self-government deserve the protection given children, so law and organised opinion should repress gambling, drunkenness, and idleness.",
+     "confidence": 0.78,
+     "similarity": 0.8084
     }
    ],
    "nuance": [
     {
-     "id": 2318,
+     "id": 2313,
      "author": "John Stuart Mill",
      "work": "On Liberty",
      "citation": "APPLICATIONS.",
-     "text": "There is another question to which an answer must be found, consistent with the principles which have been laid down. In cases of personal conduct supposed to be blamable, but which respect for liberty precludes society from preventing or punishing, because the evil directly resulting falls wholly on the agent; what the agent is free to do, ought other persons to be equally free to counsel or instigate? This question is not free from difficulty. The case of a person who solicits another to do an act, is not strictly a case of self-regarding conduct. To give advice or offer inducements to any one, is a social act, and may therefore, like actions in general which affect others, be supposed amenable to social control. But a little reflection corrects the first impression, by showing that if the case is not strictly within the definition of individual liberty, yet the reasons on which the principle of individual liberty is grounded, are applicable to it. If people must be allowed, in whatever concerns only themselves, to act as seems best to themselves at their own peril, they must equally be free to consult with one another about what is fit to be so done; to exchange opinions, and give and receive suggestions.",
-     "move": "Tests a borderline case — counselling or instigating self-regarding acts — conceding it is a social act outside the strict definition, then extending liberty to it by analogy of reasons.",
+     "text": "Again, it is a proper office of public authority to guard against accidents. If either a public officer or any one else saw a person attempting to cross a bridge which had been ascertained to be unsafe, and there were no time to warn him of his danger, they might seize him and turn him back, without any real infringement of his liberty; for liberty consists in doing what one desires, and he does not desire to fall into the river. Nevertheless, when there is not a certainty, but only a danger of mischief, no one but the person himself can judge of the sufficiency of the motive which may prompt him to incur the risk: in this case, therefore (unless he is a child, or delirious, or in some state of excitement or absorption incompatible with the full use of the reflecting faculty), he ought, I conceive, to be only warned of the danger; not forcibly prevented from exposing himself to it. Similar considerations, applied to such a question as the sale of poisons, may enable us to decide which among the possible modes of regulation are or are not contrary to principle. Such a precaution, for example, as that of labelling the drug with some word expressive of its dangerous character, may be enforced without violation of liberty: the buyer cannot wish not to know that the thing he possesses has poisonous qualities.",
+     "move": "Defuses an apparent counterexample by redefining liberty as doing what one desires, so stopping a man from an unsafe bridge is no infringement, while insisting that mere risk warrants warning rather than prevention.",
      "confidence": 0.6,
-     "similarity": 0.7621
-    },
-    {
-     "id": 2244,
-     "author": "John Stuart Mill",
-     "work": "On Liberty",
-     "citation": "CHAPTER III.",
-     "text": "Having said that Individuality is the same thing with development, and that it is only the cultivation of individuality which produces, or can produce, well-developed human beings, I might here close the argument: for what more or better can be said of any condition of human affairs, than that it brings human beings themselves nearer to the best thing they can be? or what worse can be said of any obstruction to good, than that it prevents this? Doubtless, however, these considerations will not suffice to convince those who most need convincing; and it is necessary further to show, that these developed human beings are of some use to the undeveloped--to point out to those who do not desire liberty, and would not avail themselves of it, that they may be in some intelligible manner rewarded for allowing other people to make use of it without hindrance.",
-     "move": "Argues for liberty on developmental grounds — cultivation of individuality makes well-developed human beings — without addressing what may limit it.",
-     "confidence": 0.6,
-     "similarity": 0.7468
-    },
-    {
-     "id": 2311,
-     "author": "John Stuart Mill",
-     "work": "On Liberty",
-     "citation": "APPLICATIONS.",
-     "text": "As the principle of individual liberty is not involved in the doctrine of Free Trade, so neither is it in most of the questions which arise respecting the limits of that doctrine: as for example, what amount of public control is admissible for the prevention of fraud by adulteration; how far sanitary precautions, or arrangements to protect work-people employed in dangerous occupations, should be enforced on employers. Such questions involve considerations of liberty, only in so far as leaving people to themselves is always better, _cæteris paribus_, than controlling them: but that they may be legitimately controlled for these ends, is in principle undeniable. On the other hand, there are questions relating to interference with trade, which are essentially questions of liberty; such as the Maine Law, already touched upon; the prohibition of the importation of opium into China; the restriction of the sale of poisons; all cases, in short, where the object of the interference is to make it impossible or difficult to obtain a particular commodity. These interferences are objectionable, not as infringements on the liberty of the producer or seller, but on that of the buyer.",
-     "move": "Reframes the boundary question by distinguishing controls that raise no issue of liberty at all (anti-adulteration, workplace safety) from prohibitions that infringe the buyer's liberty.",
-     "confidence": 0.65,
-     "similarity": 0.7445
-    },
-    {
-     "id": 2230,
-     "author": "John Stuart Mill",
-     "work": "On Liberty",
-     "citation": "CHAPTER III.",
-     "text": "In maintaining this principle, the greatest difficulty to be encountered does not lie in the appreciation of means towards an acknowledged end, but in the indifference of persons in general to the end itself. If it were felt that the free development of individuality is one of the leading essentials of well-being; that it is not only a co-ordinate element with all that is designated by the terms civilisation, instruction, education, culture, but is itself a necessary part and condition of all those things; there would be no danger that liberty should be under-valued, and the adjustment of the boundaries between it and social control would present no extraordinary difficulty. But the evil is, that individual spontaneity is hardly recognised by the common modes of thinking, as having any intrinsic worth, or deserving any regard on its own account. The majority, being satisfied with the ways of mankind as they now are (for it is they who make them what they are), cannot comprehend why those ways should not be good enough for everybody; and what is more, spontaneity forms no part of the ideal of the majority of moral and social reformers, but is rather looked on with jealousy, as a troublesome and perhaps rebellious obstruction to the general acceptance of what these reformers, in their own judgment, think would be best for mankind.",
-     "move": "Locates the real difficulty not in drawing the boundary with social control but in the public's indifference to individual spontaneity as an intrinsic good.",
-     "confidence": 0.65,
-     "similarity": 0.7423
+     "similarity": 0.7981
     }
    ]
   },
@@ -1057,24 +1057,34 @@ window.APORIA_DATA = {
    "blurb": "Plato's Republic exists because someone argued justice was a racket.",
    "for": [
     {
+     "id": 4450,
+     "author": "Plato",
+     "work": "The Republic",
+     "citation": "BOOK IV.",
+     "text": "Let us say so. And now, I said, injustice has to be considered. Clearly. Must not injustice be a strife which arises among the three principles—a meddlesomeness, and interference, and rising up of a part of the soul against the whole, an assertion of unlawful authority, which is made by a rebellious subject against a true prince, of whom he is the natural vassal,—what is all this confusion and delusion but injustice, and intemperance and cowardice and ignorance, and every form of vice? Exactly so. And if the nature of justice and injustice be known, then the meaning of acting unjustly and being unjust, or, again, of acting justly, will also be perfectly clear? What do you mean? he said. Why, I said, they are like disease and health; being in the soul just what disease and health are in the body. How so? he said. Why, I said, that which is healthy causes health, and that which is unhealthy causes disease. Yes. And just actions cause justice, and unjust actions cause injustice? That is certain. And the creation of health is the institution of a natural order and government of one by another in the parts of the body; and the creation of disease is the production of a state of things at variance with this natural order? True. And is not the creation of justice the institution of a natural order and government of one by another in the parts of the soul, and the creation of injustice the production of a state of things at variance with the natural order? Exactly so, he said. Then virtue is the health and beauty and well-being of the soul, and vice the disease and weakness and deformity of the same? True.",
+     "move": "Casts justice and injustice as health and disease of the soul, making justice the institution of a natural order and government among the soul's parts rather than an agreed arrangement.",
+     "confidence": 0.88,
+     "similarity": 0.8034
+    },
+    {
      "id": 4448,
      "author": "Plato",
      "work": "The Republic",
      "citation": "BOOK IV.",
      "text": "And is justice dimmer in the individual, and is her form different, or is she the same which we found her to be in the State? There is no difference in my opinion, he said. Because, if any doubt is still lingering in our minds, a few commonplace instances will satisfy us of the truth of what I am saying. What sort of instances do you mean? If the case is put to us, must we not admit that the just State, or the man who is trained in the principles of such a State, will be less likely than the unjust to make away with a deposit of gold or silver? Would any one deny this? No one, he replied. Will the just man or citizen ever be guilty of sacrilege or theft, or treachery either to his friends or to his country? Never. Neither will he ever break faith where there have been oaths or agreements? Impossible. No one will be less likely to commit adultery, or to dishonour his father and mother, or to fail in his religious duties? No one. And the reason is that each part of him is doing its own business, whether in ruling or being ruled? Exactly so. Are you satisfied then that the quality which makes such men and such states is justice, or do you hope to discover some other? Not I, indeed. Then our dream has been realized; and the suspicion which we entertained at the beginning of our work of construction, that some divine power must have conducted us to a primary form of justice, has now been verified? Yes, certainly.",
-     "move": "Identifies justice as the same structural quality in state and soul — each part doing its own business — and treats it as a discovered 'primary form' that some divine power led them to, not a human arrangement.",
+     "move": "Finds one and the same form of justice in state and individual — each part doing its own business — and treats it as a primary form discovered, and divinely led to, rather than instituted.",
      "confidence": 0.85,
-     "similarity": 0.7263
+     "similarity": 0.7913
     },
     {
-     "id": 4298,
-     "author": "Plato",
-     "work": "The Republic",
-     "citation": "BOOK I.",
-     "text": "Certainly not, I said, if contrary to your real opinion. Yes, he said, I will, to please you, since you will not let me speak. What else would you have? Nothing in the world, I said; and if you are so disposed I will ask and you shall answer. Proceed. Then I will repeat the question which I asked before, in order that our examination of the relative nature of justice and injustice may be carried on regularly. A statement was made that injustice is stronger and more powerful than justice, but now justice, having been identified with wisdom and virtue, is easily shown to be stronger than injustice, if injustice is ignorance; this can no longer be questioned by any one. But I want to view the matter, Thrasymachus, in a different way: You would not deny that a state may be unjust and may be unjustly attempting to enslave other states, or may have already enslaved them, and may be holding many of them in subjection? True, he replied; and I will add that the best and most perfectly unjust state will be most likely to do so. I know, I said, that such was your position; but what I would further consider is, whether this power which is possessed by the superior state can exist or be exercised without justice or only with justice. If you are right in your view, and justice is wisdom, then only with justice; but if I am right, then without justice. I am delighted, Thrasymachus, to see you not only nodding assent and dissent, but making answers which are quite excellent. That is out of civility to you, he replied.",
-     "move": "Identifies justice with wisdom and virtue and argues that even a state's power to enslave depends on justice among its members, making justice a real strength-conferring quality rather than a convention.",
-     "confidence": 0.7,
-     "similarity": 0.7215
+     "id": 2086,
+     "author": "John Stuart Mill",
+     "work": "Utilitarianism",
+     "citation": "CHAPTER V.",
+     "text": "That first of judicial virtues, impartiality, is an obligation of justice, partly for the reason last mentioned; as being a necessary condition of the fulfilment of the other obligations of justice. But this is not the only source of the exalted rank, among human obligations, of those maxims of equality and impartiality, which, both in popular estimation and in that of the most enlightened, are included among the precepts of justice. In one point of view, they may be considered as corollaries from the principles already laid down. If it is a duty to do to each according to his deserts, returning good for good as well as repressing evil by evil, it necessarily follows that we should treat all equally well (when no higher duty forbids) who have deserved equally well of us, and that society should treat all equally well who have deserved equally well of it, that is, who have deserved equally well absolutely. This is the highest abstract standard of social and distributive justice; towards which all institutions, and the efforts of all virtuous citizens, should be made in the utmost possible degree to converge. But this great moral duty rests upon a still deeper foundation, being a direct emanation from the first principle of morals, and not a mere logical corollary from secondary or derivative doctrines.",
+     "move": "Derives equality and impartiality as the highest abstract standard of distributive justice toward which all institutions should converge, resting it on a deeper foundation that emanates directly from the first principle of morals.",
+     "confidence": 0.6,
+     "similarity": 0.7842
     }
    ],
    "against": [
@@ -1084,9 +1094,9 @@ window.APORIA_DATA = {
      "work": "Utilitarianism",
      "citation": "CHAPTER V.",
      "text": "It appears from what has been said, that justice is a name for certain moral requirements, which, regarded collectively, stand higher in the scale of social utility, and are therefore of more paramount obligation, than any others; though particular cases may occur in which some other social duty is so important, as to overrule any one of the general maxims of justice. Thus, to save a life, it may not only be allowable, but a duty, to steal, or take by force, the necessary food or medicine, or to kidnap, and compel to officiate, the only qualified medical practitioner. In such cases, as we do not call anything justice which is not a virtue, we usually say, not that justice must give way to some other moral principle, but that what is just in ordinary cases is, by reason of that other principle, not just in the particular case. By this useful accommodation of language, the character of indefeasibility attributed to justice is kept up, and we are saved from the necessity of maintaining that there can be laudable injustice.",
-     "move": "Reduces justice to the class of moral requirements highest in social utility, admitting they can be overruled and that their apparent indefeasibility is preserved only by a 'useful accommodation of language'.",
-     "confidence": 0.6,
-     "similarity": 0.7492
+     "move": "Reduces justice to those moral requirements highest in social utility, admits other duties can override them, and treats its apparent indefeasibility as preserved only by a useful accommodation of language.",
+     "confidence": 0.72,
+     "similarity": 0.8155
     },
     {
      "id": 2075,
@@ -1094,9 +1104,9 @@ window.APORIA_DATA = {
      "work": "Utilitarianism",
      "citation": "CHAPTER V.",
      "text": "Again, when the legitimacy of inflicting punishment is admitted, how many conflicting conceptions of justice come to light in discussing the proper apportionment of punishment to offences. No rule on this subject recommends itself so strongly to the primitive and spontaneous sentiment of justice, as the _lex talionis_, an eye for an eye and a tooth for a tooth. Though this principle of the Jewish and of the Mahomedan law has been generally abandoned in Europe as a practical maxim, there is, I suspect, in most minds, a secret hankering after it; and when retribution accidentally falls on an offender in that precise shape, the general feeling of satisfaction evinced, bears witness how natural is the sentiment to which this repayment in kind is acceptable. With many the test of justice in penal infliction is that the punishment should be proportioned to the offence; meaning that it should be exactly measured by the moral guilt of the culprit (whatever be their standard for measuring moral guilt): the consideration, what amount of punishment is necessary to deter from the offence, having nothing to do with the question of justice, in their estimation: while there are others to whom that consideration is all in all; who maintain that it is not just, at least for man, to inflict on a fellow creature, whatever may be his offences, any amount of suffering beyond the least that will suffice to prevent him from repeating, and others from imitating, his misconduct.",
-     "move": "Exhibits the irreconcilable conflict between retributive (lex talionis, proportion to guilt) and deterrent conceptions of just punishment as evidence that no single standard of justice is delivered to us.",
-     "confidence": 0.7,
-     "similarity": 0.7405
+     "move": "Displays the unresolved conflict between retributive and deterrent tests of just punishment as evidence that the sentiment of justice delivers no single determinate standard.",
+     "confidence": 0.72,
+     "similarity": 0.8025
     },
     {
      "id": 2071,
@@ -1104,19 +1114,19 @@ window.APORIA_DATA = {
      "work": "Utilitarianism",
      "citation": "CHAPTER V.",
      "text": "If the preceding analysis, or something resembling it, be not the correct account of the notion of justice; if justice be totally independent of utility, and be a standard _per se_, which the mind can recognize by simple introspection of itself; it is hard to understand why that internal oracle is so ambiguous, and why so many things appear either just or unjust, according to the light in which they are regarded. We are continually informed that Utility is an uncertain standard, which every different person interprets differently, and that there is no safety but in the immutable, ineffaceable, and unmistakeable dictates of Justice, which carry their evidence in themselves, and are independent of the fluctuations of opinion. One would suppose from this that on questions of justice there could be no controversy; that if we take that for our rule, its application to any given case could leave us in as little doubt as a mathematical demonstration. So far is this from being the fact, that there is as much difference of opinion, and as fierce discussion, about what is just, as about what is useful to society. Not only have different nations and individuals different notions of justice, but, in the mind of one and the same individual, justice is not some one rule, principle, or maxim, but many, which do not always coincide in their dictates, and in choosing between which, he is guided either by some extraneous standard, or by his own personal predilections.",
-     "move": "Argues that if justice were an independent standard per se known by introspection, its 'internal oracle' would not be so ambiguous — yet nations, individuals, and even one mind hold many conflicting maxims of justice.",
+     "move": "Argues that if justice were an independent standard per se known by introspection its internal oracle would not be so ambiguous, since disagreement about the just is as fierce as about the useful, even within one mind.",
      "confidence": 0.9,
-     "similarity": 0.7241
+     "similarity": 0.7888
     },
     {
-     "id": 4309,
-     "author": "Plato",
-     "work": "The Republic",
-     "citation": "BOOK II.",
-     "text": "Indeed I do; nor can I imagine any theme about which a man of sense would oftener wish to converse. I am delighted, he replied, to hear you say so, and shall begin by speaking, as I proposed, of the nature and origin of justice. They say that to do injustice is, by nature, good; to suffer injustice, evil; but that the evil is greater than the good. And so when men have both done and suffered injustice and have had experience of both, not being able to avoid the one and obtain the other, they think that they had better agree among themselves to have neither; hence there arise laws and mutual covenants; and that which is ordained by law is termed by them lawful and just. This they affirm to be the origin and nature of justice;—it is a mean or compromise, between the best of all, which is to do injustice and not be punished, and the worst of all, which is to suffer injustice without the power of retaliation; and justice, being at a middle point between the two, is tolerated not as a good, but as the lesser evil, and honoured by reason of the inability of men to do injustice. For no man who is worthy to be called a man would ever submit to such an agreement if he were able to resist; he would be mad if he did. Such is the received account, Socrates, of the nature and origin of justice.",
-     "move": "Reports the received account that justice originates in laws and mutual covenants adopted as a compromise by those unable to do injustice with impunity, tolerated as the lesser evil rather than as a good.",
+     "id": 2074,
+     "author": "John Stuart Mill",
+     "work": "Utilitarianism",
+     "citation": "CHAPTER V.",
+     "text": "To escape from the other difficulties, a favourite contrivance has been the fiction of a contract, whereby at some unknown period all the members of society engaged to obey the laws, and consented to be punished for any disobedience to them; thereby giving to their legislators the right, which it is assumed they would not otherwise have had, of punishing them, either for their own good or for that of society. This happy thought was considered to get rid of the whole difficulty, and to legitimate the infliction of punishment, in virtue of another received maxim of justice, _volenti non fit injuria_; that is not unjust which is done with the consent of the person who is supposed to be hurt by it. I need hardly remark, that even if the consent were not a mere fiction, this maxim is not superior in authority to the others which it is brought in to supersede. It is, on the contrary, an instructive specimen of the loose and irregular manner in which supposed principles of justice grow up. This particular one evidently came into use as a help to the coarse exigencies of courts of law, which are sometimes obliged to be content with very uncertain presumptions, on account of the greater evils which would often arise from any attempt on their part to cut finer.",
+     "move": "Debunks the maxim volenti non fit injuria as an instructive specimen of the loose and irregular way supposed principles of justice grow up, arising from the coarse exigencies of courts.",
      "confidence": 0.8,
-     "similarity": 0.72
+     "similarity": 0.7847
     }
    ],
    "nuance": [
@@ -1126,9 +1136,9 @@ window.APORIA_DATA = {
      "work": "Utilitarianism",
      "citation": "CHAPTER V.",
      "text": "* * * * * Is, then, the difference between the Just and the Expedient a merely imaginary distinction? Have mankind been under a delusion in thinking that justice is a more sacred thing than policy, and that the latter ought only to be listened to after the former has been satisfied? By no means. The exposition we have given of the nature and origin of the sentiment, recognises a real distinction; and no one of those who profess the most sublime contempt for the consequences of actions as an element in their morality, attaches more importance to the distinction than I do. While I dispute the pretensions of any theory which sets up an imaginary standard of justice not grounded on utility, I account the justice which is grounded on utility to be the chief part, and incomparably the most sacred and binding part, of all morality. Justice is a name for certain classes of moral rules, which concern the essentials of human well-being more nearly, and are therefore of more absolute obligation, than any other rules for the guidance of life; and the notion which we have found to be of the essence of the idea of justice, that of a right residing in an individual, implies and testifies to this more binding obligation.",
-     "move": "Insists the Just/Expedient distinction is real and supremely binding, while simultaneously rejecting any standard of justice not grounded on utility, so justice is neither imaginary nor independently real.",
-     "confidence": 0.65,
-     "similarity": 0.7709
+     "move": "Affirms that the Just/Expedient distinction is real and the most sacred part of morality while denying any standard of justice not grounded on utility, so justice is neither imaginary nor independently real.",
+     "confidence": 0.68,
+     "similarity": 0.8299
     },
     {
      "id": 2056,
@@ -1136,9 +1146,9 @@ window.APORIA_DATA = {
      "work": "Utilitarianism",
      "citation": "CHAPTER V.",
      "text": "The above is, I think, a true account, as far as it goes, of the origin and progressive growth of the idea of justice. But we must observe, that it contains, as yet, nothing to distinguish that obligation from moral obligation in general. For the truth is, that the idea of penal sanction, which is the essence of law, enters not only into the conception of injustice, but into that of any kind of wrong. We do not call anything wrong, unless we mean to imply that a person ought to be punished in some way or other for doing it; if not by law, by the opinion of his fellow creatures; if not by opinion, by the reproaches of his own conscience. This seems the real turning point of the distinction between morality and simple expediency. It is a part of the notion of Duty in every one of its forms, that a person may rightfully be compelled to fulfil it. Duty is a thing which may be _exacted_ from a person, as one exacts a debt. Unless we think that it might be exacted from him, we do not call it his duty. Reasons of prudence, or the interest of other people, may militate against actually exacting it; but the person himself, it is clearly understood, would not be entitled to complain.",
-     "move": "Analyzes the idea of justice genealogically, locating the mark of duty in the thought that performance may rightfully be exacted, without saying whether justice is objective or conventional.",
+     "move": "Analyses the idea of justice by locating the mark of duty in the thought that performance may rightfully be exacted, distinguishing morality from expediency without settling whether justice is objective.",
      "confidence": 0.7,
-     "similarity": 0.7506
+     "similarity": 0.8071
     },
     {
      "id": 2054,
@@ -1146,19 +1156,9 @@ window.APORIA_DATA = {
      "work": "Utilitarianism",
      "citation": "CHAPTER V.",
      "text": "It is true that mankind consider the idea of justice and its obligations as applicable to many things which neither are, nor is it desired that they should be, regulated by law. Nobody desires that laws should interfere with the whole detail of private life; yet every one allows that in all daily conduct a person may and does show himself to be either just or unjust. But even here, the idea of the breach of what ought to be law, still lingers in a modified shape. It would always give us pleasure, and chime in with our feelings of fitness, that acts which we deem unjust should be punished, though we do not always think it expedient that this should be done by the tribunals. We forego that gratification on account of incidental inconveniences. We should be glad to see just conduct enforced and injustice repressed, even in the minutest details, if we were not, with reason, afraid of trusting the magistrate with so unlimited an amount of power over individuals. When we think that a person is bound in justice to do a thing, it is an ordinary form of language to say, that he ought to be compelled to do it.",
-     "move": "Observes that justice extends beyond enforceable law yet still carries the shadow of 'what ought to be law', describing the concept's scope rather than adjudicating its objectivity.",
+     "move": "Notes that justice reaches beyond what law does or should regulate yet still carries the lingering idea of what ought to be law, describing the concept's scope rather than adjudicating its status.",
      "confidence": 0.65,
-     "similarity": 0.7337
-    },
-    {
-     "id": 2053,
-     "author": "John Stuart Mill",
-     "work": "Utilitarianism",
-     "citation": "CHAPTER V.",
-     "text": "The courts of justice, the administration of justice, are the courts and the administration of law. _La justice_, in French, is the established term for judicature. There can, I think, be no doubt that the _idée mère_, the primitive element, in the formation of the notion of justice, was conformity to law. It constituted the entire idea among the Hebrews, up to the birth of Christianity; as might be expected in the case of a people whose laws attempted to embrace all subjects on which precepts were required, and who believed those laws to be a direct emanation from the Supreme Being. But other nations, and in particular the Greeks and Romans, who knew that their laws had been made originally, and still continued to be made, by men, were not afraid to admit that those men might make bad laws; might do, by law, the same things, and from the same motives, which, if done by individuals without the sanction of law, would be called unjust. And hence the sentiment of injustice came to be attached, not to all violations of law, but only to violations of such laws as _ought_ to exist, including such as ought to exist but do not; and to laws themselves, if supposed to be contrary to what ought to be law.",
-     "move": "Traces the primitive element of justice to conformity to law, then notes that Greeks and Romans, knowing laws were man-made and could be bad, attached injustice only to laws that ought to exist.",
-     "confidence": 0.6,
-     "similarity": 0.727
+     "similarity": 0.7951
     },
     {
      "id": 2058,
@@ -1166,9 +1166,9 @@ window.APORIA_DATA = {
      "work": "Utilitarianism",
      "citation": "CHAPTER V.",
      "text": "This, therefore, being the characteristic difference which marks off, not justice, but morality in general, from the remaining provinces of Expediency and Worthiness; the character is still to be sought which distinguishes justice from other branches of morality. Now it is known that ethical writers divide moral duties into two classes, denoted by the ill-chosen expressions, duties of perfect and of imperfect obligation; the latter being those in which, though the act is obligatory, the particular occasions of performing it are left to our choice; as in the case of charity or beneficence, which we are indeed bound to practise, but not towards any definite person, nor at any prescribed time. In the more precise language of philosophic jurists, duties of perfect obligation are those duties in virtue of which a correlative right resides in some person or persons; duties of imperfect obligation are those moral obligations which do not give birth to any right. I think it will be found that this distinction exactly coincides with that which exists between justice and the other obligations of morality. In our survey of the various popular acceptations of justice, the term appeared generally to involve the idea of a personal right--a claim on the part of one or more individuals, like that which the law gives when it confers a proprietary or other legal right.",
-     "move": "Distinguishes duties of perfect from imperfect obligation and aligns justice with the former by the presence of a correlative personal right, an analytic demarcation that takes no side on objectivity.",
+     "move": "Demarcates justice from other morality by aligning it with duties of perfect obligation, which have a correlative personal right, an analytic distinction that takes no side on objectivity.",
      "confidence": 0.7,
-     "similarity": 0.7258
+     "similarity": 0.7893
     },
     {
      "id": 2040,
@@ -1176,9 +1176,9 @@ window.APORIA_DATA = {
      "work": "Utilitarianism",
      "citation": "CHAPTER V.",
      "text": "In the case of this, as of our other moral sentiments, there is no necessary connexion between the question of its origin, and that of its binding force. That a feeling is bestowed on us by Nature, does not necessarily legitimate all its promptings. The feeling of justice might be a peculiar instinct, and might yet require, like our other instincts, to be controlled and enlightened by a higher reason. If we have intellectual instincts, leading us to judge in a particular way, as well as animal instincts that prompt us to act in a particular way, there is no necessity that the former should be more infallible in their sphere than the latter in theirs: it may as well happen that wrong judgments are occasionally suggested by those, as wrong actions by these. But though it is one thing to believe that we have natural feelings of justice, and another to acknowledge them as an ultimate criterion of conduct, these two opinions are very closely connected in point of fact. Mankind are always predisposed to believe that any subjective feeling, not otherwise accounted for, is a revelation of some objective reality. Our present object is to determine whether the reality, to which the feeling of justice corresponds, is one which needs any such special revelation; whether the justice or injustice of an action is a thing intrinsically peculiar, and distinct from all its other qualities, or only a combination of certain of those qualities, presented under a peculiar aspect.",
-     "move": "Separates the origin of the sentiment of justice from its binding force and poses as an open question whether the reality behind the feeling is intrinsically peculiar or only a combination of other qualities.",
+     "move": "Separates the origin of the feeling of justice from its binding force and poses as still open whether the reality behind it is intrinsically peculiar or merely a combination of other qualities.",
      "confidence": 0.75,
-     "similarity": 0.7198
+     "similarity": 0.7866
     }
    ]
   },
@@ -1193,9 +1193,9 @@ window.APORIA_DATA = {
      "work": "The Will to Believe, and Other Essays in Popular Philosophy",
      "citation": "IV.",
      "text": "Agnostic positivism, of course, admits this principle theoretically in the most cordial terms, but insists that we must not turn it to any practical use. We have no right, this doctrine tells us, to dream dreams, or suppose anything about the unseen part of the universe, merely because to do so may be for what we are pleased to call our highest interests. We must always wait for sensible evidence for our beliefs; and where such evidence is inaccessible we must frame no hypotheses whatever. Of course this is a safe enough position _in abstracto_. If a thinker had no stake in the unknown, no vital needs, to live or languish according to what the unseen world contained, a philosophic neutrality and refusal to believe either one way or the other would be his wisest cue. But, unfortunately, neutrality is not only inwardly difficult, it is also outwardly unrealizable, where our relations to an alternative are practical and vital. This is because, as the psychologists tell us, belief and doubt are living attitudes, and involve conduct on our part. Our only way, for example, of doubting, or refusing to believe, that a certain thing _is_, is continuing to act as if it were _not_.",
-     "move": "Argues that the agnostic rule of framing no hypotheses without sensible evidence is unlivable, since doubt is itself a living attitude that commits us to acting as if the thing were not so.",
+     "move": "Argues that the agnostic rule to frame no hypotheses without sensible evidence is outwardly unrealizable where an option is practical and vital, since doubting is itself a living attitude that commits us to acting as if the thing were not so.",
      "confidence": 0.85,
-     "similarity": 0.7558
+     "similarity": 0.8205
     },
     {
      "id": 824,
@@ -1203,9 +1203,9 @@ window.APORIA_DATA = {
      "work": "The Will to Believe, and Other Essays in Popular Philosophy",
      "citation": "I.",
      "text": "With regard to all other possible truths, however, a number of our most influential contemporaries think that an attitude of faith is not only illogical but shameful. Faith in a religious dogma for which there is no outward proof, but which we are tempted to postulate for our emotional interests, just as we {92} postulate the uniformity of nature for our intellectual interests, is branded by Professor Huxley as \"the lowest depth of immorality.\" Citations of this kind from leaders of the modern _Aufklärung_ might be multiplied almost indefinitely. Take Professor Clifford's article on the 'Ethics of Belief.' He calls it 'guilt' and 'sin' to believe even the truth without 'scientific evidence.' But what is the use of being a genius, unless _with the same scientific evidence_ as other men, one can reach more truth than they? Why does Clifford fearlessly proclaim his belief in the conscious-automaton theory, although the 'proofs' before him are the same which make Mr. Lewes reject it? Why does he believe in primordial units of 'mind-stuff' on evidence which would seem quite worthless to Professor Bain? Simply because, like every human being of the slightest mental originality, he is peculiarly sensitive to evidence that bears in some one direction.",
-     "move": "Turns Clifford's own case against him by noting that Clifford affirms the automaton theory and mind-stuff on evidence others find worthless, showing belief always outruns shared scientific evidence.",
+     "move": "Turns Clifford's own evidentialism against him by noting he proclaims the conscious-automaton theory and mind-stuff on evidence other competent men find worthless, because every original mind is peculiarly sensitive to evidence bearing in one direction.",
      "confidence": 0.75,
-     "similarity": 0.7507
+     "similarity": 0.8038
     },
     {
      "id": 830,
@@ -1213,31 +1213,31 @@ window.APORIA_DATA = {
      "work": "The Will to Believe, and Other Essays in Popular Philosophy",
      "citation": "I.",
      "text": "Suppose, for example, that I am climbing in the Alps, and have had the ill-luck to work myself into a position from which the only escape is by a terrible leap. Being without similar experience, I have no evidence of my ability to perform it successfully; but hope and confidence in myself make me sure I shall not miss my aim, and nerve my feet to execute what without those subjective emotions would perhaps have been impossible. But suppose that, on the contrary, {97} the emotions of fear and mistrust preponderate; or suppose that, having just read the Ethics of Belief, I feel it would be sinful to act upon an assumption unverified by previous experience,--why, then I shall hesitate so long that at last, exhausted and trembling, and launching myself in a moment of despair, I miss my foothold and roll into the abyss. In this case (and it is one of an immense class) the part of wisdom clearly is to believe what one desires; for the belief is one of the indispensable preliminary conditions of the realization of its object. _There are then cases where faith creates its own verification_. Believe, and you shall be right, for you shall save yourself; doubt, and you shall again be right, for you shall perish. The only difference is that to believe is greatly to your advantage.",
-     "move": "Uses the Alpine leap to show a class of cases where faith creates its own verification, so believing beyond one's prior experience is the part of wisdom.",
-     "confidence": 0.9,
-     "similarity": 0.7376
+     "move": "Uses the Alpine leap to exhibit a class of cases where faith creates its own verification, making it the part of wisdom to believe what one desires because the belief is a precondition of its object's realization.",
+     "confidence": 0.95,
+     "similarity": 0.8027
     },
     {
-     "id": 823,
+     "id": 853,
      "author": "William James",
      "work": "The Will to Believe, and Other Essays in Popular Philosophy",
      "citation": "I.",
-     "text": "The necessity of faith as an ingredient in our mental attitude is strongly insisted on by the scientific philosophers of the present day; but by a singularly arbitrary caprice they say that it is only legitimate when used in the interests of one particular proposition,--the proposition, namely, that the course of nature is uniform. That nature will follow to-morrow the same laws that she follows to-day is, they all admit, a truth which no man can _know_; but in the interests of cognition as well as of action we must postulate or assume it. As Helmholtz says: \"Hier gilt nur der eine Rath: vertraue und handle!\" And Professor Bain urges: \"Our only error is in proposing to give any reason or justification of the postulate, or to treat it as otherwise than begged at the very outset.\"",
-     "move": "Points out that scientific philosophers themselves concede faith is required to postulate the uniformity of nature, a truth no man can know, and charges them with arbitrarily limiting faith to that one proposition.",
-     "confidence": 0.8,
-     "similarity": 0.7334
+     "text": "[2] At most, the command laid upon us by science to believe nothing not yet verified by the senses is a prudential rule intended to maximize our right thinking and minimize our errors _in the long run_. In the particular instance we must frequently lose truth by obeying it; but on the whole we are safer if we follow it consistently, for we are sure to cover our losses with our gains. It is like those gambling and insurance rules based on probability, in which we secure ourselves against losses in detail by hedging on the total run. But this hedging philosophy requires that long run should be there; and this makes it inapplicable to the question of religious faith as the latter comes home to the individual man. He plays the game of life not to escape losses, for he brings nothing with him to lose; he plays it for gains; and it is now or never with him, for the long run which exists indeed for humanity, is not there for him. Let him doubt, believe, or deny, he runs his risk, and has the natural right to choose which one it shall be. [3] Life of James Hinton, pp. 172, 173. See also the excellent chapter on Faith and Sight in the Mystery of Matter, by J. Allanson Picton. Hinton's Mystery of Pain will undoubtedly always remain the classical utterance on this subject.",
+     "move": "Recasts science's ban on unverified belief as a merely prudential long-run hedging rule that does not bind the individual, who plays for gains now or never and has a natural right to choose belief, doubt, or denial.",
+     "confidence": 0.9,
+     "similarity": 0.7992
     }
    ],
    "against": [
     {
-     "id": 180,
+     "id": 171,
      "author": "David Hume",
      "work": "An Enquiry Concerning Human Understanding",
      "citation": "PART I.",
-     "text": "91. The plain consequence is (and it is a general maxim worthy of our attention), 'That no testimony is sufficient to establish a miracle, unless the testimony be of such a kind, that its falsehood would be more miraculous, than the fact, which it endeavours to establish; and even in that case there is a mutual destruction of arguments, and the superior only gives us an assurance suitable to that degree of force, which remains, after deducting the inferior.' When anyone tells me, that he saw a dead man restored to life, I immediately consider with myself, whether it be more probable, that this person should either deceive or be deceived, or that the fact, which he relates, should really have happened. I weigh the one miracle against the other; and according to the superiority, which I discover, I pronounce my decision, and always reject the greater miracle. If the falsehood of his testimony would be more miraculous, than the event which he relates; then, and not till then, can he pretend to command my belief or opinion.",
-     "move": "Lays down the maxim that testimony warrants belief in a miracle only when its falsehood would be more miraculous than the reported event, so assent must track the balance of improbabilities.",
-     "confidence": 0.85,
-     "similarity": 0.7471
+     "text": "A wise man, therefore, proportions his belief to the evidence. In such conclusions as are founded on an infallible experience, he expects the event with the last degree of assurance, and regards his past experience as a full _proof_ of the future existence of that event. In other cases, he proceeds with more caution: He weighs the opposite experiments: He considers which side is supported by the greater number of experiments: to that side he inclines, with doubt and hesitation; and when at last he fixes his judgement, the evidence exceeds not what we properly call _probability_. All probability, then, supposes an opposition of experiments and observations, where the one side is found to overbalance the other, and to produce a degree of evidence, proportioned to the superiority. A hundred instances or experiments on one side, and fifty on another, afford a doubtful expectation of any event; though a hundred uniform experiments, with only one that is contradictory, reasonably beget a pretty strong degree of assurance. In all cases, we must balance the opposite experiments, where they are opposite, and deduct the smaller number from the greater, in order to know the exact force of the superior evidence.",
+     "move": "States that a wise man proportions his belief to the evidence, fixing his degree of assurance by balancing opposite experiments and deducting the smaller number from the greater.",
+     "confidence": 0.95,
+     "similarity": 0.8125
     },
     {
      "id": 2185,
@@ -1245,51 +1245,61 @@ window.APORIA_DATA = {
      "work": "On Liberty",
      "citation": "CHAPTER II.",
      "text": "There is a class of persons (happily not quite so numerous as formerly) who think it enough if a person assents undoubtingly to what they think true, though he has no knowledge whatever of the grounds of the opinion, and could not make a tenable defence of it against the most superficial objections. Such persons, if they can once get their creed taught from authority, naturally think that no good, and some harm, comes of its being allowed to be questioned. Where their influence prevails, they make it nearly impossible for the received opinion to be rejected wisely and considerately, though it may still be rejected rashly and ignorantly; for to shut out discussion entirely is seldom possible, and when it once gets in, beliefs not grounded on conviction are apt to give way before the slightest semblance of an argument. Waiving, however, this possibility--assuming that the true opinion abides in the mind, but abides as a prejudice, a belief independent of, and proof against, argument--this is not the way in which truth ought to be held by a rational being. This is not knowing the truth. Truth, thus held, is but one superstition the more, accidentally clinging to the words which enunciate a truth.",
-     "move": "Holds that a true opinion held as an unexamined prejudice, with no knowledge of its grounds, is not knowledge but 'one superstition the more' and not how a rational being should hold truth.",
-     "confidence": 0.9,
-     "similarity": 0.7468
+     "move": "Holds that a true opinion assented to without knowledge of its grounds abides as a prejudice and is 'one superstition the more', not the way truth ought to be held by a rational being.",
+     "confidence": 0.85,
+     "similarity": 0.8114
     },
     {
-     "id": 171,
+     "id": 180,
      "author": "David Hume",
      "work": "An Enquiry Concerning Human Understanding",
      "citation": "PART I.",
-     "text": "A wise man, therefore, proportions his belief to the evidence. In such conclusions as are founded on an infallible experience, he expects the event with the last degree of assurance, and regards his past experience as a full _proof_ of the future existence of that event. In other cases, he proceeds with more caution: He weighs the opposite experiments: He considers which side is supported by the greater number of experiments: to that side he inclines, with doubt and hesitation; and when at last he fixes his judgement, the evidence exceeds not what we properly call _probability_. All probability, then, supposes an opposition of experiments and observations, where the one side is found to overbalance the other, and to produce a degree of evidence, proportioned to the superiority. A hundred instances or experiments on one side, and fifty on another, afford a doubtful expectation of any event; though a hundred uniform experiments, with only one that is contradictory, reasonably beget a pretty strong degree of assurance. In all cases, we must balance the opposite experiments, where they are opposite, and deduct the smaller number from the greater, in order to know the exact force of the superior evidence.",
-     "move": "States that a wise man proportions his belief to the evidence, fixing degrees of assurance by balancing opposing experiments and deducting the lesser from the greater.",
-     "confidence": 0.95,
-     "similarity": 0.7444
-    },
-    {
-     "id": 149,
-     "author": "David Hume",
-     "work": "An Enquiry Concerning Human Understanding",
-     "citation": "PART II.",
-     "text": "75. There is no method of reasoning more common, and yet none more blameable, than, in philosophical disputes, to endeavour the refutation of any hypothesis, by a pretence of its dangerous consequences to religion and morality. When any opinion leads to absurdities, it is certainly false; but it is not certain that an opinion is false, because it is of dangerous consequence. Such topics, therefore, ought entirely to be forborne; as serving nothing to the discovery of truth, but only to make the person of an antagonist odious. This I observe in general, without pretending to draw any advantage from it. I frankly submit to an examination of this kind, and shall venture to affirm that the doctrines, both of necessity and of liberty, as above explained, are not only consistent with morality, but are absolutely essential to its support.",
-     "move": "Insists that an opinion's dangerous consequences for religion and morality are no ground for rejecting it, so truth must be settled by argument rather than by what it is desirable to believe.",
-     "confidence": 0.5,
-     "similarity": 0.7373
-    },
-    {
-     "id": 716,
-     "author": "William James",
-     "work": "The Will to Believe, and Other Essays in Popular Philosophy",
-     "citation": "VIII.",
-     "text": "Well, of course, I agree as far as the facts will allow. Wherever the option between losing truth and gaining it is not momentous, we can throw the {20} chance of _gaining truth_ away, and at any rate save ourselves from any chance of _believing falsehood_, by not making up our minds at all till objective evidence has come. In scientific questions, this is almost always the case; and even in human affairs in general, the need of acting is seldom so urgent that a false belief to act on is better than no belief at all. Law courts, indeed, have to decide on the best evidence attainable for the moment, because a judge's duty is to make law as well as to ascertain it, and (as a learned judge once said to me) few cases are worth spending much time over: the great thing is to have them decided on _any_ acceptable principle, and got out of the way. But in our dealings with objective nature we obviously are recorders, not makers, of the truth; and decisions for the mere sake of deciding promptly and getting on to the next business would be wholly out of place. Throughout the breadth of physical nature facts are what they are quite independently of us, and seldom is there any such hurry about them that the risks of being duped by believing a premature theory need be faced.",
-     "move": "Concedes that where the option is not momentous — as in scientific questions and most human affairs — we should make up no mind until objective evidence arrives, since in dealing with nature we are recorders rather than makers of truth.",
-     "confidence": 0.6,
-     "similarity": 0.7282
+     "text": "91. The plain consequence is (and it is a general maxim worthy of our attention), 'That no testimony is sufficient to establish a miracle, unless the testimony be of such a kind, that its falsehood would be more miraculous, than the fact, which it endeavours to establish; and even in that case there is a mutual destruction of arguments, and the superior only gives us an assurance suitable to that degree of force, which remains, after deducting the inferior.' When anyone tells me, that he saw a dead man restored to life, I immediately consider with myself, whether it be more probable, that this person should either deceive or be deceived, or that the fact, which he relates, should really have happened. I weigh the one miracle against the other; and according to the superiority, which I discover, I pronounce my decision, and always reject the greater miracle. If the falsehood of his testimony would be more miraculous, than the event which he relates; then, and not till then, can he pretend to command my belief or opinion.",
+     "move": "Lays down the maxim that no testimony establishes a miracle unless its falsehood would be more miraculous than the fact reported, so assent must follow the weighed balance of improbabilities.",
+     "confidence": 0.9,
+     "similarity": 0.803
     }
    ],
    "nuance": [
+    {
+     "id": 1155,
+     "author": "William James",
+     "work": "The Will to Believe, and Other Essays in Popular Philosophy",
+     "citation": "THE IMPORTANCE OF INDIVIDUALS.",
+     "text": "And we must remember also that this undermining of the strength of a presumption by reiterated report of facts to the contrary does not logically require that the facts in question should all be well proved. A lot of rumors in the air against a business man's credit, though they might all be vague, and no one of them amount to proof that he is unsound, would certainly weaken the _presumption_ of his soundness. And all the more would they have this effect if they formed what Gurney called a fagot and not a chain,--that is, if they were independent of one another, and came from different quarters. Now, the evidence for telepathy, weak and strong, taken just as it comes, forms a fagot and not a chain. No one item cites the content of another item as part of its own proof. But taken together the items have a certain general consistency; there is a method in their madness, so to speak. So each of them adds presumptive value to the lot; and cumulatively, as no candid mind can fail to see, they subtract presumptive force from the orthodox belief that there can be nothing in any one's intellect that has not come in through ordinary experiences of sense.",
+     "move": "Reframes evidential sufficiency by arguing that independent, individually unproved reports form a 'fagot and not a chain' whose cumulative weight can legitimately shift a presumption.",
+     "confidence": 0.6,
+     "similarity": 0.8033
+    },
+    {
+     "id": 1589,
+     "author": "David Hume",
+     "work": "Dialogues Concerning Natural Religion",
+     "citation": "PART 9",
+     "text": "I shall not leave it to PHILO, said CLEANTHES, though I know that the starting objections is his chief delight, to point out the weakness of this metaphysical reasoning. It seems to me so obviously ill-grounded, and at the same time of so little consequence to the cause of true piety and religion, that I shall myself venture to show the fallacy of it. I shall begin with observing, that there is an evident absurdity in pretending to demonstrate a matter of fact, or to prove it by any arguments a priori. Nothing is demonstrable, unless the contrary implies a contradiction. Nothing, that is distinctly conceivable, implies a contradiction. Whatever we conceive as existent, we can also conceive as non-existent. There is no being, therefore, whose non-existence implies a contradiction. Consequently there is no being, whose existence is demonstrable. I propose this argument as entirely decisive, and am willing to rest the whole controversy upon it.",
+     "move": "Argues that no matter of fact is demonstrable a priori, since whatever is conceivable as existent is conceivable as non-existent, addressing what can be proved rather than whether belief may outrun evidence.",
+     "confidence": 0.55,
+     "similarity": 0.8025
+    },
+    {
+     "id": 717,
+     "author": "William James",
+     "work": "The Will to Believe, and Other Essays in Popular Philosophy",
+     "citation": "VIII.",
+     "text": "The questions here are always trivial options, the hypotheses are hardly living (at any rate not living for us spectators), the choice between believing truth or falsehood is seldom forced. The attitude of sceptical balance is therefore the absolutely wise one if we would escape mistakes. What difference, indeed, does it make to most of us whether we have or have not a theory of the Röntgen rays, whether we believe or not in mind-stuff, or have a conviction about the causality of conscious states? It makes no difference. Such options are not forced on us. On every account it is better not to make them, but still keep weighing reasons _pro et contra_ with an indifferent hand.",
+     "move": "Grants that sceptical balance is the absolutely wise attitude, but expressly confines that verdict to trivial, barely living, unforced options where nothing practical turns on deciding.",
+     "confidence": 0.55,
+     "similarity": 0.8025
+    },
     {
      "id": 1194,
      "author": "Immanuel Kant",
      "work": "The Critique of Practical Reason",
      "citation": "PREFACE.",
      "text": "Nothing worse could happen to these labours than that anyone should make the unexpected discovery that there neither is, nor can be, any a priori knowledge at all. But there is no danger of this. This would be the same thing as if one sought to prove by reason that there is no reason. For we only say that we know something by reason, when we are conscious that we could have known it, even if it had not been given to us in experience; hence rational knowledge and knowledge a priori are one and the same. It is a clear contradiction to try to extract necessity from a principle of experience (ex pumice aquam), and to try by this to give a judgement true universality (without which there is no rational inference, not even inference from analogy, which is at least a presumed universality and objective necessity). To substitute subjective necessity, that is, custom, for objective, which exists only in a priori judgements, is to deny to reason the power of judging about the object, i.e., of knowing it, and what belongs to it. It implies, for example, that we must not say of something which often or always follows a certain antecedent state that we can conclude from this to that (for this would imply objective necessity and the notion of an a priori connexion), but only that we may expect similar cases (just as animals do), that is that we reject the notion of cause altogether as false and a mere delusion.",
-     "move": "Reframes rational knowledge as a priori knowledge whose necessity cannot be extracted from experience, attacking the substitution of customary expectation for objective necessity rather than addressing evidential sufficiency.",
-     "confidence": 0.5,
-     "similarity": 0.7401
+     "move": "Defends the reality of a priori rational knowledge, objecting that substituting custom (subjective necessity) for objective necessity would deny reason any power of judging its object.",
+     "confidence": 0.55,
+     "similarity": 0.8003
     },
     {
      "id": 2498,
@@ -1297,19 +1307,9 @@ window.APORIA_DATA = {
      "work": "Fundamental Principles of the Metaphysic of Morals",
      "citation": "CRITIQUE OF PURE PRACTICAL REASON",
      "text": "The speculative employment of reason with respect to nature leads to the absolute necessity of some supreme cause of the world: the practical employment of reason with a view to freedom leads also to absolute necessity, but only of the laws of the actions of a rational being as such. Now it is an essential principle of reason, however employed, to push its knowledge to a consciousness of its necessity (without which it would not be rational knowledge). It is, however, an equally essential restriction of the same reason that it can neither discern the necessity of what is or what happens, nor of what ought to happen, unless a condition is supposed on which it is or happens or ought to happen. In this way, however, by the constant inquiry for the condition, the satisfaction of reason is only further and further postponed. Hence it unceasingly seeks the unconditionally necessary and finds itself forced to assume it, although without any means of making it comprehensible to itself, happy enough if only it can discover a conception which agrees with this assumption. It is therefore no fault in our deduction of the supreme principle of morality, but an objection that should be made to human reason in general, that it cannot enable us to conceive the absolute necessity of an unconditional practical law (such as the categorical imperative must be).",
-     "move": "Observes that reason is forced to assume an unconditionally necessary ground it has no means of making comprehensible, presenting this as an objection to human reason in general rather than a licence to believe.",
+     "move": "Observes that reason unceasingly seeks and finds itself forced to assume an unconditionally necessary ground it has no means of making comprehensible, presenting this as a limit of human reason in general.",
      "confidence": 0.5,
-     "similarity": 0.7337
-    },
-    {
-     "id": 1155,
-     "author": "William James",
-     "work": "The Will to Believe, and Other Essays in Popular Philosophy",
-     "citation": "THE IMPORTANCE OF INDIVIDUALS.",
-     "text": "And we must remember also that this undermining of the strength of a presumption by reiterated report of facts to the contrary does not logically require that the facts in question should all be well proved. A lot of rumors in the air against a business man's credit, though they might all be vague, and no one of them amount to proof that he is unsound, would certainly weaken the _presumption_ of his soundness. And all the more would they have this effect if they formed what Gurney called a fagot and not a chain,--that is, if they were independent of one another, and came from different quarters. Now, the evidence for telepathy, weak and strong, taken just as it comes, forms a fagot and not a chain. No one item cites the content of another item as part of its own proof. But taken together the items have a certain general consistency; there is a method in their madness, so to speak. So each of them adds presumptive value to the lot; and cumulatively, as no candid mind can fail to see, they subtract presumptive force from the orthodox belief that there can be nothing in any one's intellect that has not come in through ordinary experiences of sense.",
-     "move": "Reframes evidential sufficiency by arguing that independent, individually unproved items form a 'fagot and not a chain' whose cumulative weight can legitimately shift a presumption.",
-     "confidence": 0.6,
-     "similarity": 0.7318
+     "similarity": 0.7992
     }
    ]
   },
@@ -1319,34 +1319,24 @@ window.APORIA_DATA = {
    "blurb": "Descartes' thinking thing versus Hume's bundle of perceptions.",
    "for": [
     {
-     "id": 443,
-     "author": "Baruch Spinoza",
-     "work": "Ethics",
-     "citation": "POSTULATES",
-     "text": "Proof.--If it involved a limited time, which should determine the duration of the thing, it would then follow solely from that power whereby the thing exists, that the thing could not exist beyond the limits of that time, but that it must be destroyed; but this (III. iv.) is absurd. Wherefore the endeavour wherewith a thing exists involves no definite time; but, contrariwise, since (III. iv.) it will by the same power whereby it already exists always continue to exist, unless it be destroyed by some external cause, this endeavour involves an indefinite time. PROP. IX. The mind, both in so far as it has clear and distinct ideas, and also in so far as it has confused ideas, endeavours to persist in its being for an indefinite period, and of this endeavour it is conscious. Proof.--The essence of the mind is constituted by adequate and inadequate ideas (III. iii.), therefore (III. vii.), both in so far as it possesses the former, and in so far as it possesses the latter, it endeavours to persist in its own being, and that for an indefinite time (III. viii.). Now as the mind (II. xxiii.) is necessarily conscious of itself through the ideas of the modifications of the body, the mind is therefore (III. vii.) conscious of its own endeavour. Note.--This endeavour, when referred solely to the mind, is called will, when referred to the mind and body in conjunction it is called appetite; it is, in fact, nothing else but man's essence, from the nature of which necessarily follow all those results which tend to its preservation; and which man has thus been determined to perform.",
-     "move": "Argues that the mind's endeavour to persist in its own being involves no definite but an indefinite time, and that the mind is conscious of this endeavour, which is nothing but man's essence.",
-     "confidence": 0.75,
-     "similarity": 0.7297
-    },
-    {
      "id": 887,
      "author": "William James",
      "work": "The Will to Believe, and Other Essays in Popular Philosophy",
      "citation": "MEMBERS OF THE MINISTERS' INSTITUTE:",
      "text": "That sense of emotional reconciliation with God which characterizes the highest moments of the theistic consciousness may be described as 'oneness' with him, and so from the very bosom of theism a {135} monistic doctrine seem to arise. But this consciousness of self-surrender, of absolute practical union between one's self and the divine object of one's contemplation, is a totally different thing from any sort of substantial identity. Still the object God and the subject I are two. Still I simply come upon him, and find his existence given to me; and the climax of my practical union with what is given, forms at the same time the climax of my perception that as a numerical fact of existence I am something radically other than the Divinity with whose effulgence I am filled.",
-     "move": "Distinguishes felt union with the divine from substantial identity, insisting that even at the climax of union 'the object God and the subject I are two' and the I remains numerically other.",
-     "confidence": 0.5,
-     "similarity": 0.7291
+     "move": "Distinguishes felt union with the divine from substantial identity, insisting that at the climax of union 'the object God and the subject I are two' and the I remains numerically something radically other.",
+     "confidence": 0.6,
+     "similarity": 0.7812
     },
     {
-     "id": 442,
+     "id": 443,
      "author": "Baruch Spinoza",
      "work": "Ethics",
      "citation": "POSTULATES",
-     "text": "Proof.--Individual things are modes whereby the attributes of God are expressed in a given determinate manner (I. xxv. Coroll.); that is, (I. xxxiv.), they are things which express in a given determinate manner the power of God, whereby God is and acts; now no thing contains in itself anything whereby it can be destroyed, or which can take away its existence (III. iv.); but contrariwise it is opposed to all that could take away its existence (III. v.). Therefore, in so far as it can, and in so far as it is in itself, it endeavours to persist in its own being. Q.E.D. PROP. VII. The endeavour, wherewith everything endeavours to persist in its own being, is nothing else but the actual essence of the thing in question. Proof.--From the given essence of any thing certain consequences necessarily follow (I. xxxvi.), nor have things any power save such as necessarily follows from their nature as determined (I. xxix.); wherefore the power of any given thing, or the endeavour whereby, either alone or with other things, it acts, or endeavours to act, that is (III. vi.), the power or endeavour, wherewith it endeavours to persist in its own being, is nothing else but the given or actual essence of the thing in question. Q.E.D. PROP. VIII. The endeavour, whereby a thing endeavours to persist in its own being, involves no finite time, but an indefinite time.",
-     "move": "Identifies the endeavour whereby each thing persists in its own being with its actual essence, and holds that nothing contains within itself anything that could destroy it, so this striving involves an indefinite time.",
-     "confidence": 0.75,
-     "similarity": 0.7264
+     "text": "Proof.--If it involved a limited time, which should determine the duration of the thing, it would then follow solely from that power whereby the thing exists, that the thing could not exist beyond the limits of that time, but that it must be destroyed; but this (III. iv.) is absurd. Wherefore the endeavour wherewith a thing exists involves no definite time; but, contrariwise, since (III. iv.) it will by the same power whereby it already exists always continue to exist, unless it be destroyed by some external cause, this endeavour involves an indefinite time. PROP. IX. The mind, both in so far as it has clear and distinct ideas, and also in so far as it has confused ideas, endeavours to persist in its being for an indefinite period, and of this endeavour it is conscious. Proof.--The essence of the mind is constituted by adequate and inadequate ideas (III. iii.), therefore (III. vii.), both in so far as it possesses the former, and in so far as it possesses the latter, it endeavours to persist in its own being, and that for an indefinite time (III. viii.). Now as the mind (II. xxiii.) is necessarily conscious of itself through the ideas of the modifications of the body, the mind is therefore (III. vii.) conscious of its own endeavour. Note.--This endeavour, when referred solely to the mind, is called will, when referred to the mind and body in conjunction it is called appetite; it is, in fact, nothing else but man's essence, from the nature of which necessarily follow all those results which tend to its preservation; and which man has thus been determined to perform.",
+     "move": "Argues that the mind's endeavour to persist in its own being involves no definite but an indefinite time, that the mind is conscious of this endeavour, and that the endeavour is nothing else but man's essence.",
+     "confidence": 0.8,
+     "similarity": 0.7647
     }
    ],
    "against": [
@@ -1356,9 +1346,9 @@ window.APORIA_DATA = {
      "work": "Dialogues Concerning Natural Religion",
      "citation": "PART 8",
      "text": "Thus the universe goes on for many ages in a continued succession of chaos and disorder. But is it not possible that it may settle at last, so as not to lose its motion and active force (for that we have supposed inherent in it), yet so as to preserve an uniformity of appearance, amidst the continual motion and fluctuation of its parts? This we find to be the case with the universe at present. Every individual is perpetually changing, and every part of every individual; and yet the whole remains, in appearance, the same. May we not hope for such a position, or rather be assured of it, from the eternal revolutions of unguided matter; and may not this account for all the appearing wisdom and contrivance which is in the universe? Let us contemplate the subject a little, and we shall find, that this adjustment, if attained by matter of a seeming stability in the forms, with a real and perpetual revolution or motion of parts, affords a plausible, if not a true solution of the difficulty.",
-     "move": "Observes that every individual and every part of every individual is perpetually changing while the whole remains 'in appearance' the same, making persistent identity a stable appearance produced by ceaseless motion of parts.",
-     "confidence": 0.6,
-     "similarity": 0.7317
+     "move": "Observes that every individual and every part of every individual is perpetually changing while the whole remains 'in appearance' the same, making stable identity a seeming produced by ceaseless motion of parts.",
+     "confidence": 0.55,
+     "similarity": 0.763
     },
     {
      "id": 1686,
@@ -1366,19 +1356,9 @@ window.APORIA_DATA = {
      "work": "Beyond Good and Evil",
      "citation": "CHAPTER I. PREJUDICES OF PHILOSOPHERS",
      "text": "16. There are still harmless self-observers who believe that there are \"immediate certainties\"; for instance, \"I think,\" or as the superstition of Schopenhauer puts it, \"I will\"; as though cognition here got hold of its object purely and simply as \"the thing in itself,\" without any falsification taking place either on the part of the subject or the object. I would repeat it, however, a hundred times, that \"immediate certainty,\" as well as \"absolute knowledge\" and the \"thing in itself,\" involve a CONTRADICTIO IN ADJECTO; we really ought to free ourselves from the misleading significance of words! The people on their part may think that cognition is knowing all about things, but the philosopher must say to himself: \"When I analyze the process that is expressed in the sentence, 'I think,' I find a whole series of daring assertions, the argumentative proof of which would be difficult, perhaps impossible: for instance, that it is _I_ who think, that there must necessarily be something that thinks, that thinking is an activity and operation on the part of a being who is thought of as a cause, that there is an 'ego,' and finally, that it is already determined what is to be designated by thinking--that I KNOW what thinking is.",
-     "move": "Unpacks 'I think' into a series of unproven daring assertions, explicitly listing 'that there is an ego' and 'that it is I who think' among the claims that cannot be treated as immediate certainties.",
-     "confidence": 0.85,
-     "similarity": 0.7127
-    },
-    {
-     "id": 1122,
-     "author": "William James",
-     "work": "The Will to Believe, and Other Essays in Popular Philosophy",
-     "citation": "THE IMPORTANCE OF INDIVIDUALS.",
-     "text": "The immense emotional sense of _reconciliation_ which characterizes the 'maudlin' stage of alcoholic drunkenness,--a stage which seems silly to lookers-on, but the subjective rapture of which probably constitutes a chief part of the temptation to the vice,--is well known. The centre and periphery of things seem to come together. The ego and its objects, the _meum_ and the _tuum_, are one. Now this, only a thousandfold enhanced, was the effect upon me of the gas: and its first result was to make peal through me with unutterable power the conviction that Hegelism was true after all, and that the deepest convictions of my intellect hitherto were wrong. Whatever idea or representation occurred to the mind was seized by the same logical forceps, and served to illustrate the same truth; and that truth was that every opposition, among whatsoever things, vanishes in a higher unity in which it is based; that all contradictions, so-called, are but differences; that all differences are of degree; that all degrees are of a common kind; that unbroken continuity is of the essence of being; and that we are literally in the midst of _an infinite_, to perceive the existence of which is the utmost we can attain.",
-     "move": "Reports an anaesthetic-induced conviction in which the ego and its objects, the meum and the tuum, become one and unbroken continuity is felt as the essence of being, dissolving the boundaries of a discrete self.",
-     "confidence": 0.45,
-     "similarity": 0.7073
+     "move": "Unpacks 'I think' into a series of daring and perhaps unprovable assertions, explicitly listing 'that it is I who think' and 'that there is an ego' among the claims wrongly treated as immediate certainties.",
+     "confidence": 0.9,
+     "similarity": 0.7628
     }
    ],
    "nuance": [
@@ -1388,39 +1368,9 @@ window.APORIA_DATA = {
      "work": "The Will to Believe, and Other Essays in Popular Philosophy",
      "citation": "THE IMPORTANCE OF INDIVIDUALS.",
      "text": "Even when the process stops short of this ultimatum, the reader will have noticed from the phrases quoted how often it ends by losing the clue. Something 'fades,' 'escapes;' and the feeling of insight is changed into an intense one of bewilderment, puzzle, confusion, astonishment. I know no more singular sensation than this intense bewilderment, with nothing particular left to be bewildered at save the bewilderment itself. It seems, indeed, _a causa sui_, or 'spirit become its own object.' My conclusion is that the togetherness of things in a common world, the law of sharing, of which I have said so much, may, when perceived, engender a very powerful emotion, that Hegel was so unusually susceptible to this emotion throughout his life that its gratification became his supreme end, and made him tolerably unscrupulous as to the means he employed; that _indifferentism_ is the true outcome of every view of the world which makes infinity and continuity to be its essence, and that pessimistic or optimistic attitudes pertain to the mere accidental subjectivity of the moment; finally, that the identification of contradictories, so far from being the self-developing process which Hegel supposes, is really a self-consuming process, passing from the less to the more abstract, and terminating either in a laugh at the ultimate nothingness, or in a mood of vertiginous amazement at a meaningless infinity. [1] Reprinted from Mind, April, 1882.",
-     "move": "Diagnoses the monistic sense of universal togetherness as an emotion rather than an insight, arguing the identification of contradictories is a self-consuming abstraction that ends in bewilderment, without taking a position on the endurance of a self.",
-     "confidence": 0.55,
-     "similarity": 0.7533
-    },
-    {
-     "id": 453,
-     "author": "Baruch Spinoza",
-     "work": "Ethics",
-     "citation": "POSTULATES",
-     "text": "Proof.--So long as a man is affected by the image of anything, he will regard that thing as present, even though it be non--existent (II. xvii. and Coroll.), he will not conceive it as past or future, except in so far as its image is joined to the image of time past or future (II. xliv. note). Wherefore the image of a thing, regarded in itself alone, is identical, whether it be referred to time past, time future, or time present; that is (II. xvi. Coroll.), the disposition or emotion of the body is identical, whether the image be of a thing past, future, or present. Thus the emotion of pleasure or pain is the same, whether the image be of a thing past or future. Q.E.D. Note I.--I call a thing past or future, according as we either have been or shall be affected thereby. For instance, according as we have seen it, or are about to see it, according as it has recreated us, or will recreate us, according as it has harmed us, or will harm us. For, as we thus conceive it, we affirm its existence; that is, the body is affected by no emotion which excludes the existence of the thing, and therefore (II. xvii.) the body is affected by the image of the thing, in the same way as if the thing were actually present. However, as it generally happens that those, who have had many experiences, vacillate, so long as they regard a thing as future or past, and are usually in doubt about its issue (II. xliv. note); it follows that the emotions which arise from similar images of things are not so constant, but are generally disturbed by the images of other things, until men become assured of the issue.",
-     "move": "Argues that an image of a thing produces the same bodily affect whether referred to past, present, or future, treating temporal reference as an addition to the image rather than addressing whether a self endures through time.",
-     "confidence": 0.6,
-     "similarity": 0.7347
-    },
-    {
-     "id": 1540,
-     "author": "David Hume",
-     "work": "Dialogues Concerning Natural Religion",
-     "citation": "PART 4",
-     "text": "By the same act, say they, he sees past, present, and future: His love and hatred, his mercy and justice, are one individual operation: He is entire in every point of space; and complete in every instant of duration. No succession, no change, no acquisition, no diminution. What he is implies not in it any shadow of distinction or diversity. And what he is this moment he ever has been, and ever will be, without any new judgement, sentiment, or operation. He stands fixed in one simple, perfect state: nor can you ever say, with any propriety, that this act of his is different from that other; or that this judgement or idea has been lately formed, and will give place, by succession, to any different judgement or idea.",
-     "move": "Rehearses the mystics' description of a being fixed in one simple perfect state with 'no succession, no change,' presenting this changelessness as a reported doctrine about God rather than arguing for a self enduring through time.",
-     "confidence": 0.5,
-     "similarity": 0.7186
-    },
-    {
-     "id": 482,
-     "author": "Baruch Spinoza",
-     "work": "Ethics",
-     "citation": "POSTULATES",
-     "text": "Note.--This proposition can also be proved from the Corollary to II. xvii. Whenever we remember anything, even if it does not actually exist, we regard it only as present, and the body is affected in the same manner; wherefore, in so far as the remembrance of the thing is strong, a man is determined to regard it with pain; this determination, while the image of the thing in question lasts, is indeed checked by the remembrance of other things excluding the existence of the aforesaid thing, but is not destroyed: hence, a man only feels pleasure in so far as the said determination is checked: for this reason the joy arising from the injury done to what we hate is repeated, every time we remember that object of hatred. For, as we have said, when the image of the thing in question, is aroused, inasmuch as it involves the thing's existence, it determines the man to regard the thing with the same pain as he was wont to do, when it actually did exist. However, since he has joined to the image of the thing other images, which exclude its existence, this determination to pain is forthwith checked, and the man rejoices afresh as often as the repetition takes place. This is the cause of men's pleasure in recalling past evils, and delight in narrating dangers from which they have escaped. For when men conceive a danger, they conceive it as still future, and are determined to fear it; this determination is checked afresh by the idea of freedom, which became associated with the idea of the danger when they escaped therefrom: this renders them secure afresh: therefore they rejoice afresh.",
-     "move": "Explains pleasure in recalling past evils by the way a remembered image, which presents its object as present, is checked by other images excluding its existence, without addressing whether the rememberer is one persisting thing.",
-     "confidence": 0.6,
-     "similarity": 0.7166
+     "move": "Diagnoses the monistic sense of universal togetherness as a powerful emotion rather than an insight, and calls the identification of contradictories a self-consuming process ending in bewilderment, without addressing whether a self endures.",
+     "confidence": 0.4,
+     "similarity": 0.8043
     },
     {
      "id": 1696,
@@ -1428,19 +1378,69 @@ window.APORIA_DATA = {
      "work": "Beyond Good and Evil",
      "citation": "CHAPTER I. PREJUDICES OF PHILOSOPHERS",
      "text": "In \"being-in-itself\" there is nothing of \"casual-connection,\" of \"necessity,\" or of \"psychological non-freedom\"; there the effect does NOT follow the cause, there \"law\" does not obtain. It is WE alone who have devised cause, sequence, reciprocity, relativity, constraint, number, law, freedom, motive, and purpose; and when we interpret and intermix this symbol-world, as \"being-in-itself,\" with things, we act once more as we have always acted--MYTHOLOGICALLY. The \"non-free will\" is mythology; in real life it is only a question of STRONG and WEAK wills.--It is almost always a symptom of what is lacking in himself, when a thinker, in every \"causal-connection\" and \"psychological necessity,\" manifests something of compulsion, indigence, obsequiousness, oppression, and non-freedom; it is suspicious to have such feelings--the person betrays himself. And in general, if I have observed correctly, the \"non-freedom of the will\" is regarded as a problem from two entirely opposite standpoints, but always in a profoundly PERSONAL manner: some will not give up their \"responsibility,\" their belief in THEMSELVES, the personal right to THEIR merits, at any price (the vain races belong to this class); others on the contrary, do not wish to be answerable for anything, or blamed for anything, and owing to an inward self-contempt, seek to GET OUT OF THE BUSINESS, no matter how.",
-     "move": "Claims that cause, sequence, number, law, and freedom are human inventions projected mythologically onto being-in-itself, and reduces the will question to strong versus weak wills, without directly addressing the persistence of a self.",
-     "confidence": 0.55,
-     "similarity": 0.7148
+     "move": "Treats cause, law, number, and freedom as human devisings projected mythologically onto being-in-itself and reduces the will question to strong versus weak wills and the believer's personal motives.",
+     "confidence": 0.4,
+     "similarity": 0.7772
     },
     {
-     "id": 1368,
+     "id": 482,
+     "author": "Baruch Spinoza",
+     "work": "Ethics",
+     "citation": "POSTULATES",
+     "text": "Note.--This proposition can also be proved from the Corollary to II. xvii. Whenever we remember anything, even if it does not actually exist, we regard it only as present, and the body is affected in the same manner; wherefore, in so far as the remembrance of the thing is strong, a man is determined to regard it with pain; this determination, while the image of the thing in question lasts, is indeed checked by the remembrance of other things excluding the existence of the aforesaid thing, but is not destroyed: hence, a man only feels pleasure in so far as the said determination is checked: for this reason the joy arising from the injury done to what we hate is repeated, every time we remember that object of hatred. For, as we have said, when the image of the thing in question, is aroused, inasmuch as it involves the thing's existence, it determines the man to regard the thing with the same pain as he was wont to do, when it actually did exist. However, since he has joined to the image of the thing other images, which exclude its existence, this determination to pain is forthwith checked, and the man rejoices afresh as often as the repetition takes place. This is the cause of men's pleasure in recalling past evils, and delight in narrating dangers from which they have escaped. For when men conceive a danger, they conceive it as still future, and are determined to fear it; this determination is checked afresh by the idea of freedom, which became associated with the idea of the danger when they escaped therefrom: this renders them secure afresh: therefore they rejoice afresh.",
+     "move": "Explains the pleasure of recalling past evils by a remembered image that presents its object as present being checked by other images excluding its existence, without addressing the identity of the rememberer.",
+     "confidence": 0.4,
+     "similarity": 0.7756
+    },
+    {
+     "id": 1122,
+     "author": "William James",
+     "work": "The Will to Believe, and Other Essays in Popular Philosophy",
+     "citation": "THE IMPORTANCE OF INDIVIDUALS.",
+     "text": "The immense emotional sense of _reconciliation_ which characterizes the 'maudlin' stage of alcoholic drunkenness,--a stage which seems silly to lookers-on, but the subjective rapture of which probably constitutes a chief part of the temptation to the vice,--is well known. The centre and periphery of things seem to come together. The ego and its objects, the _meum_ and the _tuum_, are one. Now this, only a thousandfold enhanced, was the effect upon me of the gas: and its first result was to make peal through me with unutterable power the conviction that Hegelism was true after all, and that the deepest convictions of my intellect hitherto were wrong. Whatever idea or representation occurred to the mind was seized by the same logical forceps, and served to illustrate the same truth; and that truth was that every opposition, among whatsoever things, vanishes in a higher unity in which it is based; that all contradictions, so-called, are but differences; that all differences are of degree; that all degrees are of a common kind; that unbroken continuity is of the essence of being; and that we are literally in the midst of _an infinite_, to perceive the existence of which is the utmost we can attain.",
+     "move": "Reports an anaesthetic-induced conviction that the ego and its objects, the meum and the tuum, are one and that unbroken continuity is the essence of being, offered as an experience rather than an argument about a persisting self.",
+     "confidence": 0.45,
+     "similarity": 0.7706
+    },
+    {
+     "id": 453,
+     "author": "Baruch Spinoza",
+     "work": "Ethics",
+     "citation": "POSTULATES",
+     "text": "Proof.--So long as a man is affected by the image of anything, he will regard that thing as present, even though it be non--existent (II. xvii. and Coroll.), he will not conceive it as past or future, except in so far as its image is joined to the image of time past or future (II. xliv. note). Wherefore the image of a thing, regarded in itself alone, is identical, whether it be referred to time past, time future, or time present; that is (II. xvi. Coroll.), the disposition or emotion of the body is identical, whether the image be of a thing past, future, or present. Thus the emotion of pleasure or pain is the same, whether the image be of a thing past or future. Q.E.D. Note I.--I call a thing past or future, according as we either have been or shall be affected thereby. For instance, according as we have seen it, or are about to see it, according as it has recreated us, or will recreate us, according as it has harmed us, or will harm us. For, as we thus conceive it, we affirm its existence; that is, the body is affected by no emotion which excludes the existence of the thing, and therefore (II. xvii.) the body is affected by the image of the thing, in the same way as if the thing were actually present. However, as it generally happens that those, who have had many experiences, vacillate, so long as they regard a thing as future or past, and are usually in doubt about its issue (II. xliv. note); it follows that the emotions which arise from similar images of things are not so constant, but are generally disturbed by the images of other things, until men become assured of the issue.",
+     "move": "Argues that an image of a thing, taken by itself, affects the body identically whether referred to past, present, or future, treating temporal reference as an addition to the image rather than addressing an enduring subject.",
+     "confidence": 0.4,
+     "similarity": 0.7703
+    },
+    {
+     "id": 1540,
+     "author": "David Hume",
+     "work": "Dialogues Concerning Natural Religion",
+     "citation": "PART 4",
+     "text": "By the same act, say they, he sees past, present, and future: His love and hatred, his mercy and justice, are one individual operation: He is entire in every point of space; and complete in every instant of duration. No succession, no change, no acquisition, no diminution. What he is implies not in it any shadow of distinction or diversity. And what he is this moment he ever has been, and ever will be, without any new judgement, sentiment, or operation. He stands fixed in one simple, perfect state: nor can you ever say, with any propriety, that this act of his is different from that other; or that this judgement or idea has been lately formed, and will give place, by succession, to any different judgement or idea.",
+     "move": "Rehearses the doctrine of a being complete in every instant of duration with 'no succession, no change,' reporting this changelessness as a claim about the deity rather than arguing it of a self.",
+     "confidence": 0.45,
+     "similarity": 0.7677
+    },
+    {
+     "id": 2486,
      "author": "Immanuel Kant",
-     "work": "The Critique of Practical Reason",
-     "citation": "IV. MODALITY.",
-     "text": "Self-consciousness would indeed make him a thinking automaton; but the consciousness of his own spontaneity would be mere delusion if this were mistaken for freedom, and it would deserve this name only in a comparative sense, since, although the proximate determining causes of its motion and a long series of their determining causes are internal, yet the last and highest is found in a foreign hand. Therefore I do not see how those who still insist on regarding time and space as attributes belonging to the existence of things in themselves, can avoid admitting the fatality of actions; or if (like the otherwise acute Mendelssohn) they allow them to be conditions necessarily belonging to the existence of finite and derived beings, but not to that of the infinite Supreme Being, I do not see on what ground they can justify such a distinction, or, indeed, how they can avoid the contradiction that meets them, when they hold that existence in time is an attribute necessarily belonging to finite things in themselves, whereas God is the cause of this existence, but cannot be the cause of time (or space) itself (since this must be presupposed as a necessary a priori condition of the existence of things); and consequently as regards the existence of these things.",
-     "move": "Argues that if time is treated as belonging to things in themselves, the self-conscious being becomes a thinking automaton whose spontaneity is delusion, reframing existence-in-time as a condition that cannot straightforwardly apply to the subject itself.",
-     "confidence": 0.6,
-     "similarity": 0.712
+     "work": "Fundamental Principles of the Metaphysic of Morals",
+     "citation": "CRITIQUE OF PURE PRACTICAL REASON",
+     "text": "The claims to freedom of will made even by common reason are founded on the consciousness and the admitted supposition that reason is independent of merely subjectively determined causes which together constitute what belongs to sensation only and which consequently come under the general designation of sensibility. Man considering himself in this way as an intelligence places himself thereby in a different order of things and in a relation to determining grounds of a wholly different kind when on the one hand he thinks of himself as an intelligence endowed with a will, and consequently with causality, and when on the other he perceives himself as a phenomenon in the world of sense (as he really is also), and affirms that his causality is subject to external determination according to laws of nature. Now he soon becomes aware that both can hold good, nay, must hold good at the same time. For there is not the smallest contradiction in saying that a thing in appearance (belonging to the world of sense) is subject to certain laws, of which the very same as a thing or being in itself is independent, and that he must conceive and think of himself in this twofold way, rests as to the first on the consciousness of himself as an object affected through the senses, and as to the second on the consciousness of himself as an intelligence, i.e., as independent on sensible impressions in the employment of his reason (in other words as belonging to the world of understanding).",
+     "move": "Holds that one and the same man must conceive himself in a twofold way — as a sense-world phenomenon under natural laws and as an intelligence independent of them — and insists both can and must hold good at once without contradiction.",
+     "confidence": 0.55,
+     "similarity": 0.7654
+    },
+    {
+     "id": 80,
+     "author": "David Hume",
+     "work": "An Enquiry Concerning Human Understanding",
+     "citation": "PART II.",
+     "text": "44. We may observe, that, in these phaenomena, the belief of the correlative object is always presupposed; without which the relation could have no effect. The influence of the picture supposes, that we _believe_ our friend to have once existed. Contiguity to home can never excite our ideas of home, unless we _believe_ that it really exists. Now I assert, that this belief, where it reaches beyond the memory or senses, is of a similar nature, and arises from similar causes, with the transition of thought and vivacity of conception here explained. When I throw a piece of dry wood into a fire, my mind is immediately carried to conceive, that it augments, not extinguishes the flame. This transition of thought from the cause to the effect proceeds not from reason. It derives its origin altogether from custom and experience. And as it first begins from an object, present to the senses, it renders the idea or conception of flame more strong and lively than any loose, floating reverie of the imagination. That idea arises immediately. The thought moves instantly towards it, and conveys to it all that force of conception, which is derived from the impression present to the senses.",
+     "move": "Traces belief in objects beyond memory and senses to custom and the vivacity conveyed from a present impression, discussing the mechanism of belief rather than the identity of the believer.",
+     "confidence": 0.35,
+     "similarity": 0.7631
     }
    ]
   },
@@ -1455,29 +1455,9 @@ window.APORIA_DATA = {
      "work": "The Critique of Practical Reason",
      "citation": "INTERNAL EXTERNAL",
      "text": "Well or ill always implies only a reference to our condition, as pleasant or unpleasant, as one of pleasure or pain, and if we desire or avoid an object on this account, it is only so far as it is referred to our sensibility and to the feeling of pleasure or pain that it produces. But good or evil always implies a reference to the will, as determined by the law of reason, to make something its object; for it is never determined directly by the object and the idea of it, but is a faculty of taking a rule of reason for or motive of an action (by which an object may be realized). Good and evil therefore are properly referred to actions, not to the sensations of the person, and if anything is to be good or evil absolutely (i.e., in every respect and without any further condition), or is to be so esteemed, it can only be the manner of acting, the maxim of the will, and consequently the acting person himself as a good or evil man that can be so called, and not a thing.",
-     "move": "Separates 'well/ill' (mere pleasure and pain referred to our sensibility) from 'good/evil', which is referred to the will as determined by the law of reason, so that something can be good or evil absolutely.",
-     "confidence": 0.75,
-     "similarity": 0.7529
-    },
-    {
-     "id": 1292,
-     "author": "Immanuel Kant",
-     "work": "The Critique of Practical Reason",
-     "citation": "INTERNAL EXTERNAL",
-     "text": "This is the proper place to explain the paradox of method in a critique of practical reason, namely, that the concept of good and evil must not be determined before the moral law (of which it seems as if it must be the foundation), but only after it and by means of it. In fact, even if we did not know that the principle of morality is a pure a priori law determining the will, yet, that we may not assume principles quite gratuitously, we must, at least at first, leave it undecided, whether the will has merely empirical principles of determination, or whether it has not also pure a priori principles; for it is contrary to all rules of philosophical method to assume as decided that which is the very point in question. Supposing that we wished to begin with the concept of good, in order to deduce from it the laws of the will, then this concept of an object (as a good) would at the same time assign to us this object as the sole determining principle of the will. Now, since this concept had not any practical a priori law for its standard, the criterion of good or evil could not be placed in anything but the agreement of the object with our feeling of pleasure or pain; and the use of reason could only consist in determining in the first place this pleasure or pain in connexion with all the sensations of my existence, and in the second place the means of securing to myself the object of the pleasure.",
-     "move": "Argues the concept of good and evil must be derived from the a priori moral law rather than preceding it, since any concept of good taken first could only be measured by our feeling of pleasure or pain.",
-     "confidence": 0.6,
-     "similarity": 0.7484
-    },
-    {
-     "id": 2381,
-     "author": "Immanuel Kant",
-     "work": "Fundamental Principles of the Metaphysic of Morals",
-     "citation": "OF MORALITY TO THE PHILOSOPHICAL",
-     "text": "Thus the moral worth of an action does not lie in the effect expected from it, nor in any principle of action which requires to borrow its motive from this expected effect. For all these effects- agreeableness of one's condition and even the promotion of the happiness of others- could have been also brought about by other causes, so that for this there would have been no need of the will of a rational being; whereas it is in this alone that the supreme and unconditional good can be found. The pre-eminent good which we call moral can therefore consist in nothing else than the conception of law in itself, which certainly is only possible in a rational being, in so far as this conception, and not the expected effect, determines the will. This is a good which is already present in the person who acts accordingly, and we have not to wait for it to appear first in the result. *",
-     "move": "Locates moral worth not in an action's expected effects but in the conception of law itself determining the will, making the unconditional good present in the acting person rather than in results.",
-     "confidence": 0.7,
-     "similarity": 0.7418
+     "move": "Separates 'well/ill' — mere pleasure and pain referred to our sensibility — from 'good/evil', which is referred to the will as determined by the law of reason, so a maxim or an acting person can be good absolutely.",
+     "confidence": 0.8,
+     "similarity": 0.8007
     },
     {
      "id": 2396,
@@ -1485,83 +1465,9 @@ window.APORIA_DATA = {
      "work": "Fundamental Principles of the Metaphysic of Morals",
      "citation": "TO THE METAPHYSIC OF MORALS",
      "text": "Nor could anything be more fatal to morality than that we should wish to derive it from examples. For every example of it that is set before me must be first itself tested by principles of morality, whether it is worthy to serve as an original example, i.e., as a pattern; but by no means can it authoritatively furnish the conception of morality. Even the Holy One of the Gospels must first be compared with our ideal of moral perfection before we can recognise Him as such; and so He says of Himself, \"Why call ye Me (whom you see) good; none is good (the model of good) but God only (whom ye do not see)?\" But whence have we the conception of God as the supreme good? Simply from the idea of moral perfection, which reason frames a priori and connects inseparably with the notion of a free will. Imitation finds no place at all in morality, and examples serve only for encouragement, i.e., they put beyond doubt the feasibility of what the law commands, they make visible that which the practical rule expresses more generally, but they can never authorize us to set aside the true original which lies in reason and to guide ourselves by examples. If then there is no genuine supreme principle of morality but what must rest simply on pure reason, independent of all experience, I think it is not necessary even to put the question whether it is good to exhibit these concepts in their generality (in abstracto) as they are established a priori along with the principles belonging to them, if our knowledge is to be distinguished from the vulgar and to be called philosophical.",
-     "move": "Denies that morality can be drawn from examples, since even the Holy One of the Gospels must first be measured against an ideal of moral perfection that reason frames a priori, independent of all experience.",
-     "confidence": 0.75,
-     "similarity": 0.7371
-    },
-    {
-     "id": 2366,
-     "author": "Immanuel Kant",
-     "work": "Fundamental Principles of the Metaphysic of Morals",
-     "citation": "OF MORALITY TO THE PHILOSOPHICAL",
-     "text": "There are even some qualities which are of service to this good will itself and may facilitate its action, yet which have no intrinsic unconditional value, but always presuppose a good will, and this qualifies the esteem that we justly have for them and does not permit us to regard them as absolutely good. Moderation in the affections and passions, self-control, and calm deliberation are not only good in many respects, but even seem to constitute part of the intrinsic worth of the person; but they are far from deserving to be called good without qualification, although they have been so unconditionally praised by the ancients. For without the principles of a good will, they may become extremely bad, and the coolness of a villain not only makes him far more dangerous, but also directly makes him more abominable in our eyes than he would have been without it.",
-     "move": "Shows that self-control and calm deliberation have no unconditional value since they make a villain more abominable, leaving only the good will as absolutely good.",
-     "confidence": 0.65,
-     "similarity": 0.7327
-    },
-    {
-     "id": 1300,
-     "author": "Immanuel Kant",
-     "work": "The Critique of Practical Reason",
-     "citation": "IV. MODALITY.",
-     "text": "It is the notions of good and evil that first determine an object of the will. They themselves, however, are subject to a practical rule of reason which, if it is pure reason, determines the will a priori relatively to its object. Now, whether an action which is possible to us in the world of sense, comes under the rule or not, is a question to be decided by the practical judgement, by which what is said in the rule universally (in abstracto) is applied to an action in concreto. But since a practical rule of pure reason in the first place as practical concerns the existence of an object, and in the second place as a practical rule of pure reason implies necessity as regards the existence of the action and, therefore, is a practical law, not a physical law depending on empirical principles of determination, but a law of freedom by which the will is to be determined independently on anything empirical (merely by the conception of a law and its form), whereas all instances that can occur of possible actions can only be empirical, that is, belong to the experience of physical nature; hence, it seems absurd to expect to find in the world of sense a case which, while as such it depends only on the law of nature, yet admits of the application to it of a law of freedom, and to which we can apply the supersensible idea of the morally good which is to be exhibited in it in concreto.",
-     "move": "Makes the notions of good and evil answer to a practical rule of pure reason that determines the will a priori under a law of freedom rather than an empirical law of nature, while noting the difficulty of exhibiting the morally good in a concrete sensible case.",
-     "confidence": 0.6,
-     "similarity": 0.7312
-    }
-   ],
-   "against": [
-    {
-     "id": 825,
-     "author": "William James",
-     "work": "The Will to Believe, and Other Essays in Popular Philosophy",
-     "citation": "I.",
-     "text": "It is utterly hopeless to try to exorcise such sensitiveness by calling it the disturbing subjective factor, and branding it as the root of all evil. 'Subjective' be it called! and 'disturbing' to those whom it foils! But if it helps those who, as Cicero says, \"vim naturae magis sentiunt,\" it is good and not evil. Pretend what we may, the whole man within us is at work when we form our philosophical opinions. Intellect, will, taste, and passion co-operate just as they do in practical affairs; and lucky it is if the passion be not something as petty as a love of personal conquest over the philosopher across the way. The absurd abstraction of an intellect verbally formulating all its evidence and carefully estimating the probability thereof by a vulgar fraction by the size of whose denominator and numerator alone it is swayed, is {93} ideally as inept as it is actually impossible. It is almost incredible that men who are themselves working philosophers should pretend that any philosophy can be, or ever has been, constructed without the help of personal preference, belief, or divination. How have they succeeded in so stultifying their sense for the living facts of human nature as not to perceive that every philosopher, or man of science either, whose initiative counts for anything in the evolution of thought, has taken his stand on a sort of dumb conviction that the truth must lie in one direction rather than another, and a sort of preliminary assurance that his notion can be made to work; and has borne his best fruit in trying to make it work?",
-     "move": "Refuses to brand subjective sensitiveness as the root of evil, calling it good if it helps those who feel nature's force, and insists personal preference and passion enter every philosophical opinion.",
-     "confidence": 0.55,
-     "similarity": 0.7349
-    },
-    {
-     "id": 833,
-     "author": "William James",
-     "work": "The Will to Believe, and Other Essays in Popular Philosophy",
-     "citation": "I.",
-     "text": "Let us make this clear by a few examples. The philosophy of evolution offers us to-day a new criterion to serve as an ethical test between right and wrong. Previous criteria, it says, being subjective, have left us still floundering in variations of opinion and the _status belli_. Here is a criterion which is objective and fixed: _That is to be called good which is destined to prevail or survive_. But we immediately see that this standard can only remain objective by leaving myself and my conduct out. If what prevails and survives does so by my help, and cannot do so without that help; if something else will prevail in case I alter my conduct,--how can I possibly now, conscious of alternative courses of action open before me, either of which {99} I may suppose capable of altering the path of events, decide which course to take by asking what path events will follow? If they follow my direction, evidently my direction cannot wait on them. The only possible manner in which an evolutionist can use his standard is the obsequious method of forecasting the course society would take _but for him_, and then putting an extinguisher on all personal idiosyncrasies of desire and interest, and with bated breath and tiptoe tread following as straight as may be at the tail, and bringing up the rear of everything.",
-     "move": "Attacks the evolutionist's supposedly objective and fixed criterion ('that is good which is destined to prevail') by showing it can stay objective only by omitting the agent's own conduct from the calculation.",
-     "confidence": 0.7,
-     "similarity": 0.7313
-    }
-   ],
-   "nuance": [
-    {
-     "id": 2288,
-     "author": "John Stuart Mill",
-     "work": "On Liberty",
-     "citation": "CHAPTER IV.",
-     "text": "The evil here pointed out is not one which exists only in theory; and it may perhaps be expected that I should specify the instances in which the public of this age and country improperly invests its own preferences with the character of moral laws. I am not writing an essay on the aberrations of existing moral feeling. That is too weighty a subject to be discussed parenthetically, and by way of illustration. Yet examples are necessary, to show that the principle I maintain is of serious and practical moment, and that I am not endeavouring to erect a barrier against imaginary evils. And it is not difficult to show, by abundant instances, that to extend the bounds of what may be called moral police, until it encroaches on the most unquestionably legitimate liberty of the individual, is one of the most universal of all human propensities.",
-     "move": "Warns that the public improperly invests its own preferences with the character of moral laws and extends 'moral police' over legitimate liberty, without settling whether morality itself is invented.",
-     "confidence": 0.5,
-     "similarity": 0.7424
-    },
-    {
-     "id": 1999,
-     "author": "John Stuart Mill",
-     "work": "Utilitarianism",
-     "citation": "WHAT UTILITARIANISM IS.",
-     "text": "It is truly a whimsical supposition, that if mankind were agreed in considering utility to be the test of morality, they would remain without any agreement as to what is useful, and would take no measures for having their notions on the subject taught to the young, and enforced by law and opinion. There is no difficulty in proving any ethical standard whatever to work ill, if we suppose universal idiocy to be conjoined with it, but on any hypothesis short of that, mankind must by this time have acquired positive beliefs as to the effects of some actions on their happiness; and the beliefs which have thus come down are the rules of morality for the multitude, and for the philosopher until he has succeeded in finding better. That philosophers might easily do this, even now, on many subjects; that the received code of ethics is by no means of divine right; and that mankind have still much to learn as to the effects of actions on the general happiness, I admit, or rather, earnestly maintain. The corollaries from the principle of utility, like the precepts of every practical art, admit of indefinite improvement, and, in a progressive state of the human mind, their improvement is perpetually going on.",
-     "move": "Defends utility as a workable test of morality while granting that the received code of ethics is by no means of divine right and that inherited moral rules are corrigible human beliefs about effects on happiness.",
-     "confidence": 0.5,
-     "similarity": 0.7382
-    },
-    {
-     "id": 2244,
-     "author": "John Stuart Mill",
-     "work": "On Liberty",
-     "citation": "CHAPTER III.",
-     "text": "Having said that Individuality is the same thing with development, and that it is only the cultivation of individuality which produces, or can produce, well-developed human beings, I might here close the argument: for what more or better can be said of any condition of human affairs, than that it brings human beings themselves nearer to the best thing they can be? or what worse can be said of any obstruction to good, than that it prevents this? Doubtless, however, these considerations will not suffice to convince those who most need convincing; and it is necessary further to show, that these developed human beings are of some use to the undeveloped--to point out to those who do not desire liberty, and would not avail themselves of it, that they may be in some intelligible manner rewarded for allowing other people to make use of it without hindrance.",
-     "move": "Treats individuality and development as the best condition human beings can reach and any obstruction to it as an obstruction to good, arguing about liberty's value rather than about whether good is objective.",
-     "confidence": 0.6,
-     "similarity": 0.7346
+     "move": "Denies morality can be derived from examples, since even the Holy One of the Gospels must first be compared with an ideal of moral perfection that reason frames a priori, independent of all experience.",
+     "confidence": 0.8,
+     "similarity": 0.7987
     },
     {
      "id": 1991,
@@ -1569,9 +1475,103 @@ window.APORIA_DATA = {
      "work": "Utilitarianism",
      "citation": "WHAT UTILITARIANISM IS.",
      "text": "The same considerations dispose of another reproach against the doctrine of utility, founded on a still grosser misconception of the purpose of a standard of morality, and of the very meaning of the words right and wrong. It is often affirmed that utilitarianism renders men cold and unsympathizing; that it chills their moral feelings towards individuals; that it makes them regard only the dry and hard consideration of the consequences of actions, not taking into their moral estimate the qualities from which those actions emanate. If the assertion means that they do not allow their judgment respecting the rightness or wrongness of an action to be influenced by their opinion of the qualities of the person who does it, this is a complaint not against utilitarianism, but against having any standard of morality at all; for certainly no known ethical standard decides an action to be good or bad because it is done by a good or a bad man, still less because done by an amiable, a brave, or a benevolent man or the contrary. These considerations are relevant, not to the estimation of actions, but of persons; and there is nothing in the utilitarian theory inconsistent with the fact that there are other things which interest us in persons besides the rightness and wrongness of their actions.",
-     "move": "Rebuts the charge that utilitarianism is cold by noting no ethical standard judges an action good or bad from the doer's character, distinguishing the estimation of actions from that of persons.",
+     "move": "Rebuts the charge that utilitarianism is cold by insisting that no known ethical standard makes an action good or bad because of the doer's qualities, so the objection is really against having any standard of morality at all.",
+     "confidence": 0.55,
+     "similarity": 0.7965
+    },
+    {
+     "id": 154,
+     "author": "David Hume",
+     "work": "An Enquiry Concerning Human Understanding",
+     "citation": "PART II.",
+     "text": "Our clear and unalterable ideas of morality establish this rule, upon unquestionable reasons, when we examine the consequences of any human action; and these reasons must still have greater force when applied to the volitions and intentions of a Being infinitely wise and powerful. Ignorance or impotence may be pleaded for so limited a creature as man; but those imperfections have no place in our Creator. He foresaw, he ordained, he intended all those actions of men, which we so rashly pronounce criminal. And we must therefore conclude, either that they are not criminal, or that the Deity, not man, is accountable for them. But as either of these positions is absurd and impious, it follows, that the doctrine from which they are deduced cannot possibly be true, as being liable to all the same objections. An absurd consequence, if necessary, proves the original doctrine to be absurd; in the same manner as criminal actions render criminal the original cause, if the connexion between them be necessary and evitable.",
+     "move": "Appeals to 'clear and unalterable ideas of morality' resting on unquestionable reasons to run a reductio: if necessity holds, either human crimes are not criminal or the Deity is accountable for them, both absurd.",
      "confidence": 0.6,
-     "similarity": 0.7296
+     "similarity": 0.7945
+    },
+    {
+     "id": 1287,
+     "author": "Immanuel Kant",
+     "work": "The Critique of Practical Reason",
+     "citation": "INTERNAL EXTERNAL",
+     "text": "What we call good must be an object of desire in the judgement of every rational man, and evil an object of aversion in the eyes of everyone; therefore, in addition to sense, this judgement requires reason. So it is with truthfulness, as opposed to lying; so with justice, as opposed to violence, &c. But we may call a thing a bad [or ill] thing, which yet everyone must at the same time acknowledge to be good, sometimes directly, sometimes indirectly. The man who submits to a surgical operation feels it no doubt as a bad thing, but by their reason he and everyone acknowledge it to be good. If a man who delights in annoying and vexing peaceable people at last receives a right good beating, this is no doubt a bad thing; but everyone approves it and regards it as a good thing, even though nothing else resulted from it; nay, even the man who receives it must in his reason acknowledge that he has met justice, because he sees the proportion between good conduct and good fortune, which reason inevitably places before him, here put into practice. {BOOK_1|CHAPTER_2 ^paragraph 10}",
+     "move": "Argues that what we call good must be an object of desire in the judgement of every rational man, requiring reason and not mere sense, as the surgery and the deserved beating show a thing bad to feeling yet acknowledged good by everyone's reason.",
+     "confidence": 0.8,
+     "similarity": 0.7885
+    },
+    {
+     "id": 2381,
+     "author": "Immanuel Kant",
+     "work": "Fundamental Principles of the Metaphysic of Morals",
+     "citation": "OF MORALITY TO THE PHILOSOPHICAL",
+     "text": "Thus the moral worth of an action does not lie in the effect expected from it, nor in any principle of action which requires to borrow its motive from this expected effect. For all these effects- agreeableness of one's condition and even the promotion of the happiness of others- could have been also brought about by other causes, so that for this there would have been no need of the will of a rational being; whereas it is in this alone that the supreme and unconditional good can be found. The pre-eminent good which we call moral can therefore consist in nothing else than the conception of law in itself, which certainly is only possible in a rational being, in so far as this conception, and not the expected effect, determines the will. This is a good which is already present in the person who acts accordingly, and we have not to wait for it to appear first in the result. *",
+     "move": "Locates moral worth not in an action's expected effects but in the conception of law itself determining the will, so the supreme and unconditional good is already present in the person who acts on it.",
+     "confidence": 0.7,
+     "similarity": 0.7867
+    }
+   ],
+   "against": [
+    {
+     "id": 2288,
+     "author": "John Stuart Mill",
+     "work": "On Liberty",
+     "citation": "CHAPTER IV.",
+     "text": "The evil here pointed out is not one which exists only in theory; and it may perhaps be expected that I should specify the instances in which the public of this age and country improperly invests its own preferences with the character of moral laws. I am not writing an essay on the aberrations of existing moral feeling. That is too weighty a subject to be discussed parenthetically, and by way of illustration. Yet examples are necessary, to show that the principle I maintain is of serious and practical moment, and that I am not endeavouring to erect a barrier against imaginary evils. And it is not difficult to show, by abundant instances, that to extend the bounds of what may be called moral police, until it encroaches on the most unquestionably legitimate liberty of the individual, is one of the most universal of all human propensities.",
+     "move": "Charges that the public improperly invests its own preferences with the character of moral laws and calls this extension of 'moral police' one of the most universal human propensities.",
+     "confidence": 0.5,
+     "similarity": 0.8015
+    },
+    {
+     "id": 1628,
+     "author": "David Hume",
+     "work": "Dialogues Concerning Natural Religion",
+     "citation": "PART 11",
+     "text": "There may four hypotheses be framed concerning the first causes of the universe: that they are endowed with perfect goodness; that they have perfect malice; that they are opposite, and have both goodness and malice; that they have neither goodness nor malice. Mixed phenomena can never prove the two former unmixed principles; and the uniformity and steadiness of general laws seem to oppose the third. The fourth, therefore, seems by far the most probable. What I have said concerning natural evil will apply to moral, with little or no variation; and we have no more reason to infer, that the rectitude of the Supreme Being resembles human rectitude, than that his benevolence resembles the human. Nay, it will be thought, that we have still greater cause to exclude from him moral sentiments, such as we feel them; since moral evil, in the opinion of many, is much more predominant above moral good than natural evil above natural good. But even though this should not be allowed, and though the virtue which is in mankind should be acknowledged much superior to the vice, yet so long as there is any vice at all in the universe, it will very much puzzle you Anthropomorphites, how to account for it. You must assign a cause for it, without having recourse to the first cause. But as every effect must have a cause, and that cause another, you must either carry on the progression in infinitum, or rest on that original principle, who is the ultimate cause of all things...",
+     "move": "Ranks four hypotheses about the first causes and judges the fourth — that they have neither goodness nor malice — by far the most probable, concluding we have still greater cause to exclude from the deity moral sentiments such as we feel them.",
+     "confidence": 0.65,
+     "similarity": 0.7895
+    }
+   ],
+   "nuance": [
+    {
+     "id": 1292,
+     "author": "Immanuel Kant",
+     "work": "The Critique of Practical Reason",
+     "citation": "INTERNAL EXTERNAL",
+     "text": "This is the proper place to explain the paradox of method in a critique of practical reason, namely, that the concept of good and evil must not be determined before the moral law (of which it seems as if it must be the foundation), but only after it and by means of it. In fact, even if we did not know that the principle of morality is a pure a priori law determining the will, yet, that we may not assume principles quite gratuitously, we must, at least at first, leave it undecided, whether the will has merely empirical principles of determination, or whether it has not also pure a priori principles; for it is contrary to all rules of philosophical method to assume as decided that which is the very point in question. Supposing that we wished to begin with the concept of good, in order to deduce from it the laws of the will, then this concept of an object (as a good) would at the same time assign to us this object as the sole determining principle of the will. Now, since this concept had not any practical a priori law for its standard, the criterion of good or evil could not be placed in anything but the agreement of the object with our feeling of pleasure or pain; and the use of reason could only consist in determining in the first place this pleasure or pain in connexion with all the sensations of my existence, and in the second place the means of securing to myself the object of the pleasure.",
+     "move": "Reverses the order of derivation, insisting the concept of good and evil be settled only after and by means of the moral law, since a concept of good taken first could be measured by nothing but our feeling of pleasure or pain.",
+     "confidence": 0.6,
+     "similarity": 0.8112
+    },
+    {
+     "id": 825,
+     "author": "William James",
+     "work": "The Will to Believe, and Other Essays in Popular Philosophy",
+     "citation": "I.",
+     "text": "It is utterly hopeless to try to exorcise such sensitiveness by calling it the disturbing subjective factor, and branding it as the root of all evil. 'Subjective' be it called! and 'disturbing' to those whom it foils! But if it helps those who, as Cicero says, \"vim naturae magis sentiunt,\" it is good and not evil. Pretend what we may, the whole man within us is at work when we form our philosophical opinions. Intellect, will, taste, and passion co-operate just as they do in practical affairs; and lucky it is if the passion be not something as petty as a love of personal conquest over the philosopher across the way. The absurd abstraction of an intellect verbally formulating all its evidence and carefully estimating the probability thereof by a vulgar fraction by the size of whose denominator and numerator alone it is swayed, is {93} ideally as inept as it is actually impossible. It is almost incredible that men who are themselves working philosophers should pretend that any philosophy can be, or ever has been, constructed without the help of personal preference, belief, or divination. How have they succeeded in so stultifying their sense for the living facts of human nature as not to perceive that every philosopher, or man of science either, whose initiative counts for anything in the evolution of thought, has taken his stand on a sort of dumb conviction that the truth must lie in one direction rather than another, and a sort of preliminary assurance that his notion can be made to work; and has borne his best fruit in trying to make it work?",
+     "move": "Defends the 'subjective factor' in philosophizing, arguing intellect, will, taste, and passion co-operate in forming every philosophical opinion, and uses good and evil only in passing about that sensitiveness.",
+     "confidence": 0.4,
+     "similarity": 0.8108
+    },
+    {
+     "id": 1999,
+     "author": "John Stuart Mill",
+     "work": "Utilitarianism",
+     "citation": "WHAT UTILITARIANISM IS.",
+     "text": "It is truly a whimsical supposition, that if mankind were agreed in considering utility to be the test of morality, they would remain without any agreement as to what is useful, and would take no measures for having their notions on the subject taught to the young, and enforced by law and opinion. There is no difficulty in proving any ethical standard whatever to work ill, if we suppose universal idiocy to be conjoined with it, but on any hypothesis short of that, mankind must by this time have acquired positive beliefs as to the effects of some actions on their happiness; and the beliefs which have thus come down are the rules of morality for the multitude, and for the philosopher until he has succeeded in finding better. That philosophers might easily do this, even now, on many subjects; that the received code of ethics is by no means of divine right; and that mankind have still much to learn as to the effects of actions on the general happiness, I admit, or rather, earnestly maintain. The corollaries from the principle of utility, like the precepts of every practical art, admit of indefinite improvement, and, in a progressive state of the human mind, their improvement is perpetually going on.",
+     "move": "Grounds received morality in mankind's accumulated empirical beliefs about the effects of actions on happiness, granting that the received code is by no means of divine right and admits of indefinite improvement.",
+     "confidence": 0.55,
+     "similarity": 0.7976
+    },
+    {
+     "id": 843,
+     "author": "William James",
+     "work": "The Will to Believe, and Other Essays in Popular Philosophy",
+     "citation": "I.",
+     "text": "The practical difference between this objective sort of moralist and the other one is enormous. The subjectivist in morals, when his moral feelings are at war with the facts about him, is always free to seek harmony by toning down the sensitiveness of the feelings. Being mere data, neither good nor evil in themselves, he may pervert them or lull them to sleep by any means at his command. Truckling, compromise, time-serving, capitulations of conscience, are conventionally opprobrious names for what, if successfully carried out, {105} would be on his principles by far the easiest and most praiseworthy mode of bringing about that harmony between inner and outer relations which is all that he means by good. The absolute moralist, on the other hand, when his interests clash with the world, is not free to gain harmony by sacrificing the ideal interests. According to him, these latter should be as they are and not otherwise. Resistance then, poverty, martyrdom if need be, tragedy in a word,--such are the solemn feasts of his inward faith. Not that the contradiction between the two men occurs every day; in commonplace matters all moral schools agree. It is only in the lonely emergencies of life that our creed is tested: then routine maxims fail, and we fall back on our gods.",
+     "move": "Contrasts the practical consequences of the two positions — the subjectivist treats his moral feelings as mere data he may lull to sleep, while the absolute moralist accepts poverty and martyrdom — without arguing which view is true.",
+     "confidence": 0.5,
+     "similarity": 0.7864
     }
    ]
   }
@@ -1582,8 +1582,8 @@ window.APORIA_DATA = {
   "authors": 10,
   "claims": 12,
   "classified": 144,
-  "for": 58,
-  "against": 36,
-  "nuance": 50
+  "for": 61,
+  "against": 34,
+  "nuance": 49
  }
 };
