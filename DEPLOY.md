@@ -10,7 +10,11 @@ just loads the artifacts, so a small always-on instance is enough.
    locally or in CI: `ingest.download` → `ingest.chunk` → `index.build_index`).
 2. `ANTHROPIC_API_KEY` set in the environment, so the stance layer uses the
    Anthropic SDK (the `claude` CLI fallback is for local dev only).
-3. ~1.5 GB RAM (embedding model + index in memory).
+3. **~770 MB RAM.** Measured, not estimated: the container idles at 716 MB
+   after the model and index load, and peaks at 769 MB after serving queries
+   (`docker stats`, linux/amd64). An earlier version of this file guessed
+   1.5 GB, which was roughly double the truth and ruled out hosts that would
+   in fact have worked.
 
 ## Fly.io (recommended)
 
@@ -22,7 +26,8 @@ fly deploy
 ```
 
 The repo ships a working [Dockerfile](Dockerfile) — build-tested locally
-(2.5GB image; serves search + UI from baked-in artifacts). It installs
+(**605 MB** for linux/amd64, measured 2026-08-17; serves search + UI from
+baked-in artifacts). It installs
 CPU-only torch (avoiding ~3GB of CUDA libraries), bakes the embedding model
 into the image, and reuses local `data/` artifacts when present (building
 corpus + index from scratch otherwise):

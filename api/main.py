@@ -7,18 +7,21 @@ import sys
 from pathlib import Path
 
 import numpy as np
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import FastAPI, HTTPException, Query, Request
 from fastapi.responses import FileResponse
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from config import DB_PATH, EMBED_MODEL, INDEX_DIR, QUERY_PREFIX, ROOT, TOP_K
-from api import expand, stance
+from api import expand, limits, stance
 from api.claims import resolve_claim
 from index.vector_index import load_index
 
 app = FastAPI(title="Aporia", description="Search philosophy by argument, not keyword.")
 
 _state: dict = {}
+
+# Per-instance rate limiter. See api/limits.py for why it is not shared.
+_limiter = limits.SlidingWindowLimiter()
 
 
 @app.on_event("startup")
@@ -43,7 +46,23 @@ def _fetch_chunks(ids: list[int]) -> list[dict]:
 
 
 @app.get("/search")
-def search(q: str = Query(..., min_length=3), k: int = TOP_K):
+def search(
+    request: Request,
+    q: str = Query(..., min_length=3, max_length=limits.MAX_QUERY_CHARS),
+    k: int = TOP_K,
+):
+    # This endpoint can spend money: any claim not already cached costs one
+    # batched Claude call over `k` passages. Bound the request before doing any
+    # of that work — see api/limits.py.
+    allowed, retry_after = _limiter.check(limits.client_key(request))
+    if not allowed:
+        raise HTTPException(
+            status_code=429,
+            detail="Too many searches. Each new claim costs a model call.",
+            headers={"Retry-After": str(int(retry_after) + 1)},
+        )
+    k = limits.clamp_k(k)
+
     # Bare topics ("free will") resolve to a canonical claim; retrieval still
     # uses the original query for breadth, stance is judged against the claim.
     claim, was_topic, claim_error = resolve_claim(q)
