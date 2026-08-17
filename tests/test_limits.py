@@ -136,6 +136,10 @@ def client(monkeypatch):
     # reads as a bare topic, which sends it to the LLM to be turned into a
     # canonical claim. Twenty of those is twenty backend timeouts.
     monkeypatch.setattr("api.main.resolve_claim", lambda q: (q, False, None))
+    # No corpus database in CI — data/aporia.db is a build artifact, not source.
+    # These tests are about rate limiting, not retrieval, so the chunk lookup is
+    # stubbed rather than requiring the whole ingest pipeline to have run.
+    monkeypatch.setattr("api.main._fetch_chunks", lambda ids: [])
     return TestClient(main.app)
 
 
@@ -163,3 +167,11 @@ def test_over_long_queries_are_rejected_before_any_work(client):
 
     r = client.get("/search?q=" + "a" * (L.MAX_QUERY_CHARS + 1))
     assert r.status_code == 422  # FastAPI validation, no model call made
+
+
+def test_empty_retrieval_returns_nothing_rather_than_500():
+    """`WHERE id IN ()` is not valid SQL, so a search that matched no passages
+    used to be a server error rather than an empty result."""
+    from api import main
+
+    assert main._fetch_chunks([]) == []

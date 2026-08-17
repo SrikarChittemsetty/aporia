@@ -33,6 +33,11 @@ def startup() -> None:
 
 
 def _fetch_chunks(ids: list[int]) -> list[dict]:
+    # An empty id list would build "WHERE id IN ()", which is not valid SQL —
+    # so a search that retrieved nothing would 500 instead of returning nothing.
+    if not ids:
+        return []
+
     con = sqlite3.connect(DB_PATH)
     con.row_factory = sqlite3.Row
     placeholders = ",".join("?" * len(ids))
