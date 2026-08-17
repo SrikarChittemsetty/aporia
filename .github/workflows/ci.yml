@@ -13,7 +13,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      # Unit tests cover the chunker, claim resolution, and both pure-Python
-      # index implementations — no ML downloads needed.
-      - run: pip install numpy pytest
+      # Unit tests cover the chunker, claim resolution, both pure-Python index
+      # implementations, and the /search rate limiting — no ML downloads needed.
+      # fastapi and httpx are here for the endpoint tests: every heavy import
+      # (torch, sentence-transformers, anthropic) is deferred to call time, so
+      # importing api.main costs nothing but these two.
+      - run: pip install numpy pytest fastapi httpx
       - run: pytest -q

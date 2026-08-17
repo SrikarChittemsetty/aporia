@@ -123,11 +123,19 @@ def client(monkeypatch):
     main._state["model"] = _FakeModel()
     main._state["index"] = _FakeIndex()
     main._limiter.reset()
-    # alpha=0 keeps retrieval off the expansion path, which would want a backend.
     monkeypatch.setattr(
         "api.expand.search_vector",
         lambda model, q, alpha=0.0: (_FakeModel().encode(q), None, None),
     )
+    # Stub the stance layer too. Left real it tries an LLM backend on every
+    # request and waits for it to fail, which turns a test about rate limiting
+    # into 20 timeouts — slow, and dependent on whether a `claude` binary
+    # happens to be on PATH.
+    monkeypatch.setattr("api.stance.classify", lambda claim, passages: ({}, None))
+    # And claim resolution, for the same reason: a short query like "claim 5"
+    # reads as a bare topic, which sends it to the LLM to be turned into a
+    # canonical claim. Twenty of those is twenty backend timeouts.
+    monkeypatch.setattr("api.main.resolve_claim", lambda q: (q, False, None))
     return TestClient(main.app)
 
 
