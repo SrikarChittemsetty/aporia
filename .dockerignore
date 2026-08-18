@@ -6,3 +6,5 @@ docs/
 tests/
 data/raw/
 .github/
+frontend/
+**/node_modules/
