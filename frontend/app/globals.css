@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+/*
+ * Palette carried over from the original `web/index.html` — warm paper, serif
+ * type, and one colour per stance so the reader can tell sides apart before
+ * reading a word. The dark variant is new; it keeps the same hue relationships
+ * with the lightness inverted, rather than switching to a neutral grey theme
+ * that would lose the "old book" feel entirely.
+ */
+:root {
+  --canvas: #faf7f2;
+  --card: #ffffff;
+  --ink: #22201c;
+  --muted: #7a746a;
+  --line: #e4ddd2;
+  --accent: #b4541f;
+
+  --for: #1e6f50;
+  --for-soft: #eaf5ef;
+  --against: #9c3524;
+  --against-soft: #f9ece9;
+  --nuance: #6b5ca5;
+  --nuance-soft: #efecf7;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --canvas: #16140f;
+    --card: #1e1b16;
+    --ink: #ece7dd;
+    --muted: #9b948a;
+    --line: #322e27;
+    --accent: #dd8b52;
+
+    --for: #5cbd93;
+    --for-soft: #14261e;
+    --against: #e08a74;
+    --against-soft: #2b1815;
+    --nuance: #a89ada;
+    --nuance-soft: #1f1b2d;
+  }
+}
+
+@theme inline {
+  --color-canvas: var(--canvas);
+  --color-card: var(--card);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+
+  --color-for: var(--for);
+  --color-for-soft: var(--for-soft);
+  --color-against: var(--against);
+  --color-against-soft: var(--against-soft);
+  --color-nuance: var(--nuance);
+  --color-nuance-soft: var(--nuance-soft);
+
+  --font-serif: Georgia, "Iowan Old Style", "Times New Roman", serif;
+}
+
+html {
+  color-scheme: light dark;
+}
+
+body {
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: var(--font-serif);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Visible keyboard focus everywhere, since the default ring is nearly
+   invisible against the warm background. */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@keyframes aporia-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-fade-in {
+  animation: aporia-fade-in 0.28s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in {
+    animation: none;
+  }
+}
