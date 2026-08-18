@@ -206,7 +206,7 @@ Honest reading: at this corpus size a single vectorized matrix product is
 hard to beat, and C++ beats Python on constant factors. That invites the
 obvious question — so why build the index? — and
 **[BENCHMARKS.md](BENCHMARKS.md) answers it by measuring the crossover** across
-corpus sizes from 3.7k to 300k vectors:
+corpus sizes from 3.7k to 1M vectors:
 
 | vectors | brute force | hnswlib | PyHNSW (ours) |
 |--------:|------------:|--------:|--------------:|
@@ -214,6 +214,19 @@ corpus sizes from 3.7k to 300k vectors:
 | 7,500 | 0.496 ms | 0.138 ms | **0.340 ms** |
 | 100,000 | 8.442 ms | 0.218 ms | **0.520 ms** |
 | 300,000 | 27.172 ms | 1.146 ms | — |
+| 1,000,000 | 167.410 ms | 89.450 ms | — |
+
+The from-scratch index is measured to 100k. Past that only the exact search and
+hnswlib were run, because building a million-vector index in a pure-Python
+inner loop takes longer than the answer is worth — that build cost is a real
+limitation of this implementation and is stated rather than hidden.
+
+The 1M row is worth reading closely for a different reason: hnswlib goes from
+1.1 ms at 300k to **89 ms at 1M**, an 78× jump for a 3.3× increase in vectors.
+That is not the algorithm degrading, it is the index leaving cache and hitting
+memory. The lesson the whole table teaches is that "which index is fastest"
+has no answer independent of corpus size and hardware, which is exactly why
+the crossover was measured instead of assumed.
 
 The C++ index is already at parity on today's corpus (1.04×) and 2.1× ahead by
 5,000 vectors; the from-scratch one overtakes exact search between **5,000 and
