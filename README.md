@@ -286,6 +286,28 @@ CI runs on every push.
   catches the classifier drifting from behaviour that was once reviewed. It is
   not an independent ground truth, and a true accuracy number needs a human
   labelling passages blind. That is the next eval worth building.
+- `python -m evals.judge_eval` — **cross-prompt agreement**, the failure mode
+  self-consistency structurally cannot see. The production classifier judges
+  passages batched, as JSON, with ids, under one prompt; this eval has an
+  independently-prompted judge (fresh-context LLM, single passage, plain
+  language, no access to the classifier's answers) re-judge the same stratified
+  30 passages. If they disagree, at least one of them is being steered by its
+  prompt rather than by the text. Measured result
+  ([evals/judge_results.json](evals/judge_results.json)):
+
+  | | |
+  |---|---|
+  | agreement | 23/30 = 76.7% |
+  | Cohen's kappa | 0.653 |
+  | for → against flips | **0** |
+  | against → for flips | **0** |
+
+  Every one of the seven disagreements is the classifier saying *nuance* where
+  the blind judge committed to a side. Polarity survives a complete change of
+  framing; the soft boundary is hedging, exactly where stability.py found its
+  instability. **What this is not:** accuracy. Both judges are LLMs, so this
+  bounds prompt-sensitivity, not correctness — the blind human sheet above
+  remains the only path to a real accuracy number.
 
 ## Roadmap
 

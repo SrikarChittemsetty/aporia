@@ -1,0 +1,74 @@
+{
+  "what_this_is": "Agreement between the production stance classifier (batched JSON prompt) and an independently-prompted judge, both LLMs. This is a prompt-robustness check, NOT accuracy — no human labels are involved.",
+  "judge": "Fresh-context Claude subagents (Claude Code Agent tool), 3 batches of 10, single-passage plain-language prompt, no tools, blind to the stance cache. LLM judge — not human labels.",
+  "n": 30,
+  "agreement": 0.7666666666666667,
+  "kappa": 0.6528925619834712,
+  "skipped_uncached": 0,
+  "skipped_unparseable": 0,
+  "confusion_classifier_x_judge": {
+    "against->against": 7,
+    "for->for": 11,
+    "nuance->against": 3,
+    "nuance->for": 4,
+    "nuance->nuance": 5
+  },
+  "disagreements": [
+    {
+      "claim": "The self persists as one thing over time",
+      "chunk_id": 1696,
+      "author": "Friedrich Nietzsche",
+      "work": "Beyond Good and Evil",
+      "classifier": "nuance",
+      "judge": "against"
+    },
+    {
+      "claim": "Happiness is the highest good",
+      "chunk_id": 1984,
+      "author": "John Stuart Mill",
+      "work": "Utilitarianism",
+      "classifier": "nuance",
+      "judge": "for"
+    },
+    {
+      "claim": "The self persists as one thing over time",
+      "chunk_id": 1540,
+      "author": "David Hume",
+      "work": "Dialogues Concerning Natural Religion",
+      "classifier": "nuance",
+      "judge": "for"
+    },
+    {
+      "claim": "God exists",
+      "chunk_id": 359,
+      "author": "Baruch Spinoza",
+      "work": "Ethics",
+      "classifier": "nuance",
+      "judge": "for"
+    },
+    {
+      "claim": "It is rational to believe something without sufficient evidence",
+      "chunk_id": 717,
+      "author": "William James",
+      "work": "The Will to Believe, and Other Essays in Popular Philosophy",
+      "classifier": "nuance",
+      "judge": "against"
+    },
+    {
+      "claim": "Good and evil are objective, not human inventions",
+      "chunk_id": 843,
+      "author": "William James",
+      "work": "The Will to Believe, and Other Essays in Popular Philosophy",
+      "classifier": "nuance",
+      "judge": "for"
+    },
+    {
+      "claim": "It is rational to believe something without sufficient evidence",
+      "chunk_id": 1194,
+      "author": "Immanuel Kant",
+      "work": "The Critique of Practical Reason",
+      "classifier": "nuance",
+      "judge": "against"
+    }
+  ]
+}

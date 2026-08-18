@@ -120,17 +120,18 @@ show();
 """
 
 
-def main() -> None:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--n", type=int, default=60, help="how many passages to label")
-    ap.add_argument("--seed", type=int, default=7)
-    args = ap.parse_args()
+def sample_passages(n: int, seed: int) -> list[dict]:
+    """The stratified sample both blind evals draw from.
 
+    Shared (rather than duplicated) so the human sheet and the cross-prompt
+    judge in evals/judge_eval.py score the *same* passages — same n, same seed,
+    same items — and their numbers stay comparable.
+    """
     data = json.loads(RETRIEVAL.read_text())
-    rng = random.Random(args.seed)
+    rng = random.Random(seed)
 
     # Stratified: take an equal slice from each claim, then top up at random.
-    per_claim = max(1, args.n // len(data))
+    per_claim = max(1, n // len(data))
     picked, pool = [], []
     for entry in data:
         passages = list(entry["passages"])
@@ -141,10 +142,10 @@ def main() -> None:
             pool.append((entry["claim"], p))
 
     rng.shuffle(pool)
-    picked.extend(pool[: max(0, args.n - len(picked))])
+    picked.extend(pool[: max(0, n - len(picked))])
     rng.shuffle(picked)
 
-    items = [
+    return [
         {
             "claim": claim,
             "id": p["id"],
@@ -153,8 +154,17 @@ def main() -> None:
             "work": p["work"],
             "citation": p["citation_path"],
         }
-        for claim, p in picked[: args.n]
+        for claim, p in picked[:n]
     ]
+
+
+def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--n", type=int, default=60, help="how many passages to label")
+    ap.add_argument("--seed", type=int, default=7)
+    args = ap.parse_args()
+
+    items = sample_passages(args.n, args.seed)
 
     OUT.write_text(
         TEMPLATE.format(items=json.dumps(items, ensure_ascii=False), n=len(items))
