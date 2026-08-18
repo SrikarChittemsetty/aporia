@@ -175,3 +175,16 @@ def test_empty_retrieval_returns_nothing_rather_than_500():
     from api import main
 
     assert main._fetch_chunks([]) == []
+
+
+def test_cors_allows_the_frontend_origin_and_only_it(client):
+    """Pages serves the UI from a different origin, so without CORS the browser
+    blocks every live call and the frontend silently degrades to bundled data —
+    a failure that is invisible in curl and total in a browser."""
+    r = client.get("/search?q=claim+cors", headers={"Origin": "https://srikarchittemsetty.github.io"})
+    assert r.headers.get("access-control-allow-origin") == "https://srikarchittemsetty.github.io"
+
+    # An unknown origin gets no grant — the per-IP rate limit budget must not
+    # be spendable from arbitrary third-party pages.
+    r2 = client.get("/search?q=claim+cors2", headers={"Origin": "https://evil.example"})
+    assert "access-control-allow-origin" not in r2.headers

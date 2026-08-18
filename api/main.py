@@ -18,6 +18,24 @@ from index.vector_index import load_index
 
 app = FastAPI(title="Aporia", description="Search philosophy by argument, not keyword.")
 
+# The Next.js frontend is served from GitHub Pages, a different origin than the
+# API, so without these headers every browser blocks the call and the frontend
+# silently falls back to its bundled demo data. An explicit allowlist rather
+# than "*": the API is rate-limited per client IP, and a wildcard would let any
+# site on the internet spend this deployment's budget from its visitors'
+# browsers.
+from fastapi.middleware.cors import CORSMiddleware  # noqa: E402
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "https://srikarchittemsetty.github.io",  # the deployed frontend
+        "http://localhost:3000",                 # `next dev`
+    ],
+    allow_methods=["GET"],
+    allow_headers=["*"],
+)
+
 _state: dict = {}
 
 # Per-instance rate limiter. See api/limits.py for why it is not shared.
